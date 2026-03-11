@@ -1,0 +1,12 @@
+name: oauth_consent_abuse
+category: identity
+dataset: azure_audit
+description: Look for suspicious OAuth consent, app grant, or application-related audit activity.
+required_fields:
+  - "@timestamp"
+  - event.action
+  - azure.auditlogs.properties.activity_display_name
+  - azure.auditlogs.properties.initiated_by.user.userPrincipalName
+severity: high
+enabled: true
+status: active

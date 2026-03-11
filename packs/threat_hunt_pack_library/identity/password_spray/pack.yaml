@@ -1,0 +1,11 @@
+name: password_spray
+category: identity
+dataset: azure_signin
+description: Detect multiple failed sign-ins from a single IP against multiple users.
+required_fields:
+  - "@timestamp"
+  - user.name
+  - source.ip
+  - event.outcome
+severity: medium
+enabled: true

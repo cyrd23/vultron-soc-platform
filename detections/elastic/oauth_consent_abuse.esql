@@ -1,0 +1,21 @@
+FROM logs-azure.auditlogs*
+| WHERE event.action IS NOT NULL OR azure.auditlogs.properties.activity_display_name IS NOT NULL
+| WHERE event.action LIKE "*consent*"
+    OR event.action LIKE "*grant*"
+    OR event.action LIKE "*application*"
+    OR azure.auditlogs.properties.activity_display_name LIKE "*consent*"
+    OR azure.auditlogs.properties.activity_display_name LIKE "*grant*"
+    OR azure.auditlogs.properties.activity_display_name LIKE "*application*"
+| KEEP @timestamp,
+       event.action,
+       event.outcome,
+       source.ip,
+       client.ip,
+       azure.auditlogs.properties.activity_display_name,
+       azure.auditlogs.properties.initiated_by.user.userPrincipalName,
+       azure.auditlogs.properties.initiated_by.user.displayName,
+       azure.auditlogs.properties.initiated_by.app.displayName,
+       azure.auditlogs.properties.initiated_by.app.servicePrincipalName,
+       azure.auditlogs.operation_name
+| SORT @timestamp DESC
+| LIMIT 100

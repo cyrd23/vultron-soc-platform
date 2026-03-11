@@ -1,0 +1,18 @@
+title: Suspicious OAuth Consent or Permission Grant Activity
+id: oauth-consent-abuse-001
+status: experimental
+description: Detects OAuth consent, delegated permission grants, and application-related Azure audit activity.
+logsource:
+  product: azure
+  service: auditlogs
+detection:
+  selection:
+    event.action|contains:
+      - Consent
+      - grant
+      - application
+  condition: selection
+falsepositives:
+  - Expected enterprise application onboarding
+  - Administrator-approved app integrations
+level: high

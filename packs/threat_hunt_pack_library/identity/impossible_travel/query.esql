@@ -1,0 +1,5 @@
+FROM logs-azure.signinlogs*
+| WHERE event.outcome == "success" AND geo.country_name IS NOT NULL
+| STATS country_count = COUNT_DISTINCT(geo.country_name), countries = VALUES(geo.country_name), ips = VALUES(source.ip) BY user.name
+| WHERE country_count > 1
+| SORT country_count DESC

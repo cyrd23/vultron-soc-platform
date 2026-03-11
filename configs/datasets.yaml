@@ -1,0 +1,23 @@
+fortigate: logs-fortinet_fortigate.log*
+umbrella: logs-cisco_umbrella.log*
+
+azure_signin: logs-azure.signinlogs*
+azure_audit: logs-azure.auditlogs*
+azure_provisioning: logs-azure.provisioning*
+azure_identity_protection: logs-azure.identity_protection*
+
+o365: logs-o365.audit*
+
+crowdstrike_fdr: logs-crowdstrike.fdr*
+crowdstrike_alert: logs-crowdstrike.alert*
+crowdstrike_host: logs-crowdstrike.host*
+crowdstrike_vulnerability: logs-crowdstrike.vulnerability*
+
+tenable_vulnerability: logs-tenable_io.vulnerability*
+tenable_asset: logs-tenable_io.asset*
+
+zeek_connection: logs-zeek.connection*
+zeek_dns: logs-zeek.dns*
+zeek_http: logs-zeek.http*
+zeek_ssl: logs-zeek.ssl*
+zeek_files: logs-zeek.files*

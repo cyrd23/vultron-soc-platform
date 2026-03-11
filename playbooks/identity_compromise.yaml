@@ -1,0 +1,15 @@
+name: identity_compromise
+description: Response workflow for suspected identity compromise or risky OAuth activity.
+approval_required: true
+
+actions:
+  - name: review_signin_activity
+    description: Review recent successful and failed sign-ins for the affected user(s)
+  - name: review_oauth_grants
+    description: Review recent OAuth grants, delegated permissions, and app consents
+  - name: review_o365_activity
+    description: Review mailbox, SharePoint, OneDrive, and related activity
+  - name: consider_session_revocation
+    description: Revoke active sessions if compromise is confirmed
+  - name: consider_password_reset
+    description: Force password reset if compromise is confirmed

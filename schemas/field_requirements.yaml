@@ -1,0 +1,39 @@
+identity:
+  - "@timestamp"
+  - source.ip
+  - event.outcome
+
+identity_signin:
+  - "@timestamp"
+  - user.name
+  - source.ip
+  - event.outcome
+  - geo.country_name
+
+identity_audit:
+  - "@timestamp"
+  - event.action
+  - azure.auditlogs.properties.activity_display_name
+  - azure.auditlogs.properties.initiated_by.user.userPrincipalName
+
+endpoint:
+  - "@timestamp"
+  - host.name
+  - process.name
+  - process.command_line
+  - user.name
+
+dns:
+  - "@timestamp"
+  - source.ip
+  - dns.question.name
+
+network:
+  - "@timestamp"
+  - source.ip
+  - destination.ip
+  - destination.port
+
+exposure:
+  - "@timestamp"
+  - host.name

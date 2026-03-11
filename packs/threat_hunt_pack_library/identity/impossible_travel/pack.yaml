@@ -1,0 +1,12 @@
+name: impossible_travel
+category: identity
+dataset: azure_signin
+description: Find users authenticating from multiple countries in suspicious patterns.
+required_fields:
+  - "@timestamp"
+  - user.name
+  - source.ip
+  - geo.country_name
+  - event.outcome
+severity: medium
+enabled: true
