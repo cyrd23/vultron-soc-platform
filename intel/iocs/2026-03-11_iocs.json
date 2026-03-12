@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-03-11T17:44:51.710117+00:00",
+  "source_files": [
+    "2026-03-11_feed_entries.json"
+  ],
+  "ips": [],
+  "domains": [
+    "anthropic-finds-22-firefox.html",
+    "apt28-uses-beardshell-and-covenant.html",
+    "bleepingcomputer.com",
+    "can-security-platform-finally-deliver.html",
+    "chrome-extension-turns-malicious-after.html",
+    "cisa-flags-solarwinds-ivanti-and.html",
+    "cpr-blog-image-option-1-300x150.png",
+    "critical-n8n-flaws-allow-remote-code.html",
+    "darkreading.com",
+    "dozens-of-vendors-patch-security-flaws.html",
+    "five-malicious-rust-crates-and-ai-bot.html",
+    "fortigate-devices-exploited-to-breach.html",
+    "hatless1der.com",
+    "how-to-stop-ai-data-leaks-webinar-guide.html",
+    "kadnap-malware-infects-14000-edge.html",
+    "malicious-npm-package-posing-as.html",
+    "meta-disables-150k-accounts-linked-to.html",
+    "microsoft-patches-84-flaws-in-march.html",
+    "multi-stage-voidgeist-malware.html",
+    "new-leakylooker-flaws-in-google-looker.html",
+    "next.js",
+    "openai-codex-security-scanned-12.html",
+    "proofpoint.com",
+    "the-zero-day-scramble-is-avoidable.html",
+    "thehackernews.com",
+    "threat-actors-mass-scan-salesforce.html",
+    "transparent-tribe-uses-ai-to-mass.html",
+    "unc4899-used-airdrop-file-transfer-and.html",
+    "unc6426-exploits-nx-npm-supply-chain.html",
+    "web-server-exploits-and-mimikatz-used.html",
+    "weekly-recap-qualcomm-0-day-ios-exploit.html",
+    "what-boards-must-demand-in-age-of-ai.html"
+  ],
+  "hashes": []
+}

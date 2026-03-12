@@ -1,0 +1,16 @@
+known_good_ips:
+  - 96.255.250.253
+
+known_good_internal_ips:
+  - 192.168.20.102
+
+known_good_domains:
+  - github.com
+  - docs.google.com
+  - drive.google.com
+  - onedrive.live.com
+  - cdn.jsdelivr.net
+  - res.cloudinary.com
+  - adclick.g.doubleclick.net
+  - files.constantcontact.com
+  - img1.wsimg.com

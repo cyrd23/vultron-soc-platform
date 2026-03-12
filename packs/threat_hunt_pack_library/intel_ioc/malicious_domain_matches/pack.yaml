@@ -1,0 +1,14 @@
+name: malicious_domain_matches
+category: intel_ioc
+description: Hunt for threat intel domains observed in Zeek DNS telemetry
+severity: high
+
+input_type: domain_list
+input_source: intel/operational/latest_operational
+
+query_template: |
+  FROM logs-zeek.dns*
+  | WHERE dns.question.name IN ({ioc_list})
+  | KEEP @timestamp, source.ip, dns.question.name, dns.answers.data
+  | SORT @timestamp DESC
+  | LIMIT 200

@@ -1,0 +1,12 @@
+{
+  "name": "suspicious_powershell",
+  "category": "endpoint",
+  "description": "Proposed hunt based on intel theme: Ransomware or malware delivery activity",
+  "reason": "Ransomware or malware delivery activity",
+  "mapped_ttps": [
+    "T1204",
+    "T1059"
+  ],
+  "relevance": "high",
+  "status": "proposed"
+}

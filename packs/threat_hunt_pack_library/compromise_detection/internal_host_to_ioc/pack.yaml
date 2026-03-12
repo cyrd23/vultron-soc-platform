@@ -1,0 +1,14 @@
+name: internal_host_to_ioc
+category: compromise_detection
+description: Detect internal hosts contacting known malicious infrastructure
+severity: critical
+
+input_type: ip_list
+input_source: intel/operational/latest_operational
+
+query_template: |
+  FROM logs-crowdstrike.fdr*
+  | WHERE destination.ip IN ({ioc_list})
+  | KEEP @timestamp, host.name, host.hostname, source.ip, destination.ip, destination.port, event.action, event.category, event.type, process.name, process.executable, process.command_line
+  | SORT @timestamp DESC
+  | LIMIT 200

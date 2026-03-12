@@ -1,0 +1,212 @@
+sources:
+  # Tier 1 — Threat Intelligence Research
+  - name: sans_internet_storm_center
+    tier: 1
+    type: rss
+    url: https://isc.sans.edu/rssfeed.xml
+    focus: [threat_intel, exploitation, malware, situational_awareness]
+    parser: rss
+    enabled: true
+
+  - name: google_threat_intelligence_blog
+    tier: 1
+    type: rss
+    url: https://cloud.google.com/blog/topics/threat-intelligence/rss
+    focus: [threat_intel, cloud, threat_actor, campaigns]
+    parser: rss
+    enabled: true
+
+  - name: microsoft_security_blog
+    tier: 1
+    type: rss
+    url: https://www.microsoft.com/security/blog/feed/
+    focus: [identity, cloud, m365, oauth, entra, threat_intel]
+    parser: rss
+    enabled: true
+
+  - name: cisco_talos_intelligence
+    tier: 1
+    type: rss
+    url: https://blog.talosintelligence.com/feeds/posts/default
+    focus: [malware, email, network, iocs, campaigns]
+    parser: rss
+    enabled: true
+
+  - name: unit42
+    tier: 1
+    type: rss
+    url: https://unit42.paloaltonetworks.com/feed/
+    focus: [cloud, malware, phishing, threat_actor, campaigns]
+    parser: rss
+    enabled: true
+
+  - name: securelist
+    tier: 1
+    type: rss
+    url: https://securelist.com/feed/
+    focus: [malware, campaigns, threat_actor, detection]
+    parser: rss
+    enabled: true
+
+  - name: check_point_research
+    tier: 1
+    type: rss
+    url: https://research.checkpoint.com/feed/
+    focus: [malware, cloud, exploitation, campaigns]
+    parser: rss
+    enabled: true
+
+  - name: fortinet_fortiguard_labs
+    tier: 1
+    type: rss
+    url: https://www.fortiguard.com/rss-feeds
+    focus: [network, malware, exploitation, fortinet, threat_intel]
+    parser: rss
+    enabled: true
+
+  - name: proofpoint_threat_insight
+    tier: 1
+    type: rss
+    url: https://www.proofpoint.com/us/rss.xml
+    focus: [email, phishing, identity, campaigns, threat_intel]
+    parser: rss
+    enabled: true
+
+  # Tier 2 — IOC / Indicator Feeds
+  - name: abuse_ch_malwarebazaar
+    tier: 2
+    type: rss
+    url: https://bazaar.abuse.ch/rss/
+    focus: [iocs, malware, hashes, samples]
+    parser: rss
+    enabled: true
+
+  - name: urlhaus
+    tier: 2
+    type: rss
+    url: https://urlhaus.abuse.ch/rss/
+    focus: [iocs, urls, domains, malware_delivery]
+    parser: rss
+    enabled: true
+
+  - name: alienvault_otx_subscribed
+    tier: 2
+    type: api
+    url: https://otx.alienvault.com/api/v1/pulses/subscribed
+    focus: [iocs, pulses, campaigns, threat_intel]
+    parser: otx_api
+    enabled: true
+
+  - name: spamhaus_threat_feed
+    tier: 2
+    type: rss
+    url: https://www.spamhaus.org/feed/
+    focus: [spam, botnet, blocklists, ip_reputation]
+    parser: rss
+    enabled: true
+
+  - name: honeydb
+    tier: 2
+    type: rss
+    url: https://honeydb.io/rss
+    focus: [scanning, opportunistic_activity, recon]
+    parser: rss
+    enabled: true
+
+  - name: blocklist_de
+    tier: 2
+    type: rss
+    url: https://www.blocklist.de/en/rss.html
+    focus: [iocs, abusive_ips, scanning, brute_force]
+    parser: rss
+    enabled: true
+
+  # Tier 3 — Cybersecurity News & Breach Intelligence
+  - name: the_hacker_news
+    tier: 3
+    type: rss
+    url: https://feeds.feedburner.com/TheHackersNews
+    focus: [news, breaches, malware, exploitation]
+    parser: rss
+    enabled: true
+
+  - name: dark_reading
+    tier: 3
+    type: rss
+    url: https://www.darkreading.com/rss.xml
+    focus: [news, enterprise_security, trends]
+    parser: rss
+    enabled: true
+
+  - name: bleeping_computer
+    tier: 3
+    type: rss
+    url: https://www.bleepingcomputer.com/feed
+    focus: [news, ransomware, exploitation, patches]
+    parser: rss
+    enabled: true
+
+  - name: securityweek
+    tier: 3
+    type: rss
+    url: https://www.securityweek.com/feed
+    focus: [news, enterprise_security, vulnerabilities]
+    parser: rss
+    enabled: true
+
+  - name: the_cyberwire
+    tier: 3
+    type: rss
+    url: https://thecyberwire.com/rss
+    focus: [news, daily_digest, threat_intel]
+    parser: rss
+    enabled: true
+
+  - name: krebs_on_security
+    tier: 3
+    type: rss
+    url: https://krebsonsecurity.com/feed/
+    focus: [investigations, breaches, fraud, cybercrime]
+    parser: rss
+    enabled: true
+
+  # Tier 4 — OSINT / Investigation Tradecraft
+  - name: bellingcat
+    tier: 4
+    type: rss
+    url: https://www.bellingcat.com/feed/
+    focus: [osint, investigations, methodology]
+    parser: rss
+    enabled: true
+
+  - name: secjuice_osint
+    tier: 4
+    type: rss
+    url: https://www.secjuice.com/tag/osint/feed/
+    focus: [osint, tradecraft, methodology]
+    parser: rss
+    enabled: true
+
+  - name: maltego_blog
+    tier: 4
+    type: rss
+    url: https://www.maltego.com/blog/feed/
+    focus: [osint, investigations, graph_analysis]
+    parser: rss
+    enabled: true
+
+  - name: webbreacher_osint
+    tier: 4
+    type: rss
+    url: https://webbreacher.com/category/osint/feed/
+    focus: [osint, investigations, tradecraft]
+    parser: rss
+    enabled: true
+
+  - name: portswigger_daily_swig
+    tier: 4
+    type: rss
+    url: https://portswigger.net/daily-swig/rss
+    focus: [web, appsec, research, methodology]
+    parser: rss
+    enabled: true

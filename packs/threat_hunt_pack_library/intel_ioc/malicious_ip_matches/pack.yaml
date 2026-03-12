@@ -1,0 +1,15 @@
+name: malicious_ip_matches
+category: intel_ioc
+description: Hunt for threat intel IPs observed in the environment
+
+input_type: ip_list
+input_source: intel/operational/latest_operational
+
+query_template: |
+  FROM logs-*
+  | WHERE source.ip IN ({ioc_list})
+     OR destination.ip IN ({ioc_list})
+     OR related.ip IN ({ioc_list})
+  | KEEP @timestamp, data_stream.dataset, event.action, source.ip, destination.ip, related.ip
+  | SORT @timestamp DESC
+  | LIMIT 200

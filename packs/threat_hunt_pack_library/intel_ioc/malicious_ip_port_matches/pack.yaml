@@ -1,0 +1,14 @@
+name: malicious_ip_port_matches
+category: intel_ioc
+description: Hunt for threat intel IP:Port combinations
+severity: high
+
+input_type: ip_port_list
+input_source: intel/operational/latest_operational
+
+query_template: |
+  FROM logs-*
+  | WHERE {ip_port_clause}
+  | KEEP @timestamp, data_stream.dataset, source.ip, destination.ip, destination.port, event.action
+  | SORT @timestamp DESC
+  | LIMIT 200

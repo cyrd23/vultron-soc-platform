@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-03-11T17:12:25.870584+00:00",
+  "priority_themes": [
+    "Ransomware or malware delivery activity"
+  ],
+  "priority_categories": [
+    "endpoint"
+  ],
+  "recommended_hunts": [
+    "credential_dumping",
+    "suspicious_powershell"
+  ]
+}

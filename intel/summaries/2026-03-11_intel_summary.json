@@ -1,0 +1,133 @@
+{
+  "date": "2026-03-11",
+  "generated_at": "2026-03-11T17:12:25.870220+00:00",
+  "themes": [
+    {
+      "theme": "Ransomware or malware delivery activity",
+      "relevance": "high",
+      "category": "endpoint",
+      "mapped_ttps": [
+        "T1204",
+        "T1059"
+      ],
+      "recommended_hunts": [
+        "suspicious_powershell",
+        "credential_dumping"
+      ],
+      "base_severity": "medium",
+      "score": 9.75,
+      "matched_entries": [
+        {
+          "source": "microsoft_security_blog",
+          "title": "OAuth redirection abuse enables phishing and malware delivery",
+          "link": "https://www.microsoft.com/en-us/security/blog/2026/03/02/oauth-redirection-abuse-enables-phishing-malware-delivery/",
+          "score": 1.0
+        },
+        {
+          "source": "unit42",
+          "title": "Nation-State Actors Exploit Notepad++ Supply Chain",
+          "link": "https://unit42.paloaltonetworks.com/notepad-infrastructure-compromise/",
+          "score": 0.9
+        },
+        {
+          "source": "securelist",
+          "title": "BeatBanker: A dual\u2011mode Android Trojan",
+          "link": "https://securelist.com/beatbanker-miner-and-banker/119121/",
+          "score": 0.8
+        },
+        {
+          "source": "securelist",
+          "title": "Mobile malware evolution in 2025",
+          "link": "https://securelist.com/mobile-threat-report-2025/119076/",
+          "score": 0.8
+        },
+        {
+          "source": "securelist",
+          "title": "Arkanix Stealer: a C++ & Python infostealer",
+          "link": "https://securelist.com/arkanix-stealer/119006/",
+          "score": 0.8
+        },
+        {
+          "source": "securelist",
+          "title": "The game is over: when \u201cfree\u201d comes at too high a price. What we know about RenEngine",
+          "link": "https://securelist.com/renengine-campaign-with-hijackloader-lumma-and-acr-stealer/118891/",
+          "score": 0.8
+        },
+        {
+          "source": "securelist",
+          "title": "Stan Ghouls targeting Russia and Uzbekistan with NetSupport RAT",
+          "link": "https://securelist.com/stan-ghouls-in-uzbekistan/118738/",
+          "score": 0.8
+        },
+        {
+          "source": "check_point_research",
+          "title": "9th March \u2013 Threat Intelligence Report",
+          "link": "https://research.checkpoint.com/2026/9th-march-threat-intelligence-report/",
+          "score": 0.9
+        },
+        {
+          "source": "check_point_research",
+          "title": "26th January \u2013 Threat Intelligence Report",
+          "link": "https://research.checkpoint.com/2026/26th-january-threat-intelligence-report/",
+          "score": 0.9
+        },
+        {
+          "source": "proofpoint_threat_insight",
+          "title": "Life Mirrors Art: Ransomware Hits Hospitals on TV & IRL",
+          "link": "https://www.proofpoint.com/us/newsroom/news/life-mirrors-art-ransomware-hits-hospitals-tv-irl",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "theme": "OAuth consent phishing",
+      "relevance": "low",
+      "category": "identity",
+      "mapped_ttps": [
+        "T1528",
+        "T1078"
+      ],
+      "recommended_hunts": [
+        "oauth_consent_abuse"
+      ],
+      "base_severity": "high",
+      "score": 1.12,
+      "matched_entries": [
+        {
+          "source": "microsoft_security_blog",
+          "title": "OAuth redirection abuse enables phishing and malware delivery",
+          "link": "https://www.microsoft.com/en-us/security/blog/2026/03/02/oauth-redirection-abuse-enables-phishing-malware-delivery/",
+          "score": 1.0
+        },
+        {
+          "source": "bellingcat",
+          "title": "Tracing Tomahawks: US Missiles Bound for Iran Spotted Over Iraq",
+          "link": "https://www.bellingcat.com/news/middle-east/2026/03/11/iran-war-iraq-tomahawks-munitions-syria-located-kurdistan-missiles-fired/",
+          "score": 0.12
+        }
+      ]
+    },
+    {
+      "theme": "Graph API or cloud file abuse",
+      "relevance": "low",
+      "category": "cloud_activity",
+      "mapped_ttps": [
+        "T1530",
+        "T1529"
+      ],
+      "recommended_hunts": [
+        "graph_api_mass_access"
+      ],
+      "base_severity": "medium",
+      "score": 0.35,
+      "matched_entries": [
+        {
+          "source": "bleeping_computer",
+          "title": "Microsoft to enable Windows hotpatch security updates by default",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-enable-hotpatch-security-updates-by-default-in-may/",
+          "score": 0.35
+        }
+      ]
+    }
+  ]
+}

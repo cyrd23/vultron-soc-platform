@@ -1,0 +1,17 @@
+name: malicious_domain_matches_umbrella
+category: intel_ioc
+description: Hunt for threat intel domains observed in Cisco Umbrella telemetry
+severity: high
+
+input_type: domain_list
+input_source: intel/operational/latest_operational
+
+query_template: |
+  FROM logs-cisco_umbrella.log*
+  | WHERE dns.question.name IN ({ioc_list})
+     OR dns.question.registered_domain IN ({ioc_list})
+     OR related.hosts IN ({ioc_list})
+     OR cisco.umbrella.fqdns IN ({ioc_list})
+  | KEEP @timestamp, source.ip, dns.question.name, dns.question.registered_domain, related.hosts, cisco.umbrella.fqdns, event.action
+  | SORT @timestamp DESC
+  | LIMIT 200

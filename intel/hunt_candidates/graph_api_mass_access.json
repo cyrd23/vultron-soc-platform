@@ -1,0 +1,12 @@
+{
+  "name": "graph_api_mass_access",
+  "category": "cloud_activity",
+  "description": "Proposed hunt based on intel theme: Graph API or cloud file abuse",
+  "reason": "Graph API or cloud file abuse",
+  "mapped_ttps": [
+    "T1530",
+    "T1529"
+  ],
+  "relevance": "low",
+  "status": "proposed"
+}

@@ -1,0 +1,52 @@
+tier_weights:
+  1: 1.0
+  2: 0.9
+  3: 0.5
+  4: 0.3
+
+source_overrides:
+  microsoft_security_blog: 1.0
+  google_threat_intelligence_blog: 1.0
+  cisco_talos_intelligence: 1.0
+  unit42: 1.0
+  proofpoint_threat_insight: 1.0
+
+  abuse_ch_malwarebazaar: 0.95
+  urlhaus: 0.95
+  alienvault_otx_subscribed: 0.95
+
+  the_hacker_news: 0.5
+  dark_reading: 0.5
+  bleeping_computer: 0.5
+  securityweek: 0.5
+  the_cyberwire: 0.5
+  krebs_on_security: 0.6
+
+  bellingcat: 0.3
+  secjuice_osint: 0.3
+  maltego_blog: 0.3
+  webbreacher_osint: 0.3
+  portswigger_daily_swig: 0.4
+
+focus_weights:
+  identity: 1.0
+  oauth: 1.0
+  entra: 1.0
+  m365: 1.0
+  cloud: 0.9
+  threat_intel: 0.9
+  campaigns: 0.8
+  threat_actor: 0.8
+  phishing: 0.8
+  email: 0.8
+  iocs: 0.8
+  malware: 0.7
+  exploitation: 0.7
+  vulnerabilities: 0.7
+  network: 0.6
+  blocklists: 0.6
+  recon: 0.5
+  situational_awareness: 0.4
+  news: 0.3
+  osint: 0.3
+  methodology: 0.2
