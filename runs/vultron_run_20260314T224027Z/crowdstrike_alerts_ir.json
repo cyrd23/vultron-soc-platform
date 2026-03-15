@@ -1,0 +1,2163 @@
+[
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:454c248f82bd4974a8576eb033799770:1954357939752-56-4023824",
+    "hostname": "PO-STEMM-01-NC",
+    "display_name": "HashDumpSAMUntrusted",
+    "severity": 70,
+    "ir_verdict": "high_severity_follow_on_activity_found",
+    "notes": [
+      "Reviewed CrowdStrike alert: HashDumpSAMUntrusted",
+      "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr",
+      "Event actions observed: DnsRequest, NetworkConnectIP4, NetworkConnectIP6, ProcessRollup2",
+      "Processes observed: OfficeClickToRun.exe, WmiPrvSE.exe, cmd.exe, conhost.exe, filebeat.exe, metricbeat.exe, nessus-agent-module.exe, nessuscli.exe, nessusd.exe"
+    ],
+    "event_timestamp": "2026-03-04T15:19:10.396Z",
+    "summary": {
+      "documents_found": 300,
+      "columns": [
+        "@timestamp",
+        "host.name",
+        "event.action",
+        "process.name",
+        "process.command_line",
+        "source.ip",
+        "destination.ip",
+        "data_stream.dataset"
+      ],
+      "sample_values": [
+        [
+          "2026-03-14T22:24:01.357Z",
+          "PO-STEMM-01-NC",
+          "DnsRequest",
+          "nessuscli.exe",
+          null,
+          "192.168.1.135",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T22:24:01.357Z",
+          "PO-STEMM-01-NC",
+          "DnsRequest",
+          "OfficeClickToRun.exe",
+          null,
+          "192.168.1.135",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T22:24:01.357Z",
+          "PO-STEMM-01-NC",
+          "DnsRequest",
+          "nessuscli.exe",
+          null,
+          "192.168.1.135",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T22:24:01.357Z",
+          "PO-STEMM-01-NC",
+          "NetworkConnectIP6",
+          "OfficeClickToRun.exe",
+          null,
+          "192.168.1.135",
+          "2603:1063:16:131::365:7ea3",
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T22:24:01.357Z",
+          "PO-STEMM-01-NC",
+          "DnsRequest",
+          "nessuscli.exe",
+          null,
+          "192.168.1.135",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T22:24:01.357Z",
+          "PO-STEMM-01-NC",
+          "ProcessRollup2",
+          "nessus-agent-module.exe",
+          "C:\\Program Files\\Tenable\\Nessus Agent\\nessus-agent-module.exe",
+          "192.168.1.135",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T22:24:01.356Z",
+          "PO-STEMM-01-NC",
+          "ProcessRollup2",
+          "filebeat.exe",
+          "\"C:\\Program Files\\Elastic\\Agent\\data\\elastic-agent-de80b0\\components\\filebeat.exe\" -E setup.ilm.enabled=false -E setup.template.enabled=false -E management.enabled=true -E management.restart_on_output_change=true -E logging.level=info -E logging.to_stderr=true -E gc_percent=${FILEBEAT_GOGC:100} -E filebeat.config.modules.enabled=false -E http.enabled=true -E http.host=npipe:///ebvJ72JkKcLim6zl2Go79BFvDy6QqDTt.sock -E \"path.data=C:\\Program Files\\Elastic\\Agent\\data\\elastic-agent-de80b0\\run\\winlog-default\"",
+          "192.168.1.135",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T22:24:01.356Z",
+          "PO-STEMM-01-NC",
+          "NetworkConnectIP4",
+          "filebeat.exe",
+          null,
+          "192.168.1.135",
+          "169.254.169.254",
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T22:24:01.356Z",
+          "PO-STEMM-01-NC",
+          "ProcessRollup2",
+          "conhost.exe",
+          "\\??\\C:\\WINDOWS\\system32\\conhost.exe 0xffffffff -ForceV1",
+          "192.168.1.135",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T22:24:01.356Z",
+          "PO-STEMM-01-NC",
+          "ProcessRollup2",
+          "metricbeat.exe",
+          "\"C:\\Program Files\\Elastic\\Agent\\data\\elastic-agent-de80b0\\components\\metricbeat.exe\" -E setup.ilm.enabled=false -E setup.template.enabled=false -E management.enabled=true -E management.restart_on_output_change=true -E logging.level=info -E logging.to_stderr=true -E gc_percent=${METRICBEAT_GOGC:100} -E metricbeat.config.modules.enabled=false -E http.enabled=true -E http.host=npipe:///iThI_df0cBKC6YUNGGlKscMkOfz3FBH3.sock -E \"path.data=C:\\Program Files\\Elastic\\Agent\\data\\elastic-agent-de80b0\\run\\system\\metrics-default\"",
+          "192.168.1.135",
+          null,
+          "crowdstrike.fdr"
+        ]
+      ]
+    }
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-8256784",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:02.567Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-5733-6910480",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Machine Learning Identified High Confidence Malicious File",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Machine Learning Identified High Confidence Malicious File",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:32:09.203Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-10417-6841360",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:23:36.019Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-5733-3985936",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Machine Learning Identified High Confidence Malicious File",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Machine Learning Identified High Confidence Malicious File",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T12:24:02.223Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11959720516-10417-8721936",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:32:26.355Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9899057346-10417-6141968",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:13:20.752Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-5738-5987600",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "OnWrite-PrewittSensorDetect-Medium",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: OnWrite-PrewittSensorDetect-Medium",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:03:35.935Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-5733-5911312",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Machine Learning Identified High Confidence Malicious File",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Machine Learning Identified High Confidence Malicious File",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:03:33.86Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4530704",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T13:52:02.616Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-4748-6918160",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Detect OnWrite Adware/PUP Hash",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Detect OnWrite Adware/PUP Hash",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:32:09.283Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11862111419-10120-8314640",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "ExploitKit",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: ExploitKit",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:44.815Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11833570885-10417-8258576",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:02.567Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-7802128",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:21:12.092Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-7765008",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:18:57.42Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-5738-6963984",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "OnWrite-PrewittSensorDetect-Medium",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: OnWrite-PrewittSensorDetect-Medium",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:32:12.002Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-4748-6908176",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Detect OnWrite Adware/PUP Hash",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Detect OnWrite Adware/PUP Hash",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:32:08.593Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9898133367-10417-6138640",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:13:20.662Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11863870195-10438-8340240",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Anomalous Process Execution",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Anomalous Process Execution",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:47.142Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11863870195-10120-8318736",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "ExploitKit",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: ExploitKit",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:45.064Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11865244389-10159-8321040",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "PShellBase64",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: PShellBase64",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:45.185Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9910974655-10166-6162704",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "PShellDownloadRun",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: PShellDownloadRun",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:13:21.141Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8846444048-10417-4700432",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T14:01:24.75Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11960544478-10417-8722960",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:32:26.355Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11935825673-10417-8447760",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:30:37.802Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11896024689-10417-8384784",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:54.594Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11859097911-10166-8309520",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "PShellDownloadRun",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: PShellDownloadRun",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:44.069Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-10127-5993232",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Dropper",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Dropper",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:03:36.063Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4548112",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T13:53:16.484Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-5733-3974672",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Machine Learning Identified High Confidence Malicious File",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Machine Learning Identified High Confidence Malicious File",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T12:24:01.859Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-4748-3986448",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Detect OnWrite Adware/PUP Hash",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Detect OnWrite Adware/PUP Hash",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T12:24:02.223Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11866272953-10127-8325392",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Dropper",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Dropper",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:45.357Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9897024929-10417-6137616",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:13:20.662Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-10417-6112272",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:12:26.115Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4278032",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T12:55:00.343Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-8392208",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:26:20.802Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11893337767-10417-8379408",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:53.851Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11856711824-10164-8306960",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "PShellExploitKit2",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: PShellExploitKit2",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:43.983Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:fb3d64feb50846208262f41b6b78bf30:1917645402998-474-15836944",
+    "hostname": "TUL-COUNTER-02",
+    "display_name": "Parallel port scanning",
+    "severity": 50,
+    "ir_verdict": "medium_severity_follow_on_activity_found",
+    "notes": [
+      "Reviewed CrowdStrike alert: Parallel port scanning",
+      "Medium severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr",
+      "Event actions observed: DnsRequest, NetworkConnectIP4, ProcessRollup2, ServiceStarted",
+      "Processes observed: LogonUI.exe, MicrosoftEdgeUpdate.exe, MpCmdRun.exe, MpDefenderCoreService.exe, MsMpEng.exe, MsSense.exe, OneDrive.Sync.Service.exe, OneDrive.exe, RuntimeBroker.exe, SenseIR.exe"
+    ],
+    "event_timestamp": "2026-03-10T13:29:46.744Z",
+    "summary": {
+      "documents_found": 100,
+      "columns": [
+        "@timestamp",
+        "host.name",
+        "event.action",
+        "process.name",
+        "process.command_line",
+        "source.ip",
+        "destination.ip",
+        "data_stream.dataset"
+      ],
+      "sample_values": [
+        [
+          "2026-03-14T01:03:30.019Z",
+          "TUL-COUNTER-02",
+          "ProcessRollup2",
+          "LogonUI.exe",
+          "\"LogonUI.exe\" /flags:0x0 /state0:0xa0bb1855 /state1:0x41c64e6d",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:30.019Z",
+          "TUL-COUNTER-02",
+          "ProcessRollup2",
+          "svchost.exe",
+          "C:\\WINDOWS\\System32\\svchost.exe -k CameraMonitor",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:30.019Z",
+          "TUL-COUNTER-02",
+          "ProcessRollup2",
+          "taskhostw.exe",
+          "taskhostw.exe KEYROAMING",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:30.019Z",
+          "TUL-COUNTER-02",
+          "ServiceStarted",
+          "svchost.exe",
+          "C:\\WINDOWS\\System32\\svchost.exe -k CameraMonitor",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:11.928Z",
+          "TUL-COUNTER-02",
+          "ServiceStarted",
+          "svchost.exe",
+          "C:\\WINDOWS\\system32\\svchost.exe -k wsappx -p -s AppXSvc",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:11.928Z",
+          "TUL-COUNTER-02",
+          "NetworkConnectIP4",
+          "svchost.exe",
+          null,
+          "192.168.100.13",
+          "74.178.76.54",
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:11.928Z",
+          "TUL-COUNTER-02",
+          "ProcessRollup2",
+          "svchost.exe",
+          "C:\\WINDOWS\\system32\\svchost.exe -k wsappx -p -s AppXSvc",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:10.882Z",
+          "TUL-COUNTER-02",
+          "NetworkConnectIP4",
+          "svchost.exe",
+          null,
+          "192.168.100.13",
+          "40.79.173.41",
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:09.345Z",
+          "TUL-COUNTER-02",
+          "NetworkConnectIP4",
+          "lsass.exe",
+          null,
+          "192.168.100.13",
+          "20.190.157.3",
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:07.933Z",
+          "TUL-COUNTER-02",
+          "NetworkConnectIP4",
+          "svchost.exe",
+          null,
+          "192.168.100.13",
+          "130.213.27.178",
+          "crowdstrike.fdr"
+        ]
+      ]
+    }
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11950902765-10417-8449552",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:30:40.808Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11889542395-10248-8372240",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "UnusualNslookup",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: UnusualNslookup",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:53.85Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-4748-6920976",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Detect OnWrite Adware/PUP Hash",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Detect OnWrite Adware/PUP Hash",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:32:09.283Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9907554859-10258-6154000",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "CommandLineKnownMalware",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: CommandLineKnownMalware",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:13:20.919Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9683050737-10127-5992464",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Dropper",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Dropper",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:03:36.063Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-5733-5913872",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Machine Learning Identified High Confidence Malicious File",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Machine Learning Identified High Confidence Malicious File",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:03:33.955Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-5733-5915408",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Machine Learning Identified High Confidence Malicious File",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Machine Learning Identified High Confidence Malicious File",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:03:33.955Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-4748-5904656",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Detect OnWrite Adware/PUP Hash",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Detect OnWrite Adware/PUP Hash",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:03:33.859Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11863060189-10120-8316688",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "ExploitKit",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: ExploitKit",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:45.064Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11892127031-10417-8378384",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:53.851Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11952182729-10417-8450832",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:30:40.808Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11886057611-10107-8365584",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "PShellDownload",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: PShellDownload",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:52.881Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11884723401-10147-8364304",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "PShellMimikatz",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: PShellMimikatz",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:52.881Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11856711824-10417-8303376",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:43.983Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11859097911-10166-8308496",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "PShellDownloadRun",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: PShellDownloadRun",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:43.983Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-10127-6969104",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Dropper",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Dropper",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:32:12.707Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-4748-5905168",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Detect OnWrite Adware/PUP Hash",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Detect OnWrite Adware/PUP Hash",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:03:33.859Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4478736",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T13:48:49.956Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:9a83a8075e294430b6a73302b5b4a0fd:510256351096-10311-5536272",
+    "hostname": "F-STEMM-01-BP",
+    "display_name": "BypassUACPrivEsc",
+    "severity": 70,
+    "ir_verdict": "high_severity_follow_on_activity_found",
+    "notes": [
+      "Reviewed CrowdStrike alert: BypassUACPrivEsc",
+      "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr",
+      "Event actions observed: DnsRequest, NetworkConnectIP4, NetworkConnectIP6, ProcessRollup2, ServiceStarted, ServiceStopped, UserLogoff, UserLogon",
+      "Processes observed: BrConsole.exe, BrPrintHelper.exe, CSFalconContainer.exe, FileCoAuth.exe, HxTsr.exe, LogonUI.exe, MoUsoCoreWorker.exe, MsSense.exe, PrintIsolationHost.exe, RtkAudUService64.exe"
+    ],
+    "event_timestamp": "2026-03-12T19:13:25.084Z",
+    "summary": {
+      "documents_found": 100,
+      "columns": [
+        "@timestamp",
+        "host.name",
+        "event.action",
+        "process.name",
+        "process.command_line",
+        "source.ip",
+        "destination.ip",
+        "data_stream.dataset"
+      ],
+      "sample_values": [
+        [
+          "2026-03-13T14:21:54.605Z",
+          "F-STEMM-01-BP",
+          "UserLogon",
+          null,
+          null,
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:54.605Z",
+          "F-STEMM-01-BP",
+          "UserLogon",
+          null,
+          null,
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:54.605Z",
+          "F-STEMM-01-BP",
+          "UserLogoff",
+          null,
+          null,
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:54.048Z",
+          "F-STEMM-01-BP",
+          "ProcessRollup2",
+          "conhost.exe",
+          "\\??\\C:\\WINDOWS\\system32\\conhost.exe 0xffffffff -ForceV1",
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:54.048Z",
+          "F-STEMM-01-BP",
+          "ProcessRollup2",
+          "conhost.exe",
+          "\\??\\C:\\WINDOWS\\system32\\conhost.exe 0xffffffff -ForceV1",
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:54.048Z",
+          "F-STEMM-01-BP",
+          "ProcessRollup2",
+          "ax_installer.exe",
+          "\"C:\\Program Files\\HP\\Sure Click\\4.4.23.316\\servers\\ax_installer.exe\" -v",
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:53.925Z",
+          "F-STEMM-01-BP",
+          "ProcessRollup2",
+          "svchost.exe",
+          "C:\\WINDOWS\\system32\\svchost.exe -k LocalSystemNetworkRestricted -s ScDeviceEnum",
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:53.925Z",
+          "F-STEMM-01-BP",
+          "ProcessRollup2",
+          "SECOCL64.exe",
+          "/exit-mutex-guid={1EE0FCDF-2C27-4E9F-9BAE-9E2BDE38F631} /host-pipe-name=\\\\.\\pipe\\{EF682DBB-1D6E-4EE1-BD25-FE47451CC2EA} /endpoint-id={0.0.0.00000000}.{485b8cb6-6ce2-46ec-8d89-cbc2af450612}",
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:53.798Z",
+          "F-STEMM-01-BP",
+          "ServiceStarted",
+          "svchost.exe",
+          "C:\\WINDOWS\\system32\\svchost.exe -k LocalSystemNetworkRestricted -s ScDeviceEnum",
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:53.108Z",
+          "F-STEMM-01-BP",
+          "ServiceStarted",
+          "svchost.exe",
+          "C:\\WINDOWS\\System32\\svchost.exe -k CameraMonitor",
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ]
+      ]
+    }
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:fb3d64feb50846208262f41b6b78bf30:1924242885558-56-23975696",
+    "hostname": "TUL-COUNTER-02",
+    "display_name": "HashDumpSAMUntrusted",
+    "severity": 70,
+    "ir_verdict": "high_severity_follow_on_activity_found",
+    "notes": [
+      "Reviewed CrowdStrike alert: HashDumpSAMUntrusted",
+      "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr",
+      "Event actions observed: DnsRequest, NetworkConnectIP4, ProcessRollup2, ServiceStarted",
+      "Processes observed: LogonUI.exe, MicrosoftEdgeUpdate.exe, MpCmdRun.exe, MpDefenderCoreService.exe, MsMpEng.exe, MsSense.exe, OneDrive.Sync.Service.exe, OneDrive.exe, RuntimeBroker.exe, SenseIR.exe"
+    ],
+    "event_timestamp": "2026-03-11T15:02:01.142Z",
+    "summary": {
+      "documents_found": 100,
+      "columns": [
+        "@timestamp",
+        "host.name",
+        "event.action",
+        "process.name",
+        "process.command_line",
+        "source.ip",
+        "destination.ip",
+        "data_stream.dataset"
+      ],
+      "sample_values": [
+        [
+          "2026-03-14T01:03:30.019Z",
+          "TUL-COUNTER-02",
+          "ProcessRollup2",
+          "LogonUI.exe",
+          "\"LogonUI.exe\" /flags:0x0 /state0:0xa0bb1855 /state1:0x41c64e6d",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:30.019Z",
+          "TUL-COUNTER-02",
+          "ProcessRollup2",
+          "svchost.exe",
+          "C:\\WINDOWS\\System32\\svchost.exe -k CameraMonitor",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:30.019Z",
+          "TUL-COUNTER-02",
+          "ProcessRollup2",
+          "taskhostw.exe",
+          "taskhostw.exe KEYROAMING",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:30.019Z",
+          "TUL-COUNTER-02",
+          "ServiceStarted",
+          "svchost.exe",
+          "C:\\WINDOWS\\System32\\svchost.exe -k CameraMonitor",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:11.928Z",
+          "TUL-COUNTER-02",
+          "ServiceStarted",
+          "svchost.exe",
+          "C:\\WINDOWS\\system32\\svchost.exe -k wsappx -p -s AppXSvc",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:11.928Z",
+          "TUL-COUNTER-02",
+          "NetworkConnectIP4",
+          "svchost.exe",
+          null,
+          "192.168.100.13",
+          "74.178.76.54",
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:11.928Z",
+          "TUL-COUNTER-02",
+          "ProcessRollup2",
+          "svchost.exe",
+          "C:\\WINDOWS\\system32\\svchost.exe -k wsappx -p -s AppXSvc",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:10.882Z",
+          "TUL-COUNTER-02",
+          "NetworkConnectIP4",
+          "svchost.exe",
+          null,
+          "192.168.100.13",
+          "40.79.173.41",
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:09.345Z",
+          "TUL-COUNTER-02",
+          "NetworkConnectIP4",
+          "lsass.exe",
+          null,
+          "192.168.100.13",
+          "20.190.157.3",
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:07.933Z",
+          "TUL-COUNTER-02",
+          "NetworkConnectIP4",
+          "svchost.exe",
+          null,
+          "192.168.100.13",
+          "130.213.27.178",
+          "crowdstrike.fdr"
+        ]
+      ]
+    }
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10371703633-10417-6660368",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:14:44.418Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11884723401-134-8363024",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "PowershellCommandlineSuspicious",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: PowershellCommandlineSuspicious",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:52.881Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-7995920",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:22:13.109Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9910974655-10258-6161680",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "CommandLineKnownMalware",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: CommandLineKnownMalware",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:13:21.141Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9901855281-10258-6146320",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "CommandLineKnownMalware",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: CommandLineKnownMalware",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:13:20.841Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9901855281-10166-6147344",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "PShellDownloadRun",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: PShellDownloadRun",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:13:20.841Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4240656",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T12:53:52.321Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10370718937-10417-6659344",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:14:44.418Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11854519589-10146-8300048",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "ProcMimikatz",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: ProcMimikatz",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:43.224Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11928730356-546-8428816",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "VolumeShadowCopyDeletion",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: VolumeShadowCopyDeletion",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:28:39.881Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11901842666-546-8396048",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "VolumeShadowCopyDeletion",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: VolumeShadowCopyDeletion",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:26:20.802Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11857738830-10417-8304400",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:43.983Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-8298256",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:43.223Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11834385132-10417-8259600",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:02.568Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4514832",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T13:51:43.052Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11919584015-10417-8424720",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:28:39.298Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11854519589-10166-8301072",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "PShellDownloadRun",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: PShellDownloadRun",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:43.224Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11837773137-10106-8267280",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "CredDump",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: CredDump",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:03.419Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-4748-3955216",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Detect OnWrite Adware/PUP Hash",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Detect OnWrite Adware/PUP Hash",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T12:24:01.645Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:9a83a8075e294430b6a73302b5b4a0fd:510317325820-10427-14436880",
+    "hostname": "F-STEMM-01-BP",
+    "display_name": "SuspiciousFileWritten",
+    "severity": 70,
+    "ir_verdict": "high_severity_follow_on_activity_found",
+    "notes": [
+      "Reviewed CrowdStrike alert: SuspiciousFileWritten",
+      "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr",
+      "Event actions observed: DnsRequest, NetworkConnectIP4, NetworkConnectIP6, ProcessRollup2, ServiceStarted, ServiceStopped, UserLogoff, UserLogon",
+      "Processes observed: BrConsole.exe, BrPrintHelper.exe, CSFalconContainer.exe, FileCoAuth.exe, HxTsr.exe, LogonUI.exe, MoUsoCoreWorker.exe, MsSense.exe, PrintIsolationHost.exe, RtkAudUService64.exe"
+    ],
+    "event_timestamp": "2026-03-12T20:48:35.579Z",
+    "summary": {
+      "documents_found": 100,
+      "columns": [
+        "@timestamp",
+        "host.name",
+        "event.action",
+        "process.name",
+        "process.command_line",
+        "source.ip",
+        "destination.ip",
+        "data_stream.dataset"
+      ],
+      "sample_values": [
+        [
+          "2026-03-13T14:21:54.605Z",
+          "F-STEMM-01-BP",
+          "UserLogon",
+          null,
+          null,
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:54.605Z",
+          "F-STEMM-01-BP",
+          "UserLogon",
+          null,
+          null,
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:54.605Z",
+          "F-STEMM-01-BP",
+          "UserLogoff",
+          null,
+          null,
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:54.048Z",
+          "F-STEMM-01-BP",
+          "ProcessRollup2",
+          "conhost.exe",
+          "\\??\\C:\\WINDOWS\\system32\\conhost.exe 0xffffffff -ForceV1",
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:54.048Z",
+          "F-STEMM-01-BP",
+          "ProcessRollup2",
+          "conhost.exe",
+          "\\??\\C:\\WINDOWS\\system32\\conhost.exe 0xffffffff -ForceV1",
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:54.048Z",
+          "F-STEMM-01-BP",
+          "ProcessRollup2",
+          "ax_installer.exe",
+          "\"C:\\Program Files\\HP\\Sure Click\\4.4.23.316\\servers\\ax_installer.exe\" -v",
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:53.925Z",
+          "F-STEMM-01-BP",
+          "ProcessRollup2",
+          "svchost.exe",
+          "C:\\WINDOWS\\system32\\svchost.exe -k LocalSystemNetworkRestricted -s ScDeviceEnum",
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:53.925Z",
+          "F-STEMM-01-BP",
+          "ProcessRollup2",
+          "SECOCL64.exe",
+          "/exit-mutex-guid={1EE0FCDF-2C27-4E9F-9BAE-9E2BDE38F631} /host-pipe-name=\\\\.\\pipe\\{EF682DBB-1D6E-4EE1-BD25-FE47451CC2EA} /endpoint-id={0.0.0.00000000}.{485b8cb6-6ce2-46ec-8d89-cbc2af450612}",
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:53.798Z",
+          "F-STEMM-01-BP",
+          "ServiceStarted",
+          "svchost.exe",
+          "C:\\WINDOWS\\system32\\svchost.exe -k LocalSystemNetworkRestricted -s ScDeviceEnum",
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-13T14:21:53.108Z",
+          "F-STEMM-01-BP",
+          "ServiceStarted",
+          "svchost.exe",
+          "C:\\WINDOWS\\System32\\svchost.exe -k CameraMonitor",
+          "192.168.1.150",
+          null,
+          "crowdstrike.fdr"
+        ]
+      ]
+    }
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:ca8f0e489d374816b962fb078131fb4a:127314022248-337-6270992",
+    "hostname": "E-DAL-01-DB",
+    "display_name": "CommandLineStomping",
+    "severity": 50,
+    "ir_verdict": "medium_severity_follow_on_activity_found",
+    "notes": [
+      "Reviewed CrowdStrike alert: CommandLineStomping",
+      "Medium severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr",
+      "Event actions observed: DnsRequest, NetworkConnectIP4, ProcessRollup2, ServiceStopped, UserLogon",
+      "Processes observed: LogonUI.exe, MoUsoCoreWorker.exe, MsSense.exe, NVDisplay.Container.exe, OUTLOOK.EXE, OfficeC2RClient.exe, OfficeClickToRun.exe, StartMenuExperienceHost.exe, Sysmon64.exe, WmiPrvSE.exe"
+    ],
+    "event_timestamp": "2026-03-10T22:08:08.136Z",
+    "summary": {
+      "documents_found": 100,
+      "columns": [
+        "@timestamp",
+        "host.name",
+        "event.action",
+        "process.name",
+        "process.command_line",
+        "source.ip",
+        "destination.ip",
+        "data_stream.dataset"
+      ],
+      "sample_values": [
+        [
+          "2026-03-11T16:02:26.037Z",
+          "E-DAL-01-DB",
+          "NetworkConnectIP4",
+          "OfficeC2RClient.exe",
+          null,
+          "192.168.8.155",
+          "20.42.73.30",
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:26.037Z",
+          "E-DAL-01-DB",
+          "NetworkConnectIP4",
+          "svchost.exe",
+          null,
+          "192.168.8.155",
+          "52.140.118.28",
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:26.037Z",
+          "E-DAL-01-DB",
+          "DnsRequest",
+          "Sysmon64.exe",
+          null,
+          "192.168.8.155",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:25.233Z",
+          "E-DAL-01-DB",
+          "ProcessRollup2",
+          "NVDisplay.Container.exe",
+          "\"C:\\Windows\\System32\\DriverStore\\FileRepository\\nvdm.inf_amd64_90aa6eeaeb0581d4\\Display.NvContainer\\NVDisplay.Container.exe\" -f %ProgramData%\\NVIDIA\\DisplaySessionContainer%d.log -d C:\\Windows\\System32\\DriverStore\\FileRepository\\nvdm.inf_amd64_90aa6eeaeb0581d4\\Display.NvContainer\\plugins\\Session -r -l 3 -p 30000 -cfg NVDisplay.ContainerLocalSystem\\Session /ert -c",
+          "192.168.8.155",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:25.232Z",
+          "E-DAL-01-DB",
+          "ProcessRollup2",
+          "OfficeC2RClient.exe",
+          "\"C:\\Program Files\\Common Files\\Microsoft Shared\\ClickToRun\\OfficeC2RClient.exe\" /frequentupdate SCHEDULEDTASK displaylevel=False",
+          "192.168.8.155",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:25.232Z",
+          "E-DAL-01-DB",
+          "ProcessRollup2",
+          "MoUsoCoreWorker.exe",
+          "\"C:\\Windows\\uus\\packages\\preview\\AMD64\\MoUsoCoreWorker.exe\" useprivatenamespaces",
+          "192.168.8.155",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:25.232Z",
+          "E-DAL-01-DB",
+          "ProcessRollup2",
+          "svchost.exe",
+          "C:\\Windows\\system32\\svchost.exe -k wusvcs -p -s WaaSMedicSvc",
+          "192.168.8.155",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:24.556Z",
+          "E-DAL-01-DB",
+          "DnsRequest",
+          "Sysmon64.exe",
+          null,
+          "192.168.8.155",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:23.961Z",
+          "E-DAL-01-DB",
+          "ServiceStopped",
+          "svchost.exe",
+          "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s UserManager",
+          "192.168.8.155",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:23.961Z",
+          "E-DAL-01-DB",
+          "ServiceStopped",
+          "svchost.exe",
+          "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s UserManager",
+          "192.168.8.155",
+          null,
+          "crowdstrike.fdr"
+        ]
+      ]
+    }
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:ca8f0e489d374816b962fb078131fb4a:126935565049-103-5439760",
+    "hostname": "E-DAL-01-DB",
+    "display_name": "ProductivityAppWroteAsep",
+    "severity": 60,
+    "ir_verdict": "medium_severity_follow_on_activity_found",
+    "notes": [
+      "Reviewed CrowdStrike alert: ProductivityAppWroteAsep",
+      "Medium severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr",
+      "Event actions observed: DnsRequest, NetworkConnectIP4, ProcessRollup2, ServiceStopped, UserLogon",
+      "Processes observed: LogonUI.exe, MoUsoCoreWorker.exe, MsSense.exe, NVDisplay.Container.exe, OUTLOOK.EXE, OfficeC2RClient.exe, OfficeClickToRun.exe, StartMenuExperienceHost.exe, Sysmon64.exe, WmiPrvSE.exe"
+    ],
+    "event_timestamp": "2026-03-10T21:18:35.013Z",
+    "summary": {
+      "documents_found": 100,
+      "columns": [
+        "@timestamp",
+        "host.name",
+        "event.action",
+        "process.name",
+        "process.command_line",
+        "source.ip",
+        "destination.ip",
+        "data_stream.dataset"
+      ],
+      "sample_values": [
+        [
+          "2026-03-11T16:02:26.037Z",
+          "E-DAL-01-DB",
+          "NetworkConnectIP4",
+          "OfficeC2RClient.exe",
+          null,
+          "192.168.8.155",
+          "20.42.73.30",
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:26.037Z",
+          "E-DAL-01-DB",
+          "NetworkConnectIP4",
+          "svchost.exe",
+          null,
+          "192.168.8.155",
+          "52.140.118.28",
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:26.037Z",
+          "E-DAL-01-DB",
+          "DnsRequest",
+          "Sysmon64.exe",
+          null,
+          "192.168.8.155",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:25.233Z",
+          "E-DAL-01-DB",
+          "ProcessRollup2",
+          "NVDisplay.Container.exe",
+          "\"C:\\Windows\\System32\\DriverStore\\FileRepository\\nvdm.inf_amd64_90aa6eeaeb0581d4\\Display.NvContainer\\NVDisplay.Container.exe\" -f %ProgramData%\\NVIDIA\\DisplaySessionContainer%d.log -d C:\\Windows\\System32\\DriverStore\\FileRepository\\nvdm.inf_amd64_90aa6eeaeb0581d4\\Display.NvContainer\\plugins\\Session -r -l 3 -p 30000 -cfg NVDisplay.ContainerLocalSystem\\Session /ert -c",
+          "192.168.8.155",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:25.232Z",
+          "E-DAL-01-DB",
+          "ProcessRollup2",
+          "OfficeC2RClient.exe",
+          "\"C:\\Program Files\\Common Files\\Microsoft Shared\\ClickToRun\\OfficeC2RClient.exe\" /frequentupdate SCHEDULEDTASK displaylevel=False",
+          "192.168.8.155",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:25.232Z",
+          "E-DAL-01-DB",
+          "ProcessRollup2",
+          "MoUsoCoreWorker.exe",
+          "\"C:\\Windows\\uus\\packages\\preview\\AMD64\\MoUsoCoreWorker.exe\" useprivatenamespaces",
+          "192.168.8.155",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:25.232Z",
+          "E-DAL-01-DB",
+          "ProcessRollup2",
+          "svchost.exe",
+          "C:\\Windows\\system32\\svchost.exe -k wusvcs -p -s WaaSMedicSvc",
+          "192.168.8.155",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:24.556Z",
+          "E-DAL-01-DB",
+          "DnsRequest",
+          "Sysmon64.exe",
+          null,
+          "192.168.8.155",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:23.961Z",
+          "E-DAL-01-DB",
+          "ServiceStopped",
+          "svchost.exe",
+          "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s UserManager",
+          "192.168.8.155",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-11T16:02:23.961Z",
+          "E-DAL-01-DB",
+          "ServiceStopped",
+          "svchost.exe",
+          "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s UserManager",
+          "192.168.8.155",
+          null,
+          "crowdstrike.fdr"
+        ]
+      ]
+    }
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8846444048-10417-4660496",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T13:58:33.809Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-5733-3980560",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Machine Learning Identified High Confidence Malicious File",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Machine Learning Identified High Confidence Malicious File",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T12:24:02.042Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11863870195-10438-8339728",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Anomalous Process Execution",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Anomalous Process Execution",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:47.142Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11859763589-10147-8311568",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "PShellMimikatz",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: PShellMimikatz",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:44.815Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10372706814-10417-6661392",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:14:44.418Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9908250020-10166-6157840",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "PShellDownloadRun",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: PShellDownloadRun",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:13:21.056Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-10417-6120208",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Testing activity",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Testing activity",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:13:13.351Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11859763589-10146-8310544",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "ProcMimikatz",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: ProcMimikatz",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:44.815Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11863870195-10438-8388112",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Anomalous Process Execution",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Anomalous Process Execution",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T19:25:54.594Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-10127-6968848",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Dropper",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Dropper",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:32:12.707Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-4748-5916176",
+    "hostname": "LB-CCDEMO-01-RD",
+    "display_name": "Detect OnWrite Adware/PUP Hash",
+    "ir_verdict": "expected_lab_activity",
+    "notes": [
+      "Reviewed CrowdStrike alert: Detect OnWrite Adware/PUP Hash",
+      "No additional IR investigation required because alert was classified as expected lab/test activity"
+    ],
+    "event_timestamp": "2026-03-14T15:03:33.955Z"
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:fb3d64feb50846208262f41b6b78bf30:1925365432554-459-23959568",
+    "hostname": "TUL-COUNTER-02",
+    "display_name": "UmppcBypassSuspected",
+    "severity": 90,
+    "ir_verdict": "high_severity_follow_on_activity_found",
+    "notes": [
+      "Reviewed CrowdStrike alert: UmppcBypassSuspected",
+      "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr",
+      "Event actions observed: DnsRequest, NetworkConnectIP4, ProcessRollup2, ServiceStarted",
+      "Processes observed: LogonUI.exe, MicrosoftEdgeUpdate.exe, MpCmdRun.exe, MpDefenderCoreService.exe, MsMpEng.exe, MsSense.exe, OneDrive.Sync.Service.exe, OneDrive.exe, RuntimeBroker.exe, SenseIR.exe"
+    ],
+    "event_timestamp": "2026-03-11T15:00:04.371Z",
+    "summary": {
+      "documents_found": 100,
+      "columns": [
+        "@timestamp",
+        "host.name",
+        "event.action",
+        "process.name",
+        "process.command_line",
+        "source.ip",
+        "destination.ip",
+        "data_stream.dataset"
+      ],
+      "sample_values": [
+        [
+          "2026-03-14T01:03:30.019Z",
+          "TUL-COUNTER-02",
+          "ProcessRollup2",
+          "LogonUI.exe",
+          "\"LogonUI.exe\" /flags:0x0 /state0:0xa0bb1855 /state1:0x41c64e6d",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:30.019Z",
+          "TUL-COUNTER-02",
+          "ProcessRollup2",
+          "svchost.exe",
+          "C:\\WINDOWS\\System32\\svchost.exe -k CameraMonitor",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:30.019Z",
+          "TUL-COUNTER-02",
+          "ProcessRollup2",
+          "taskhostw.exe",
+          "taskhostw.exe KEYROAMING",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:30.019Z",
+          "TUL-COUNTER-02",
+          "ServiceStarted",
+          "svchost.exe",
+          "C:\\WINDOWS\\System32\\svchost.exe -k CameraMonitor",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:11.928Z",
+          "TUL-COUNTER-02",
+          "ServiceStarted",
+          "svchost.exe",
+          "C:\\WINDOWS\\system32\\svchost.exe -k wsappx -p -s AppXSvc",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:11.928Z",
+          "TUL-COUNTER-02",
+          "NetworkConnectIP4",
+          "svchost.exe",
+          null,
+          "192.168.100.13",
+          "74.178.76.54",
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:11.928Z",
+          "TUL-COUNTER-02",
+          "ProcessRollup2",
+          "svchost.exe",
+          "C:\\WINDOWS\\system32\\svchost.exe -k wsappx -p -s AppXSvc",
+          "192.168.1.40",
+          null,
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:10.882Z",
+          "TUL-COUNTER-02",
+          "NetworkConnectIP4",
+          "svchost.exe",
+          null,
+          "192.168.100.13",
+          "40.79.173.41",
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:09.345Z",
+          "TUL-COUNTER-02",
+          "NetworkConnectIP4",
+          "lsass.exe",
+          null,
+          "192.168.100.13",
+          "20.190.157.3",
+          "crowdstrike.fdr"
+        ],
+        [
+          "2026-03-14T01:03:07.933Z",
+          "TUL-COUNTER-02",
+          "NetworkConnectIP4",
+          "svchost.exe",
+          null,
+          "192.168.100.13",
+          "130.213.27.178",
+          "crowdstrike.fdr"
+        ]
+      ]
+    }
+  }
+]

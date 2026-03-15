@@ -1,0 +1,7 @@
+{
+  "hunt": "mfa_fatigue",
+  "verdict": "needs_review",
+  "notes": [
+    "Unhandled hunt type; manual review recommended"
+  ]
+}

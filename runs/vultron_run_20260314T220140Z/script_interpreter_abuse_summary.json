@@ -1,0 +1,85 @@
+{
+  "hunt": "script_interpreter_abuse",
+  "category": "endpoint",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "host.name",
+    "host.hostname",
+    "process.name",
+    "process.executable",
+    "process.command_line",
+    "event.action"
+  ],
+  "entities": {
+    "apps": [
+      "NetworkConnectIP4",
+      "ProcessRollup2"
+    ],
+    "hosts": [
+      "DAL-COUNTER-02",
+      "F-DAL-02-SS",
+      "IS-DAL-01-BC",
+      "IS-DAL-01-MF",
+      "LB-CCDEMO-01-RD",
+      "MCA-COUNTER-01",
+      "OA-AUS-01-RZ",
+      "OA-DAL-01-CR",
+      "OS-BR-01-GB",
+      "OS-KAN-01-TG",
+      "PO-STEMM-01-NC",
+      "SAN-COUNTER-01",
+      "SSI-2024-Net",
+      "SSI-F9"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-14T21:51:25.332Z",
+      "PO-STEMM-01-NC",
+      "PO-STEMM-01-NC",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {172b83ca-1fb3-11f1-84f8-7c4d8f0b8d3d}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:51:24.949Z",
+      "PO-STEMM-01-NC",
+      "PO-STEMM-01-NC",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {172b83ca-1fb3-11f1-84f8-7c4d8f0b8d3d}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:51:17.558Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\cmd.exe",
+      "/k echo {1f3ea2fc-1f57-11f1-9cbf-000d3a93b705}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:50:39.373Z",
+      "MCA-COUNTER-01",
+      "MCA-COUNTER-01",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {bd385af9-1fe9-11f1-a254-040e3cc45b4a}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:50:33.753Z",
+      "F-DAL-02-SS",
+      "F-DAL-02-SS",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {c51946d0-1fed-11f1-a193-9c67d64b7589}",
+      "ProcessRollup2"
+    ]
+  ]
+}

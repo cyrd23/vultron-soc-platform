@@ -1,0 +1,76 @@
+{
+  "hunt": "persistence_creation",
+  "category": "endpoint",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "host.name",
+    "host.hostname",
+    "event.action",
+    "process.name",
+    "process.executable",
+    "process.command_line"
+  ],
+  "entities": {
+    "apps": [
+      "ProcessRollup2",
+      "ServiceStarted",
+      "ServiceStopped"
+    ],
+    "hosts": [
+      "F-AUS-01-LS",
+      "MCA-COUNTER-01",
+      "OS-KAN-01-TG",
+      "SSI-2024-Net"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-14T23:13:09.720Z",
+      "MCA-COUNTER-01",
+      "MCA-COUNTER-01",
+      "ServiceStopped",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p -s wuauserv"
+    ],
+    [
+      "2026-03-14T23:12:06.856Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\svchost.exe",
+      "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s wuauserv"
+    ],
+    [
+      "2026-03-14T23:06:01.862Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "ServiceStarted",
+      "sppsvc.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\sppsvc.exe",
+      "C:\\Windows\\system32\\sppsvc.exe"
+    ],
+    [
+      "2026-03-14T23:04:49.469Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "ProcessRollup2",
+      "schtasks.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\schtasks.exe",
+      "schtasks.exe /change /tn \"Microsoft\\Office\\Office Serviceability Manager\" /enable"
+    ],
+    [
+      "2026-03-14T23:04:49.468Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "ProcessRollup2",
+      "schtasks.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\schtasks.exe",
+      "schtasks.exe /change /tn \"Microsoft\\Office\\Office Serviceability Manager\" /enable"
+    ]
+  ]
+}

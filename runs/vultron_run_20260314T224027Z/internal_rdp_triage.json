@@ -1,0 +1,7 @@
+{
+  "hunt": "internal_rdp",
+  "verdict": "needs_review",
+  "notes": [
+    "Unhandled hunt type; manual review recommended"
+  ]
+}

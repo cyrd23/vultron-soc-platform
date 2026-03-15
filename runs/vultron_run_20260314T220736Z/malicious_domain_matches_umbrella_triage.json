@@ -1,0 +1,7 @@
+{
+  "hunt": "malicious_domain_matches_umbrella",
+  "verdict": "clean",
+  "notes": [
+    "No findings returned by the hunt"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "documents_found": 0,
+  "values_loaded": 0,
+  "took": 11,
+  "is_partial": false,
+  "columns": [
+    {
+      "name": "@timestamp",
+      "type": "date"
+    },
+    {
+      "name": "user.name",
+      "type": "keyword"
+    },
+    {
+      "name": "source.ip",
+      "type": "ip"
+    },
+    {
+      "name": "event.action",
+      "type": "keyword"
+    }
+  ],
+  "values": []
+}

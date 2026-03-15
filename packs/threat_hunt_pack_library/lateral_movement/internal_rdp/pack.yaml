@@ -1,0 +1,11 @@
+name: internal_rdp
+category: lateral_movement
+description: Detect internal-to-internal RDP connections
+severity: high
+
+query_template: |
+  FROM logs-*
+  | WHERE destination.port == 3389
+  | KEEP @timestamp, source.ip, destination.ip, destination.port, host.name, data_stream.dataset, event.action
+  | SORT @timestamp DESC
+  | LIMIT 100

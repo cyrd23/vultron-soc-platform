@@ -1,0 +1,57 @@
+{
+  "documents_found": 0,
+  "values_loaded": 0,
+  "took": 396,
+  "is_partial": false,
+  "columns": [
+    {
+      "name": "@timestamp",
+      "type": "date"
+    },
+    {
+      "name": "host.name",
+      "type": "keyword"
+    },
+    {
+      "name": "host.hostname",
+      "type": "keyword"
+    },
+    {
+      "name": "source.ip",
+      "type": "ip"
+    },
+    {
+      "name": "destination.ip",
+      "type": "ip"
+    },
+    {
+      "name": "destination.port",
+      "type": "long"
+    },
+    {
+      "name": "event.action",
+      "type": "keyword"
+    },
+    {
+      "name": "event.category",
+      "type": "keyword"
+    },
+    {
+      "name": "event.type",
+      "type": "keyword"
+    },
+    {
+      "name": "process.name",
+      "type": "keyword"
+    },
+    {
+      "name": "process.executable",
+      "type": "keyword"
+    },
+    {
+      "name": "process.command_line",
+      "type": "keyword"
+    }
+  ],
+  "values": []
+}

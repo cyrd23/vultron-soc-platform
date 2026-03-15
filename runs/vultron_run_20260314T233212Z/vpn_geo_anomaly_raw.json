@@ -1,0 +1,37 @@
+{
+  "documents_found": 0,
+  "values_loaded": 0,
+  "took": 21,
+  "is_partial": false,
+  "columns": [
+    {
+      "name": "logins",
+      "type": "long"
+    },
+    {
+      "name": "first_seen",
+      "type": "date"
+    },
+    {
+      "name": "last_seen",
+      "type": "date"
+    },
+    {
+      "name": "source.ip",
+      "type": "ip"
+    },
+    {
+      "name": "source.geo.country_name",
+      "type": "keyword"
+    },
+    {
+      "name": "user.name",
+      "type": "keyword"
+    },
+    {
+      "name": "duration_minutes",
+      "type": "integer"
+    }
+  ],
+  "values": []
+}

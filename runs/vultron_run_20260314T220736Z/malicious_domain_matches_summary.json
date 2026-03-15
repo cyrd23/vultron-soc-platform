@@ -1,0 +1,15 @@
+{
+  "hunt": "malicious_domain_matches",
+  "category": "intel_ioc",
+  "status": "clean",
+  "findings": 0,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "source.ip",
+    "dns.question.name",
+    "dns.answers.data"
+  ],
+  "entities": {},
+  "sample_values": []
+}

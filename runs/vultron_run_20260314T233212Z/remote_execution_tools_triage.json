@@ -1,0 +1,7 @@
+{
+  "hunt": "remote_execution_tools",
+  "verdict": "needs_review",
+  "notes": [
+    "Unhandled hunt type; manual review recommended"
+  ]
+}

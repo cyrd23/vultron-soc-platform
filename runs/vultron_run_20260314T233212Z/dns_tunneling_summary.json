@@ -1,0 +1,59 @@
+{
+  "hunt": "dns_tunneling",
+  "category": "dns",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "source.ip",
+    "dns.question.name",
+    "dns.question.type"
+  ],
+  "entities": {
+    "ips": [
+      "192.168.20.102",
+      "192.168.20.104",
+      "192.168.50.20",
+      "96.255.250.253",
+      "fe80::456:46bd:a084:3822"
+    ],
+    "domains": [
+      "2.2.8.3.4.8.0.a.d.b.6.4.6.5.4.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa",
+      "cs-mav-cannon-gyr-ac-9qyycku6xmy77o64ywmeupi9a5pawusw2b-s3alias.s3.us-west-2.amazonaws.com",
+      "mav-gyr-dmz-p-apigw-nlb-5b36f1bc7a7d23ac.elb.us-west-2.amazonaws.com"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-14T23:32:23.417Z",
+      "96.255.250.253",
+      "mav-gyr-dmz-p-apigw-nlb-5b36f1bc7a7d23ac.elb.us-west-2.amazonaws.com",
+      "AAAA"
+    ],
+    [
+      "2026-03-14T23:32:23.415Z",
+      "192.168.20.102",
+      "mav-gyr-dmz-p-apigw-nlb-5b36f1bc7a7d23ac.elb.us-west-2.amazonaws.com",
+      "AAAA"
+    ],
+    [
+      "2026-03-14T23:32:22.987Z",
+      "96.255.250.253",
+      "mav-gyr-dmz-p-apigw-nlb-5b36f1bc7a7d23ac.elb.us-west-2.amazonaws.com",
+      "AAAA"
+    ],
+    [
+      "2026-03-14T23:32:22.985Z",
+      "192.168.20.102",
+      "mav-gyr-dmz-p-apigw-nlb-5b36f1bc7a7d23ac.elb.us-west-2.amazonaws.com",
+      "AAAA"
+    ],
+    [
+      "2026-03-14T23:32:22.561Z",
+      "96.255.250.253",
+      "mav-gyr-dmz-p-apigw-nlb-5b36f1bc7a7d23ac.elb.us-west-2.amazonaws.com",
+      "AAAA"
+    ]
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "hunt": "remote_service_creation",
+  "category": "lateral_movement",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "host.name",
+    "host.hostname",
+    "source.ip",
+    "destination.ip",
+    "event.action",
+    "process.name",
+    "process.executable",
+    "process.command_line"
+  ],
+  "entities": {
+    "ips": [
+      "10.10.2.4",
+      "10.10.2.8",
+      "192.168.60.12",
+      "192.168.70.10",
+      "192.168.86.229"
+    ],
+    "apps": [
+      "ServiceStarted",
+      "ServiceStopped"
+    ],
+    "hosts": [
+      "F-AUS-01-LS",
+      "MCA-COUNTER-01",
+      "OS-KAN-01-TG",
+      "SSI-2024-Net",
+      "SSI-F9"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-14T23:37:01.770Z",
+      "SSI-F9",
+      "SSI-F9",
+      "10.10.2.8",
+      null,
+      "ServiceStopped",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-14T23:32:47.312Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "10.10.2.4",
+      null,
+      "ServiceStarted",
+      "sppsvc.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\sppsvc.exe",
+      "C:\\Windows\\system32\\sppsvc.exe"
+    ],
+    [
+      "2026-03-14T23:28:54.876Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "10.10.2.4",
+      null,
+      "ServiceStarted",
+      "updater.exe",
+      "\\Device\\HarddiskVolume4\\Program Files (x86)\\Google\\GoogleUpdater\\147.0.7703.0\\updater.exe",
+      "\"C:\\Program Files (x86)\\Google\\GoogleUpdater\\147.0.7703.0\\updater.exe\" --system --windows-service --service=update-internal"
+    ],
+    [
+      "2026-03-14T23:28:54.876Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "10.10.2.4",
+      null,
+      "ServiceStarted",
+      "updater.exe",
+      "\\Device\\HarddiskVolume4\\Program Files (x86)\\Google\\GoogleUpdater\\147.0.7703.0\\updater.exe",
+      "\"C:\\Program Files (x86)\\Google\\GoogleUpdater\\147.0.7703.0\\updater.exe\" --system --windows-service --service=update"
+    ],
+    [
+      "2026-03-14T23:22:11.124Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "10.10.2.4",
+      null,
+      "ServiceStopped",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\svchost.exe",
+      "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s wuauserv"
+    ]
+  ]
+}

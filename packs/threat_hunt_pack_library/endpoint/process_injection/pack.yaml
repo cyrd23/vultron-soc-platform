@@ -1,0 +1,13 @@
+name: process_injection
+category: endpoint
+description: Detect likely process injection or suspicious memory abuse indicators
+severity: critical
+
+query_template: |
+  FROM logs-crowdstrike.fdr*
+  | WHERE event.action == "ClassifiedModuleLoad"
+     OR event.action == "SensitiveWmiQuery"
+     OR event.action == "ProcessAncestryInformation"
+  | KEEP @timestamp, host.name, host.hostname, event.action, process.name, process.executable, process.command_line
+  | SORT @timestamp DESC
+  | LIMIT 100

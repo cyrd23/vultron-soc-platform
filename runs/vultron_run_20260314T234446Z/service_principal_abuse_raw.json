@@ -1,0 +1,871 @@
+{
+  "documents_found": 75,
+  "values_loaded": 521,
+  "took": 17,
+  "is_partial": false,
+  "columns": [
+    {
+      "name": "@timestamp",
+      "type": "date"
+    },
+    {
+      "name": "event.action",
+      "type": "keyword"
+    },
+    {
+      "name": "event.outcome",
+      "type": "keyword"
+    },
+    {
+      "name": "source.ip",
+      "type": "ip"
+    },
+    {
+      "name": "client.ip",
+      "type": "ip"
+    },
+    {
+      "name": "azure.auditlogs.properties.activity_display_name",
+      "type": "keyword"
+    },
+    {
+      "name": "azure.auditlogs.properties.initiated_by.user.userPrincipalName",
+      "type": "keyword"
+    },
+    {
+      "name": "azure.auditlogs.properties.initiated_by.app.displayName",
+      "type": "keyword"
+    },
+    {
+      "name": "azure.auditlogs.operation_name",
+      "type": "keyword"
+    }
+  ],
+  "values": [
+    [
+      "2026-03-12T20:38:28.921Z",
+      "Consent to application",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Consent to application",
+      "MPetrikat@ssicm.com",
+      null,
+      "Consent to application"
+    ],
+    [
+      "2026-03-12T20:38:28.920Z",
+      "Add app role assignment grant to user",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Add app role assignment grant to user",
+      "MPetrikat@ssicm.com",
+      null,
+      "Add app role assignment grant to user"
+    ],
+    [
+      "2026-03-12T20:38:28.855Z",
+      "Add delegated permission grant",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Add delegated permission grant",
+      "MPetrikat@ssicm.com",
+      null,
+      "Add delegated permission grant"
+    ],
+    [
+      "2026-03-12T20:38:28.794Z",
+      "Add service principal",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Add service principal",
+      "MPetrikat@ssicm.com",
+      null,
+      "Add service principal"
+    ],
+    [
+      "2026-03-12T09:18:10.428Z",
+      "Add service principal",
+      "success",
+      null,
+      null,
+      "Add service principal",
+      null,
+      "Microsoft Azure AD Internal - Jit Provisioning",
+      "Add service principal"
+    ],
+    [
+      "2026-03-10T16:29:17.208Z",
+      "Consent to application",
+      "success",
+      "172.190.161.50",
+      "172.190.161.50",
+      "Consent to application",
+      "JFulbright@ssicm.com",
+      null,
+      "Consent to application"
+    ],
+    [
+      "2026-03-10T16:29:17.207Z",
+      "Add app role assignment grant to user",
+      "success",
+      "172.190.161.50",
+      "172.190.161.50",
+      "Add app role assignment grant to user",
+      "JFulbright@ssicm.com",
+      null,
+      "Add app role assignment grant to user"
+    ],
+    [
+      "2026-03-10T16:29:17.031Z",
+      "Add delegated permission grant",
+      "success",
+      "172.190.161.50",
+      "172.190.161.50",
+      "Add delegated permission grant",
+      "JFulbright@ssicm.com",
+      null,
+      "Add delegated permission grant"
+    ],
+    [
+      "2026-02-27T21:30:19.874Z",
+      "Create application password for user",
+      "success",
+      "104.210.141.148",
+      "104.210.141.148",
+      "Create application password for user",
+      "ELarson@ssicm.com",
+      null,
+      "Create application password for user"
+    ],
+    [
+      "2026-02-27T18:38:05.085Z",
+      "Consent to application",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Consent to application",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Consent to application"
+    ],
+    [
+      "2026-02-27T18:38:05.012Z",
+      "Remove delegated permission grant",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Remove delegated permission grant",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Remove delegated permission grant"
+    ],
+    [
+      "2026-02-27T18:38:05.011Z",
+      "Add delegated permission grant",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Add delegated permission grant",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Add delegated permission grant"
+    ],
+    [
+      "2026-02-27T18:00:53.389Z",
+      "Consent to application",
+      "success",
+      "13.65.198.214",
+      "13.65.198.214",
+      "Consent to application",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Consent to application"
+    ],
+    [
+      "2026-02-27T18:00:53.389Z",
+      "Consent to application",
+      "success",
+      "13.65.198.214",
+      "13.65.198.214",
+      "Consent to application",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Consent to application"
+    ],
+    [
+      "2026-02-27T18:00:53.389Z",
+      "Consent to application",
+      "success",
+      "13.65.198.214",
+      "13.65.198.214",
+      "Consent to application",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Consent to application"
+    ],
+    [
+      "2026-02-27T18:00:53.376Z",
+      "Remove delegated permission grant",
+      "success",
+      "13.65.198.214",
+      "13.65.198.214",
+      "Remove delegated permission grant",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Remove delegated permission grant"
+    ],
+    [
+      "2026-02-27T18:00:53.376Z",
+      "Remove delegated permission grant",
+      "success",
+      "13.65.198.214",
+      "13.65.198.214",
+      "Remove delegated permission grant",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Remove delegated permission grant"
+    ],
+    [
+      "2026-02-27T18:00:53.376Z",
+      "Remove delegated permission grant",
+      "success",
+      "13.65.198.214",
+      "13.65.198.214",
+      "Remove delegated permission grant",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Remove delegated permission grant"
+    ],
+    [
+      "2026-02-27T18:00:53.375Z",
+      "Add delegated permission grant",
+      "success",
+      "13.65.198.214",
+      "13.65.198.214",
+      "Add delegated permission grant",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Add delegated permission grant"
+    ],
+    [
+      "2026-02-27T18:00:53.375Z",
+      "Add delegated permission grant",
+      "success",
+      "13.65.198.214",
+      "13.65.198.214",
+      "Add delegated permission grant",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Add delegated permission grant"
+    ],
+    [
+      "2026-02-27T18:00:53.375Z",
+      "Add delegated permission grant",
+      "success",
+      "13.65.198.214",
+      "13.65.198.214",
+      "Add delegated permission grant",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Add delegated permission grant"
+    ],
+    [
+      "2026-02-27T18:00:32.109Z",
+      "Consent to application",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Consent to application",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Consent to application"
+    ],
+    [
+      "2026-02-27T18:00:32.096Z",
+      "Remove delegated permission grant",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Remove delegated permission grant",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Remove delegated permission grant"
+    ],
+    [
+      "2026-02-27T18:00:32.094Z",
+      "Add delegated permission grant",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Add delegated permission grant",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Add delegated permission grant"
+    ],
+    [
+      "2026-02-27T17:14:27.507Z",
+      "Consent to application",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Consent to application",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Consent to application"
+    ],
+    [
+      "2026-02-27T17:14:27.507Z",
+      "Consent to application",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Consent to application",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Consent to application"
+    ],
+    [
+      "2026-02-27T17:14:27.457Z",
+      "Remove delegated permission grant",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Remove delegated permission grant",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Remove delegated permission grant"
+    ],
+    [
+      "2026-02-27T17:14:27.457Z",
+      "Remove delegated permission grant",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Remove delegated permission grant",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Remove delegated permission grant"
+    ],
+    [
+      "2026-02-27T17:14:27.456Z",
+      "Add delegated permission grant",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Add delegated permission grant",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Add delegated permission grant"
+    ],
+    [
+      "2026-02-27T17:14:27.456Z",
+      "Add delegated permission grant",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Add delegated permission grant",
+      "Reggie-Cyleuth@ssicm.com",
+      null,
+      "Add delegated permission grant"
+    ],
+    [
+      "2026-02-24T15:53:25.911Z",
+      "Consent to application",
+      "success",
+      "157.55.167.20",
+      "157.55.167.20",
+      "Consent to application",
+      "NChrisman@ssicm.com",
+      null,
+      "Consent to application"
+    ],
+    [
+      "2026-02-24T15:53:25.910Z",
+      "Add app role assignment grant to user",
+      "success",
+      "157.55.167.20",
+      "157.55.167.20",
+      "Add app role assignment grant to user",
+      "NChrisman@ssicm.com",
+      null,
+      "Add app role assignment grant to user"
+    ],
+    [
+      "2026-02-24T15:53:25.744Z",
+      "Add delegated permission grant",
+      "success",
+      "157.55.167.20",
+      "157.55.167.20",
+      "Add delegated permission grant",
+      "NChrisman@ssicm.com",
+      null,
+      "Add delegated permission grant"
+    ],
+    [
+      "2026-02-23T13:07:44.698Z",
+      "Update service principal",
+      "success",
+      null,
+      null,
+      "Update service principal",
+      null,
+      "Office 365 SharePoint Online",
+      "Update service principal"
+    ],
+    [
+      "2026-02-23T13:07:44.354Z",
+      "Update service principal",
+      "success",
+      null,
+      null,
+      "Update service principal",
+      null,
+      "Office 365 SharePoint Online",
+      "Update service principal"
+    ],
+    [
+      "2026-02-23T13:07:44.354Z",
+      "Update service principal",
+      "success",
+      null,
+      null,
+      "Update service principal",
+      null,
+      "Office 365 SharePoint Online",
+      "Update service principal"
+    ],
+    [
+      "2026-02-21T19:03:37.451Z",
+      "Update service principal",
+      "success",
+      null,
+      null,
+      "Update service principal",
+      null,
+      "Microsoft Intune",
+      "Update service principal"
+    ],
+    [
+      "2026-02-21T19:03:36.933Z",
+      "Update service principal",
+      "success",
+      null,
+      null,
+      "Update service principal",
+      null,
+      "Microsoft Intune",
+      "Update service principal"
+    ],
+    [
+      "2026-02-21T19:03:36.688Z",
+      "Update service principal",
+      "success",
+      null,
+      null,
+      "Update service principal",
+      null,
+      "Microsoft Intune",
+      "Update service principal"
+    ],
+    [
+      "2026-02-11T00:01:16.012Z",
+      "Add service principal",
+      "success",
+      null,
+      null,
+      "Add service principal",
+      null,
+      null,
+      "Add service principal"
+    ],
+    [
+      "2026-01-28T20:09:22.118Z",
+      "Add service principal",
+      "success",
+      null,
+      null,
+      "Add service principal",
+      null,
+      "PowerApps Service",
+      "Add service principal"
+    ],
+    [
+      "2026-01-28T20:09:22.118Z",
+      "Add service principal",
+      "success",
+      null,
+      null,
+      "Add service principal",
+      null,
+      "PowerApps Service",
+      "Add service principal"
+    ],
+    [
+      "2026-01-28T13:26:07.466Z",
+      "Consent to application",
+      "success",
+      "172.190.161.50",
+      "172.190.161.50",
+      "Consent to application",
+      "jaldape@ssicm.com",
+      null,
+      "Consent to application"
+    ],
+    [
+      "2026-01-28T13:26:07.464Z",
+      "Add app role assignment grant to user",
+      "success",
+      "172.190.161.50",
+      "172.190.161.50",
+      "Add app role assignment grant to user",
+      "jaldape@ssicm.com",
+      null,
+      "Add app role assignment grant to user"
+    ],
+    [
+      "2026-01-28T13:26:07.326Z",
+      "Add delegated permission grant",
+      "success",
+      "172.190.161.50",
+      "172.190.161.50",
+      "Add delegated permission grant",
+      "jaldape@ssicm.com",
+      null,
+      "Add delegated permission grant"
+    ],
+    [
+      "2026-01-28T04:13:52.359Z",
+      "Add service principal",
+      "success",
+      null,
+      null,
+      "Add service principal",
+      null,
+      "Windows Azure Service Management API",
+      "Add service principal"
+    ],
+    [
+      "2026-01-26T17:58:55.005Z",
+      "Add owner to application",
+      "failure",
+      null,
+      null,
+      "Add owner to application",
+      null,
+      "Power Virtual Agents Service",
+      "Add owner to application"
+    ],
+    [
+      "2026-01-26T17:57:09.615Z",
+      "Update application",
+      "success",
+      null,
+      null,
+      "Update application",
+      null,
+      "Power Virtual Agents Service",
+      "Update application"
+    ],
+    [
+      "2026-01-26T17:57:09.609Z",
+      "Update service principal",
+      "success",
+      null,
+      null,
+      "Update service principal",
+      null,
+      "Power Virtual Agents Service",
+      "Update service principal"
+    ],
+    [
+      "2026-01-26T17:53:45.392Z",
+      "Add owner to service principal",
+      "success",
+      null,
+      null,
+      "Add owner to service principal",
+      null,
+      "Power Virtual Agents Service",
+      "Add owner to service principal"
+    ],
+    [
+      "2026-01-26T17:53:45.245Z",
+      "Update service principal",
+      "success",
+      null,
+      null,
+      "Update service principal",
+      null,
+      "Power Virtual Agents Service",
+      "Update service principal"
+    ],
+    [
+      "2026-01-26T17:53:44.944Z",
+      "Add owner to application",
+      "success",
+      null,
+      null,
+      "Add owner to application",
+      null,
+      "Power Virtual Agents Service",
+      "Add owner to application"
+    ],
+    [
+      "2026-01-26T17:53:44.650Z",
+      "Add owner to service principal",
+      "success",
+      null,
+      null,
+      "Add owner to service principal",
+      null,
+      "Power Virtual Agents Service",
+      "Add owner to service principal"
+    ],
+    [
+      "2026-01-26T17:53:44.493Z",
+      "Add service principal",
+      "success",
+      null,
+      null,
+      "Add service principal",
+      null,
+      "Power Virtual Agents Service",
+      "Add service principal"
+    ],
+    [
+      "2026-01-26T17:53:44.095Z",
+      "Update application",
+      "success",
+      null,
+      null,
+      "Update application",
+      null,
+      "Power Virtual Agents Service",
+      "Update application"
+    ],
+    [
+      "2026-01-26T17:53:43.841Z",
+      "Update application",
+      "success",
+      null,
+      null,
+      "Update application",
+      null,
+      "Power Virtual Agents Service",
+      "Update application"
+    ],
+    [
+      "2026-01-26T17:53:43.480Z",
+      "Add owner to application",
+      "success",
+      null,
+      null,
+      "Add owner to application",
+      null,
+      "Power Virtual Agents Service",
+      "Add owner to application"
+    ],
+    [
+      "2026-01-26T17:53:43.319Z",
+      "Add application",
+      "success",
+      null,
+      null,
+      "Add application",
+      null,
+      "Power Virtual Agents Service",
+      "Add application"
+    ],
+    [
+      "2026-01-26T17:53:43.157Z",
+      "Create application \u2013 Certificates and secrets management ",
+      "success",
+      null,
+      null,
+      "Create application \u2013 Certificates and secrets management ",
+      null,
+      "Power Virtual Agents Service",
+      "Create application \u2013 Certificates and secrets management "
+    ],
+    [
+      "2026-01-25T03:21:22.234Z",
+      "Update service principal",
+      "success",
+      null,
+      null,
+      "Update service principal",
+      null,
+      "Microsoft Intune",
+      "Update service principal"
+    ],
+    [
+      "2026-01-25T03:21:21.986Z",
+      "Update service principal",
+      "success",
+      null,
+      null,
+      "Update service principal",
+      null,
+      "Microsoft Intune",
+      "Update service principal"
+    ],
+    [
+      "2026-01-23T21:27:20.910Z",
+      "Consent to application",
+      "success",
+      "172.190.161.50",
+      "172.190.161.50",
+      "Consent to application",
+      "dcarter@ssicm.com",
+      null,
+      "Consent to application"
+    ],
+    [
+      "2026-01-23T21:27:20.908Z",
+      "Add app role assignment grant to user",
+      "success",
+      "172.190.161.50",
+      "172.190.161.50",
+      "Add app role assignment grant to user",
+      "dcarter@ssicm.com",
+      null,
+      "Add app role assignment grant to user"
+    ],
+    [
+      "2026-01-23T21:27:20.805Z",
+      "Add delegated permission grant",
+      "success",
+      "172.190.161.50",
+      "172.190.161.50",
+      "Add delegated permission grant",
+      "dcarter@ssicm.com",
+      null,
+      "Add delegated permission grant"
+    ],
+    [
+      "2026-01-23T20:42:56.374Z",
+      "Add service principal",
+      "failure",
+      null,
+      null,
+      "Add service principal",
+      null,
+      null,
+      "Add service principal"
+    ],
+    [
+      "2026-01-23T20:42:56.374Z",
+      "Add service principal",
+      "failure",
+      null,
+      null,
+      "Add service principal",
+      null,
+      null,
+      "Add service principal"
+    ],
+    [
+      "2026-01-23T20:42:53.642Z",
+      "Add service principal",
+      "success",
+      null,
+      null,
+      "Add service principal",
+      null,
+      null,
+      "Add service principal"
+    ],
+    [
+      "2026-01-23T20:42:53.642Z",
+      "Add service principal",
+      "success",
+      null,
+      null,
+      "Add service principal",
+      null,
+      null,
+      "Add service principal"
+    ],
+    [
+      "2026-01-23T17:18:53.017Z",
+      "Add service principal",
+      "success",
+      null,
+      null,
+      "Add service principal",
+      null,
+      "Windows Azure Service Management API",
+      "Add service principal"
+    ],
+    [
+      "2026-01-23T17:18:52.965Z",
+      "Add service principal",
+      "success",
+      null,
+      null,
+      "Add service principal",
+      null,
+      "Windows Azure Service Management API",
+      "Add service principal"
+    ],
+    [
+      "2026-01-23T17:18:52.963Z",
+      "Add service principal",
+      "success",
+      null,
+      null,
+      "Add service principal",
+      null,
+      "Windows Azure Service Management API",
+      "Add service principal"
+    ],
+    [
+      "2026-01-23T17:18:52.946Z",
+      "Add service principal",
+      "success",
+      null,
+      null,
+      "Add service principal",
+      null,
+      "Windows Azure Service Management API",
+      "Add service principal"
+    ],
+    [
+      "2026-01-23T17:18:52.730Z",
+      "Add service principal",
+      "success",
+      null,
+      null,
+      "Add service principal",
+      null,
+      "Windows Azure Service Management API",
+      "Add service principal"
+    ],
+    [
+      "2026-01-23T17:18:52.674Z",
+      "Add service principal",
+      "success",
+      null,
+      null,
+      "Add service principal",
+      null,
+      "Windows Azure Service Management API",
+      "Add service principal"
+    ],
+    [
+      "2026-01-23T17:18:52.674Z",
+      "Add service principal",
+      "success",
+      null,
+      null,
+      "Add service principal",
+      null,
+      "Windows Azure Service Management API",
+      "Add service principal"
+    ]
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "hunt": "dns_c2_beaconing",
+  "category": "construction_threats",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "high",
+  "columns": [
+    "queries",
+    "first_seen",
+    "last_seen",
+    "source.ip",
+    "dns.question.name",
+    "duration_minutes"
+  ],
+  "entities": {
+    "ips": [
+      "12.117.151.122",
+      "12.117.188.38",
+      "12.118.121.106",
+      "12.76.125.250",
+      "12.76.62.86",
+      "12.77.178.110",
+      "12.77.9.70",
+      "12.86.141.10",
+      "192.168.20.104",
+      "192.168.70.10",
+      "32.140.248.34",
+      "fe80::456:46bd:a084:3822"
+    ],
+    "domains": [
+      "Domain",
+      "acdn.adnxs.com",
+      "addin.insights.static.microsoft",
+      "adsdkprod.azureedge.net",
+      "assets.msn.com",
+      "augloop.svc.cloud.microsoft",
+      "browser.events.data.microsoft.com",
+      "cerasis.ltlship.com",
+      "config.edge.skype.com",
+      "ctldl.windowsupdate.com",
+      "dba59dc1c266401789e719d371bb1879.us-central1.gcp.cloud.es.io",
+      "dns.msftncsi.com",
+      "doh.opendns.com",
+      "ecs.office.com",
+      "edge.microsoft.com",
+      "editor.svc.cloud.microsoft",
+      "exo.nel.measure.office.net",
+      "fleet.cyleuth.com",
+      "fonts.gstatic.com",
+      "graph.microsoft.com",
+      "img-s-msn-com.akamaized.net",
+      "kv601.prod.do.dsp.mp.microsoft.com",
+      "login.live.com",
+      "login.microsoftonline.com",
+      "mingle-portal.inforcloudsuite.com"
+    ]
+  },
+  "sample_values": [
+    [
+      1578134,
+      "2026-02-05T23:18:25.000Z",
+      "2026-03-14T23:29:58.000Z",
+      "12.117.188.38",
+      "time-b.timefreq.bldrdoc.gov",
+      53291
+    ],
+    [
+      1578121,
+      "2026-02-05T23:18:17.000Z",
+      "2026-03-14T23:29:50.000Z",
+      "12.117.188.38",
+      "time-c.timefreq.bldrdoc.gov",
+      53291
+    ],
+    [
+      1578015,
+      "2026-02-05T23:05:41.000Z",
+      "2026-03-14T23:29:58.000Z",
+      "12.117.188.38",
+      "time-a.timefreq.bldrdoc.gov",
+      53304
+    ],
+    [
+      173865,
+      "2026-02-05T23:51:22.000Z",
+      "2026-03-14T23:18:53.000Z",
+      "12.86.141.10",
+      "dba59dc1c266401789e719d371bb1879.us-central1.gcp.cloud.es.io",
+      53247
+    ],
+    [
+      130834,
+      "2026-02-06T12:43:58.000Z",
+      "2026-03-13T20:19:12.000Z",
+      "12.117.188.38",
+      "npi26be30.ssi.com",
+      50855
+    ]
+  ]
+}

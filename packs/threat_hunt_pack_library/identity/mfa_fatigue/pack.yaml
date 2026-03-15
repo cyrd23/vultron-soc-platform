@@ -1,0 +1,12 @@
+name: mfa_fatigue
+category: identity
+description: Detect repeated MFA-related sign-in failures from the same user or IP
+severity: high
+
+query_template: |
+  FROM logs-azure.signinlogs*
+  | WHERE event.outcome == "failure"
+  | STATS failures = COUNT(), ips = VALUES(source.ip) BY user.name
+  | WHERE failures >= 10
+  | SORT failures DESC
+  | LIMIT 100

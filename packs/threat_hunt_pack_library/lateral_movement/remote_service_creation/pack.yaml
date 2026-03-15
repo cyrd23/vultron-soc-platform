@@ -1,0 +1,11 @@
+name: remote_service_creation
+category: lateral_movement
+description: Detect service creation or service start/stop events in endpoint telemetry
+severity: high
+
+query_template: |
+  FROM logs-crowdstrike.fdr*
+  | WHERE event.action == "ServiceStarted" OR event.action == "ServiceStopped"
+  | KEEP @timestamp, host.name, host.hostname, source.ip, destination.ip, event.action, process.name, process.executable, process.command_line
+  | SORT @timestamp DESC
+  | LIMIT 100

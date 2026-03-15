@@ -1,0 +1,33 @@
+{
+  "documents_found": 0,
+  "values_loaded": 0,
+  "took": 1877,
+  "is_partial": false,
+  "columns": [
+    {
+      "name": "@timestamp",
+      "type": "date"
+    },
+    {
+      "name": "data_stream.dataset",
+      "type": "keyword"
+    },
+    {
+      "name": "source.ip",
+      "type": "ip"
+    },
+    {
+      "name": "destination.ip",
+      "type": "ip"
+    },
+    {
+      "name": "destination.port",
+      "type": "long"
+    },
+    {
+      "name": "event.action",
+      "type": "keyword"
+    }
+  ],
+  "values": []
+}

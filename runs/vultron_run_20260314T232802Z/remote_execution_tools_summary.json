@@ -1,0 +1,107 @@
+{
+  "hunt": "remote_execution_tools",
+  "category": "lateral_movement",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "host.name",
+    "host.hostname",
+    "event.action",
+    "process.name",
+    "process.executable",
+    "process.command_line",
+    "source.ip",
+    "destination.ip"
+  ],
+  "entities": {
+    "ips": [
+      "10.10.2.4",
+      "192.168.1.135",
+      "192.168.1.191",
+      "192.168.1.226",
+      "192.168.20.106",
+      "192.168.4.61",
+      "192.168.50.7",
+      "192.168.60.12",
+      "192.168.65.38",
+      "192.168.70.10",
+      "192.168.86.229"
+    ],
+    "apps": [
+      "ProcessRollup2",
+      "ServiceStopped"
+    ],
+    "hosts": [
+      "DAL-COUNTER-02",
+      "F-AUS-01-LS",
+      "F-DAL-02-SS",
+      "LB-CCDEMO-01-RD",
+      "MCA-COUNTER-01",
+      "OS-BR-01-GB",
+      "OS-DAL-01-NG",
+      "OS-HOUS-01-NC",
+      "OS-KAN-01-TG",
+      "SAN-COUNTER-01",
+      "SSI-2024-Net"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-14T23:14:27.487Z",
+      "LB-CCDEMO-01-RD",
+      "LB-CCDEMO-01-RD",
+      "ProcessRollup2",
+      "csc.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe",
+      "\"C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe\" /noconfig /fullpaths @\"C:\\WINDOWS\\SystemTemp\\vhorzsys\\vhorzsys.cmdline\"",
+      "192.168.20.106",
+      null
+    ],
+    [
+      "2026-03-14T23:12:06.855Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "ProcessRollup2",
+      "sc.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\sc.exe",
+      "\"C:\\Windows\\system32\\sc.exe\" start wuauserv",
+      "10.10.2.4",
+      null
+    ],
+    [
+      "2026-03-14T23:04:33.020Z",
+      "SAN-COUNTER-01",
+      "SAN-COUNTER-01",
+      "ProcessRollup2",
+      "csc.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe",
+      "\"C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe\" /noconfig /fullpaths @\"C:\\WINDOWS\\SystemTemp\\lqifalk3\\lqifalk3.cmdline\"",
+      "192.168.50.7",
+      null
+    ],
+    [
+      "2026-03-14T23:02:44.237Z",
+      "MCA-COUNTER-01",
+      "MCA-COUNTER-01",
+      "ProcessRollup2",
+      "sc.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\sc.exe",
+      "\"C:\\WINDOWS\\system32\\sc.exe\" start w32time task_started",
+      "192.168.70.10",
+      null
+    ],
+    [
+      "2026-03-14T23:02:13.246Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ProcessRollup2",
+      "sc.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\sc.exe",
+      "\"C:\\WINDOWS\\system32\\sc.exe\" \"create\" \"HpTouchpointAnalyticsService\" binPath=\"c:\\windows\\system32\\driverstore\\filerepository\\hpanalyticscomp.inf_amd64_b532962506597d3d\\x64\\touchpointanalyticsclientservice.exe\" DisplayName=\"HP Insights Analytics\"",
+      "192.168.60.12",
+      null
+    ]
+  ]
+}

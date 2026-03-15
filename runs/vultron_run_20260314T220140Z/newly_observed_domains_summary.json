@@ -1,0 +1,80 @@
+{
+  "hunt": "newly_observed_domains",
+  "category": "dns",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "medium",
+  "columns": [
+    "first_seen",
+    "last_seen",
+    "src_ips",
+    "dns.question.name"
+  ],
+  "entities": {
+    "domains": [
+      "025071ef96dbe18eb311420b318be751a744c0f9.malware.hash.cymru.com",
+      "07c4874f913e3f78305b8e7676ba820a2337bb1d.malware.hash.cymru.com",
+      "0cf5b282d3401bf768bab968ba794f9806967530.malware.hash.cymru.com",
+      "1.courier-push-apple.com.akadns.net",
+      "101.30.168.192.in-addr.arpa",
+      "173968463bded0b36551a6a630260e0c55cf20bb.malware.hash.cymru.com",
+      "17e055295c15aafe4b9e0ea5b86d63bb16f00d03.malware.hash.cymru.com",
+      "19b57c1f794510344aedcc2217ca8fb7da3863a4.malware.hash.cymru.com",
+      "2.173.189.20.in-addr.arpa",
+      "243.253.221.23.in-addr.arpa",
+      "26230bb0ddaafdc3256387f26ee73784f6616dcc.malware.hash.cymru.com",
+      "2d0aade56867cf4b6d1d0a14f2b54ac9dbef1716.malware.hash.cymru.com",
+      "345c20b0f71c437197ff2bf486e90d6a6423173f.malware.hash.cymru.com",
+      "35ec2b5edcc9bf70b50ee9e1e1f528fcbf29dbdd.malware.hash.cymru.com",
+      "3a5bfa12481d7ff0c36a7a1cf0bde011edaf667f.malware.hash.cymru.com",
+      "3f575b23e5cdd88d8ba3f90877915c0882313015.malware.hash.cymru.com",
+      "4ffe43cb5ff860e1d7653b1650d0be23ef576fac.malware.hash.cymru.com",
+      "570ba634983c8e752fa1cafa102023cc22716a82.malware.hash.cymru.com",
+      "582c875332a72fc2ec81b09638b6be84ffa03054.malware.hash.cymru.com",
+      "5a4dd96eadd7c6b0164aaee64144e8c291baa0e6.malware.hash.cymru.com",
+      "66ce623df97cf343922635ce1dbc145898ad0aae.malware.hash.cymru.com",
+      "6c21299dfe5e2c5b89e44581fe85f1a1caa8914c.malware.hash.cymru.com",
+      "6e7582919a9011f771a2aadd5c120a305d849b8f.malware.hash.cymru.com",
+      "73e8782e6b4c6cee46357244582f7abfe4faf11c.malware.hash.cymru.com",
+      "7ccdfe65a21cc5bc16f6f95d8709a4f9cc6aae6d.malware.hash.cymru.com"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-14T21:13:23.846Z",
+      "2026-03-14T21:34:01.434Z",
+      [
+        "192.168.20.102",
+        "96.255.250.253"
+      ],
+      "mav-gyr-dmz-p-apigw-nlb-5b36f1bc7a7d23ac.elb.us-west-2.amazonaws.com"
+    ],
+    [
+      "2026-03-14T21:13:23.793Z",
+      "2026-03-14T21:34:00.605Z",
+      [
+        "192.168.20.102",
+        "96.255.250.253"
+      ],
+      "api.us-2.crowdstrike.com"
+    ],
+    [
+      "2026-03-14T21:04:04.227Z",
+      "2026-03-14T21:04:04.227Z",
+      "96.255.250.253",
+      "db._dns-sd._udp.0.30.168.192.in-addr.arpa"
+    ],
+    [
+      "2026-03-14T21:04:04.227Z",
+      "2026-03-14T21:04:04.227Z",
+      "96.255.250.253",
+      "101.30.168.192.in-addr.arpa"
+    ],
+    [
+      "2026-03-14T21:04:04.227Z",
+      "2026-03-14T21:04:04.227Z",
+      "96.255.250.253",
+      "b._dns-sd._udp.0.30.168.192.in-addr.arpa"
+    ]
+  ]
+}

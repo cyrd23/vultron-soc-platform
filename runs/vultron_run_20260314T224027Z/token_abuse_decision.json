@@ -1,0 +1,8 @@
+{
+  "hunt": "token_abuse",
+  "decision": "benign",
+  "severity": "low",
+  "rationale": [
+    "Triage found no suspicious activity"
+  ]
+}

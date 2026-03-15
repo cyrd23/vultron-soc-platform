@@ -1,0 +1,11 @@
+name: dns_tunneling
+category: dns
+description: Detect long DNS queries that may indicate tunneling
+severity: high
+
+query_template: |
+  FROM logs-zeek.dns*
+  | WHERE LENGTH(dns.question.name) > 60
+  | KEEP @timestamp, source.ip, dns.question.name, dns.question.type
+  | SORT @timestamp DESC
+  | LIMIT 100

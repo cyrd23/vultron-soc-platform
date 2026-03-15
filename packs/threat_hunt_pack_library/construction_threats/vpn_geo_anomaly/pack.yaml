@@ -1,0 +1,18 @@
+name: vpn_geo_anomaly
+category: construction_threats
+severity: high
+description: Detect VPN logins from unexpected geographic regions
+
+query_template: |
+  FROM logs-fortinet.fortigate*, logs-fortinet_fortigate.log*
+  | WHERE event.action LIKE "*vpn*"
+  | WHERE source.geo.country_name IS NOT NULL
+    AND source.geo.country_name NOT IN ("United States")
+  | STATS
+      logins = COUNT(),
+      first_seen = MIN(@timestamp),
+      last_seen = MAX(@timestamp)
+    BY source.ip, source.geo.country_name, user.name
+  | EVAL duration_minutes = DATE_DIFF("minute", first_seen, last_seen)
+  | SORT logins DESC
+  | LIMIT 100

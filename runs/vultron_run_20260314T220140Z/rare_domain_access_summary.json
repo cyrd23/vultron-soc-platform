@@ -1,0 +1,68 @@
+{
+  "hunt": "rare_domain_access",
+  "category": "dns",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "medium",
+  "columns": [
+    "query_count",
+    "src_ips",
+    "dns.question.name"
+  ],
+  "entities": {
+    "domains": [
+      "00064c93736709b3.b20c.96-255-250-253.asertdnsresearch.com",
+      "00064ce6f65cbf71.bfe0.96-255-250-253.asertdnsresearch.com",
+      "1.12.199.48.in-addr.arpa",
+      "1.173.189.20.in-addr.arpa",
+      "1.251.123.52.in-addr.arpa",
+      "1.courier-push-apple.com.akadns.net",
+      "10-courier.push.apple.com",
+      "10.173.189.20.in-addr.arpa",
+      "10.179.89.13.in-addr.arpa",
+      "10.24.213.130.in-addr.arpa",
+      "10.73.50.20.in-addr.arpa",
+      "100.35.145.72.in-addr.arpa",
+      "101.30.168.192.in-addr.arpa",
+      "101.7.154.72.in-addr.arpa",
+      "102.7.154.72.in-addr.arpa",
+      "103.7.154.72.in-addr.arpa",
+      "104.116.69.13.in-addr.arpa",
+      "104.193.132.51.in-addr.arpa",
+      "104.219.191.52.in-addr.arpa",
+      "104.246.116.51.in-addr.arpa",
+      "105.116.69.13.in-addr.arpa",
+      "105.193.132.51.in-addr.arpa",
+      "105.20.168.192.in-addr.arpa",
+      "105.246.116.51.in-addr.arpa",
+      "105.35.145.72.in-addr.arpa"
+    ]
+  },
+  "sample_values": [
+    [
+      1,
+      "96.255.250.253",
+      "131.109.69.13.in-addr.arpa"
+    ],
+    [
+      1,
+      "96.255.250.253",
+      "15.173.189.20.in-addr.arpa"
+    ],
+    [
+      1,
+      "96.255.250.253",
+      "12.0.215.23.in-addr.arpa"
+    ],
+    [
+      1,
+      "96.255.250.253",
+      "130.62.126.40.in-addr.arpa"
+    ],
+    [
+      1,
+      "96.255.250.253",
+      "137.71.105.51.in-addr.arpa"
+    ]
+  ]
+}

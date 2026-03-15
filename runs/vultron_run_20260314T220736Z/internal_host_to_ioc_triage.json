@@ -1,0 +1,7 @@
+{
+  "hunt": "internal_host_to_ioc",
+  "verdict": "clean",
+  "notes": [
+    "No findings returned by the hunt"
+  ]
+}

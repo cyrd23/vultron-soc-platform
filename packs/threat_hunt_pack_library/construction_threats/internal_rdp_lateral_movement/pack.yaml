@@ -1,0 +1,20 @@
+name: internal_rdp_lateral_movement
+category: lateral_movement
+severity: high
+description: Detect internal-to-internal RDP connections between hosts indicating possible lateral movement
+
+query_template: |
+  FROM logs-zeek.conn*, logs-crowdstrike.fdr*, logs-fortinet.fortigate*
+  | WHERE destination.port == 3389
+     OR process.command_line LIKE "*mstsc*"
+     OR service.name == "TermService"
+  | WHERE CIDR_MATCH(source.ip, "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16")
+    AND CIDR_MATCH(destination.ip, "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16")
+  | STATS
+      connections = COUNT(),
+      first_seen = MIN(@timestamp),
+      last_seen = MAX(@timestamp)
+    BY source.ip, destination.ip, host.name, user.name
+  | EVAL duration_minutes = DATE_DIFF("minute", first_seen, last_seen)
+  | SORT connections DESC
+  | LIMIT 100

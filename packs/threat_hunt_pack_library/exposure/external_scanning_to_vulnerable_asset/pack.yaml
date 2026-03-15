@@ -1,0 +1,12 @@
+name: external_scanning_to_vulnerable_asset
+category: exposure
+description: Detect scanning pressure against exposed assets
+severity: high
+
+query_template: |
+  FROM logs-fortinet_fortigate.log*
+  | WHERE event.action == "deny"
+  | STATS hits = COUNT(), src_ips = VALUES(source.ip) BY destination.ip, destination.port
+  | WHERE hits >= 5
+  | SORT hits DESC
+  | LIMIT 100

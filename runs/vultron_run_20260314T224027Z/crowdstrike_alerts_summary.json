@@ -1,0 +1,23 @@
+{
+  "source": "crowdstrike",
+  "generated_at": "2026-03-14T22:40:41.829754+00:00",
+  "query_limit": 100,
+  "min_severity": 40,
+  "alert_ids_found": 100,
+  "raw_alert_objects": 100,
+  "normalized_alerts": 100,
+  "alerts_after_filtering": 93,
+  "new_alerts_after_dedupe": 93,
+  "classification_counts": {
+    "needs_triage": 8,
+    "expected_lab_activity": 85
+  },
+  "severity_counts": {
+    "High": 35,
+    "Informational": 36,
+    "Medium": 12,
+    "Low": 8,
+    "Critical": 2
+  },
+  "vultron_alert_url_configured": false
+}

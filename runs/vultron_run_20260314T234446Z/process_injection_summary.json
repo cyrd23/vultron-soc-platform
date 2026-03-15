@@ -1,0 +1,78 @@
+{
+  "hunt": "process_injection",
+  "category": "endpoint",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "critical",
+  "columns": [
+    "@timestamp",
+    "host.name",
+    "host.hostname",
+    "event.action",
+    "process.name",
+    "process.executable",
+    "process.command_line"
+  ],
+  "entities": {
+    "apps": [
+      "ClassifiedModuleLoad",
+      "ProcessAncestryInformation",
+      "SensitiveWmiQuery"
+    ],
+    "hosts": [
+      "F-DAL-02-SS",
+      "OS-BR-01-GB",
+      "OS-HOU-01-BD",
+      "SAN-COUNTER-01",
+      "SSI-2024-Net",
+      "SSI-F9"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-08T00:01:41.908Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "ProcessAncestryInformation",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-08T00:01:41.771Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "ProcessAncestryInformation",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-08T00:01:41.771Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "ClassifiedModuleLoad",
+      "AM_Delta_Patch_1.445.391.0.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\SoftwareDistribution\\Download\\Install\\AM_Delta_Patch_1.445.391.0.exe",
+      null
+    ],
+    [
+      "2026-03-08T00:01:41.771Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "ProcessAncestryInformation",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-08T00:01:30.886Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "ProcessAncestryInformation",
+      null,
+      null,
+      null
+    ]
+  ]
+}

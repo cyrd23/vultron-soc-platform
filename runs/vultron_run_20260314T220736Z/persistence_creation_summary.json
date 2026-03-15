@@ -1,0 +1,81 @@
+{
+  "hunt": "persistence_creation",
+  "category": "endpoint",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "host.name",
+    "host.hostname",
+    "event.action",
+    "process.name",
+    "process.executable",
+    "process.command_line"
+  ],
+  "entities": {
+    "apps": [
+      "ProcessRollup2",
+      "ServiceStarted",
+      "ServiceStopped"
+    ],
+    "hosts": [
+      "DAL-COUNTER-02",
+      "IS-DAL-01-BC",
+      "IS-DAL-01-MF",
+      "OA-AUS-01-RZ",
+      "OS-BR-01-GB",
+      "OS-KAN-01-TG",
+      "SAN-COUNTER-01",
+      "SSI-2024-Net",
+      "SSI-F9"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-14T21:53:50.674Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\Windows\\system32\\svchost.exe -k netsvcs -p"
+    ],
+    [
+      "2026-03-14T21:52:41.283Z",
+      "SSI-F9",
+      "SSI-F9",
+      "ServiceStarted",
+      "sppsvc.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\sppsvc.exe",
+      "C:\\Windows\\system32\\sppsvc.exe"
+    ],
+    [
+      "2026-03-14T21:49:55.971Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\Windows\\system32\\svchost.exe -k GPSvcGroup"
+    ],
+    [
+      "2026-03-14T21:49:42.324Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "ServiceStopped",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s wuauserv"
+    ],
+    [
+      "2026-03-14T21:49:36.636Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\Windows\\System32\\svchost.exe -k wsappx -p -s ClipSVC"
+    ]
+  ]
+}

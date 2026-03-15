@@ -1,0 +1,11 @@
+name: suspicious_mailbox_rules
+category: construction_threats
+severity: high
+description: Detect suspicious mailbox forwarding or inbox rule creation
+
+query_template: |
+  FROM logs-o365.audit*
+  | WHERE event.action == "New-InboxRule"
+  | KEEP @timestamp, user.name, source.ip, event.action
+  | SORT @timestamp DESC
+  | LIMIT 100

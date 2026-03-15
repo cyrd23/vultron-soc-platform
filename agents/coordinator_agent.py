@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json
 import os
+from collections import Counter
 from pathlib import Path
 
 BASE = Path.home() / "soc"
@@ -72,7 +73,6 @@ def classify(hunt: str, summary: dict, triage: dict, ir: dict | None):
             internal_summary = load_json(internal_hunt_summary_path)
             internal_hunt_clean = internal_summary.get("status") == "clean"
 
-        # Best-case interpretation: inbound blocked hostile traffic
         if (
             ir_verdict == "network_overlap_found"
             and blocked > 0
@@ -93,7 +93,6 @@ def classify(hunt: str, summary: dict, triage: dict, ir: dict | None):
                 "rationale": rationale,
             }
 
-        # Identity or cloud overlap is more serious
         if ir_verdict == "identity_or_cloud_overlap_found":
             decision = "escalate_identity_or_cloud_ioc_overlap"
             severity = "high"
@@ -106,7 +105,6 @@ def classify(hunt: str, summary: dict, triage: dict, ir: dict | None):
                 "rationale": rationale,
             }
 
-        # Generic suspicious IOC overlap
         if triage_verdict == "suspicious":
             decision = "needs_investigation"
             severity = "medium"
@@ -125,7 +123,6 @@ def classify(hunt: str, summary: dict, triage: dict, ir: dict | None):
     # IOC: malicious_domain_matches
     # ----------------------------
     elif hunt == "malicious_domain_matches":
-        # Zeek-only domain match with known benign noise
         notes_text = " ".join(triage_notes).lower()
         if "potentially benign" in notes_text or "ioc source filtering" in notes_text:
             decision = "benign_filtering_noise"
@@ -346,6 +343,142 @@ def classify(hunt: str, summary: dict, triage: dict, ir: dict | None):
     }
 
 
+def classify_crowdstrike_alert(triage_item: dict, ir_item: dict | None):
+    alert_id = triage_item.get("alert_id")
+    display_name = triage_item.get("display_name")
+    hostname = triage_item.get("hostname")
+    user = triage_item.get("user")
+    triage_verdict = triage_item.get("verdict", "unknown")
+    triage_notes = triage_item.get("notes", []) or []
+
+    ir_verdict = None
+    ir_notes = []
+    if ir_item:
+        ir_verdict = ir_item.get("ir_verdict")
+        ir_notes = ir_item.get("notes", []) or []
+
+    decision = "needs_review"
+    severity = "medium"
+    rationale = []
+
+    if triage_verdict == "expected_lab_activity":
+        decision = "suppress_expected_lab_activity"
+        severity = "low"
+        rationale.append("CrowdStrike alert was classified as expected lab/test activity")
+        rationale.extend(triage_notes[:2])
+        return {
+            "hunt": "crowdstrike_alert",
+            "source": "crowdstrike",
+            "alert_id": alert_id,
+            "display_name": display_name,
+            "hostname": hostname,
+            "user": user,
+            "decision": decision,
+            "severity": severity,
+            "rationale": rationale,
+        }
+
+    if ir_verdict == "high_severity_follow_on_activity_found":
+        decision = "escalate_crowdstrike_high_severity_alert"
+        severity = "high"
+        rationale.append("High severity CrowdStrike alert has supporting host telemetry in Elastic")
+        rationale.extend(ir_notes[:3])
+        return {
+            "hunt": "crowdstrike_alert",
+            "source": "crowdstrike",
+            "alert_id": alert_id,
+            "display_name": display_name,
+            "hostname": hostname,
+            "user": user,
+            "decision": decision,
+            "severity": severity,
+            "rationale": rationale,
+        }
+
+    if ir_verdict == "medium_severity_follow_on_activity_found":
+        decision = "investigate_crowdstrike_medium_alert"
+        severity = "medium"
+        rationale.append("Medium severity CrowdStrike alert has supporting telemetry and requires investigation")
+        rationale.extend(ir_notes[:2])
+        return {
+            "hunt": "crowdstrike_alert",
+            "source": "crowdstrike",
+            "alert_id": alert_id,
+            "display_name": display_name,
+            "hostname": hostname,
+            "user": user,
+            "decision": decision,
+            "severity": severity,
+            "rationale": rationale,
+        }
+
+    if ir_verdict == "low_severity_follow_on_activity_found":
+        decision = "review_crowdstrike_low_severity_alert"
+        severity = "low"
+        rationale.append("Low severity CrowdStrike alert has some supporting host telemetry")
+        rationale.extend(ir_notes[:2])
+        return {
+            "hunt": "crowdstrike_alert",
+            "source": "crowdstrike",
+            "alert_id": alert_id,
+            "display_name": display_name,
+            "hostname": hostname,
+            "user": user,
+            "decision": decision,
+            "severity": severity,
+            "rationale": rationale,
+        }
+
+    if triage_verdict in ("suspicious", "needs_review"):
+        decision = "investigate_crowdstrike_alert"
+        severity = "medium" if triage_verdict == "needs_review" else "high"
+        rationale.append("CrowdStrike alert requires analyst investigation")
+        rationale.extend(triage_notes[:2])
+        if ir_notes:
+            rationale.extend(ir_notes[:2])
+        return {
+            "hunt": "crowdstrike_alert",
+            "source": "crowdstrike",
+            "alert_id": alert_id,
+            "display_name": display_name,
+            "hostname": hostname,
+            "user": user,
+            "decision": decision,
+            "severity": severity,
+            "rationale": rationale,
+        }
+
+    rationale.append("No specific CrowdStrike coordinator rule matched; manual analyst review recommended")
+    return {
+        "hunt": "crowdstrike_alert",
+        "source": "crowdstrike",
+        "alert_id": alert_id,
+        "display_name": display_name,
+        "hostname": hostname,
+        "user": user,
+        "decision": decision,
+        "severity": severity,
+        "rationale": rationale,
+    }
+
+
+def build_crowdstrike_decision_rollup(results):
+    decision_counts = Counter()
+    severity_counts = Counter()
+
+    for item in results:
+        decision_counts[item.get("decision", "unknown")] += 1
+        severity_counts[item.get("severity", "unknown")] += 1
+
+    return {
+        "hunt": "crowdstrike_alerts",
+        "source": "crowdstrike",
+        "alert_count": len(results),
+        "decision_counts": dict(decision_counts),
+        "severity_counts": dict(severity_counts),
+    }
+
+
 def run():
     summary_files = sorted(REPORTS_DIR.glob("*_summary.json"))
 
@@ -354,6 +487,9 @@ def run():
         return
 
     for summary_path in summary_files:
+        if summary_path.name == "crowdstrike_alerts_summary.json":
+            continue
+
         hunt = summary_path.name.replace("_summary.json", "")
         summary = load_json(summary_path)
 
@@ -371,6 +507,39 @@ def run():
         out_file = REPORTS_DIR / f"{hunt}_decision.json"
         out_file.write_text(json.dumps(result, indent=2), encoding="utf-8")
         print(f"Decision saved: {out_file}")
+
+    # -------------------------------------------------
+    # CrowdStrike alert decisions
+    # -------------------------------------------------
+    crowdstrike_triage_path = REPORTS_DIR / "crowdstrike_alerts_triage.json"
+    crowdstrike_ir_path = REPORTS_DIR / "crowdstrike_alerts_ir.json"
+
+    if crowdstrike_triage_path.exists():
+        triage_items = load_json(crowdstrike_triage_path)
+        ir_items = load_json(crowdstrike_ir_path) if crowdstrike_ir_path.exists() else []
+
+        ir_by_alert_id = {}
+        if isinstance(ir_items, list):
+            for item in ir_items:
+                alert_id = item.get("alert_id")
+                if alert_id:
+                    ir_by_alert_id[alert_id] = item
+
+        results = []
+        if isinstance(triage_items, list):
+            for triage_item in triage_items:
+                alert_id = triage_item.get("alert_id")
+                ir_item = ir_by_alert_id.get(alert_id)
+                results.append(classify_crowdstrike_alert(triage_item, ir_item))
+
+        detailed_out = REPORTS_DIR / "crowdstrike_alerts_decision.json"
+        detailed_out.write_text(json.dumps(results, indent=2), encoding="utf-8")
+        print(f"Decision saved: {detailed_out}")
+
+        rollup = build_crowdstrike_decision_rollup(results)
+        rollup_out = REPORTS_DIR / "crowdstrike_decision_summary.json"
+        rollup_out.write_text(json.dumps(rollup, indent=2), encoding="utf-8")
+        print(f"Decision saved: {rollup_out}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,15 @@
+{
+  "hunt": "suspicious_mailbox_rules",
+  "category": "construction_threats",
+  "status": "clean",
+  "findings": 0,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "user.name",
+    "source.ip",
+    "event.action"
+  ],
+  "entities": {},
+  "sample_values": []
+}

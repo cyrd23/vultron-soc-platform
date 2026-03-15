@@ -1,0 +1,49 @@
+{
+  "hunt": "smb_lateral_movement",
+  "category": "construction_threats",
+  "status": "suspicious",
+  "findings": 2,
+  "severity": "high",
+  "columns": [
+    "connections",
+    "first_seen",
+    "last_seen",
+    "source.ip",
+    "destination.ip",
+    "host.name",
+    "process.name",
+    "duration_minutes"
+  ],
+  "entities": {
+    "ips": [
+      "192.168.1.116",
+      "192.168.1.150",
+      "192.168.1.219"
+    ],
+    "hosts": [
+      "F-STEMM-01-BP"
+    ]
+  },
+  "sample_values": [
+    [
+      2,
+      "2026-03-11T12:57:50.380Z",
+      "2026-03-12T13:36:22.865Z",
+      "192.168.1.150",
+      "192.168.1.116",
+      "F-STEMM-01-BP",
+      null,
+      1478
+    ],
+    [
+      2,
+      "2026-03-11T16:13:04.802Z",
+      "2026-03-12T12:59:35.220Z",
+      "192.168.1.150",
+      "192.168.1.219",
+      "F-STEMM-01-BP",
+      null,
+      1246
+    ]
+  ]
+}

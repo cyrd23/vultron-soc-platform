@@ -1,0 +1,25 @@
+{
+  "documents_found": 0,
+  "values_loaded": 0,
+  "took": 5,
+  "is_partial": false,
+  "columns": [
+    {
+      "name": "@timestamp",
+      "type": "date"
+    },
+    {
+      "name": "source.ip",
+      "type": "ip"
+    },
+    {
+      "name": "dns.question.name",
+      "type": "keyword"
+    },
+    {
+      "name": "dns.answers.data",
+      "type": "keyword"
+    }
+  ],
+  "values": []
+}

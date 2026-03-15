@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-03-12T13:07:39.324807+00:00",
+  "run_dir": "/home/reg/soc/runs/vultron_run_20260312T130729Z",
+  "file_counts": {
+    "summaries": 5,
+    "triage": 5,
+    "ir": 1,
+    "decisions": 5
+  },
+  "hunt_status_counts": {
+    "clean": 4,
+    "suspicious": 1
+  },
+  "hunt_category_counts": {
+    "compromise_detection": 1,
+    "intel_ioc": 4
+  },
+  "triage_verdict_counts": {
+    "clean": 4,
+    "suspicious": 1
+  },
+  "ir_verdict_counts": {
+    "network_overlap_found": 1
+  },
+  "decision_counts": {
+    "benign": 4,
+    "blocked_inbound_hostile_traffic": 1
+  },
+  "severity_counts": {
+    "low": 5
+  },
+  "suspicious_hunts": [
+    {
+      "hunt": "malicious_ip_matches",
+      "category": "intel_ioc",
+      "findings": 200,
+      "severity": "unknown"
+    }
+  ],
+  "coordinator_decisions": [
+    {
+      "hunt": "internal_host_to_ioc",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ]
+    },
+    {
+      "hunt": "malicious_domain_matches",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ]
+    },
+    {
+      "hunt": "malicious_domain_matches_umbrella",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ]
+    },
+    {
+      "hunt": "malicious_ip_matches",
+      "decision": "blocked_inbound_hostile_traffic",
+      "severity": "low",
+      "rationale": [
+        "Threat-intel IOC IPs were observed only in denied network events",
+        "Fortinet blocked the activity at the edge",
+        "No endpoint evidence of internal hosts contacting IOC infrastructure"
+      ]
+    },
+    {
+      "hunt": "malicious_ip_port_matches",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ]
+    }
+  ]
+}

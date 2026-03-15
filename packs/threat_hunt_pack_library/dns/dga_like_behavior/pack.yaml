@@ -1,0 +1,12 @@
+name: dga_like_behavior
+category: dns
+description: Detect potentially DGA-like domains based on long registered domains
+severity: medium
+
+query_template: |
+  FROM logs-cisco_umbrella.log*
+  | WHERE dns.question.registered_domain IS NOT NULL
+  | WHERE LENGTH(dns.question.registered_domain) > 25
+  | KEEP @timestamp, source.ip, dns.question.name, dns.question.registered_domain, event.action
+  | SORT @timestamp DESC
+  | LIMIT 100

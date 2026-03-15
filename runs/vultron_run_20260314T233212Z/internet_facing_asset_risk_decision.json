@@ -1,0 +1,10 @@
+{
+  "hunt": "internet_facing_asset_risk",
+  "decision": "needs_review",
+  "severity": "medium",
+  "rationale": [
+    "No specific coordinator rule matched; manual analyst review recommended",
+    "Unhandled hunt type; manual review recommended",
+    "No IR workflow implemented yet for this hunt"
+  ]
+}

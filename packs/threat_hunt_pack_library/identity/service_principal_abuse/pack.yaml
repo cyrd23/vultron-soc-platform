@@ -1,0 +1,17 @@
+name: service_principal_abuse
+category: identity
+description: Detect service principal, app, or permission grant activity in Azure audit logs
+severity: high
+
+query_template: |
+  FROM logs-azure.auditlogs*
+  | WHERE event.action IS NOT NULL OR azure.auditlogs.properties.activity_display_name IS NOT NULL
+  | WHERE event.action LIKE "*service principal*" 
+     OR event.action LIKE "*application*" 
+     OR event.action LIKE "*grant*" 
+     OR azure.auditlogs.properties.activity_display_name LIKE "*service principal*"
+     OR azure.auditlogs.properties.activity_display_name LIKE "*application*"
+     OR azure.auditlogs.properties.activity_display_name LIKE "*grant*"
+  | KEEP @timestamp, event.action, event.outcome, source.ip, client.ip, azure.auditlogs.properties.activity_display_name, azure.auditlogs.properties.initiated_by.user.userPrincipalName, azure.auditlogs.properties.initiated_by.app.displayName, azure.auditlogs.operation_name
+  | SORT @timestamp DESC
+  | LIMIT 100

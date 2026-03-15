@@ -1,0 +1,7 @@
+{
+  "hunt": "shadow_copy_deletion",
+  "verdict": "clean",
+  "notes": [
+    "No findings returned by the hunt"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "hunt": "nxdomain_burst",
+  "verdict": "needs_review",
+  "notes": [
+    "Unhandled hunt type; manual review recommended"
+  ]
+}

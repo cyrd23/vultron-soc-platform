@@ -54,14 +54,6 @@ def summarize(result, limit=10):
 
 
 def summarize_ioc_activity(result):
-    """
-    Build an operational summary for IOC activity.
-    Works best when the query returns row-level event data with:
-      - source.ip
-      - destination.ip
-      - data_stream.dataset
-      - event.action
-    """
     columns = [c["name"] for c in result.get("columns", [])]
     values = result.get("values", [])
 
@@ -207,7 +199,6 @@ def investigate_malicious_ip_matches(summary):
          for ip in ips[:25]]
     )
 
-    # Row-level query for operational interpretation
     row_query = f"""
 FROM logs-*
 | WHERE ({ioc_filters})
@@ -219,7 +210,6 @@ FROM logs-*
     row_result = run_query(row_query)
     ioc_activity_summary = summarize_ioc_activity(row_result)
 
-    # Aggregated query for breadth/context
     agg_query = f"""
 FROM logs-*
 | WHERE ({ioc_filters})
@@ -238,7 +228,6 @@ FROM logs-*
     if findings == 0 or not values:
         verdict = "no_follow_on_ioc_activity"
     else:
-        datasets = []
         actions = []
         columns = [c["name"] for c in result.get("columns", [])]
         row = dict(zip(columns, values[0]))
@@ -561,10 +550,133 @@ def investigate_internal_host_to_ioc(summary):
     }
 
 
+# -------------------------------------------------
+# CrowdStrike alert IR workflow
+# -------------------------------------------------
+
+def investigate_crowdstrike_alert(triage_item):
+    alert_id = triage_item.get("alert_id")
+    hostname = triage_item.get("hostname")
+    event_timestamp = triage_item.get("event_timestamp")
+    display_name = triage_item.get("display_name")
+    severity = triage_item.get("severity", 0)
+    verdict = triage_item.get("verdict")
+
+    notes = [f"Reviewed CrowdStrike alert: {display_name or 'unknown'}"]
+
+    if verdict == "expected_lab_activity":
+        return {
+            "hunt": "crowdstrike_alert",
+            "source": "crowdstrike",
+            "alert_id": alert_id,
+            "hostname": hostname,
+            "display_name": display_name,
+            "ir_verdict": "expected_lab_activity",
+            "notes": notes + ["No additional IR investigation required because alert was classified as expected lab/test activity"],
+            "event_timestamp": event_timestamp,
+        }
+
+    if not hostname:
+        return {
+            "hunt": "crowdstrike_alert",
+            "source": "crowdstrike",
+            "alert_id": alert_id,
+            "display_name": display_name,
+            "ir_verdict": "no_hostname",
+            "notes": notes + ["Hostname missing from CrowdStrike alert; unable to perform Elastic follow-on search"],
+            "event_timestamp": event_timestamp,
+        }
+
+    host_value = safe_quote(hostname)
+
+    query = f"""
+FROM logs-*
+| WHERE host.name == "{host_value}" OR host.hostname == "{host_value}"
+| KEEP @timestamp, host.name, event.action, process.name, process.command_line, source.ip, destination.ip, data_stream.dataset
+| SORT @timestamp DESC
+| LIMIT 100
+""".strip()
+
+    result = run_query(query)
+    findings = result.get("documents_found", 0)
+    columns = [c["name"] for c in result.get("columns", [])]
+    values = result.get("values", [])
+
+    datasets = set()
+    actions = set()
+    processes = set()
+
+    for row in values:
+        row_map = dict(zip(columns, row))
+        dataset = row_map.get("data_stream.dataset")
+        action = row_map.get("event.action")
+        process_name = row_map.get("process.name")
+
+        if dataset:
+            datasets.add(str(dataset))
+        if action:
+            actions.add(str(action))
+        if process_name:
+            processes.add(str(process_name))
+
+    if findings == 0:
+        ir_verdict = "no_follow_on_host_activity"
+        notes.append("No follow-on Elastic telemetry found for the host")
+    else:
+        if severity >= 70:
+            ir_verdict = "high_severity_follow_on_activity_found"
+            notes.append("High severity CrowdStrike alert with supporting host telemetry found in Elastic")
+        elif severity >= 40:
+            ir_verdict = "medium_severity_follow_on_activity_found"
+            notes.append("Medium severity CrowdStrike alert with supporting host telemetry found in Elastic")
+        else:
+            ir_verdict = "low_severity_follow_on_activity_found"
+            notes.append("Low severity CrowdStrike alert with supporting host telemetry found in Elastic")
+
+        if datasets:
+            notes.append(f"Datasets observed: {', '.join(sorted(datasets)[:10])}")
+
+        if actions:
+            notes.append(f"Event actions observed: {', '.join(sorted(actions)[:10])}")
+
+        if processes:
+            notes.append(f"Processes observed: {', '.join(sorted(processes)[:10])}")
+
+    return {
+        "hunt": "crowdstrike_alert",
+        "source": "crowdstrike",
+        "alert_id": alert_id,
+        "hostname": hostname,
+        "display_name": display_name,
+        "severity": severity,
+        "ir_verdict": ir_verdict,
+        "notes": notes,
+        "event_timestamp": event_timestamp,
+        "summary": summarize(result),
+    }
+
+
+def build_crowdstrike_ir_rollup(results):
+    verdict_counts = {}
+    for item in results:
+        v = item.get("ir_verdict", "unknown")
+        verdict_counts[v] = verdict_counts.get(v, 0) + 1
+
+    return {
+        "hunt": "crowdstrike_alerts",
+        "source": "crowdstrike",
+        "alert_count": len(results),
+        "ir_verdict_counts": verdict_counts,
+    }
+
+
 def main():
     triage_files = sorted(REPORTS_DIR.glob("*_triage.json"))
 
     for triage_path in triage_files:
+        if triage_path.name == "crowdstrike_alerts_triage.json":
+            continue
+
         triage = load_json(triage_path)
         hunt = triage.get("hunt")
         verdict = triage.get("verdict")
@@ -609,6 +721,31 @@ def main():
         out_file = REPORTS_DIR / f"{hunt}_ir.json"
         out_file.write_text(json.dumps(ir_result, indent=2), encoding="utf-8")
         print(f"IR saved: {out_file}")
+
+    # -------------------------------------------------
+    # CrowdStrike alert IR processing
+    # -------------------------------------------------
+    crowdstrike_triage_file = REPORTS_DIR / "crowdstrike_alerts_triage.json"
+    if crowdstrike_triage_file.exists():
+        crowdstrike_triage = load_json(crowdstrike_triage_file)
+
+        if isinstance(crowdstrike_triage, list):
+            crowdstrike_results = []
+            for item in crowdstrike_triage:
+                item_verdict = item.get("verdict")
+                if item_verdict not in ("suspicious", "needs_review", "expected_lab_activity"):
+                    continue
+
+                crowdstrike_results.append(investigate_crowdstrike_alert(item))
+
+            detailed_out = REPORTS_DIR / "crowdstrike_alerts_ir.json"
+            detailed_out.write_text(json.dumps(crowdstrike_results, indent=2), encoding="utf-8")
+            print(f"IR saved: {detailed_out}")
+
+            rollup = build_crowdstrike_ir_rollup(crowdstrike_results)
+            rollup_out = REPORTS_DIR / "crowdstrike_ir_summary.json"
+            rollup_out.write_text(json.dumps(rollup, indent=2), encoding="utf-8")
+            print(f"IR saved: {rollup_out}")
 
 
 if __name__ == "__main__":

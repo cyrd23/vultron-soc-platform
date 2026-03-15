@@ -1,0 +1,7 @@
+{
+  "hunt": "rare_geo_mailbox_rule",
+  "verdict": "clean",
+  "notes": [
+    "No findings returned by the hunt"
+  ]
+}

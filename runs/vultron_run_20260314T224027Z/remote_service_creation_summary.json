@@ -1,0 +1,105 @@
+{
+  "hunt": "remote_service_creation",
+  "category": "lateral_movement",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "host.name",
+    "host.hostname",
+    "source.ip",
+    "destination.ip",
+    "event.action",
+    "process.name",
+    "process.executable",
+    "process.command_line"
+  ],
+  "entities": {
+    "ips": [
+      "10.10.2.4",
+      "10.10.2.8",
+      "192.168.1.135",
+      "192.168.1.215",
+      "192.168.1.99",
+      "192.168.50.7",
+      "192.168.60.16",
+      "192.168.65.38",
+      "192.168.65.55",
+      "192.168.86.229"
+    ],
+    "apps": [
+      "ServiceStarted",
+      "ServiceStopped"
+    ],
+    "hosts": [
+      "DAL-COUNTER-02",
+      "IS-DAL-01-BC",
+      "IS-DAL-01-MF",
+      "OA-AUS-01-RZ",
+      "OA-DAL-01-CR",
+      "OS-BR-01-GB",
+      "OS-KAN-01-TG",
+      "SAN-COUNTER-01",
+      "SSI-2024-Net",
+      "SSI-F9"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-14T22:28:54.915Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "10.10.2.4",
+      null,
+      "ServiceStarted",
+      "updater.exe",
+      "\\Device\\HarddiskVolume4\\Program Files (x86)\\Google\\GoogleUpdater\\147.0.7703.0\\updater.exe",
+      "\"C:\\Program Files (x86)\\Google\\GoogleUpdater\\147.0.7703.0\\updater.exe\" --system --windows-service --service=update"
+    ],
+    [
+      "2026-03-14T22:28:54.915Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "10.10.2.4",
+      null,
+      "ServiceStarted",
+      "updater.exe",
+      "\\Device\\HarddiskVolume4\\Program Files (x86)\\Google\\GoogleUpdater\\147.0.7703.0\\updater.exe",
+      "\"C:\\Program Files (x86)\\Google\\GoogleUpdater\\147.0.7703.0\\updater.exe\" --system --windows-service --service=update-internal"
+    ],
+    [
+      "2026-03-14T22:28:41.303Z",
+      "OA-DAL-01-CR",
+      "OA-DAL-01-CR",
+      "192.168.1.99",
+      null,
+      "ServiceStopped",
+      "services.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\services.exe",
+      "C:\\WINDOWS\\system32\\services.exe"
+    ],
+    [
+      "2026-03-14T22:22:36.038Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "192.168.86.229",
+      null,
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\Windows\\system32\\svchost.exe -k LocalServiceNetworkRestricted -p -s SmsRouter"
+    ],
+    [
+      "2026-03-14T22:20:03.130Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "192.168.86.229",
+      null,
+      "ServiceStarted",
+      "SurfaceBroker.exe",
+      "\\Device\\HarddiskVolume3\\Program Files\\WindowsApps\\Microsoft.SurfaceHub_76.2010.134.0_x64__8wekyb3d8bbwe\\Services\\SurfaceBroker.exe",
+      "\"C:\\Program Files\\WindowsApps\\Microsoft.SurfaceHub_76.2010.134.0_x64__8wekyb3d8bbwe\\Services\\SurfaceBroker.exe\""
+    ]
+  ]
+}

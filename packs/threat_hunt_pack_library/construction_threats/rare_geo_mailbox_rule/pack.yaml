@@ -1,0 +1,11 @@
+name: rare_geo_mailbox_rule
+category: identity
+severity: critical
+description: Detect login from rare country followed by mailbox rule creation (BEC indicator)
+
+query_template: |
+  FROM logs-azure.signinlogs*
+  | WHERE geo.country_name NOT IN ("United States")
+  | STATS logins = COUNT() BY user.name, geo.country_name
+  | SORT logins DESC
+  | LIMIT 100

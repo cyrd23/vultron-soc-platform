@@ -43,6 +43,7 @@ ENTITY_HINTS = {
     "hosts": [
         "host.name",
         "observer.hostname",
+        "host.hostname",
     ],
     "domains": [
         "dns.question.name",
@@ -189,7 +190,6 @@ def load_latest_iocs(input_source: str):
     with open(latest, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    # New enriched/operational/object format
     if "iocs" in data and isinstance(data["iocs"], list):
         normalized = {
             "ips": [],
@@ -238,7 +238,6 @@ def load_latest_iocs(input_source: str):
 
         return normalized
 
-    # Backward compatibility for flat format
     data["source_file"] = latest.name
     return data
 
@@ -286,7 +285,6 @@ def build_query_for_pack(meta, pack):
     input_source = meta.get("input_source")
     query_template = meta.get("query_template")
 
-    # Generated/parameterized pack
     if input_type and input_source and query_template:
         iocs = load_latest_iocs(input_source)
 
@@ -304,7 +302,9 @@ def build_query_for_pack(meta, pack):
         query_text = query_template.replace("{ioc_list}", ioc_list)
         return query_text, None
 
-    # Static query pack
+    if query_template and not input_type and not input_source:
+        return query_template.strip(), None
+
     if pack["query_file"] and pack["query_file"].exists():
         return pack["query_file"].read_text(encoding="utf-8").strip(), None
 
@@ -331,9 +331,21 @@ def run_pack(pack_name):
     raw_file, summary_file = save_report(meta["name"], result, summary)
 
     print(f"{meta['name']} .......... {summary['status']} ({summary['findings']} findings)")
+
+    if result.get("columns") and result.get("values"):
+        cols = [c["name"] for c in result["columns"]]
+
+        print("\nSample Findings:")
+        for i, row in enumerate(result["values"][:3], 1):
+            print(f"\n--- Finding {i} ---")
+            for k, v in zip(cols, row):
+                print(f"{k}: {v}")
+
     if summary.get("entities"):
-        print(f"Entities: {json.dumps(summary['entities'], indent=2)}")
-    print(f"Summary saved: {summary_file}")
+        print("\nEntities:")
+        print(json.dumps(summary["entities"], indent=2))
+
+    print(f"\nSummary saved: {summary_file}")
     print(f"Raw saved:     {raw_file}")
 
 

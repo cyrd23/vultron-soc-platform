@@ -1,0 +1,8 @@
+{
+  "hunt": "vpn_geo_anomaly",
+  "decision": "benign",
+  "severity": "low",
+  "rationale": [
+    "Triage found no suspicious activity"
+  ]
+}

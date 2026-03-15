@@ -1,0 +1,7 @@
+{
+  "hunt": "vulnerable_host_activity",
+  "verdict": "needs_review",
+  "notes": [
+    "Unhandled hunt type; manual review recommended"
+  ]
+}

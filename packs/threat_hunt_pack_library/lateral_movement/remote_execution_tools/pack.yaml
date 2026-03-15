@@ -1,0 +1,13 @@
+name: remote_execution_tools
+category: lateral_movement
+description: Detect common remote execution tooling patterns
+severity: high
+
+query_template: |
+  FROM logs-crowdstrike.fdr*
+  | WHERE process.command_line LIKE "*psexec*"
+     OR process.command_line LIKE "*wmic*"
+     OR process.command_line LIKE "*sc.exe*"
+  | KEEP @timestamp, host.name, host.hostname, event.action, process.name, process.executable, process.command_line, source.ip, destination.ip
+  | SORT @timestamp DESC
+  | LIMIT 100

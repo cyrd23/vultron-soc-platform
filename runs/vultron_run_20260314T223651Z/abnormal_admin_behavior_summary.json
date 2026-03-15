@@ -1,0 +1,68 @@
+{
+  "hunt": "abnormal_admin_behavior",
+  "category": "lateral_movement",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "event.action",
+    "event.outcome",
+    "source.ip",
+    "client.ip",
+    "azure.auditlogs.properties.activity_display_name",
+    "azure.auditlogs.properties.initiated_by.user.userPrincipalName"
+  ],
+  "entities": {
+    "apps": [
+      "Update device local administrator password"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-14T22:02:54.724Z",
+      "Update device local administrator password",
+      "failure",
+      null,
+      null,
+      "Update device local administrator password",
+      null
+    ],
+    [
+      "2026-03-14T18:02:49.685Z",
+      "Update device local administrator password",
+      "failure",
+      null,
+      null,
+      "Update device local administrator password",
+      null
+    ],
+    [
+      "2026-03-14T17:54:40.380Z",
+      "Update device local administrator password",
+      "failure",
+      null,
+      null,
+      "Update device local administrator password",
+      null
+    ],
+    [
+      "2026-03-13T21:52:32.050Z",
+      "Update device local administrator password",
+      "failure",
+      null,
+      null,
+      "Update device local administrator password",
+      null
+    ],
+    [
+      "2026-03-13T20:52:30.764Z",
+      "Update device local administrator password",
+      "failure",
+      null,
+      null,
+      "Update device local administrator password",
+      null
+    ]
+  ]
+}

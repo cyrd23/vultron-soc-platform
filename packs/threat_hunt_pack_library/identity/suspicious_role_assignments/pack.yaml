@@ -1,0 +1,12 @@
+name: suspicious_role_assignments
+category: identity
+description: Detect suspicious Azure role assignment activity
+severity: high
+
+query_template: |
+  FROM logs-azure.auditlogs*
+  | WHERE event.action IS NOT NULL
+  | WHERE event.action LIKE "*role*" OR azure.auditlogs.properties.activity_display_name LIKE "*role*"
+  | KEEP @timestamp, event.action, event.outcome, source.ip, client.ip, azure.auditlogs.properties.activity_display_name, azure.auditlogs.properties.initiated_by.user.userPrincipalName, azure.auditlogs.properties.initiated_by.user.displayName
+  | SORT @timestamp DESC
+  | LIMIT 100

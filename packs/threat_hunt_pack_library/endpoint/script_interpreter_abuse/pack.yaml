@@ -1,0 +1,15 @@
+name: script_interpreter_abuse
+category: endpoint
+description: Detect suspicious script interpreter use
+severity: high
+
+query_template: |
+  FROM logs-crowdstrike.fdr*
+  | WHERE process.name == "cmd.exe"
+     OR process.name == "wscript.exe"
+     OR process.name == "cscript.exe"
+     OR process.name == "mshta.exe"
+     OR process.name == "rundll32.exe"
+  | KEEP @timestamp, host.name, host.hostname, process.name, process.executable, process.command_line, event.action
+  | SORT @timestamp DESC
+  | LIMIT 100

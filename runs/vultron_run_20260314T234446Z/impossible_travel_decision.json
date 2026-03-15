@@ -1,0 +1,8 @@
+{
+  "hunt": "impossible_travel",
+  "decision": "benign",
+  "severity": "low",
+  "rationale": [
+    "Triage found no suspicious activity"
+  ]
+}

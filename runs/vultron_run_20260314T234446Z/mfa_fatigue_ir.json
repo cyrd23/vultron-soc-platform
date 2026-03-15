@@ -1,0 +1,7 @@
+{
+  "hunt": "mfa_fatigue",
+  "ir_verdict": "not_implemented",
+  "notes": [
+    "No IR workflow implemented yet for this hunt"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "hunt": "malicious_ip_port_matches",
+  "category": "intel_ioc",
+  "status": "clean",
+  "findings": 0,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "data_stream.dataset",
+    "source.ip",
+    "destination.ip",
+    "destination.port",
+    "event.action"
+  ],
+  "entities": {},
+  "sample_values": []
+}

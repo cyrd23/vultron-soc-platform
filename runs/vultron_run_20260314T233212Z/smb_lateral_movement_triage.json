@@ -1,0 +1,7 @@
+{
+  "hunt": "smb_lateral_movement",
+  "verdict": "needs_review",
+  "notes": [
+    "Unhandled hunt type; manual review recommended"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "hunt": "vulnerable_host_activity",
+  "category": "exposure",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "host.name",
+    "host.hostname",
+    "host.ip",
+    "vulnerability.id",
+    "vulnerability.severity"
+  ],
+  "entities": {
+    "hosts": [
+      "os-aus-01-mp"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-12T18:14:07.261Z",
+      "os-aus-01-mp",
+      "os-aus-01-mp",
+      [
+        "192.168.4.31",
+        "fd89:437:cc5f:1:1438:6a49:8da5:fba3"
+      ],
+      null,
+      "None"
+    ],
+    [
+      "2026-03-12T18:14:07.261Z",
+      "os-aus-01-mp",
+      "os-aus-01-mp",
+      [
+        "192.168.4.31",
+        "fd89:437:cc5f:1:1438:6a49:8da5:fba3"
+      ],
+      null,
+      "None"
+    ],
+    [
+      "2026-03-12T18:14:07.261Z",
+      "os-aus-01-mp",
+      "os-aus-01-mp",
+      [
+        "192.168.4.31",
+        "fd89:437:cc5f:1:1438:6a49:8da5:fba3"
+      ],
+      null,
+      "None"
+    ],
+    [
+      "2026-03-12T18:14:07.261Z",
+      "os-aus-01-mp",
+      "os-aus-01-mp",
+      [
+        "192.168.4.31",
+        "fd89:437:cc5f:1:1438:6a49:8da5:fba3"
+      ],
+      null,
+      "None"
+    ],
+    [
+      "2026-03-12T18:14:07.261Z",
+      "os-aus-01-mp",
+      "os-aus-01-mp",
+      [
+        "192.168.4.31",
+        "fd89:437:cc5f:1:1438:6a49:8da5:fba3"
+      ],
+      null,
+      "None"
+    ]
+  ]
+}

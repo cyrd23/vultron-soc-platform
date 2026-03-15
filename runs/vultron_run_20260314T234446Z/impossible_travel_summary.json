@@ -1,0 +1,15 @@
+{
+  "hunt": "impossible_travel",
+  "category": "identity",
+  "status": "clean",
+  "findings": 0,
+  "severity": "medium",
+  "columns": [
+    "country_count",
+    "countries",
+    "ips",
+    "user.name"
+  ],
+  "entities": {},
+  "sample_values": []
+}

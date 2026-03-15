@@ -1,10 +1,20 @@
 #!/usr/bin/env python3
 import json
 import os
+from collections import Counter
 from pathlib import Path
 
 BASE = Path.home() / "soc"
 REPORTS_DIR = Path(os.environ.get("VULTRON_RUN_DIR", BASE / "reports"))
+
+NON_HUNT_SUMMARY_FILES = {
+    "crowdstrike_alerts_summary.json",
+    "crowdstrike_triage_summary.json",
+    "crowdstrike_ir_summary.json",
+    "crowdstrike_decision_summary.json",
+    "cases_summary.json",
+    "vultron_run_summary.json",
+}
 
 
 def load_json(file_path):
@@ -84,7 +94,6 @@ def triage(summary, intel):
         ips = entities.get("ips", [])
         apps = entities.get("apps", [])
 
-        # Start conservative but meaningful
         verdict = "needs_review"
         notes.append("Threat-intel IP matches were observed in environment telemetry")
 
@@ -132,7 +141,6 @@ def triage(summary, intel):
             verdict = "suspicious"
             notes.append("Repeated malicious-domain matches observed")
 
-        # Common benign false-positive guardrail
         benign_like = {"github.com", "google.com", "microsoft.com"}
         if any(d.lower() in benign_like for d in domains):
             notes.append("One or more matched domains appear potentially benign and should be validated against IOC source filtering")
@@ -167,27 +175,156 @@ def triage(summary, intel):
     }
 
 
+def triage_crowdstrike_alert(alert):
+    alert_id = alert.get("alert_id")
+    display_name = alert.get("display_name") or alert.get("name") or "unknown"
+    severity = alert.get("severity", 0)
+    severity_name = alert.get("severity_name", "Unknown")
+    hostname = alert.get("hostname")
+    user = alert.get("user")
+    tactic = alert.get("tactic")
+    technique = alert.get("technique")
+    technique_id = alert.get("technique_id")
+    cmdline = alert.get("cmdline")
+    pattern_disposition = alert.get("pattern_disposition")
+    classification = alert.get("lab_context", {}).get("classification")
+    likely_test_activity = alert.get("lab_context", {}).get("likely_test_activity", False)
+    reason = alert.get("lab_context", {}).get("reason")
+
+    notes = []
+    verdict = "clean"
+
+    if likely_test_activity or classification == "expected_lab_activity":
+        verdict = "expected_lab_activity"
+        notes.append("Connector classified this alert as expected lab/test activity")
+        if reason:
+            notes.append(reason)
+    else:
+        if severity >= 70:
+            verdict = "suspicious"
+            notes.append("High severity CrowdStrike alert requires immediate analyst review")
+        elif severity >= 40:
+            verdict = "needs_review"
+            notes.append("Medium severity CrowdStrike alert requires analyst review")
+        else:
+            verdict = "clean"
+            notes.append("Low severity CrowdStrike alert; review if additional context elevates concern")
+
+    if hostname:
+        notes.append(f"Host: {hostname}")
+
+    if user:
+        notes.append(f"User: {user}")
+
+    if display_name:
+        notes.append(f"Alert name: {display_name}")
+
+    if tactic or technique or technique_id:
+        technique_text = " / ".join([x for x in [tactic, technique, technique_id] if x])
+        if technique_text:
+            notes.append(f"MITRE context: {technique_text}")
+
+    if pattern_disposition:
+        notes.append(f"CrowdStrike disposition: {pattern_disposition}")
+
+    if cmdline:
+        shortened = cmdline if len(cmdline) <= 300 else cmdline[:300] + "..."
+        notes.append(f"Command line: {shortened}")
+
+    return {
+        "hunt": "crowdstrike_alert",
+        "source": "crowdstrike",
+        "alert_id": alert_id,
+        "display_name": display_name,
+        "severity": severity,
+        "severity_name": severity_name,
+        "hostname": hostname,
+        "user": user,
+        "verdict": verdict,
+        "notes": notes,
+        "classification": classification,
+        "event_timestamp": alert.get("event_timestamp"),
+        "falcon_link": alert.get("falcon_link"),
+    }
+
+
+def build_crowdstrike_rollup(results):
+    verdict_counts = Counter()
+    severity_counts = Counter()
+
+    for item in results:
+        verdict_counts[item.get("verdict", "unknown")] += 1
+        severity_counts[item.get("severity_name", "Unknown")] += 1
+
+    return {
+        "hunt": "crowdstrike_alerts",
+        "source": "crowdstrike",
+        "alert_count": len(results),
+        "verdict_counts": dict(verdict_counts),
+        "severity_counts": dict(severity_counts),
+    }
+
+
 def main():
     summary_files = sorted(REPORTS_DIR.glob("*_summary.json"))
 
     if not summary_files:
         print("No summary files found.")
-        return
 
     for summary_path in summary_files:
+        if summary_path.name in NON_HUNT_SUMMARY_FILES:
+            continue
+
         summary = load_json(summary_path)
 
-        intel_path = REPORTS_DIR / f"{summary['hunt']}_intel.json"
+        if not isinstance(summary, dict):
+            print(f"Skipping non-dict summary file: {summary_path.name}")
+            continue
+
+        hunt = summary.get("hunt")
+        if not hunt:
+            hunt = summary_path.name.replace("_summary.json", "")
+
+        # guardrail: if this still looks like a non-hunt rollup, skip it
+        if hunt in {"crowdstrike_alerts", "crowdstrike_triage", "crowdstrike_ir", "crowdstrike_decision", "cases"}:
+            print(f"Skipping non-hunt summary file: {summary_path.name}")
+            continue
+
+        summary["hunt"] = hunt
+
+        intel_path = REPORTS_DIR / f"{hunt}_intel.json"
         intel = {}
         if intel_path.exists():
             intel = load_json(intel_path)
 
         triage_result = triage(summary, intel)
 
-        out_file = REPORTS_DIR / f"{summary['hunt']}_triage.json"
+        out_file = REPORTS_DIR / f"{hunt}_triage.json"
         out_file.write_text(json.dumps(triage_result, indent=2), encoding="utf-8")
 
         print(f"Triage saved: {out_file}")
+
+    # ----------------------------
+    # CrowdStrike alert triage
+    # ----------------------------
+    crowdstrike_alerts_file = REPORTS_DIR / "crowdstrike_alerts.json"
+    if crowdstrike_alerts_file.exists():
+        alerts = load_json(crowdstrike_alerts_file)
+
+        if not isinstance(alerts, list):
+            print("crowdstrike_alerts.json is not a list; skipping CrowdStrike triage")
+            return
+
+        crowdstrike_results = [triage_crowdstrike_alert(alert) for alert in alerts]
+
+        detailed_out = REPORTS_DIR / "crowdstrike_alerts_triage.json"
+        detailed_out.write_text(json.dumps(crowdstrike_results, indent=2), encoding="utf-8")
+        print(f"Triage saved: {detailed_out}")
+
+        rollup = build_crowdstrike_rollup(crowdstrike_results)
+        rollup_out = REPORTS_DIR / "crowdstrike_triage_summary.json"
+        rollup_out.write_text(json.dumps(rollup, indent=2), encoding="utf-8")
+        print(f"Triage saved: {rollup_out}")
 
 
 if __name__ == "__main__":

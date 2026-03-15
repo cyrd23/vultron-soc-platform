@@ -1,0 +1,15 @@
+{
+  "hunt": "token_abuse",
+  "category": "identity",
+  "status": "clean",
+  "findings": 0,
+  "severity": "high",
+  "columns": [
+    "country_count",
+    "countries",
+    "ips",
+    "user.name"
+  ],
+  "entities": {},
+  "sample_values": []
+}

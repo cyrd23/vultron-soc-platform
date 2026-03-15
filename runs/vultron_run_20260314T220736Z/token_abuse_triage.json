@@ -1,0 +1,7 @@
+{
+  "hunt": "token_abuse",
+  "verdict": "clean",
+  "notes": [
+    "No findings returned by the hunt"
+  ]
+}

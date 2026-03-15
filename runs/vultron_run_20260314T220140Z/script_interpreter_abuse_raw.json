@@ -1,0 +1,938 @@
+{
+  "documents_found": 311,
+  "values_loaded": 2164,
+  "took": 59,
+  "is_partial": false,
+  "columns": [
+    {
+      "name": "@timestamp",
+      "type": "date"
+    },
+    {
+      "name": "host.name",
+      "type": "keyword"
+    },
+    {
+      "name": "host.hostname",
+      "type": "keyword"
+    },
+    {
+      "name": "process.name",
+      "type": "keyword"
+    },
+    {
+      "name": "process.executable",
+      "type": "keyword"
+    },
+    {
+      "name": "process.command_line",
+      "type": "keyword"
+    },
+    {
+      "name": "event.action",
+      "type": "keyword"
+    }
+  ],
+  "values": [
+    [
+      "2026-03-14T21:51:25.332Z",
+      "PO-STEMM-01-NC",
+      "PO-STEMM-01-NC",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {172b83ca-1fb3-11f1-84f8-7c4d8f0b8d3d}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:51:24.949Z",
+      "PO-STEMM-01-NC",
+      "PO-STEMM-01-NC",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {172b83ca-1fb3-11f1-84f8-7c4d8f0b8d3d}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:51:17.558Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\cmd.exe",
+      "/k echo {1f3ea2fc-1f57-11f1-9cbf-000d3a93b705}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:50:39.373Z",
+      "MCA-COUNTER-01",
+      "MCA-COUNTER-01",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {bd385af9-1fe9-11f1-a254-040e3cc45b4a}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:50:33.753Z",
+      "F-DAL-02-SS",
+      "F-DAL-02-SS",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {c51946d0-1fed-11f1-a193-9c67d64b7589}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:49:52.805Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {dc0716bc-1fed-11f1-9894-4c0f3eabd4bf}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:57.237Z",
+      "OS-BR-01-GB",
+      "OS-BR-01-GB",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {59426ca2-1fed-11f1-bb48-7404f1e81e66}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:35.318Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "rundll32.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\rundll32.exe",
+      "C:\\WINDOWS\\system32\\rundll32.exe C:\\WINDOWS\\system32\\AppXDeploymentExtensions.OneCore.dll,ShellRefresh",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:33.489Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\SysWOW64\\cmd.exe",
+      "C:\\WINDOWS\\system32\\cmd.exe /c find /c \"rdmConfiguration\" .\\config.xml",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:33.440Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\SysWOW64\\cmd.exe",
+      "C:\\WINDOWS\\system32\\cmd.exe /c \"\"C:\\VirtualTerminalBridge\\init.cmd\" \"",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:33.241Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "rundll32.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\rundll32.exe",
+      "\"C:\\WINDOWS\\system32\\rundll32.exe\" C:\\WINDOWS\\system32\\Windows.StateRepositoryClient.dll,StateRepositoryDoMaintenanceTasks",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:33.192Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "rundll32.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\rundll32.exe",
+      "\"C:\\WINDOWS\\system32\\rundll32.exe\" C:\\WINDOWS\\system32\\PcaSvc.dll,PcaPatchSdbTask",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:33.192Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "C:\\WINDOWS\\SYSTEM32\\cmd.exe /c \"\"C:\\VirtualTerminalBridge\\bat\\Restart Bridge Service.bat\"\"",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:33.192Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "rundll32.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\rundll32.exe",
+      "\"C:\\WINDOWS\\system32\\rundll32.exe\" C:\\WINDOWS\\system32\\CapabilityAccessManager.dll,CapabilityAccessManagerDoStoreMaintenance",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:33.045Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "rundll32.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\rundll32.exe",
+      "\"C:\\WINDOWS\\system32\\rundll32.exe\" Startupscan.dll,SusRunTask",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:33.044Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "rundll32.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\rundll32.exe",
+      "\"C:\\WINDOWS\\system32\\rundll32.exe\" Windows.Storage.ApplicationData.dll,CleanupTemporaryState",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:32.795Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {dd032e00-1fe8-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:32.549Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {dd0328f9-1fe8-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:32.448Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {dd0322ed-1fe8-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:32.156Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {dd031ccd-1fe8-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:31.956Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {a441cf7d-1fdf-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:31.857Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {a441c9e5-1fdf-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:31.656Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {a441c2ee-1fdf-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:31.369Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {a441bd8a-1fdf-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:31.222Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {a441b54c-1fdf-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:30.878Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {a441ad40-1fdf-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:30.631Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {92bde41f-1fd6-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:30.484Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {92bddcd8-1fd6-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:30.285Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {92bdd6fd-1fd6-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:30.090Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {92bdd1ca-1fd6-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:29.989Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {92bdcb57-1fd6-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:29.742Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {92bdc4a5-1fd6-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:29.493Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {9d586b00-1fcd-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:29.235Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {9d5865b2-1fcd-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:29.135Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {9d585e55-1fcd-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:28.939Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {9d5859ef-1fcd-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:28.741Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {9d585228-1fcd-11f1-acb7-e0c264227db4}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:14.093Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff533c9-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:13.840Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff532da-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:13.738Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff53289-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:13.737Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff5307e-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:13.390Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff52f79-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:13.185Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff52dfd-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:12.977Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff52de0-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:12.946Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff52c75-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:12.824Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff52b7b-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:12.331Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff52a88-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:12.186Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff529c4-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:12.185Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff5298a-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:12.185Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff52938-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:11.631Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff52131-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:11.631Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff51f71-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:10.999Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff51e76-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:10.999Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff51e84-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:10.687Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff51e45-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:47:09.770Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff51e2f-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:45:50.985Z",
+      "SAN-COUNTER-01",
+      "SAN-COUNTER-01",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {147fec8c-1feb-11f1-8f9d-040e3cc02be3}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:45:39.946Z",
+      "LB-CCDEMO-01-RD",
+      "LB-CCDEMO-01-RD",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {c266b620-1fec-11f1-92d2-e0ad4700800a}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:44:54.911Z",
+      "SSI-F9",
+      "SSI-F9",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\cmd.exe",
+      "/k echo {c401aec1-1fd7-11f1-80d0-6045bd31ed01}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:41:17.527Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\cmd.exe",
+      "/k echo {1f3ea2c1-1f57-11f1-9cbf-000d3a93b705}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:40:39.348Z",
+      "MCA-COUNTER-01",
+      "MCA-COUNTER-01",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {bd385522-1fe9-11f1-a254-040e3cc45b4a}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:40:33.745Z",
+      "F-DAL-02-SS",
+      "F-DAL-02-SS",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {c5193625-1fed-11f1-a193-9c67d64b7589}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:39:48.269Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {dc070ef5-1fed-11f1-9894-4c0f3eabd4bf}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:39:11.380Z",
+      "F-DAL-02-SS",
+      "F-DAL-02-SS",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {1123387f-1fea-11f1-a193-9c67d64b7589}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:37:57.231Z",
+      "OS-BR-01-GB",
+      "OS-BR-01-GB",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {59426695-1fed-11f1-bb48-7404f1e81e66}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:35:50.956Z",
+      "SAN-COUNTER-01",
+      "SAN-COUNTER-01",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {147fe7e9-1feb-11f1-8f9d-040e3cc02be3}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:35:40.054Z",
+      "LB-CCDEMO-01-RD",
+      "LB-CCDEMO-01-RD",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {c266b1be-1fec-11f1-92d2-e0ad4700800a}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:35:16.200Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "rundll32.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\rundll32.exe",
+      "\"C:\\Windows\\system32\\rundll32.exe\" C:\\Windows\\system32\\PcaSvc.dll,PcaPatchSdbTask",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:34:54.610Z",
+      "SSI-F9",
+      "SSI-F9",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\cmd.exe",
+      "/k echo {c401ae37-1fd7-11f1-80d0-6045bd31ed01}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:34:48.065Z",
+      "IS-DAL-01-BC",
+      "IS-DAL-01-BC",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {ea1e5a5e-1f35-11f1-a92f-e0c26422168f}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:34:40.167Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "rundll32.exe",
+      null,
+      null,
+      "NetworkConnectIP4"
+    ],
+    [
+      "2026-03-14T21:34:36.633Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "rundll32.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\rundll32.exe",
+      "\"C:\\Windows\\system32\\rundll32.exe\" C:\\Windows\\system32\\PcaSvc.dll,PcaPatchSdbTask",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:33:01.410Z",
+      "OS-BR-01-GB",
+      "OS-BR-01-GB",
+      "rundll32.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\rundll32.exe",
+      "C:\\WINDOWS\\system32\\rundll32.exe C:\\WINDOWS\\system32\\AppXDeploymentExtensions.OneCore.dll,ShellRefresh",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:32:57.800Z",
+      "OA-AUS-01-RZ",
+      "OA-AUS-01-RZ",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {6dc0e68f-1fe4-11f1-954d-70d8c2068aeb}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:32:01.924Z",
+      "PO-STEMM-01-NC",
+      "PO-STEMM-01-NC",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {172b83ca-1fb3-11f1-84f8-7c4d8f0b8d3d}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:31:17.489Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\cmd.exe",
+      "/k echo {1f3ea252-1f57-11f1-9cbf-000d3a93b705}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:30:39.328Z",
+      "MCA-COUNTER-01",
+      "MCA-COUNTER-01",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {bd384fc6-1fe9-11f1-a254-040e3cc45b4a}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:29:48.443Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {32fb64ea-1fec-11f1-9894-4c0f3eabd4bf}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:27:57.219Z",
+      "OS-BR-01-GB",
+      "OS-BR-01-GB",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {d02a1630-1fe4-11f1-bb48-7404f1e81e66}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:27:04.059Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff51e2f-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:25:50.935Z",
+      "SAN-COUNTER-01",
+      "SAN-COUNTER-01",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {147fe183-1feb-11f1-8f9d-040e3cc02be3}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:25:39.710Z",
+      "LB-CCDEMO-01-RD",
+      "LB-CCDEMO-01-RD",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {56c37711-1fe6-11f1-92d2-e0ad4700800a}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:24:54.884Z",
+      "SSI-F9",
+      "SSI-F9",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\cmd.exe",
+      "/k echo {c401ad6b-1fd7-11f1-80d0-6045bd31ed01}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:22:57.803Z",
+      "OA-AUS-01-RZ",
+      "OA-AUS-01-RZ",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {6dc0e33e-1fe4-11f1-954d-70d8c2068aeb}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:21:26.393Z",
+      "SSI-F9",
+      "SSI-F9",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\cmd.exe",
+      "\"C:\\Windows\\system32\\cmd.exe\"",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:21:17.490Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\cmd.exe",
+      "/k echo {1f3ea200-1f57-11f1-9cbf-000d3a93b705}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:20:39.324Z",
+      "MCA-COUNTER-01",
+      "MCA-COUNTER-01",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {bd384683-1fe9-11f1-a254-040e3cc45b4a}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:20:23.235Z",
+      "F-DAL-02-SS",
+      "F-DAL-02-SS",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {11233289-1fea-11f1-a193-9c67d64b7589}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:19:57.382Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {5c97c459-1f57-11f1-9894-4c0f3eabd4bf}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:19:50.052Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {5c97bf8c-1f57-11f1-9894-4c0f3eabd4bf}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:19:49.386Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {5c97befb-1f57-11f1-9894-4c0f3eabd4bf}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:18:28.453Z",
+      "OA-DAL-01-CR",
+      "OA-DAL-01-CR",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {c54f6303-1fd1-11f1-8863-5cb26dd2b238}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:18:28.347Z",
+      "OA-DAL-01-CR",
+      "OA-DAL-01-CR",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {c54f5b45-1fd1-11f1-8863-5cb26dd2b238}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:18:28.158Z",
+      "OA-DAL-01-CR",
+      "OA-DAL-01-CR",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {c54f5850-1fd1-11f1-8863-5cb26dd2b238}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:18:28.022Z",
+      "OA-DAL-01-CR",
+      "OA-DAL-01-CR",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {c54f5411-1fd1-11f1-8863-5cb26dd2b238}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:18:27.913Z",
+      "OA-DAL-01-CR",
+      "OA-DAL-01-CR",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {c54f4c94-1fd1-11f1-8863-5cb26dd2b238}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:18:27.745Z",
+      "OA-DAL-01-CR",
+      "OA-DAL-01-CR",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {c54f467f-1fd1-11f1-8863-5cb26dd2b238}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:18:27.563Z",
+      "OA-DAL-01-CR",
+      "OA-DAL-01-CR",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {83426711-1fc9-11f1-8863-5cb26dd2b238}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:18:27.483Z",
+      "OA-DAL-01-CR",
+      "OA-DAL-01-CR",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {834261bf-1fc9-11f1-8863-5cb26dd2b238}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:18:27.252Z",
+      "OA-DAL-01-CR",
+      "OA-DAL-01-CR",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {83425c1d-1fc9-11f1-8863-5cb26dd2b238}",
+      "ProcessRollup2"
+    ]
+  ]
+}

@@ -1,0 +1,18 @@
+name: smb_lateral_movement
+category: construction_threats
+severity: high
+description: Detect abnormal internal SMB connections indicating lateral movement
+
+query_template: |
+  FROM logs-zeek.conn*, logs-crowdstrike.fdr*, logs-fortinet.fortigate*
+  | WHERE destination.port == 445 OR destination.port == 139
+  | WHERE CIDR_MATCH(source.ip, "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16")
+    AND CIDR_MATCH(destination.ip, "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16")
+  | STATS
+      connections = COUNT(),
+      first_seen = MIN(@timestamp),
+      last_seen = MAX(@timestamp)
+    BY source.ip, destination.ip, host.name, process.name
+  | EVAL duration_minutes = DATE_DIFF("minute", first_seen, last_seen)
+  | SORT connections DESC
+  | LIMIT 100

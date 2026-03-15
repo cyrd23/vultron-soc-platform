@@ -1,0 +1,83 @@
+{
+  "hunt": "script_interpreter_abuse",
+  "category": "endpoint",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "host.name",
+    "host.hostname",
+    "process.name",
+    "process.executable",
+    "process.command_line",
+    "event.action"
+  ],
+  "entities": {
+    "apps": [
+      "ProcessRollup2"
+    ],
+    "hosts": [
+      "F-AUS-01-LS",
+      "F-DAL-02-SS",
+      "IS-DAL-01-MF",
+      "LB-CCDEMO-01-RD",
+      "MCA-COUNTER-01",
+      "OA-DAL-02-CR",
+      "OS-BR-01-GB",
+      "OS-HOU-01-BD",
+      "OS-KAN-01-TG",
+      "PO-STEMM-01-NC",
+      "SAN-COUNTER-01",
+      "SSI-2024-Net",
+      "SSI-F9"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-14T23:37:05.889Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff53475-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T23:37:05.738Z",
+      "IS-DAL-01-MF",
+      "IS-DAL-01-MF",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {cff533c9-1fcd-11f1-8523-e0c264221702}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T23:35:51.220Z",
+      "SAN-COUNTER-01",
+      "SAN-COUNTER-01",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {e8792f3f-1ffa-11f1-8f9d-040e3cc02be3}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T23:35:40.229Z",
+      "LB-CCDEMO-01-RD",
+      "LB-CCDEMO-01-RD",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {26c74d77-1ff7-11f1-92d2-e0ad4700800a}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T23:34:54.695Z",
+      "SSI-F9",
+      "SSI-F9",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\cmd.exe",
+      "/k echo {9005c24a-1ff1-11f1-80d0-6045bd31ed01}",
+      "ProcessRollup2"
+    ]
+  ]
+}

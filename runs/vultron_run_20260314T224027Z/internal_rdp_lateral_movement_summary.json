@@ -1,0 +1,49 @@
+{
+  "hunt": "internal_rdp_lateral_movement",
+  "category": "lateral_movement",
+  "status": "suspicious",
+  "findings": 2,
+  "severity": "high",
+  "columns": [
+    "connections",
+    "first_seen",
+    "last_seen",
+    "source.ip",
+    "destination.ip",
+    "host.name",
+    "user.name",
+    "duration_minutes"
+  ],
+  "entities": {
+    "ips": [
+      "10.10.2.6",
+      "192.168.1.110",
+      "192.168.65.44"
+    ],
+    "hosts": [
+      "IT-STEMM-01-AJ"
+    ]
+  },
+  "sample_values": [
+    [
+      4,
+      "2026-03-09T13:15:56.892Z",
+      "2026-03-13T14:25:20.568Z",
+      "192.168.65.44",
+      "10.10.2.6",
+      "IT-STEMM-01-AJ",
+      null,
+      5829
+    ],
+    [
+      1,
+      "2026-03-10T14:19:09.300Z",
+      "2026-03-10T14:19:09.300Z",
+      "192.168.1.110",
+      "10.10.2.6",
+      "IT-STEMM-01-AJ",
+      null,
+      0
+    ]
+  ]
+}

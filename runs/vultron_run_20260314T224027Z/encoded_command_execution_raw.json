@@ -1,0 +1,101 @@
+{
+  "documents_found": 7,
+  "values_loaded": 46,
+  "took": 182,
+  "is_partial": false,
+  "columns": [
+    {
+      "name": "@timestamp",
+      "type": "date"
+    },
+    {
+      "name": "host.name",
+      "type": "keyword"
+    },
+    {
+      "name": "host.hostname",
+      "type": "keyword"
+    },
+    {
+      "name": "process.name",
+      "type": "keyword"
+    },
+    {
+      "name": "process.executable",
+      "type": "keyword"
+    },
+    {
+      "name": "process.command_line",
+      "type": "keyword"
+    },
+    {
+      "name": "event.action",
+      "type": "keyword"
+    }
+  ],
+  "values": [
+    [
+      "2026-03-14T19:26:47.000Z",
+      "LB-CCDEMO-01-RD",
+      "LB-CCDEMO-01-RD",
+      null,
+      null,
+      "\"powershell.exe\" & {# Encoded payload in next command is the following \\\"\"Set-Content -path \\\"\"$env:SystemRoot/Temp/art-marker.txt\\\"\" -value \\\"\"Hello from the Atomic Red Team\\\"\"\\\"\"\nreg.exe add \\\"\"HKEY_CURRENT_USER\\Software\\Classes\\AtomicRedTeam\\\"\" /v ART /t REG_SZ /d \\\"\"U2V0LUNvbnRlbnQgLXBhdGggIiRlbnY6U3lzdGVtUm9vdC9UZW1wL2FydC1tYXJrZXIudHh0IiAtdmFsdWUgIkhlbGxvIGZyb20gdGhlIEF0b21pYyBSZWQgVGVhbSI=\\\"\" /f\niex ([Text.Encoding]::ASCII.GetString([Convert]::FromBase64String((gp 'HKCU:\\Software\\Classes\\AtomicRedTeam').ART)))}",
+      null
+    ],
+    [
+      "2026-03-09T13:22:58.716Z",
+      "F-DAL-02-SS",
+      "F-DAL-02-SS",
+      "invcol.exe",
+      "\\Device\\HarddiskVolume3\\Program Files (x86)\\Dell\\UpdateService\\Service\\InvColPC\\invcol.exe",
+      "\"C:\\Program Files (x86)\\Dell\\UpdateService\\Service\\InvColPC\\invcol.exe\" -outc=\"C:\\ProgramData\\Dell\\TrustedDevice\\CVE\\ICData.xml\" -logc=\"C:\\ProgramData\\Dell\\TrustedDevice\\CVE\\ICLog.txt\" -enc=UTF-8",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-09T12:11:50.826Z",
+      "F-DAL-02-SS",
+      "F-DAL-02-SS",
+      "invcol.exe",
+      "\\Device\\HarddiskVolume3\\Program Files (x86)\\Dell\\UpdateService\\Service\\InvColPC\\invcol.exe",
+      "\"C:\\Program Files (x86)\\Dell\\UpdateService\\Service\\InvColPC\\invcol.exe\" -outc=\"C:\\ProgramData\\Dell\\TrustedDevice\\CVE\\ICData.xml\" -logc=\"C:\\ProgramData\\Dell\\TrustedDevice\\CVE\\ICLog.txt\" -enc=UTF-8",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-09T09:53:36.581Z",
+      "F-DAL-02-SS",
+      "F-DAL-02-SS",
+      "invcol.exe",
+      "\\Device\\HarddiskVolume3\\Program Files (x86)\\Dell\\UpdateService\\Service\\InvColPC\\invcol.exe",
+      "\"C:\\Program Files (x86)\\Dell\\UpdateService\\Service\\InvColPC\\invcol.exe\" -outc=\"C:\\ProgramData\\Dell\\TrustedDevice\\CVE\\ICData.xml\" -logc=\"C:\\ProgramData\\Dell\\TrustedDevice\\CVE\\ICLog.txt\" -enc=UTF-8",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-09T08:25:00.967Z",
+      "F-DAL-02-SS",
+      "F-DAL-02-SS",
+      "invcol.exe",
+      "\\Device\\HarddiskVolume3\\Program Files (x86)\\Dell\\UpdateService\\Service\\InvColPC\\invcol.exe",
+      "\"C:\\Program Files (x86)\\Dell\\UpdateService\\Service\\InvColPC\\invcol.exe\" -outc=\"C:\\ProgramData\\Dell\\TrustedDevice\\CVE\\ICData.xml\" -logc=\"C:\\ProgramData\\Dell\\TrustedDevice\\CVE\\ICLog.txt\" -enc=UTF-8",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-09T08:21:37.909Z",
+      "F-DAL-02-SS",
+      "F-DAL-02-SS",
+      "invcol.exe",
+      "\\Device\\HarddiskVolume3\\Program Files (x86)\\Dell\\UpdateService\\Service\\InvColPC\\invcol.exe",
+      "\"C:\\Program Files (x86)\\Dell\\UpdateService\\Service\\InvColPC\\invcol.exe\" -outc=\"C:\\ProgramData\\Dell\\TrustedDevice\\CVE\\ICData.xml\" -logc=\"C:\\ProgramData\\Dell\\TrustedDevice\\CVE\\ICLog.txt\" -enc=UTF-8",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-09T08:21:37.129Z",
+      "F-DAL-02-SS",
+      "F-DAL-02-SS",
+      "invcol.exe",
+      "\\Device\\HarddiskVolume3\\Program Files (x86)\\Dell\\UpdateService\\Service\\InvColPC\\invcol.exe",
+      "\"C:\\Program Files (x86)\\Dell\\UpdateService\\Service\\InvColPC\\invcol.exe\" -outc=\"C:\\ProgramData\\Dell\\TrustedDevice\\CVE\\ICData.xml\" -logc=\"C:\\ProgramData\\Dell\\TrustedDevice\\CVE\\ICLog.txt\" -enc=UTF-8",
+      "ProcessRollup2"
+    ]
+  ]
+}

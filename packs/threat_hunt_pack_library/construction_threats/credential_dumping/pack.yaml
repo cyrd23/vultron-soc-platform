@@ -1,0 +1,18 @@
+name: credential_dumping
+category: construction_threats
+severity: critical
+description: Detect possible credential dumping via LSASS-related access or command lines
+
+query_template: |
+  FROM logs-crowdstrike.fdr*
+  | WHERE process.command_line LIKE "*lsass*"
+     OR process.command_line LIKE "*mimikatz*"
+     OR process.command_line LIKE "*procdump*"
+  | STATS
+      executions = COUNT(),
+      first_seen = MIN(@timestamp),
+      last_seen = MAX(@timestamp)
+    BY host.name, process.name, process.command_line
+  | EVAL duration_minutes = DATE_DIFF("minute", first_seen, last_seen)
+  | SORT executions DESC
+  | LIMIT 100

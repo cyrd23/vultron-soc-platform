@@ -1,0 +1,7 @@
+{
+  "hunt": "dga_like_behavior",
+  "verdict": "needs_review",
+  "notes": [
+    "Unhandled hunt type; manual review recommended"
+  ]
+}

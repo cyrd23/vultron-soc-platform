@@ -1,0 +1,15 @@
+name: persistence_creation
+category: endpoint
+description: Detect persistence-related endpoint activity
+severity: high
+
+query_template: |
+  FROM logs-crowdstrike.fdr*
+  | WHERE event.action == "ScheduledTaskModified"
+     OR event.action == "ServiceStarted"
+     OR event.action == "ServiceStopped"
+     OR process.command_line LIKE "*schtasks*"
+     OR process.command_line LIKE "*reg add*"
+  | KEEP @timestamp, host.name, host.hostname, event.action, process.name, process.executable, process.command_line
+  | SORT @timestamp DESC
+  | LIMIT 100

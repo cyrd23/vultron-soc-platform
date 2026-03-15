@@ -1,0 +1,11 @@
+name: abnormal_admin_behavior
+category: lateral_movement
+description: Detect unusual Azure admin or role-related actions
+severity: high
+
+query_template: |
+  FROM logs-azure.auditlogs*
+  | WHERE event.action LIKE "*admin*" OR azure.auditlogs.properties.activity_display_name LIKE "*admin*"
+  | KEEP @timestamp, event.action, event.outcome, source.ip, client.ip, azure.auditlogs.properties.activity_display_name, azure.auditlogs.properties.initiated_by.user.userPrincipalName
+  | SORT @timestamp DESC
+  | LIMIT 100

@@ -1,0 +1,8 @@
+{
+  "hunt": "internal_host_to_ioc",
+  "decision": "benign",
+  "severity": "low",
+  "rationale": [
+    "Triage found no suspicious activity"
+  ]
+}

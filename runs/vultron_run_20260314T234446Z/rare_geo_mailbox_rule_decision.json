@@ -1,0 +1,8 @@
+{
+  "hunt": "rare_geo_mailbox_rule",
+  "decision": "benign",
+  "severity": "low",
+  "rationale": [
+    "Triage found no suspicious activity"
+  ]
+}

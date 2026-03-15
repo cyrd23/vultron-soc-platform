@@ -1,0 +1,11 @@
+{
+  "hunt": "oauth_consent_abuse",
+  "verdict": "needs_review",
+  "notes": [
+    "OAuth consent, grant, or application-related activity detected",
+    "Observed user count: 9",
+    "Observed app/action count: 10",
+    "Observed IP count: 5",
+    "Finding volume is notable and warrants review for expected vs suspicious app activity"
+  ]
+}

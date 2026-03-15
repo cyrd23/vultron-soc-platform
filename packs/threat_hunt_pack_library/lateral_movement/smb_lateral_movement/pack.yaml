@@ -1,0 +1,12 @@
+name: smb_lateral_movement
+category: lateral_movement
+description: Detect internal SMB movement over 445/139
+severity: high
+
+query_template: |
+  FROM logs-*
+  | WHERE destination.port == 445 OR destination.port == 139
+  | STATS connections = COUNT(), datasets = VALUES(data_stream.dataset) BY source.ip, destination.ip
+  | WHERE connections >= 10
+  | SORT connections DESC
+  | LIMIT 100

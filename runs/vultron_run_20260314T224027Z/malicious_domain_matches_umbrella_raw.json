@@ -1,0 +1,37 @@
+{
+  "documents_found": 0,
+  "values_loaded": 0,
+  "took": 7,
+  "is_partial": false,
+  "columns": [
+    {
+      "name": "@timestamp",
+      "type": "date"
+    },
+    {
+      "name": "source.ip",
+      "type": "ip"
+    },
+    {
+      "name": "dns.question.name",
+      "type": "keyword"
+    },
+    {
+      "name": "dns.question.registered_domain",
+      "type": "keyword"
+    },
+    {
+      "name": "related.hosts",
+      "type": "keyword"
+    },
+    {
+      "name": "cisco.umbrella.fqdns",
+      "type": "keyword"
+    },
+    {
+      "name": "event.action",
+      "type": "keyword"
+    }
+  ],
+  "values": []
+}

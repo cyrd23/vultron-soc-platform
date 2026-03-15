@@ -1,0 +1,11 @@
+name: rare_domain_access
+category: dns
+description: Detect rare domains queried in Zeek DNS
+severity: medium
+
+query_template: |
+  FROM logs-zeek.dns*
+  | STATS query_count = COUNT(), src_ips = VALUES(source.ip) BY dns.question.name
+  | WHERE query_count <= 2
+  | SORT query_count ASC
+  | LIMIT 100

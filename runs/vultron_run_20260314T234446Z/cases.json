@@ -1,0 +1,1266 @@
+[
+  {
+    "case_id": "VUL-20260314-0001",
+    "created_at": "2026-03-14T23:45:37.339738+00:00",
+    "updated_at": "2026-03-14T23:45:37.339747+00:00",
+    "status": "new",
+    "priority": "high",
+    "source": "crowdstrike",
+    "hunt": "crowdstrike_alert",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:fb3d64feb50846208262f41b6b78bf30:1925365432554-459-23959568",
+    "title": "UmppcBypassSuspected on TUL-COUNTER-02 for TUL-COUNTER-02$",
+    "summary": "Decision: escalate_crowdstrike_high_severity_alert. Severity: high. High severity CrowdStrike alert has supporting host telemetry in Elastic",
+    "decision": "escalate_crowdstrike_high_severity_alert",
+    "severity": "high",
+    "hostname": "TUL-COUNTER-02",
+    "user": "TUL-COUNTER-02$",
+    "display_name": "UmppcBypassSuspected",
+    "rationale": [
+      "High severity CrowdStrike alert has supporting host telemetry in Elastic",
+      "Reviewed CrowdStrike alert: UmppcBypassSuspected",
+      "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr"
+    ],
+    "recommended_actions": [
+      "Review process tree and parent-child execution chain",
+      "Validate whether activity was authorized testing",
+      "Review host telemetry in Elastic for related events",
+      "Escalate to incident response if unauthorized"
+    ],
+    "evidence": [
+      "crowdstrike_alerts.json",
+      "crowdstrike_alerts_triage.json",
+      "crowdstrike_alerts_ir.json",
+      "crowdstrike_alerts_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0002",
+    "created_at": "2026-03-14T23:45:37.339767+00:00",
+    "updated_at": "2026-03-14T23:45:37.339769+00:00",
+    "status": "new",
+    "priority": "high",
+    "source": "crowdstrike",
+    "hunt": "crowdstrike_alert",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:454c248f82bd4974a8576eb033799770:1954357939752-56-4023824",
+    "title": "HashDumpSAMUntrusted on PO-STEMM-01-NC for PO-STEMM-01-NC$",
+    "summary": "Decision: escalate_crowdstrike_high_severity_alert. Severity: high. High severity CrowdStrike alert has supporting host telemetry in Elastic",
+    "decision": "escalate_crowdstrike_high_severity_alert",
+    "severity": "high",
+    "hostname": "PO-STEMM-01-NC",
+    "user": "PO-STEMM-01-NC$",
+    "display_name": "HashDumpSAMUntrusted",
+    "rationale": [
+      "High severity CrowdStrike alert has supporting host telemetry in Elastic",
+      "Reviewed CrowdStrike alert: HashDumpSAMUntrusted",
+      "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr"
+    ],
+    "recommended_actions": [
+      "Review process tree and parent-child execution chain",
+      "Validate whether activity was authorized testing",
+      "Review host telemetry in Elastic for related events",
+      "Escalate to incident response if unauthorized"
+    ],
+    "evidence": [
+      "crowdstrike_alerts.json",
+      "crowdstrike_alerts_triage.json",
+      "crowdstrike_alerts_ir.json",
+      "crowdstrike_alerts_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0003",
+    "created_at": "2026-03-14T23:45:37.339784+00:00",
+    "updated_at": "2026-03-14T23:45:37.339786+00:00",
+    "status": "new",
+    "priority": "high",
+    "source": "crowdstrike",
+    "hunt": "crowdstrike_alert",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:fb3d64feb50846208262f41b6b78bf30:1924242885558-56-23975696",
+    "title": "HashDumpSAMUntrusted on TUL-COUNTER-02 for TUL-COUNTER-02$",
+    "summary": "Decision: escalate_crowdstrike_high_severity_alert. Severity: high. High severity CrowdStrike alert has supporting host telemetry in Elastic",
+    "decision": "escalate_crowdstrike_high_severity_alert",
+    "severity": "high",
+    "hostname": "TUL-COUNTER-02",
+    "user": "TUL-COUNTER-02$",
+    "display_name": "HashDumpSAMUntrusted",
+    "rationale": [
+      "High severity CrowdStrike alert has supporting host telemetry in Elastic",
+      "Reviewed CrowdStrike alert: HashDumpSAMUntrusted",
+      "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr"
+    ],
+    "recommended_actions": [
+      "Review process tree and parent-child execution chain",
+      "Validate whether activity was authorized testing",
+      "Review host telemetry in Elastic for related events",
+      "Escalate to incident response if unauthorized"
+    ],
+    "evidence": [
+      "crowdstrike_alerts.json",
+      "crowdstrike_alerts_triage.json",
+      "crowdstrike_alerts_ir.json",
+      "crowdstrike_alerts_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0004",
+    "created_at": "2026-03-14T23:45:37.339797+00:00",
+    "updated_at": "2026-03-14T23:45:37.339799+00:00",
+    "status": "new",
+    "priority": "high",
+    "source": "crowdstrike",
+    "hunt": "crowdstrike_alert",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:9a83a8075e294430b6a73302b5b4a0fd:510317325820-10427-14436880",
+    "title": "SuspiciousFileWritten on F-STEMM-01-BP for Bob Poplin",
+    "summary": "Decision: escalate_crowdstrike_high_severity_alert. Severity: high. High severity CrowdStrike alert has supporting host telemetry in Elastic",
+    "decision": "escalate_crowdstrike_high_severity_alert",
+    "severity": "high",
+    "hostname": "F-STEMM-01-BP",
+    "user": "Bob Poplin",
+    "display_name": "SuspiciousFileWritten",
+    "rationale": [
+      "High severity CrowdStrike alert has supporting host telemetry in Elastic",
+      "Reviewed CrowdStrike alert: SuspiciousFileWritten",
+      "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr"
+    ],
+    "recommended_actions": [
+      "Review process tree and parent-child execution chain",
+      "Validate whether activity was authorized testing",
+      "Review host telemetry in Elastic for related events",
+      "Escalate to incident response if unauthorized"
+    ],
+    "evidence": [
+      "crowdstrike_alerts.json",
+      "crowdstrike_alerts_triage.json",
+      "crowdstrike_alerts_ir.json",
+      "crowdstrike_alerts_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0005",
+    "created_at": "2026-03-14T23:45:37.339810+00:00",
+    "updated_at": "2026-03-14T23:45:37.339812+00:00",
+    "status": "new",
+    "priority": "high",
+    "source": "crowdstrike",
+    "hunt": "crowdstrike_alert",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:9a83a8075e294430b6a73302b5b4a0fd:510256351096-10311-5536272",
+    "title": "BypassUACPrivEsc on F-STEMM-01-BP for Bob Poplin",
+    "summary": "Decision: escalate_crowdstrike_high_severity_alert. Severity: high. High severity CrowdStrike alert has supporting host telemetry in Elastic",
+    "decision": "escalate_crowdstrike_high_severity_alert",
+    "severity": "high",
+    "hostname": "F-STEMM-01-BP",
+    "user": "Bob Poplin",
+    "display_name": "BypassUACPrivEsc",
+    "rationale": [
+      "High severity CrowdStrike alert has supporting host telemetry in Elastic",
+      "Reviewed CrowdStrike alert: BypassUACPrivEsc",
+      "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr"
+    ],
+    "recommended_actions": [
+      "Review process tree and parent-child execution chain",
+      "Validate whether activity was authorized testing",
+      "Review host telemetry in Elastic for related events",
+      "Escalate to incident response if unauthorized"
+    ],
+    "evidence": [
+      "crowdstrike_alerts.json",
+      "crowdstrike_alerts_triage.json",
+      "crowdstrike_alerts_ir.json",
+      "crowdstrike_alerts_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0006",
+    "created_at": "2026-03-14T23:45:37.339822+00:00",
+    "updated_at": "2026-03-14T23:45:37.339824+00:00",
+    "status": "new",
+    "priority": "high",
+    "source": "vultron",
+    "hunt": "password_spray",
+    "alert_id": null,
+    "title": "Password Spray",
+    "summary": "Decision: escalate_possible_account_compromise. Severity: high. Password spray activity was followed by successful sign-ins",
+    "decision": "escalate_possible_account_compromise",
+    "severity": "high",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "Password spray activity was followed by successful sign-ins",
+      "Checked for successful sign-ins from suspicious spray IPs"
+    ],
+    "recommended_actions": [
+      "Review authentication timeline for the affected account",
+      "Validate source IP and geo context",
+      "Reset credentials and revoke sessions if needed",
+      "Escalate to identity response workflow"
+    ],
+    "evidence": [
+      "password_spray_summary.json",
+      "password_spray_triage.json",
+      "password_spray_ir.json",
+      "password_spray_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0007",
+    "created_at": "2026-03-14T23:45:37.339837+00:00",
+    "updated_at": "2026-03-14T23:45:37.339839+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "abnormal_admin_behavior",
+    "alert_id": null,
+    "title": "Abnormal Admin Behavior",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "abnormal_admin_behavior_summary.json",
+      "abnormal_admin_behavior_triage.json",
+      "abnormal_admin_behavior_ir.json",
+      "abnormal_admin_behavior_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0008",
+    "created_at": "2026-03-14T23:45:37.339850+00:00",
+    "updated_at": "2026-03-14T23:45:37.339852+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "credential_dumping",
+    "alert_id": null,
+    "title": "Credential Dumping",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "credential_dumping_summary.json",
+      "credential_dumping_triage.json",
+      "credential_dumping_ir.json",
+      "credential_dumping_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0009",
+    "created_at": "2026-03-14T23:45:37.339862+00:00",
+    "updated_at": "2026-03-14T23:45:37.339864+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "crowdstrike",
+    "hunt": "crowdstrike_alert",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:ca8f0e489d374816b962fb078131fb4a:127314022248-337-6270992",
+    "title": "CommandLineStomping on E-DAL-01-DB for E-DAL-01-DB$",
+    "summary": "Decision: investigate_crowdstrike_medium_alert. Severity: medium. Medium severity CrowdStrike alert has supporting telemetry and requires investigation",
+    "decision": "investigate_crowdstrike_medium_alert",
+    "severity": "medium",
+    "hostname": "E-DAL-01-DB",
+    "user": "E-DAL-01-DB$",
+    "display_name": "CommandLineStomping",
+    "rationale": [
+      "Medium severity CrowdStrike alert has supporting telemetry and requires investigation",
+      "Reviewed CrowdStrike alert: CommandLineStomping",
+      "Medium severity CrowdStrike alert with supporting host telemetry found in Elastic"
+    ],
+    "recommended_actions": [
+      "Review the alert in CrowdStrike Falcon",
+      "Validate host activity in Elastic",
+      "Determine whether behavior is expected or suspicious"
+    ],
+    "evidence": [
+      "crowdstrike_alerts.json",
+      "crowdstrike_alerts_triage.json",
+      "crowdstrike_alerts_ir.json",
+      "crowdstrike_alerts_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0010",
+    "created_at": "2026-03-14T23:45:37.339875+00:00",
+    "updated_at": "2026-03-14T23:45:37.339877+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "crowdstrike",
+    "hunt": "crowdstrike_alert",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:ca8f0e489d374816b962fb078131fb4a:126935565049-103-5439760",
+    "title": "ProductivityAppWroteAsep on E-DAL-01-DB for DuaneBarnett",
+    "summary": "Decision: investigate_crowdstrike_medium_alert. Severity: medium. Medium severity CrowdStrike alert has supporting telemetry and requires investigation",
+    "decision": "investigate_crowdstrike_medium_alert",
+    "severity": "medium",
+    "hostname": "E-DAL-01-DB",
+    "user": "DuaneBarnett",
+    "display_name": "ProductivityAppWroteAsep",
+    "rationale": [
+      "Medium severity CrowdStrike alert has supporting telemetry and requires investigation",
+      "Reviewed CrowdStrike alert: ProductivityAppWroteAsep",
+      "Medium severity CrowdStrike alert with supporting host telemetry found in Elastic"
+    ],
+    "recommended_actions": [
+      "Review the alert in CrowdStrike Falcon",
+      "Validate host activity in Elastic",
+      "Determine whether behavior is expected or suspicious"
+    ],
+    "evidence": [
+      "crowdstrike_alerts.json",
+      "crowdstrike_alerts_triage.json",
+      "crowdstrike_alerts_ir.json",
+      "crowdstrike_alerts_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0011",
+    "created_at": "2026-03-14T23:45:37.339886+00:00",
+    "updated_at": "2026-03-14T23:45:37.339888+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "crowdstrike",
+    "hunt": "crowdstrike_alert",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:fb3d64feb50846208262f41b6b78bf30:1917645402998-474-15836944",
+    "title": "Parallel port scanning on TUL-COUNTER-02 for tnavarro@ssicm.com",
+    "summary": "Decision: investigate_crowdstrike_medium_alert. Severity: medium. Medium severity CrowdStrike alert has supporting telemetry and requires investigation",
+    "decision": "investigate_crowdstrike_medium_alert",
+    "severity": "medium",
+    "hostname": "TUL-COUNTER-02",
+    "user": "tnavarro@ssicm.com",
+    "display_name": "Parallel port scanning",
+    "rationale": [
+      "Medium severity CrowdStrike alert has supporting telemetry and requires investigation",
+      "Reviewed CrowdStrike alert: Parallel port scanning",
+      "Medium severity CrowdStrike alert with supporting host telemetry found in Elastic"
+    ],
+    "recommended_actions": [
+      "Review the alert in CrowdStrike Falcon",
+      "Validate host activity in Elastic",
+      "Determine whether behavior is expected or suspicious"
+    ],
+    "evidence": [
+      "crowdstrike_alerts.json",
+      "crowdstrike_alerts_triage.json",
+      "crowdstrike_alerts_ir.json",
+      "crowdstrike_alerts_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0012",
+    "created_at": "2026-03-14T23:45:37.339897+00:00",
+    "updated_at": "2026-03-14T23:45:37.339899+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "dga_like_behavior",
+    "alert_id": null,
+    "title": "Dga Like Behavior",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "dga_like_behavior_summary.json",
+      "dga_like_behavior_triage.json",
+      "dga_like_behavior_ir.json",
+      "dga_like_behavior_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0013",
+    "created_at": "2026-03-14T23:45:37.339908+00:00",
+    "updated_at": "2026-03-14T23:45:37.339910+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "dns_c2_beaconing",
+    "alert_id": null,
+    "title": "Dns C2 Beaconing",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "dns_c2_beaconing_summary.json",
+      "dns_c2_beaconing_triage.json",
+      "dns_c2_beaconing_ir.json",
+      "dns_c2_beaconing_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0014",
+    "created_at": "2026-03-14T23:45:37.339920+00:00",
+    "updated_at": "2026-03-14T23:45:37.339922+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "dns_tunneling",
+    "alert_id": null,
+    "title": "Dns Tunneling",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "dns_tunneling_summary.json",
+      "dns_tunneling_triage.json",
+      "dns_tunneling_ir.json",
+      "dns_tunneling_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0015",
+    "created_at": "2026-03-14T23:45:37.339931+00:00",
+    "updated_at": "2026-03-14T23:45:37.339933+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "encoded_command_execution",
+    "alert_id": null,
+    "title": "Encoded Command Execution",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "encoded_command_execution_summary.json",
+      "encoded_command_execution_triage.json",
+      "encoded_command_execution_ir.json",
+      "encoded_command_execution_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0016",
+    "created_at": "2026-03-14T23:45:37.339942+00:00",
+    "updated_at": "2026-03-14T23:45:37.339944+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "encoded_powershell",
+    "alert_id": null,
+    "title": "Encoded Powershell",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "encoded_powershell_summary.json",
+      "encoded_powershell_triage.json",
+      "encoded_powershell_ir.json",
+      "encoded_powershell_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0017",
+    "created_at": "2026-03-14T23:45:37.339952+00:00",
+    "updated_at": "2026-03-14T23:45:37.339954+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "external_scanning_to_vulnerable_asset",
+    "alert_id": null,
+    "title": "External Scanning To Vulnerable Asset",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "external_scanning_to_vulnerable_asset_summary.json",
+      "external_scanning_to_vulnerable_asset_triage.json",
+      "external_scanning_to_vulnerable_asset_ir.json",
+      "external_scanning_to_vulnerable_asset_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0018",
+    "created_at": "2026-03-14T23:45:37.339967+00:00",
+    "updated_at": "2026-03-14T23:45:37.339969+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "internal_rdp",
+    "alert_id": null,
+    "title": "Internal Rdp",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "internal_rdp_summary.json",
+      "internal_rdp_triage.json",
+      "internal_rdp_ir.json",
+      "internal_rdp_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0019",
+    "created_at": "2026-03-14T23:45:37.339978+00:00",
+    "updated_at": "2026-03-14T23:45:37.339980+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "internal_rdp_lateral_movement",
+    "alert_id": null,
+    "title": "Internal Rdp Lateral Movement",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "internal_rdp_lateral_movement_summary.json",
+      "internal_rdp_lateral_movement_triage.json",
+      "internal_rdp_lateral_movement_ir.json",
+      "internal_rdp_lateral_movement_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0020",
+    "created_at": "2026-03-14T23:45:37.339989+00:00",
+    "updated_at": "2026-03-14T23:45:37.339991+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "internet_facing_asset_risk",
+    "alert_id": null,
+    "title": "Internet Facing Asset Risk",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "internet_facing_asset_risk_summary.json",
+      "internet_facing_asset_risk_triage.json",
+      "internet_facing_asset_risk_ir.json",
+      "internet_facing_asset_risk_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0021",
+    "created_at": "2026-03-14T23:45:37.340001+00:00",
+    "updated_at": "2026-03-14T23:45:37.340003+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "large_data_exfiltration",
+    "alert_id": null,
+    "title": "Large Data Exfiltration",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "large_data_exfiltration_summary.json",
+      "large_data_exfiltration_triage.json",
+      "large_data_exfiltration_ir.json",
+      "large_data_exfiltration_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0022",
+    "created_at": "2026-03-14T23:45:37.340012+00:00",
+    "updated_at": "2026-03-14T23:45:37.340014+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "mfa_fatigue",
+    "alert_id": null,
+    "title": "Mfa Fatigue",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "mfa_fatigue_summary.json",
+      "mfa_fatigue_triage.json",
+      "mfa_fatigue_ir.json",
+      "mfa_fatigue_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0023",
+    "created_at": "2026-03-14T23:45:37.340023+00:00",
+    "updated_at": "2026-03-14T23:45:37.340025+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "newly_observed_domains",
+    "alert_id": null,
+    "title": "Newly Observed Domains",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "newly_observed_domains_summary.json",
+      "newly_observed_domains_triage.json",
+      "newly_observed_domains_ir.json",
+      "newly_observed_domains_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0024",
+    "created_at": "2026-03-14T23:45:37.340034+00:00",
+    "updated_at": "2026-03-14T23:45:37.340036+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "nxdomain_burst",
+    "alert_id": null,
+    "title": "Nxdomain Burst",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "nxdomain_burst_summary.json",
+      "nxdomain_burst_triage.json",
+      "nxdomain_burst_ir.json",
+      "nxdomain_burst_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0025",
+    "created_at": "2026-03-14T23:45:37.340045+00:00",
+    "updated_at": "2026-03-14T23:45:37.340047+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "oauth_app_secret_activity",
+    "alert_id": null,
+    "title": "Oauth App Secret Activity",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "oauth_app_secret_activity_summary.json",
+      "oauth_app_secret_activity_triage.json",
+      "oauth_app_secret_activity_ir.json",
+      "oauth_app_secret_activity_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0026",
+    "created_at": "2026-03-14T23:45:37.340056+00:00",
+    "updated_at": "2026-03-14T23:45:37.340058+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "oauth_consent_abuse",
+    "alert_id": null,
+    "title": "Oauth Consent Abuse",
+    "summary": "Decision: needs_oauth_review. Severity: medium. OAuth consent or application activity requires analyst validation",
+    "decision": "needs_oauth_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "OAuth consent or application activity requires analyst validation",
+      "OAuth consent, grant, or application-related activity detected",
+      "Observed user count: 9"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "oauth_consent_abuse_summary.json",
+      "oauth_consent_abuse_triage.json",
+      "oauth_consent_abuse_ir.json",
+      "oauth_consent_abuse_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0027",
+    "created_at": "2026-03-14T23:45:37.340069+00:00",
+    "updated_at": "2026-03-14T23:45:37.340071+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "persistence_creation",
+    "alert_id": null,
+    "title": "Persistence Creation",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "persistence_creation_summary.json",
+      "persistence_creation_triage.json",
+      "persistence_creation_ir.json",
+      "persistence_creation_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0028",
+    "created_at": "2026-03-14T23:45:37.340081+00:00",
+    "updated_at": "2026-03-14T23:45:37.340082+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "process_injection",
+    "alert_id": null,
+    "title": "Process Injection",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "process_injection_summary.json",
+      "process_injection_triage.json",
+      "process_injection_ir.json",
+      "process_injection_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0029",
+    "created_at": "2026-03-14T23:45:37.340091+00:00",
+    "updated_at": "2026-03-14T23:45:37.340093+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "rare_domain_access",
+    "alert_id": null,
+    "title": "Rare Domain Access",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "rare_domain_access_summary.json",
+      "rare_domain_access_triage.json",
+      "rare_domain_access_ir.json",
+      "rare_domain_access_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0030",
+    "created_at": "2026-03-14T23:45:37.340102+00:00",
+    "updated_at": "2026-03-14T23:45:37.340104+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "remote_execution_tools",
+    "alert_id": null,
+    "title": "Remote Execution Tools",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "remote_execution_tools_summary.json",
+      "remote_execution_tools_triage.json",
+      "remote_execution_tools_ir.json",
+      "remote_execution_tools_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0031",
+    "created_at": "2026-03-14T23:45:37.340112+00:00",
+    "updated_at": "2026-03-14T23:45:37.340114+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "remote_service_creation",
+    "alert_id": null,
+    "title": "Remote Service Creation",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "remote_service_creation_summary.json",
+      "remote_service_creation_triage.json",
+      "remote_service_creation_ir.json",
+      "remote_service_creation_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0032",
+    "created_at": "2026-03-14T23:45:37.340123+00:00",
+    "updated_at": "2026-03-14T23:45:37.340125+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "script_interpreter_abuse",
+    "alert_id": null,
+    "title": "Script Interpreter Abuse",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "script_interpreter_abuse_summary.json",
+      "script_interpreter_abuse_triage.json",
+      "script_interpreter_abuse_ir.json",
+      "script_interpreter_abuse_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0033",
+    "created_at": "2026-03-14T23:45:37.340136+00:00",
+    "updated_at": "2026-03-14T23:45:37.340138+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "service_principal_abuse",
+    "alert_id": null,
+    "title": "Service Principal Abuse",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "service_principal_abuse_summary.json",
+      "service_principal_abuse_triage.json",
+      "service_principal_abuse_ir.json",
+      "service_principal_abuse_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0034",
+    "created_at": "2026-03-14T23:45:37.340147+00:00",
+    "updated_at": "2026-03-14T23:45:37.340149+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "smb_lateral_movement",
+    "alert_id": null,
+    "title": "Smb Lateral Movement",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "smb_lateral_movement_summary.json",
+      "smb_lateral_movement_triage.json",
+      "smb_lateral_movement_ir.json",
+      "smb_lateral_movement_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0035",
+    "created_at": "2026-03-14T23:45:37.340158+00:00",
+    "updated_at": "2026-03-14T23:45:37.340159+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "suspicious_powershell",
+    "alert_id": null,
+    "title": "Suspicious Powershell",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "suspicious_powershell_summary.json",
+      "suspicious_powershell_triage.json",
+      "suspicious_powershell_ir.json",
+      "suspicious_powershell_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0036",
+    "created_at": "2026-03-14T23:45:37.340169+00:00",
+    "updated_at": "2026-03-14T23:45:37.340170+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "suspicious_role_assignments",
+    "alert_id": null,
+    "title": "Suspicious Role Assignments",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "suspicious_role_assignments_summary.json",
+      "suspicious_role_assignments_triage.json",
+      "suspicious_role_assignments_ir.json",
+      "suspicious_role_assignments_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0037",
+    "created_at": "2026-03-14T23:45:37.340179+00:00",
+    "updated_at": "2026-03-14T23:45:37.340181+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "tenable_exploitation_validation",
+    "alert_id": null,
+    "title": "Tenable Exploitation Validation",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "tenable_exploitation_validation_summary.json",
+      "tenable_exploitation_validation_triage.json",
+      "tenable_exploitation_validation_ir.json",
+      "tenable_exploitation_validation_decision.json"
+    ]
+  },
+  {
+    "case_id": "VUL-20260314-0038",
+    "created_at": "2026-03-14T23:45:37.340205+00:00",
+    "updated_at": "2026-03-14T23:45:37.340207+00:00",
+    "status": "new",
+    "priority": "medium",
+    "source": "vultron",
+    "hunt": "vulnerable_host_activity",
+    "alert_id": null,
+    "title": "Vulnerable Host Activity",
+    "summary": "Decision: needs_review. Severity: medium. No specific coordinator rule matched; manual analyst review recommended",
+    "decision": "needs_review",
+    "severity": "medium",
+    "hostname": null,
+    "user": null,
+    "display_name": null,
+    "rationale": [
+      "No specific coordinator rule matched; manual analyst review recommended",
+      "Unhandled hunt type; manual review recommended",
+      "No IR workflow implemented yet for this hunt"
+    ],
+    "recommended_actions": [
+      "Review evidence and rationale",
+      "Validate whether activity is expected or suspicious",
+      "Escalate if additional telemetry supports malicious activity"
+    ],
+    "evidence": [
+      "vulnerable_host_activity_summary.json",
+      "vulnerable_host_activity_triage.json",
+      "vulnerable_host_activity_ir.json",
+      "vulnerable_host_activity_decision.json"
+    ]
+  }
+]

@@ -1,0 +1,626 @@
+{
+  "generated_at": "2026-03-14T22:08:25.854912+00:00",
+  "run_dir": "/home/reg/soc/runs/vultron_run_20260314T220736Z",
+  "file_counts": {
+    "summaries": 41,
+    "triage": 41,
+    "ir": 31,
+    "decisions": 41
+  },
+  "hunt_status_counts": {
+    "suspicious": 31,
+    "clean": 10
+  },
+  "hunt_category_counts": {
+    "lateral_movement": 5,
+    "construction_threats": 8,
+    "dns": 5,
+    "endpoint": 5,
+    "exposure": 4,
+    "identity": 9,
+    "compromise_detection": 1,
+    "intel_ioc": 4
+  },
+  "triage_verdict_counts": {
+    "needs_review": 29,
+    "clean": 10,
+    "suspicious": 2
+  },
+  "ir_verdict_counts": {
+    "not_implemented": 28,
+    "network_overlap_found": 1,
+    "no_follow_on_o365_activity": 1,
+    "follow_on_success_found": 1
+  },
+  "decision_counts": {
+    "needs_review": 28,
+    "benign": 10,
+    "blocked_inbound_hostile_traffic": 1,
+    "needs_oauth_review": 1,
+    "escalate_possible_account_compromise": 1
+  },
+  "severity_counts": {
+    "medium": 29,
+    "low": 11,
+    "high": 1
+  },
+  "suspicious_hunts": [
+    {
+      "hunt": "malicious_ip_matches",
+      "category": "intel_ioc",
+      "findings": 200,
+      "severity": "unknown"
+    },
+    {
+      "hunt": "dga_like_behavior",
+      "category": "dns",
+      "findings": 100,
+      "severity": "medium"
+    },
+    {
+      "hunt": "newly_observed_domains",
+      "category": "dns",
+      "findings": 100,
+      "severity": "medium"
+    },
+    {
+      "hunt": "rare_domain_access",
+      "category": "dns",
+      "findings": 100,
+      "severity": "medium"
+    },
+    {
+      "hunt": "password_spray",
+      "category": "identity",
+      "findings": 11,
+      "severity": "medium"
+    },
+    {
+      "hunt": "abnormal_admin_behavior",
+      "category": "lateral_movement",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "dns_c2_beaconing",
+      "category": "construction_threats",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "dns_tunneling",
+      "category": "dns",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "external_scanning_to_vulnerable_asset",
+      "category": "exposure",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "internal_rdp",
+      "category": "lateral_movement",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "internet_facing_asset_risk",
+      "category": "exposure",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "mfa_fatigue",
+      "category": "identity",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "persistence_creation",
+      "category": "endpoint",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "remote_execution_tools",
+      "category": "lateral_movement",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "remote_service_creation",
+      "category": "lateral_movement",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "script_interpreter_abuse",
+      "category": "endpoint",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "tenable_exploitation_validation",
+      "category": "exposure",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "vulnerable_host_activity",
+      "category": "exposure",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "service_principal_abuse",
+      "category": "identity",
+      "findings": 75,
+      "severity": "high"
+    },
+    {
+      "hunt": "oauth_consent_abuse",
+      "category": "identity",
+      "findings": 45,
+      "severity": "high"
+    },
+    {
+      "hunt": "suspicious_role_assignments",
+      "category": "identity",
+      "findings": 21,
+      "severity": "high"
+    },
+    {
+      "hunt": "oauth_app_secret_activity",
+      "category": "identity",
+      "findings": 14,
+      "severity": "high"
+    },
+    {
+      "hunt": "encoded_powershell",
+      "category": "construction_threats",
+      "findings": 11,
+      "severity": "high"
+    },
+    {
+      "hunt": "nxdomain_burst",
+      "category": "dns",
+      "findings": 11,
+      "severity": "high"
+    },
+    {
+      "hunt": "suspicious_powershell",
+      "category": "endpoint",
+      "findings": 8,
+      "severity": "high"
+    },
+    {
+      "hunt": "encoded_command_execution",
+      "category": "endpoint",
+      "findings": 7,
+      "severity": "high"
+    },
+    {
+      "hunt": "internal_rdp_lateral_movement",
+      "category": "lateral_movement",
+      "findings": 2,
+      "severity": "high"
+    },
+    {
+      "hunt": "smb_lateral_movement",
+      "category": "construction_threats",
+      "findings": 2,
+      "severity": "high"
+    },
+    {
+      "hunt": "process_injection",
+      "category": "endpoint",
+      "findings": 100,
+      "severity": "critical"
+    },
+    {
+      "hunt": "credential_dumping",
+      "category": "construction_threats",
+      "findings": 82,
+      "severity": "critical"
+    },
+    {
+      "hunt": "large_data_exfiltration",
+      "category": "construction_threats",
+      "findings": 3,
+      "severity": "critical"
+    }
+  ],
+  "coordinator_decisions": [
+    {
+      "hunt": "abnormal_admin_behavior",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "credential_dumping",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "dga_like_behavior",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "dns_c2_beaconing",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "dns_tunneling",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "encoded_command_execution",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "encoded_powershell",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "external_scanning_to_vulnerable_asset",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "impossible_travel",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ]
+    },
+    {
+      "hunt": "internal_host_to_ioc",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ]
+    },
+    {
+      "hunt": "internal_rdp",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "internal_rdp_lateral_movement",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "internet_facing_asset_risk",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "large_data_exfiltration",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "malicious_domain_matches",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ]
+    },
+    {
+      "hunt": "malicious_domain_matches_umbrella",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ]
+    },
+    {
+      "hunt": "malicious_ip_matches",
+      "decision": "blocked_inbound_hostile_traffic",
+      "severity": "low",
+      "rationale": [
+        "Threat-intel IOC IPs were observed only in denied network events",
+        "Fortinet blocked the activity at the edge",
+        "No endpoint evidence of internal hosts contacting IOC infrastructure"
+      ]
+    },
+    {
+      "hunt": "malicious_ip_port_matches",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ]
+    },
+    {
+      "hunt": "mfa_fatigue",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "newly_observed_domains",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "nxdomain_burst",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "oauth_app_secret_activity",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "oauth_consent_abuse",
+      "decision": "needs_oauth_review",
+      "severity": "medium",
+      "rationale": [
+        "OAuth consent or application activity requires analyst validation",
+        "OAuth consent, grant, or application-related activity detected",
+        "Observed user count: 9"
+      ]
+    },
+    {
+      "hunt": "password_spray",
+      "decision": "escalate_possible_account_compromise",
+      "severity": "high",
+      "rationale": [
+        "Password spray activity was followed by successful sign-ins",
+        "Checked for successful sign-ins from suspicious spray IPs"
+      ]
+    },
+    {
+      "hunt": "persistence_creation",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "process_injection",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "rare_domain_access",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "rare_geo_mailbox_rule",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ]
+    },
+    {
+      "hunt": "remote_execution_tools",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "remote_service_creation",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "script_interpreter_abuse",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "service_principal_abuse",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "shadow_copy_deletion",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ]
+    },
+    {
+      "hunt": "smb_lateral_movement",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "suspicious_mailbox_rules",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ]
+    },
+    {
+      "hunt": "suspicious_powershell",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "suspicious_role_assignments",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "tenable_exploitation_validation",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    },
+    {
+      "hunt": "token_abuse",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ]
+    },
+    {
+      "hunt": "vpn_geo_anomaly",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ]
+    },
+    {
+      "hunt": "vulnerable_host_activity",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ]
+    }
+  ]
+}

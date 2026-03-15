@@ -1,0 +1,1227 @@
+[
+  {
+    "source": "sans_internet_storm_center",
+    "title": "SmartApeSG campaign uses ClickFix page to push Remcos RAT, (Sat, Mar 14th)",
+    "link": "https://isc.sans.edu/diary/rss/32796",
+    "published": "Sat, 14 Mar 2026 01:19:49 GMT",
+    "summary": "Introduction&#xd;"
+  },
+  {
+    "source": "sans_internet_storm_center",
+    "title": "A React-based phishing page with credential exfiltration via EmailJS, (Fri, Mar 13th)",
+    "link": "https://isc.sans.edu/diary/rss/32794",
+    "published": "Fri, 13 Mar 2026 07:20:58 GMT",
+    "summary": "On Wednesday, a phishing message made its way into our handler inbox that contained a fairly typical low-quality lure, but turned out to be quite interesting in the end nonetheless. That is because the accompanying credential stealing web page was dynamically constructed using React and used a legitimate e-mail service for credential collection.&#xd;"
+  },
+  {
+    "source": "sans_internet_storm_center",
+    "title": "ISC Stormcast For Friday, March 13th, 2026 https://isc.sans.edu/podcastdetail/9848, (Fri, Mar 13th)",
+    "link": "https://isc.sans.edu/diary/rss/32792",
+    "published": "Fri, 13 Mar 2026 02:00:02 GMT",
+    "summary": ""
+  },
+  {
+    "source": "sans_internet_storm_center",
+    "title": "ISC Stormcast For Thursday, March 12th, 2026 https://isc.sans.edu/podcastdetail/9846, (Thu, Mar 12th)",
+    "link": "https://isc.sans.edu/diary/rss/32790",
+    "published": "Thu, 12 Mar 2026 02:00:02 GMT",
+    "summary": ""
+  },
+  {
+    "source": "sans_internet_storm_center",
+    "title": "When your IoT Device Logs in as Admin, It&#x3f;s too Late&#x21; &#x5b;Guest Diary&#x5d;, (Wed, Mar 11th)",
+    "link": "https://isc.sans.edu/diary/rss/32788",
+    "published": "Thu, 12 Mar 2026 01:19:35 GMT",
+    "summary": "&#x5b;This is a Guest Diary by Adam Thorman, an ISC intern as part of the SANS.edu BACS program&#x5d;&#xd;"
+  },
+  {
+    "source": "sans_internet_storm_center",
+    "title": "Analyzing \"Zombie Zip\" Files (CVE-2026-0866), (Wed, Mar 11th)",
+    "link": "https://isc.sans.edu/diary/rss/32786",
+    "published": "Wed, 11 Mar 2026 09:57:26 GMT",
+    "summary": "A new vulnerability (CVE-2026-0866) has been published: Zombie Zip.&#xd;"
+  },
+  {
+    "source": "sans_internet_storm_center",
+    "title": "ISC Stormcast For Wednesday, March 11th, 2026 https://isc.sans.edu/podcastdetail/9844, (Wed, Mar 11th)",
+    "link": "https://isc.sans.edu/diary/rss/32784",
+    "published": "Wed, 11 Mar 2026 02:00:02 GMT",
+    "summary": ""
+  },
+  {
+    "source": "sans_internet_storm_center",
+    "title": "Microsoft Patch Tuesday March 2026, (Tue, Mar 10th)",
+    "link": "https://isc.sans.edu/diary/rss/32782",
+    "published": "Tue, 10 Mar 2026 17:33:47 GMT",
+    "summary": "Microsoft today released patches for 93 vulnerabilities, including 9 vulnerabilities in Chromium affecting Microsoft Edge. 8 of the vulnerabilities are rated critical. 2 were disclosed prior to today but have not yet been exploited. This update addresses no already-exploited vulnerabilities.&#xd;"
+  },
+  {
+    "source": "sans_internet_storm_center",
+    "title": "ISC Stormcast For Tuesday, March 10th, 2026 https://isc.sans.edu/podcastdetail/9842, (Tue, Mar 10th)",
+    "link": "https://isc.sans.edu/diary/rss/32780",
+    "published": "Tue, 10 Mar 2026 02:00:02 GMT",
+    "summary": ""
+  },
+  {
+    "source": "sans_internet_storm_center",
+    "title": "Encrypted Client Hello: Ready for Prime Time&#x3f;, (Mon, Mar 9th)",
+    "link": "https://isc.sans.edu/diary/rss/32778",
+    "published": "Mon, 09 Mar 2026 15:03:29 GMT",
+    "summary": "Last week, two related RFCs were published: &#xd;"
+  },
+  {
+    "source": "microsoft_security_blog",
+    "title": "Storm-2561 uses SEO poisoning to distribute fake VPN clients for credential theft",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/03/12/storm-2561-uses-seo-poisoning-to-distribute-fake-vpn-clients-for-credential-theft/",
+    "published": "Thu, 12 Mar 2026 17:00:00 +0000",
+    "summary": "<p>Storm-2561 uses SEO poisoning to push fake VPN downloads that install signed trojans and steal VPN credentials. Active since 2025, Storm-2561 mimics trusted brands and abuses legitimate services. This post reviews TTPs, IOCs, and mitigation guidance.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/security/blog/2026/03/12/storm-2561-uses-seo-poisoning-to-distribute-fake-vpn-clients-for-credential-theft/\">Storm-2561 uses SEO poisoning to distribute fake VPN clients for credential theft</a> appeared first on <a href=\"https://www.microsoft.com/en-us/security/blog\">Microsoft Security Blog</a>.</p>"
+  },
+  {
+    "source": "microsoft_security_blog",
+    "title": "From transparency to action: What the latest Microsoft email security benchmark reveals",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/03/12/from-transparency-to-action-what-the-latest-microsoft-email-security-benchmark-reveals/",
+    "published": "Thu, 12 Mar 2026 16:00:00 +0000",
+    "summary": "<p>The latest Microsoft benchmarking data reveals how Microsoft Defender mitigates modern email threats compared to SEG and ICES vendors.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/security/blog/2026/03/12/from-transparency-to-action-what-the-latest-microsoft-email-security-benchmark-reveals/\">From transparency to action: What the latest Microsoft email security benchmark reveals</a> appeared first on <a href=\"https://www.microsoft.com/en-us/security/blog\">Microsoft Security Blog</a>.</p>"
+  },
+  {
+    "source": "microsoft_security_blog",
+    "title": "Detecting and analyzing prompt abuse in AI tools",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/03/12/detecting-analyzing-prompt-abuse-in-ai-tools/",
+    "published": "Thu, 12 Mar 2026 14:00:00 +0000",
+    "summary": "<p>Hidden instructions in content can subtly bias AI, and our scenario shows how prompt injection works, highlighting the need for oversight and a structured response playbook.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/security/blog/2026/03/12/detecting-analyzing-prompt-abuse-in-ai-tools/\">Detecting and analyzing prompt abuse in AI tools</a> appeared first on <a href=\"https://www.microsoft.com/en-us/security/blog\">Microsoft Security Blog</a>.</p>"
+  },
+  {
+    "source": "microsoft_security_blog",
+    "title": "Contagious Interview: Malware delivered through fake developer job interviews",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/03/11/contagious-interview-malware-delivered-through-fake-developer-job-interviews/",
+    "published": "Wed, 11 Mar 2026 21:00:50 +0000",
+    "summary": "<p>The Contagious Interview campaign weaponizes job recruitment to target developers. Threat actors pose as recruiters from crypto and AI companies and deliver backdoors such as OtterCookie and FlexibleFerret through fake coding assessments. The malware then steals API tokens, cloud credentials, crypto wallets, and source code.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/security/blog/2026/03/11/contagious-interview-malware-delivered-through-fake-developer-job-interviews/\">Contagious Interview: Malware delivered through fake developer job interviews</a> appeared first on <a href=\"https://www.microsoft.com/en-us/security/blog\">Microsoft Security Blog</a>.</p>"
+  },
+  {
+    "source": "microsoft_security_blog",
+    "title": "Secure agentic AI for your Frontier Transformation",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/03/09/secure-agentic-ai-for-your-frontier-transformation/",
+    "published": "Mon, 09 Mar 2026 13:00:00 +0000",
+    "summary": "<p>Learn how Microsoft Agent 365 and Microsoft 365 E7 can help secure your Frontier Transformation.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/security/blog/2026/03/09/secure-agentic-ai-for-your-frontier-transformation/\">Secure agentic AI for your Frontier Transformation</a> appeared first on <a href=\"https://www.microsoft.com/en-us/security/blog\">Microsoft Security Blog</a>.</p>"
+  },
+  {
+    "source": "microsoft_security_blog",
+    "title": "AI as tradecraft: How threat actors operationalize AI",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/03/06/ai-as-tradecraft-how-threat-actors-operationalize-ai/",
+    "published": "Fri, 06 Mar 2026 17:00:00 +0000",
+    "summary": "<p>Threat actors are operationalizing AI to scale and sustain malicious activity, accelerating tradecraft and increasing risk for defenders, as illustrated by recent activity from North Korean groups such as Jasper Sleet and Coral Sleet (formerly Storm-1877).</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/security/blog/2026/03/06/ai-as-tradecraft-how-threat-actors-operationalize-ai/\">AI as tradecraft: How threat actors operationalize AI</a> appeared first on <a href=\"https://www.microsoft.com/en-us/security/blog\">Microsoft Security Blog</a>.</p>"
+  },
+  {
+    "source": "microsoft_security_blog",
+    "title": "Women\u2019s History Month: Encouraging women in cybersecurity at every career stage",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/03/05/womens-history-month-encouraging-women-in-cybersecurity-at-every-career-stage/",
+    "published": "Thu, 05 Mar 2026 17:00:00 +0000",
+    "summary": "<p>This Women\u2019s History Month, we explore ways to support the next generation of female defenders at every career stage.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/security/blog/2026/03/05/womens-history-month-encouraging-women-in-cybersecurity-at-every-career-stage/\">Women\u2019s History Month: Encouraging women in cybersecurity at every career stage</a> appeared first on <a href=\"https://www.microsoft.com/en-us/security/blog\">Microsoft Security Blog</a>.</p>"
+  },
+  {
+    "source": "microsoft_security_blog",
+    "title": "Malicious AI Assistant Extensions Harvest LLM Chat Histories",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/03/05/malicious-ai-assistant-extensions-harvest-llm-chat-histories/",
+    "published": "Thu, 05 Mar 2026 16:02:12 +0000",
+    "summary": "<p>Malicious AI browser extensions collected LLM chat histories and browsing data from platforms such as ChatGPT and DeepSeek. With nearly 900,000 installs and activity across more than 20,000 enterprise tenants, the campaign highlights the growing risk of data exposure through browser extensions.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/security/blog/2026/03/05/malicious-ai-assistant-extensions-harvest-llm-chat-histories/\">Malicious AI Assistant Extensions Harvest LLM Chat Histories</a> appeared first on <a href=\"https://www.microsoft.com/en-us/security/blog\">Microsoft Security Blog</a>.</p>"
+  },
+  {
+    "source": "microsoft_security_blog",
+    "title": "Inside Tycoon2FA: How a leading AiTM phishing kit operated at scale",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/03/04/inside-tycoon2fa-how-a-leading-aitm-phishing-kit-operated-at-scale/",
+    "published": "Wed, 04 Mar 2026 16:04:24 +0000",
+    "summary": "<p>Tycoon2FA has become a leading phishing-as-a-service (PhaaS) platforms, enabling campaigns that reach over 500,000 organizations monthly, prompting Microsoft\u2019s Digital Crimes Unit (DCU) to work with Europol and industry partners to facilitate a disruption of Tycoon2FA\u2019s infrastructure and operations.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/security/blog/2026/03/04/inside-tycoon2fa-how-a-leading-aitm-phishing-kit-operated-at-scale/\">Inside Tycoon2FA: How a leading AiTM phishing kit operated at scale</a> appeared first on <a href=\"https://www.microsoft.com/en-us/security/blog\">Microsoft Security Blog</a>.</p>"
+  },
+  {
+    "source": "microsoft_security_blog",
+    "title": "Signed malware impersonating workplace apps deploys RMM backdoors",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/03/03/signed-malware-impersonating-workplace-apps-deploys-rmm-backdoors/",
+    "published": "Tue, 03 Mar 2026 21:11:03 +0000",
+    "summary": "<p>Signed malware backed by a stolen EV certificate deployed legitimate RMM tools to gain persistent access inside enterprise environments. Organizations must harden certificate controls and monitor RMM activity to reduce exposure.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/security/blog/2026/03/03/signed-malware-impersonating-workplace-apps-deploys-rmm-backdoors/\">Signed malware impersonating workplace apps deploys RMM backdoors</a> appeared first on <a href=\"https://www.microsoft.com/en-us/security/blog\">Microsoft Security Blog</a>.</p>"
+  },
+  {
+    "source": "unit42",
+    "title": "Insights: Increased Risk of Wiper Attacks",
+    "link": "https://unit42.paloaltonetworks.com/handala-hack-wiper-attacks/",
+    "published": "Thu, 12 Mar 2026 22:10:00 +0000",
+    "summary": "<p>We are observing an increase of wiper attacks by the Iran-linked Handala Hack group (aka Void Manticore) through phishing and misuse of Microsoft Intune.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/handala-hack-wiper-attacks/\">Insights: Increased Risk of Wiper Attacks</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
+  },
+  {
+    "source": "unit42",
+    "title": "Suspected China-Based Espionage Operation Against Military Targets in Southeast Asia",
+    "link": "https://unit42.paloaltonetworks.com/espionage-campaign-against-military-targets/",
+    "published": "Thu, 12 Mar 2026 22:00:57 +0000",
+    "summary": "<p>An espionage operation demonstrated strategic operational patience against targets in Southeast Asia, deploying custom backdoors.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/espionage-campaign-against-military-targets/\">Suspected China-Based Espionage Operation Against Military Targets in Southeast Asia</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
+  },
+  {
+    "source": "unit42",
+    "title": "Auditing the Gatekeepers: Fuzzing \"AI Judges\" to Bypass Security Controls",
+    "link": "https://unit42.paloaltonetworks.com/fuzzing-ai-judges-security-bypass/",
+    "published": "Tue, 10 Mar 2026 10:00:29 +0000",
+    "summary": "<p>Unit 42 research reveals AI judges are vulnerable to stealthy prompt injection. Benign formatting symbols can bypass security controls.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/fuzzing-ai-judges-security-bypass/\">Auditing the Gatekeepers: Fuzzing &quot;AI Judges&quot; to Bypass Security Controls</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
+  },
+  {
+    "source": "unit42",
+    "title": "An Investigation Into Years of Undetected Operations Targeting High-Value Sectors",
+    "link": "https://unit42.paloaltonetworks.com/cl-unk-1068-targets-critical-sectors/",
+    "published": "Fri, 06 Mar 2026 11:00:35 +0000",
+    "summary": "<p>In-depth analysis of threat activity we call CL-UNK-1068. We discuss their toolset, including tunneling, reconnaissance and credential theft.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/cl-unk-1068-targets-critical-sectors/\">An Investigation Into Years of Undetected Operations Targeting High-Value Sectors</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
+  },
+  {
+    "source": "unit42",
+    "title": "Fooling AI Agents: Web-Based Indirect Prompt Injection Observed in the Wild",
+    "link": "https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/",
+    "published": "Tue, 03 Mar 2026 11:00:30 +0000",
+    "summary": "<p>Uncover real-world indirect prompt injection attacks and learn how adversaries weaponize hidden web content to exploit LLMs for high-impact fraud.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/\">Fooling AI Agents: Web-Based Indirect Prompt Injection Observed in the Wild</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
+  },
+  {
+    "source": "unit42",
+    "title": "Threat Brief: March 2026 Escalation of Cyber Risk Related to Iran",
+    "link": "https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/",
+    "published": "Tue, 03 Mar 2026 01:15:07 +0000",
+    "summary": "<p>Unit 42 details recent Iranian cyberattack activity, sharing direct observations of phishing, hacktivist activity and cybercrime. We include recommendations for defenders.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/\">Threat Brief: March 2026 Escalation of Cyber Risk Related to Iran</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
+  },
+  {
+    "source": "unit42",
+    "title": "Taming Agentic Browsers: Vulnerability in Chrome Allowed Extensions to Hijack New Gemini Panel",
+    "link": "https://unit42.paloaltonetworks.com/gemini-live-in-chrome-hijacking/",
+    "published": "Mon, 02 Mar 2026 11:00:36 +0000",
+    "summary": "<p>A high-severity CVE-2026-0628 in Chrome's Gemini allowed local file access and privacy invasion. Google quickly patched the flaw.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/gemini-live-in-chrome-hijacking/\">Taming Agentic Browsers: Vulnerability in Chrome Allowed Extensions to Hijack New Gemini Panel</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
+  },
+  {
+    "source": "unit42",
+    "title": "Bring the Fight to the Edge: Turning Time Into an Advantage in OT Security",
+    "link": "https://unit42.paloaltonetworks.com/ot-edge-security/",
+    "published": "Tue, 24 Feb 2026 14:00:40 +0000",
+    "summary": "<p>Unit 42 research reveals most OT attacks begin in IT. Learn how edge-driven defense stops threats early and turns dwell time into advantage.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/ot-edge-security/\">Bring the Fight to the Edge: Turning Time Into an Advantage in OT Security</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
+  },
+  {
+    "source": "unit42",
+    "title": "VShell and SparkRAT Observed in Exploitation of BeyondTrust Critical Vulnerability (CVE-2026-1731)",
+    "link": "https://unit42.paloaltonetworks.com/beyondtrust-cve-2026-1731/",
+    "published": "Thu, 19 Feb 2026 23:00:55 +0000",
+    "summary": "<p>CVE-2026-1731 is an RCE vulnerability in identity platform BeyondTrust. This flaw allows attackers control of systems without login credentials.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/beyondtrust-cve-2026-1731/\">VShell and SparkRAT Observed in Exploitation of BeyondTrust Critical Vulnerability (CVE-2026-1731)</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
+  },
+  {
+    "source": "unit42",
+    "title": "Critical Vulnerabilities in Ivanti EPMM Exploited",
+    "link": "https://unit42.paloaltonetworks.com/ivanti-cve-2026-1281-cve-2026-1340/",
+    "published": "Tue, 17 Feb 2026 20:35:02 +0000",
+    "summary": "<p>We discuss widespread exploitation of Ivanti EPMM zero-day vulns CVE-2026-1281 and CVE-2026-1340. Attackers are deploying web shells and backdoors.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/ivanti-cve-2026-1281-cve-2026-1340/\">Critical Vulnerabilities in Ivanti EPMM Exploited</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
+  },
+  {
+    "source": "unit42",
+    "title": "Phishing on the Edge of the Web and Mobile Using QR Codes",
+    "link": "https://unit42.paloaltonetworks.com/qr-codes-as-attack-vector/",
+    "published": "Fri, 13 Feb 2026 23:00:48 +0000",
+    "summary": "<p>We discuss the extensive use of malicious QR codes using URL shorteners, in-app deep links and direct APK downloads to bypass mobile security.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/qr-codes-as-attack-vector/\">Phishing on the Edge of the Web and Mobile Using QR Codes</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
+  },
+  {
+    "source": "unit42",
+    "title": "Nation-State Actors Exploit Notepad++ Supply Chain",
+    "link": "https://unit42.paloaltonetworks.com/notepad-infrastructure-compromise/",
+    "published": "Wed, 11 Feb 2026 23:00:54 +0000",
+    "summary": "<p>Unit 42 reveals new infrastructure associated with the Notepad++ attack. This expands understanding of threat actor operations and malware delivery.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/notepad-infrastructure-compromise/\">Nation-State Actors Exploit Notepad++ Supply Chain</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
+  },
+  {
+    "source": "unit42",
+    "title": "A Peek Into Muddled Libra\u2019s Operational Playbook",
+    "link": "https://unit42.paloaltonetworks.com/muddled-libra-ops-playbook/",
+    "published": "Tue, 10 Feb 2026 23:00:41 +0000",
+    "summary": "<p>Explore the tools Unit 42 found on a Muddled Libra rogue host. Learn how they target domain controllers and use search engines to aid their attacks.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/muddled-libra-ops-playbook/\">A Peek Into Muddled Libra\u2019s Operational Playbook</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
+  },
+  {
+    "source": "unit42",
+    "title": "Novel Technique to Detect Cloud Threat Actor Operations",
+    "link": "https://unit42.paloaltonetworks.com/tracking-threat-groups-through-cloud-logging/",
+    "published": "Fri, 06 Feb 2026 23:00:02 +0000",
+    "summary": "<p>We introduce a novel method that maps cloud alert trends to MITRE ATT&#038;CK techniques. The patterns created could identify threat actors by behavior.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/tracking-threat-groups-through-cloud-logging/\">Novel Technique to Detect Cloud Threat Actor Operations</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
+  },
+  {
+    "source": "unit42",
+    "title": "The Shadow Campaigns: Uncovering Global Espionage",
+    "link": "https://unit42.paloaltonetworks.com/shadow-campaigns-uncovering-global-espionage/",
+    "published": "Thu, 05 Feb 2026 11:00:10 +0000",
+    "summary": "<p>In 2025 a threat group compromised government and critical infrastructure in 37 countries, with reconnaissance in 155.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/shadow-campaigns-uncovering-global-espionage/\">The Shadow Campaigns: Uncovering Global Espionage</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
+  },
+  {
+    "source": "securelist",
+    "title": "BeatBanker: A dual\u2011mode Android Trojan",
+    "link": "https://securelist.com/beatbanker-miner-and-banker/119121/",
+    "published": "Tue, 10 Mar 2026 10:00:44 +0000",
+    "summary": "Kaspersky researchers identified a new Android Trojan dubbed BeatBanker targeting Brazil, posing as government apps and Google Play Store, and capable of both crypto mining and stealing banking data."
+  },
+  {
+    "source": "securelist",
+    "title": "Exploits and vulnerabilities in Q4 2025",
+    "link": "https://securelist.com/vulnerabilities-and-exploits-in-q4-2025/119105/",
+    "published": "Fri, 06 Mar 2026 10:00:22 +0000",
+    "summary": "This report provides statistical data on published vulnerabilities and exploits we researched during Q4 2025. It also includes summary data on the use of C2 frameworks in APT attacks."
+  },
+  {
+    "source": "securelist",
+    "title": "Mobile malware evolution in 2025",
+    "link": "https://securelist.com/mobile-threat-report-2025/119076/",
+    "published": "Wed, 04 Mar 2026 10:00:46 +0000",
+    "summary": "Statistics on Android malware and the most notable mobile threats of 2025: preinstalled backdoors Keenadu and Triada, spyware Trojans, the Kimwolf IoT botnet, and Mamont banking Trojans."
+  },
+  {
+    "source": "securelist",
+    "title": "Arkanix Stealer: a C++ & Python infostealer",
+    "link": "https://securelist.com/arkanix-stealer/119006/",
+    "published": "Thu, 19 Feb 2026 11:00:49 +0000",
+    "summary": "Kaspersky researchers analyze a C++ and Python stealer dubbed \"Arkanix Stealer\", which was active for several months, targeted wide range of data, was distributed as MaaS and offered referral program to its partners."
+  },
+  {
+    "source": "securelist",
+    "title": "Divide and conquer: how the new Keenadu backdoor exposed links between major Android botnets",
+    "link": "https://securelist.com/keenadu-android-backdoor/118913/",
+    "published": "Tue, 17 Feb 2026 09:00:35 +0000",
+    "summary": "Kaspersky experts have uncovered Keenadu, a sophisticated new backdoor targeting tablet firmware as well as system-level and Google Play apps. They also revealed connections between the world's most prolific Android botnets."
+  },
+  {
+    "source": "securelist",
+    "title": "The game is over: when \u201cfree\u201d comes at too high a price. What we know about RenEngine",
+    "link": "https://securelist.com/renengine-campaign-with-hijackloader-lumma-and-acr-stealer/118891/",
+    "published": "Wed, 11 Feb 2026 14:00:38 +0000",
+    "summary": "We disclose new details about campaigns involving RenEngine and HijackLoader malware. Since March 2025, attackers have been distributing the Lumma stealer in a complex chain of infections, and in February 2026, ongoing attacks using ACR Stealer became known."
+  },
+  {
+    "source": "securelist",
+    "title": "Spam and phishing in 2025",
+    "link": "https://securelist.com/spam-and-phishing-report-2025/118785/",
+    "published": "Wed, 11 Feb 2026 10:00:59 +0000",
+    "summary": "The report contains statistics on spam and phishing in 2025, outlining the main trends: phishing and scam QR codes, ClickFix attacks, ChatGPT subscription lures and others."
+  },
+  {
+    "source": "securelist",
+    "title": "Stan Ghouls targeting Russia and Uzbekistan with NetSupport RAT",
+    "link": "https://securelist.com/stan-ghouls-in-uzbekistan/118738/",
+    "published": "Thu, 05 Feb 2026 09:00:11 +0000",
+    "summary": "We analyze the recent Stan Ghouls campaign targeting organizations in Russia and Uzbekistan: Java-based loaders, the NetSupport RAT, and a potential interest in IoT."
+  },
+  {
+    "source": "securelist",
+    "title": "The Notepad++ supply chain attack \u2014 unnoticed execution chains and new IoCs",
+    "link": "https://securelist.com/notepad-supply-chain-attack/118708/",
+    "published": "Tue, 03 Feb 2026 08:10:06 +0000",
+    "summary": "Kaspersky GReAT experts discovered previously undocumented infection chains used in the Notepad++ supply chain attacks. The article provides new IoCs related to those incidents which employ DLL sideloading and Cobalt Strike Beacon delivery."
+  },
+  {
+    "source": "securelist",
+    "title": "Supply chain attack on eScan antivirus: detecting and remediating malicious updates",
+    "link": "https://securelist.com/escan-supply-chain-attack/118688/",
+    "published": "Thu, 29 Jan 2026 15:07:35 +0000",
+    "summary": "On January 20, Kaspersky solutions detected malware used in eScan antivirus supply chain attack. In this article we provide available information on the threat: indicators of compromise, threat hunting and mitigating tips, etc."
+  },
+  {
+    "source": "check_point_research",
+    "title": "\u201cHandala Hack\u201d \u2013 Unveiling Group\u2019s Modus Operandi",
+    "link": "https://research.checkpoint.com/2026/handala-hack-unveiling-groups-modus-operandi/",
+    "published": "Thu, 12 Mar 2026 17:21:23 +0000",
+    "summary": "<p>Key Findings Introduction Handala Hack, also tracked by Check Point Research as Void Manticore, is an Iranian threat actor that is known for multiple destructive wiping attacks combined with \u201chack and leak\u201d operations. The threat actor operates several online personas, with the most prominent among them being&#160;Homeland Justice, maintained from mid-2022 specifically for multiple attacks [&#8230;]</p>\n<p>The post <a href=\"https://research.checkpoint.com/2026/handala-hack-unveiling-groups-modus-operandi/\">\u201cHandala Hack\u201d &#8211; Unveiling Group&#8217;s Modus Operandi</a> appeared first on <a href=\"https://research.checkpoint.com\">Check Point Research</a>.</p>"
+  },
+  {
+    "source": "check_point_research",
+    "title": "Iranian MOIS Actors & the Cyber Crime Connection",
+    "link": "https://research.checkpoint.com/2026/iranian-mois-actors-the-cyber-crime-connection/",
+    "published": "Tue, 10 Mar 2026 16:54:53 +0000",
+    "summary": "<p>Key Points Iran-linked actors are increasingly engaging with the cyber crime ecosystem. Their activity suggests a growing reliance on criminal tools, services, and operational models in support of state objectives. Iranian actors have long used cyber crime and hacktivism as cover for destructive activity, but the trend now suggests direct engagement with the criminal ecosystem. [&#8230;]</p>\n<p>The post <a href=\"https://research.checkpoint.com/2026/iranian-mois-actors-the-cyber-crime-connection/\">Iranian MOIS Actors &amp; the Cyber Crime Connection</a> appeared first on <a href=\"https://research.checkpoint.com\">Check Point Research</a>.</p>"
+  },
+  {
+    "source": "check_point_research",
+    "title": "9th March \u2013 Threat Intelligence Report",
+    "link": "https://research.checkpoint.com/2026/9th-march-threat-intelligence-report/",
+    "published": "Mon, 09 Mar 2026 16:36:43 +0000",
+    "summary": "<p>For the latest discoveries in cyber research for the week of 9th March, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES AkzoNobel, a Netherlands-based global paint manufacturer, has confirmed a cyberattack affecting one of its United States sites. The company said the intrusion was contained, while the Anubis ransomware group claimed it stole [&#8230;]</p>\n<p>The post <a href=\"https://research.checkpoint.com/2026/9th-march-threat-intelligence-report/\">9th March \u2013 Threat Intelligence Report</a> appeared first on <a href=\"https://research.checkpoint.com\">Check Point Research</a>.</p>"
+  },
+  {
+    "source": "check_point_research",
+    "title": "Interplay between Iranian Targeting of IP Cameras and Physical Warfare in the Middle East",
+    "link": "https://research.checkpoint.com/2026/interplay-between-iranian-targeting-of-ip-cameras-and-physical-warfare-in-the-middle-east/",
+    "published": "Wed, 04 Mar 2026 03:16:44 +0000",
+    "summary": "<p>Key Findings Introduction As highlighted in the&#160;Cyber Security Report 2026, cyber operations have increasingly become an additional tool in interstate conflicts, used both to support military operations and to enable ongoing battle damage assessment (BDA). During the 12-day conflict between Israel and Iran in June 2025, the compromise of cameras was likely used to support [&#8230;]</p>\n<p>The post <a href=\"https://research.checkpoint.com/2026/interplay-between-iranian-targeting-of-ip-cameras-and-physical-warfare-in-the-middle-east/\">Interplay between Iranian Targeting of IP Cameras and Physical Warfare in the Middle East</a> appeared first on <a href=\"https://research.checkpoint.com\">Check Point Research</a>.</p>"
+  },
+  {
+    "source": "check_point_research",
+    "title": "Silver Dragon Targets Organizations in Southeast Asia and Europe",
+    "link": "https://research.checkpoint.com/2026/silver-dragon-targets-organizations-in-southeast-asia-and-europe/",
+    "published": "Tue, 03 Mar 2026 15:49:41 +0000",
+    "summary": "<p>Key Findings Introduction In recent months, Check Point Research (CPR) has been tracking a sophisticated, Chinese-aligned threat group whose activity demonstrates operational correlation with campaigns previously associated with APT41. We have designated this activity cluster as Silver Dragon. This group actively targets organizations in Southeast Asia and Europe, with a particular focus on government entities. [&#8230;]</p>\n<p>The post <a href=\"https://research.checkpoint.com/2026/silver-dragon-targets-organizations-in-southeast-asia-and-europe/\">Silver Dragon Targets Organizations in Southeast Asia and Europe</a> appeared first on <a href=\"https://research.checkpoint.com\">Check Point Research</a>.</p>"
+  },
+  {
+    "source": "check_point_research",
+    "title": "2nd March \u2013 Threat Intelligence Report",
+    "link": "https://research.checkpoint.com/2026/2nd-march-threat-intelligence-report/",
+    "published": "Mon, 02 Mar 2026 16:29:11 +0000",
+    "summary": "<p>For the latest discoveries in cyber research for the week of 2nd March, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Wynn Resorts, a United States-based casino and hotel operator, has confirmed that employee data was accessed following an extortion threat linked to ShinyHunters. The company said operations were not disrupted. Reports indicate [&#8230;]</p>\n<p>The post <a href=\"https://research.checkpoint.com/2026/2nd-march-threat-intelligence-report/\">2nd March \u2013 Threat Intelligence Report</a> appeared first on <a href=\"https://research.checkpoint.com\">Check Point Research</a>.</p>"
+  },
+  {
+    "source": "check_point_research",
+    "title": "Caught in the Hook: RCE and API Token Exfiltration Through Claude Code Project Files | CVE-2025-59536 | CVE-2026-21852",
+    "link": "https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/",
+    "published": "Wed, 25 Feb 2026 13:58:39 +0000",
+    "summary": "<p>By Aviv Donenfeld and Oded Vanunu Executive Summary Check Point Research has discovered critical vulnerabilities in Anthropic&#8217;s Claude Code that allow attackers to achieve remote code execution and steal API credentials through malicious project configurations. The vulnerabilities exploit various configuration mechanisms including Hooks, Model Context Protocol (MCP) servers, and environment variables -executing arbitrary shell commands [&#8230;]</p>\n<p>The post <a href=\"https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/\">Caught in the Hook: RCE and API Token Exfiltration Through Claude Code Project Files | CVE-2025-59536 | CVE-2026-21852&lt;other cve=&quot;&quot; id=&quot;&quot; tbd=&quot;&quot;&gt;&lt;/other&gt;</a> appeared first on <a href=\"https://research.checkpoint.com\">Check Point Research</a>.</p>"
+  },
+  {
+    "source": "check_point_research",
+    "title": "2025: The Untold Stories of Check Point Research",
+    "link": "https://research.checkpoint.com/2026/2025-the-untold-stories-of-check-point-research/",
+    "published": "Mon, 23 Feb 2026 15:27:21 +0000",
+    "summary": "<p>Introduction Check Point Research (CPR) continuously tracks threats, following the clues that lead to major players and incidents in the threat landscape. Whether it\u2019s high-end financially-motivated campaigns or state-sponsored activity, our focus is to figure out what the threat is, report our findings to the relevant parties, and make sure Check Point customers stay protected. [&#8230;]</p>\n<p>The post <a href=\"https://research.checkpoint.com/2026/2025-the-untold-stories-of-check-point-research/\">2025: The Untold Stories of Check Point Research</a> appeared first on <a href=\"https://research.checkpoint.com\">Check Point Research</a>.</p>"
+  },
+  {
+    "source": "check_point_research",
+    "title": "23rd February \u2013 Threat Intelligence Report",
+    "link": "https://research.checkpoint.com/2026/23rd-february-threat-intelligence-report/",
+    "published": "Mon, 23 Feb 2026 09:01:59 +0000",
+    "summary": "<p>For the latest discoveries in cyber research for the week of 23rd February, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES France\u2019s Ministry of Economy has disclosed a data breach resulted from an unauthorized access to the national bank account registry FICOBA, impacting information tied to 1.2 million accounts. Exposed data includes names, [&#8230;]</p>\n<p>The post <a href=\"https://research.checkpoint.com/2026/23rd-february-threat-intelligence-report/\">23rd February \u2013 Threat Intelligence Report</a> appeared first on <a href=\"https://research.checkpoint.com\">Check Point Research</a>.</p>"
+  },
+  {
+    "source": "check_point_research",
+    "title": "AI in the Middle: Turning Web-Based AI Services into C2 Proxies & The Future Of AI Driven Attacks",
+    "link": "https://research.checkpoint.com/2026/ai-in-the-middle-turning-web-based-ai-services-into-c2-proxies-the-future-of-ai-driven-attacks/",
+    "published": "Tue, 17 Feb 2026 14:12:49 +0000",
+    "summary": "<p>Key Points Introduction AI is rapidly becoming embedded in day-to-day enterprise workflows, inside browsers, collaboration suites, and developer tooling. As a result, AI service domains increasingly blend into normal corporate traffic, often allowed by default and rarely treated as sensitive egress. Threat actors are already capitalizing on this shift. Across the malware ecosystem, AI is [&#8230;]</p>\n<p>The post <a href=\"https://research.checkpoint.com/2026/ai-in-the-middle-turning-web-based-ai-services-into-c2-proxies-the-future-of-ai-driven-attacks/\">AI in the Middle: Turning Web-Based AI Services into C2 Proxies &#038; The Future Of AI Driven Attacks</a> appeared first on <a href=\"https://research.checkpoint.com\">Check Point Research</a>.</p>"
+  },
+  {
+    "source": "check_point_research",
+    "title": "16th February \u2013 Threat Intelligence Report",
+    "link": "https://research.checkpoint.com/2026/16th-february-threat-intelligence-report/",
+    "published": "Mon, 16 Feb 2026 17:57:42 +0000",
+    "summary": "<p>For the latest discoveries in cyber research for the week of 16th February, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Dutch telecom provider Odido was hit by a data breach following unauthorized access to its customer management system. Attackers extracted personal data of 6.2 million customers, including names, addresses, phone numbers, email [&#8230;]</p>\n<p>The post <a href=\"https://research.checkpoint.com/2026/16th-february-threat-intelligence-report/\">16th February \u2013 Threat Intelligence Report</a> appeared first on <a href=\"https://research.checkpoint.com\">Check Point Research</a>.</p>"
+  },
+  {
+    "source": "check_point_research",
+    "title": "9th February \u2013 Threat Intelligence Report",
+    "link": "https://research.checkpoint.com/2026/9th-february-threat-intelligence-report/",
+    "published": "Mon, 09 Feb 2026 12:50:16 +0000",
+    "summary": "<p>For the latest discoveries in cyber research for the week of 9th February, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Romania\u2019s national oil pipeline operator, Conpet, has suffered a cyberattack that disrupted its IT systems and took its website offline. The company said operational technology, including pipeline control and telecommunications systems, remained [&#8230;]</p>\n<p>The post <a href=\"https://research.checkpoint.com/2026/9th-february-threat-intelligence-report/\">9th February \u2013 Threat Intelligence Report</a> appeared first on <a href=\"https://research.checkpoint.com\">Check Point Research</a>.</p>"
+  },
+  {
+    "source": "check_point_research",
+    "title": "Amaranth-Dragon: Weaponizing CVE-2025-8088 for Targeted Espionage in the Southeast Asia",
+    "link": "https://research.checkpoint.com/2026/amaranth-dragon-weaponizes-cve-2025-8088-for-targeted-espionage/",
+    "published": "Wed, 04 Feb 2026 13:57:37 +0000",
+    "summary": "<p>Key Points Introduction Check Point Research has identified several campaigns targeting multiple countries in the Southeast Asian region. These related activities have been collectively categorized under the codename \u201cAmaranth-Dragon\u201d. The campaigns demonstrate a clear focus on government entities across the region, suggesting a motivated threat actor with a strong interest in geopolitical intelligence. The campaigns [&#8230;]</p>\n<p>The post <a href=\"https://research.checkpoint.com/2026/amaranth-dragon-weaponizes-cve-2025-8088-for-targeted-espionage/\">Amaranth-Dragon: Weaponizing CVE-2025-8088 for Targeted Espionage in the Southeast Asia</a> appeared first on <a href=\"https://research.checkpoint.com\">Check Point Research</a>.</p>"
+  },
+  {
+    "source": "check_point_research",
+    "title": "2nd February \u2013 Threat Intelligence Report",
+    "link": "https://research.checkpoint.com/2026/2nd-february-threat-intelligence-report/",
+    "published": "Mon, 02 Feb 2026 13:35:05 +0000",
+    "summary": "<p>For the latest discoveries in cyber research for the week of 2nd February, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES MicroWorld Technologies, maker of eScan antivirus, has suffered a supply-chain compromise. Malicious updates were pushed via the legitimate eScan updater, delivering multi-stage malware that establishes persistence, enables remote access, and blocks automatic [&#8230;]</p>\n<p>The post <a href=\"https://research.checkpoint.com/2026/2nd-february-threat-intelligence-report/\">2nd February \u2013 Threat Intelligence Report</a> appeared first on <a href=\"https://research.checkpoint.com\">Check Point Research</a>.</p>"
+  },
+  {
+    "source": "check_point_research",
+    "title": "Cyber Security Report 2026",
+    "link": "https://research.checkpoint.com/2026/cyber-security-report-2026/",
+    "published": "Wed, 28 Jan 2026 16:34:22 +0000",
+    "summary": "<p><img alt=\"\" class=\"alignnone size-medium wp-image-32557\" height=\"150\" src=\"https://research.checkpoint.com/wp-content/uploads/2026/01/CPR-blog-image-option-1-300x150.png\" width=\"300\" />\u200b</p>\n<p>&#160;</p>\n<p>The post <a href=\"https://research.checkpoint.com/2026/cyber-security-report-2026/\">Cyber Security Report 2026</a> appeared first on <a href=\"https://research.checkpoint.com\">Check Point Research</a>.</p>"
+  },
+  {
+    "source": "proofpoint_threat_insight",
+    "title": "Iran appears to have conducted a significant cyberattack against a U.S. company, a first since the war started",
+    "link": "https://www.proofpoint.com/us/newsroom/news/iran-appears-have-conducted-significant-cyberattack-against-us-company-first-war",
+    "published": "11 Mar 2026 15:17:39",
+    "summary": ""
+  },
+  {
+    "source": "proofpoint_threat_insight",
+    "title": "Pro-Iran hackers claim cyberattack on major US medical device maker",
+    "link": "https://www.proofpoint.com/us/newsroom/news/pro-iran-hackers-claim-cyberattack-major-us-medical-device-maker",
+    "published": "11 Mar 2026 15:16:20",
+    "summary": ""
+  },
+  {
+    "source": "proofpoint_threat_insight",
+    "title": "Tycoon 2FA Goes Boom as Europol, Vendors Bust Phishing Platform",
+    "link": "https://www.proofpoint.com/us/newsroom/news/tycoon-2fa-goes-boom-europol-vendors-bust-phishing-platform",
+    "published": "05 Mar 2026 15:19:20",
+    "summary": ""
+  },
+  {
+    "source": "proofpoint_threat_insight",
+    "title": "Microsoft Helps Bust Global Hacking Service",
+    "link": "https://www.proofpoint.com/us/newsroom/news/microsoft-helps-bust-global-hacking-service",
+    "published": "04 Mar 2026 13:48:14",
+    "summary": ""
+  },
+  {
+    "source": "proofpoint_threat_insight",
+    "title": "Global coalition dismantles Tycoon 2FA phishing kit",
+    "link": "https://www.proofpoint.com/us/newsroom/news/global-coalition-dismantles-tycoon-2fa-phishing-kit",
+    "published": "04 Mar 2026 13:47:05",
+    "summary": ""
+  },
+  {
+    "source": "proofpoint_threat_insight",
+    "title": "Proofpoint Launches AI-Enabled Discovery & Archive Suite for Small to Medium Businesses",
+    "link": "https://www.proofpoint.com/us/newsroom/press-releases/proofpoint-launches-ai-enabled-discovery-archive-suite-small-medium",
+    "published": "03 Mar 2026 14:56:03",
+    "summary": ""
+  },
+  {
+    "source": "proofpoint_threat_insight",
+    "title": "Life Mirrors Art: Ransomware Hits Hospitals on TV & IRL",
+    "link": "https://www.proofpoint.com/us/newsroom/news/life-mirrors-art-ransomware-hits-hospitals-tv-irl",
+    "published": "27 Feb 2026 13:49:27",
+    "summary": ""
+  },
+  {
+    "source": "proofpoint_threat_insight",
+    "title": "Proofpoint Collaboration Security Integrates with New Extended Plan for AWS Security Hub",
+    "link": "https://www.proofpoint.com/us/newsroom/press-releases/proofpoint-collaboration-security-integrates-new-extended-plan-aws-security",
+    "published": "26 Feb 2026 14:38:07",
+    "summary": ""
+  },
+  {
+    "source": "proofpoint_threat_insight",
+    "title": "Proofpoint Aims to Accelerate AI Security Growth",
+    "link": "https://www.proofpoint.com/us/newsroom/news/proofpoint-aims-accelerate-ai-security-growth",
+    "published": "24 Feb 2026 11:34:26",
+    "summary": ""
+  },
+  {
+    "source": "proofpoint_threat_insight",
+    "title": "Don\u2019t trust TrustConnect: This fake remote support tool only helps hackers",
+    "link": "https://www.proofpoint.com/us/newsroom/news/dont-trust-trustconnect-fake-remote-support-tool-only-helps-hackers",
+    "published": "20 Feb 2026 11:38:06",
+    "summary": ""
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "OpenClaw AI Agent Flaws Could Enable Prompt Injection and Data Exfiltration",
+    "link": "https://thehackernews.com/2026/03/openclaw-ai-agent-flaws-could-enable.html",
+    "published": "Sat, 14 Mar 2026 21:47:00 +0530",
+    "summary": "China's National Computer Network Emergency Response Technical Team (CNCERT) has issued a warning about the security stemming from the use of OpenClaw (formerly Clawdbot and Moltbot), an open-source and self-hosted autonomous artificial intelligence (AI) agent.\nIn a post shared on WeChat, CNCERT noted that the platform's \"inherently weak default security configurations,\" coupled with its"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "GlassWorm Supply-Chain Attack Abuses 72 Open VSX Extensions to Target Developers",
+    "link": "https://thehackernews.com/2026/03/glassworm-supply-chain-attack-abuses-72.html",
+    "published": "Sat, 14 Mar 2026 18:25:00 +0530",
+    "summary": "Cybersecurity researchers have flagged a new iteration of the GlassWorm campaign that they say represents a \"significant escalation\" in how it propagates through the Open VSX registry.\n\"Instead of requiring every malicious listing to embed the loader directly, the threat actor is now abusing extensionPack and extensionDependencies to turn initially standalone-looking extensions into transitive"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Chinese Hackers Target Southeast Asian Militaries with AppleChris and MemFun Malware",
+    "link": "https://thehackernews.com/2026/03/chinese-hackers-target-southeast-asian.html",
+    "published": "Fri, 13 Mar 2026 23:03:00 +0530",
+    "summary": "A suspected China-based cyber espionage operation has targeted Southeast Asian military organizations as part of a state-sponsored campaign that dates back to at least 2020.\nPalo Alto Networks Unit 42 is tracking the threat activity under the moniker CL-STA-1087, where CL refers to cluster, and STA stands for state-backed motivation.\n\"The activity demonstrated strategic operational patience and"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Meta to Shut Down Instagram End-to-End Encrypted Chat Support Starting May 2026",
+    "link": "https://thehackernews.com/2026/03/meta-to-shut-down-instagram-end-to-end.html",
+    "published": "Fri, 13 Mar 2026 22:39:00 +0530",
+    "summary": "Meta has announced plans to discontinue support for end-to-end encryption (E2EE) for chats on Instagram after May 8, 2026.\n\"If you have chats that are impacted by this change, you will see instructions on how you can download any media or messages you may want to keep,\" the social media giant said in a help document. \"If you're on an older version of Instagram, you may also need to update the"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "INTERPOL Dismantles 45,000 Malicious IPs, Arrests 94 in Global Cybercrime",
+    "link": "https://thehackernews.com/2026/03/interpol-dismantles-45000-malicious-ips.html",
+    "published": "Fri, 13 Mar 2026 20:50:00 +0530",
+    "summary": "INTERPOL on Friday announced the takedown of 45,000 malicious IP addresses and servers used in connection with phishing, malware, and ransomware campaigns, as part of the agency's ongoing efforts to dismantle criminal networks, disrupt emerging threats, and safeguard victims from scams.\nThe effort is part of an international law enforcement operation that involved 72 countries and territories."
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Storm-2561 Spreads Trojan VPN Clients via SEO Poisoning to Steal Credentials",
+    "link": "https://thehackernews.com/2026/03/storm-2561-spreads-trojan-vpn-clients.html",
+    "published": "Fri, 13 Mar 2026 19:08:00 +0530",
+    "summary": "Microsoft has disclosed details of a credential theft campaign that employs fake virtual private network (VPN) clients distributed through search engine optimization (SEO) poisoning techniques.\n\"The campaign redirects users searching for legitimate enterprise software to malicious ZIP files on attacker-controlled websites to deploy digitally signed trojans that masquerade as trusted VPN clients"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Investigating a New Click-Fix Variant",
+    "link": "https://thehackernews.com/2026/03/investigating-new-click-fix-variant.html",
+    "published": "Fri, 13 Mar 2026 18:58:00 +0530",
+    "summary": "Disclaimer: This report has been prepared by the Threat Research Center to enhance cybersecurity awareness and support the strengthening of defense capabilities. It is based on independent research and observations of the current threat landscape available at the time of publication. The content is intended for informational and preparedness purposes only.\nRead more blogs around threat"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Google Fixes Two Chrome Zero-Days Exploited in the Wild Affecting Skia and V8",
+    "link": "https://thehackernews.com/2026/03/google-fixes-two-chrome-zero-days.html",
+    "published": "Fri, 13 Mar 2026 14:47:00 +0530",
+    "summary": "Google on Thursday released security updates for its Chrome web browser to address two high-severity vulnerabilities that it said have been exploited in the wild.\nThe list of vulnerabilities is as follows -\n\nCVE-2026-3909 (CVSS score: 8.8) - An out-of-bounds write vulnerability in the Skia 2D graphics library that allows a remote attacker to perform out-of-bounds memory access via a crafted HTML"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Nine CrackArmor Flaws in Linux AppArmor Enable Root Escalation, Bypass Container Isolation",
+    "link": "https://thehackernews.com/2026/03/nine-crackarmor-flaws-in-linux-apparmor.html",
+    "published": "Fri, 13 Mar 2026 13:48:00 +0530",
+    "summary": "Cybersecurity researchers have disclosed multiple security vulnerabilities within the Linux kernel's AppArmor module that could be exploited by unprivileged users to circumvent kernel protections, escalate to root, and undermine container isolation guarantees.\nThe nine confused deputy vulnerabilities have been collectively codenamed CrackArmor by the Qualys Threat Research Unit (TRU). The"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Authorities Disrupt SocksEscort Proxy Botnet Exploiting 369,000 IPs Across 163 Countries",
+    "link": "https://thehackernews.com/2026/03/authorities-disrupt-socksescort-proxy.html",
+    "published": "Fri, 13 Mar 2026 10:56:00 +0530",
+    "summary": "A court-authorized international law enforcement operation has dismantled a criminal proxy service named SocksEscort that enslaved thousands of residential routers worldwide into a botnet for committing large-scale fraud.\n\"SocksEscort infected home and small business internet routers with malware,\" the U.S. Department of Justice (DoJ) said. \"The malware allowed SocksEscort to direct internet"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Veeam Patches 7 Critical Backup & Replication Flaws Allowing Remote Code Execution",
+    "link": "https://thehackernews.com/2026/03/veeam-patches-7-critical-backup.html",
+    "published": "Fri, 13 Mar 2026 09:45:00 +0530",
+    "summary": "Veeam has released security updates to address multiple critical vulnerabilities in its Backup &amp; Replication software that, if successfully exploited, could result in remote code execution.\nThe vulnerabilities are as follows -\n\nCVE-2026-21666 (CVSS score: 9.9) - A vulnerability that allows an authenticated domain user to perform remote code execution on the Backup Server.\nCVE-2026-21667 ("
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Rust-Based VENON Malware Targets 33 Brazilian Banks with Credential-Stealing Overlays",
+    "link": "https://thehackernews.com/2026/03/rust-based-venon-malware-targets-33.html",
+    "published": "Thu, 12 Mar 2026 23:01:00 +0530",
+    "summary": "Cybersecurity researchers have disclosed details of a new banking malware targeting Brazilian users that's written in Rust, marking a significant departure from other known Delphi-based malware families associated with the Latin American cybercrime ecosystem.\nThe malware, which is designed to infect Windows systems and was first discovered last month, has been codenamed VENON by Brazilian"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Hive0163 Uses AI-Assisted Slopoly Malware for Persistent Access in Ransomware Attacks",
+    "link": "https://thehackernews.com/2026/03/hive0163-uses-ai-assisted-slopoly.html",
+    "published": "Thu, 12 Mar 2026 22:32:00 +0530",
+    "summary": "Cybersecurity researchers have disclosed details of a suspected artificial intelligence (AI)-generated malware codenamed Slopoly put to use by a financially motivated threat actor named Hive0163.\n\"Although still relatively unspectacular, AI-generated malware such as Slopoly shows how easily threat actors can weaponize AI to develop new malware frameworks in a fraction of the time it used to take"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "How to Scale Phishing Detection in Your SOC: 3 Steps for CISOs",
+    "link": "https://thehackernews.com/2026/03/how-to-scale-phishing-detection-in-your.html",
+    "published": "Thu, 12 Mar 2026 19:00:00 +0530",
+    "summary": "Phishing has quietly turned into one of the hardest enterprise threats to expose early. Instead of crude lures and obvious payloads, modern campaigns rely on trusted infrastructure, legitimate-looking authentication flows, and encrypted traffic that conceals malicious behavior from traditional detection layers. For CISOs, the priority is now clear: scale phishing detection in a way that helps"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "ThreatsDay Bulletin: OAuth Trap, EDR Killer, Signal Phishing, Zombie ZIP, AI Platform Hack & More",
+    "link": "https://thehackernews.com/2026/03/threatsday-bulletin-oauth-trap-edr.html",
+    "published": "Thu, 12 Mar 2026 18:44:00 +0530",
+    "summary": "Another Thursday, another pile of weird security stuff that somehow happened in just seven days. Some of it is clever. Some of it is lazy. A few bits fall into that uncomfortable category of \u201cyeah\u2026 this is probably going to show up in real incidents sooner than we\u2019d like.\u201d\nThe pattern this week feels familiar in a slightly annoying way. Old tricks are getting polished. New research shows how"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Attackers Don't Just Send Phishing Emails. They Weaponize Your SOC's Workload",
+    "link": "https://thehackernews.com/2026/03/attackers-dont-just-send-phishing.html",
+    "published": "Thu, 12 Mar 2026 17:00:00 +0530",
+    "summary": "The most dangerous phishing campaigns aren\u2019t just designed to fool employees. Many are designed to exhaust the analysts investigating them. When a phishing investigation takes 12 hours instead of five minutes, the outcome can shift from a contained incident to a breach.\nFor years, the cybersecurity industry has focused on the front door of phishing defense: employee training, email gateways that"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Apple Issues Security Updates for Older iOS Devices Targeted by Coruna WebKit Exploit",
+    "link": "https://thehackernews.com/2026/03/apple-issues-security-updates-for-older.html",
+    "published": "Thu, 12 Mar 2026 15:28:00 +0530",
+    "summary": "Apple on Wednesday backported fixes for a security flaw in iOS, iPadOS, and macOS Sonoma to older versions after it was found to be used as part of the Coruna exploit kit.\nThe vulnerability, tracked as CVE-2023-43010, relates to an unspecified vulnerability in WebKit that could result in memory corruption when processing maliciously crafted web content. The iPhone maker said the issue was"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Six Android Malware Families Target Pix Payments, Banking Apps, and Crypto Wallets",
+    "link": "https://thehackernews.com/2026/03/six-android-malware-families-target-pix.html",
+    "published": "Thu, 12 Mar 2026 13:26:00 +0530",
+    "summary": "Cybersecurity researchers have discovered half-a-dozen new Android malware families that come with capabilities to steal data from compromised devices and conduct financial fraud.\nThe Android malware range from traditional banking trojans like PixRevolution, TaxiSpy RAT, BeatBanker, Mirax, and Oblivion RAT to full-fledged remote administration tools such as SURXRAT.\nPixRevolution, according to"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "CISA Flags Actively Exploited n8n RCE Bug as 24,700 Instances Remain Exposed",
+    "link": "https://thehackernews.com/2026/03/cisa-flags-actively-exploited-n8n-rce.html",
+    "published": "Thu, 12 Mar 2026 10:48:00 +0530",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a critical security flaw impacting n8n to its Known Exploited Vulnerabilities (KEV) catalog, based on evidence of active exploitation.\nThe vulnerability, tracked as CVE-2025-68613 (CVSS score: 9.9), concerns a case of expression injection that leads to remote code execution. The security shortcoming was patched"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Researchers Trick Perplexity's Comet AI Browser Into Phishing Scam in Under Four Minutes",
+    "link": "https://thehackernews.com/2026/03/researchers-trick-perplexitys-comet-ai.html",
+    "published": "Wed, 11 Mar 2026 22:08:00 +0530",
+    "summary": "Agentic web browsers that leverage artificial intelligence (AI) capabilities to autonomously execute actions across multiple websites on behalf of a user could be trained and tricked into falling prey to phishing and scam traps.\nThe attack, at its core, takes advantage of AI browsers' tendency to reason their actions and use it against the model itself to lower their security guardrails, Guardio"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Critical n8n Flaws Allow Remote Code Execution and Exposure of Stored Credentials",
+    "link": "https://thehackernews.com/2026/03/critical-n8n-flaws-allow-remote-code.html",
+    "published": "Wed, 11 Mar 2026 20:21:00 +0530",
+    "summary": "Cybersecurity researchers have disclosed details of two now-patched security flaws in the n8n workflow automation platform, including two critical bugs that could result in arbitrary command execution.\nThe vulnerabilities are listed below -\n\nCVE-2026-27577 (CVSS score: 9.4) - Expression sandbox escape leading to remote code execution (RCE)\nCVE-2026-27493 (CVSS score: 9.5) - Unauthenticated"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Meta Disables 150K Accounts Linked to Southeast Asia Scam Centers in Global Crackdown",
+    "link": "https://thehackernews.com/2026/03/meta-disables-150k-accounts-linked-to.html",
+    "published": "Wed, 11 Mar 2026 18:45:00 +0530",
+    "summary": "Meta on Wednesday said it disabled over 150,000 accounts associated with scam centers in Southeast Asia as part of a coordinated effort in partnership with authorities from Thailand, the U.S., the U.K., Canada, Korea, Japan, Singapore, the Philippines, Australia, New Zealand, and Indonesia.\nThe effort also led to 21 arrests made by the Royal Thai Police, the company said. The action builds upon"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Dozens of Vendors Patch Security Flaws Across Enterprise Software and Network Devices",
+    "link": "https://thehackernews.com/2026/03/dozens-of-vendors-patch-security-flaws.html",
+    "published": "Wed, 11 Mar 2026 17:56:00 +0530",
+    "summary": "SAP has released security updates to address two critical security flaws that could be exploited to achieve arbitrary code execution on affected systems.\nThe vulnerabilities in question listed below -\n\nCVE-2019-17571 (CVSS score: 9.8) - A code injection vulnerability in SAP Quotation Management Insurance application (FS-QUO)\nCVE-2026-27685 (CVSS score: 9.1) - An insecure deserialization"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "What Boards Must Demand in the Age of AI-Automated Exploitation",
+    "link": "https://thehackernews.com/2026/03/what-boards-must-demand-in-age-of-ai.html",
+    "published": "Wed, 11 Mar 2026 17:00:00 +0530",
+    "summary": "\u201cYou knew, and you could have acted. Why didn\u2019t you?\u201d&nbsp;\nThis is the question you do not want to be asked. And increasingly, it\u2019s the question leaders are forced to answer after an incident.\nFor years, many executive teams and boards have treated a large vulnerability backlog as an uncomfortable but tolerable fact of life: \u201cwe\u2019ve accepted the risk.\u201d If you\u2019ve ever seen a report showing"
+  },
+  {
+    "source": "the_hacker_news",
+    "title": "Microsoft Patches 84 Flaws in March Patch Tuesday, Including Two Public Zero-Days",
+    "link": "https://thehackernews.com/2026/03/microsoft-patches-84-flaws-in-march.html",
+    "published": "Wed, 11 Mar 2026 14:45:00 +0530",
+    "summary": "Microsoft on Tuesday released patches for a set of 84 new security vulnerabilities affecting various software components, including two that have been listed as publicly known.\nOf these, eight are rated Critical, and 76 are rated Important in severity. Forty-six of the patched vulnerabilities relate to privilege escalation, followed by 18 remote code execution, 10 information disclosure, four"
+  },
+  {
+    "source": "dark_reading",
+    "title": "Fake PoCs, Misunderstood Risks Cause Cisco SD-WAN Chaos",
+    "link": "https://www.darkreading.com/vulnerabilities-threats/fake-pocs-risks-cisco-sd-wan",
+    "published": "Fri, 13 Mar 2026 19:19:38 GMT",
+    "summary": "The excitement around Cisco's latest SD-WAN bugs has inspired some light fraud, misunderstandings, and overlooked risks."
+  },
+  {
+    "source": "dark_reading",
+    "title": "The Data Gap: Why Nonprofit Cyber Incidents Go Underreported",
+    "link": "https://www.darkreading.com/threat-intelligence/data-gap-why-nonprofit-cyber-incidents-go-underreported",
+    "published": "Fri, 13 Mar 2026 17:42:09 GMT",
+    "summary": "Threat actors target nonprofits due to security gaps and highly coveted information, but a lack of sufficient data makes it difficult to grasp the entire picture."
+  },
+  {
+    "source": "dark_reading",
+    "title": "Cyberattackers Don't Care About Good Causes",
+    "link": "https://www.darkreading.com/cyber-risk/cyberattackers-dont-care-about-good-causes",
+    "published": "Fri, 13 Mar 2026 17:15:17 GMT",
+    "summary": "Sightline Security's founder and advisory board discuss how cybersecurity poses significant problems for nonprofits and suggest ways the industry can help."
+  },
+  {
+    "source": "dark_reading",
+    "title": "Will AI Save Consumers From Smartphone-Based Phishing Attacks?",
+    "link": "https://www.darkreading.com/mobile-security/will-ai-save-consumers-smartphone-phishing-attacks",
+    "published": "Fri, 13 Mar 2026 15:57:47 GMT",
+    "summary": "Sophisticated phishing attacks are bypassing on-device protections with troubling frequency, making it more critical than ever for users to protect themselves from potential threats, new research from Omdia shows."
+  },
+  {
+    "source": "dark_reading",
+    "title": "Most Google Cloud Attacks Start With Bug Exploitation",
+    "link": "https://www.darkreading.com/cloud-security/google-cloud-attacks-bug-exploitation",
+    "published": "Fri, 13 Mar 2026 13:20:58 GMT",
+    "summary": "Forget stolen credentials and misconfigurations; AI means vulnerability exploits that beat patching cycles are the top cause of compromises in the cloud."
+  },
+  {
+    "source": "dark_reading",
+    "title": "Real-Time Banking Trojan Strikes Brazil's Pix Users",
+    "link": "https://www.darkreading.com/application-security/real-time-banking-trojan-strikes-brazils-pix-users",
+    "published": "Fri, 13 Mar 2026 13:00:00 GMT",
+    "summary": "The latest banking Trojan campaign to hit Brazil combines classic malware with a real-time human operator, waiting for the perfect moment to strike."
+  },
+  {
+    "source": "dark_reading",
+    "title": "Why Post-Quantum Cryptography Can't Wait",
+    "link": "https://www.darkreading.com/cyber-risk/why-post-quantum-cryptography-cant-wait",
+    "published": "Thu, 12 Mar 2026 21:45:25 GMT",
+    "summary": "Organizations have to prepare to ensure they have cryptography in place in the post-quantum world."
+  },
+  {
+    "source": "dark_reading",
+    "title": "Iran MOIS Colludes With Criminals to Boost Cyberattacks",
+    "link": "https://www.darkreading.com/threat-intelligence/iran-mois-criminals-cyberattacks",
+    "published": "Thu, 12 Mar 2026 21:11:20 GMT",
+    "summary": "Iranian APTs have long pretended to be cybercriminal groups. Now they're working with actual cybercriminal groups."
+  },
+  {
+    "source": "dark_reading",
+    "title": "Commercial Spyware Opponents Fear US Policy Shifting",
+    "link": "https://www.darkreading.com/threat-intelligence/commercial-spyware-opponents-fear-us-policy-shifting",
+    "published": "Thu, 12 Mar 2026 20:35:25 GMT",
+    "summary": "Rescinded sanctions and reactivated contracts have created confusion about the Trump administration's spyware policy and where it draws the line."
+  },
+  {
+    "source": "dark_reading",
+    "title": "Delinea's StrongDM Acquisition Highlights the Changing Role of PAM",
+    "link": "https://www.darkreading.com/identity-access-management-security/delinea-strongdm-acquisition-highlights-changing-role-pam",
+    "published": "Thu, 12 Mar 2026 17:02:11 GMT",
+    "summary": "StrongDM, which injects ephemeral, real-time credentials into developer workflows, will enable Delinea to offer privilege access management across cloud, SaaS, Kubernetes, and database environments."
+  },
+  {
+    "source": "dark_reading",
+    "title": "Why Stryker's Outage Is a Disaster Recovery Wake-Up Call",
+    "link": "https://www.darkreading.com/cybersecurity-operations/stryker-outage-disaster-recovery-wake-up-call",
+    "published": "Thu, 12 Mar 2026 16:30:14 GMT",
+    "summary": "The Iranian cyberattack on Stryker is the kind of stress test that business continuity and disaster recovery programs often do not plan for."
+  },
+  {
+    "source": "dark_reading",
+    "title": "What Orgs Can Learn From Olympics, World Cup IR Plans",
+    "link": "https://www.darkreading.com/cyber-risk/olympics-world-cup-takeaways-ir-plans",
+    "published": "Thu, 12 Mar 2026 14:33:29 GMT",
+    "summary": "In this edition of &quot;Reporters' Notebook,&quot; we discuss cyberattackers targeting the Milan-Cortina Winter Games, adding them to a long list of global sporting events in the crosshairs. Though the attack surface is grander, there are key incident-response takeaways for regular enterprises, too."
+  },
+  {
+    "source": "dark_reading",
+    "title": "A Guy Who Wrote the Code Died in 2005. I Still Have to Secure It",
+    "link": "https://www.darkreading.com/cyber-risk/a-guy-who-wrote-code-died-in-2005-i-still-must-secure-it",
+    "published": "Wed, 11 Mar 2026 22:03:46 GMT",
+    "summary": "The real frontline of American cybersecurity is a bidding war on eBay for 30-year-old industrial controllers."
+  },
+  {
+    "source": "dark_reading",
+    "title": "INC Ransomware Group Holds Healthcare Hostage in Oceania",
+    "link": "https://www.darkreading.com/threat-intelligence/inc-ransomware-healthcare-oceania",
+    "published": "Wed, 11 Mar 2026 22:00:00 GMT",
+    "summary": "Government agencies, emergency clinics, and others in Australia, New Zealand, and Tonga have had serious run-ins with the prolific ransomware outfit."
+  },
+  {
+    "source": "dark_reading",
+    "title": "Xygeni GitHub Action Compromised Via Tag Poison",
+    "link": "https://www.darkreading.com/application-security/xygeni-github-action-compromised-via-tag-poison",
+    "published": "Wed, 11 Mar 2026 20:22:39 GMT",
+    "summary": "Attackers operated an active C2 implant for up to a week and compromised AppSec vendor Xygeni's xygeni/xygeni-action in that time."
+  },
+  {
+    "source": "dark_reading",
+    "title": "Chinese Nexus Actors Shift Focus to Qatar Amid Iranian Conflict",
+    "link": "https://www.darkreading.com/threat-intelligence/chinese-nexus-actors-shift-focus-qatar-iranian-conflict",
+    "published": "Wed, 11 Mar 2026 14:46:51 GMT",
+    "summary": "Two attacks on Qatari entities signal a shift in focus for China-backed actors and demonstrate how quickly they can pivot in response to geopolitical events."
+  },
+  {
+    "source": "dark_reading",
+    "title": "Middle East Conflict Highlights Cloud Resilience Gaps",
+    "link": "https://www.darkreading.com/cyber-risk/middle-east-conflict-highlights-cloud-resilience-gaps",
+    "published": "Wed, 11 Mar 2026 05:00:00 GMT",
+    "summary": "Data centers \u2014 used by both governments and militaries for operations \u2014 are now fair game, not just for cyberattacks, but for kinetic attacks as well."
+  },
+  {
+    "source": "dark_reading",
+    "title": "Microsoft Patches 83 CVEs in March Update",
+    "link": "https://www.darkreading.com/application-security/microsoft-patches-83-cves-march-update",
+    "published": "Wed, 11 Mar 2026 01:08:31 GMT",
+    "summary": "For a change, there's little in this month's Patch Tuesday that should cause panic, according to security experts."
+  },
+  {
+    "source": "dark_reading",
+    "title": "'Overly Permissive' Salesforce Cloud Configs in the Crosshairs",
+    "link": "https://www.darkreading.com/application-security/overly-permissive-salesforce-cloud-configs-crosshairs",
+    "published": "Tue, 10 Mar 2026 21:05:28 GMT",
+    "summary": "Some customers have mishandled guest user configurations otherwise intended to allow third-party access to important \u2014 and sensitive \u2014 client data."
+  },
+  {
+    "source": "dark_reading",
+    "title": "Russian Threat Actor Sednit Resurfaces With Sophisticated Toolkit",
+    "link": "https://www.darkreading.com/cyber-risk/sednit-resurfaces-with-sophisticated-new-toolkit",
+    "published": "Tue, 10 Mar 2026 18:57:55 GMT",
+    "summary": "After several years of using simple implants, the Russia-affiliated actor is back with two new sophisticated malware tools."
+  },
+  {
+    "source": "dark_reading",
+    "title": "'BlackSanta' EDR Killer Targets HR Workflows",
+    "link": "https://www.darkreading.com/threat-intelligence/blacksanta-edr-killer-hr-workflows",
+    "published": "Tue, 10 Mar 2026 13:30:00 GMT",
+    "summary": "A campaign by Russian-speaking cyberattackers hijacks workflows to deliver security-busting malware, allowing attackers to steal data without detection."
+  },
+  {
+    "source": "dark_reading",
+    "title": "White House Cyber Strategy Prioritizes Offense",
+    "link": "https://www.darkreading.com/cybersecurity-operations/white-house-cyber-strategy-prioritizes-offense",
+    "published": "Mon, 09 Mar 2026 21:09:12 GMT",
+    "summary": "In a seven-page strategy document, the Trump administration signaled a shift to preemption and deterrence to handling cyber threats."
+  },
+  {
+    "source": "dark_reading",
+    "title": "'InstallFix' Attacks Spread Fake Claude Code Sites",
+    "link": "https://www.darkreading.com/cloud-security/installfix-attacks-fake-claude-code",
+    "published": "Mon, 09 Mar 2026 20:42:25 GMT",
+    "summary": "A fresh cyberattack campaign blends malvertising with a ClickFix-style technique that highlights risky behavior with AI coding assistants and command-line interfaces."
+  },
+  {
+    "source": "dark_reading",
+    "title": "Are We Ready for Auto Remediation With Agentic AI?",
+    "link": "https://www.darkreading.com/application-security/auto-remediation-agentic-ai",
+    "published": "Mon, 09 Mar 2026 20:13:01 GMT",
+    "summary": "With the rapid innovations in AI, we are entering an exciting era of automated risk remediation. Learn about security team readiness to leverage agentic AI for threat and exposure management."
+  },
+  {
+    "source": "dark_reading",
+    "title": "Chinese Cyber Threat Lurks In Critical Asian Sectors for Years",
+    "link": "https://www.darkreading.com/threat-intelligence/chinese-cyber-threat-critical-asian-sectors",
+    "published": "Mon, 09 Mar 2026 12:05:06 GMT",
+    "summary": "An undefined Chinese-speaking actor wields a combo of custom malware, open source tools, and LOTL binaries against Windows and Linux, likely for spying."
+  },
+  {
+    "source": "bleeping_computer",
+    "title": "Microsoft releases Windows 11 OOB hotpatch to fix RRAS RCE flaw",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-11-oob-hotpatch-to-fix-rras-rce-flaw/",
+    "published": "Sat, 14 Mar 2026 17:48:14 -0400",
+    "summary": "Microsoft has released an out-of-band (OOB) update to fix a security vulnerabilities affecting Windows 11 Enterprise devices that receive hotpatch updates instead of the regular Patch Tuesday cumulative updates. [...]"
+  },
+  {
+    "source": "bleeping_computer",
+    "title": "AppsFlyer Web SDK hijacked to spread crypto-stealing JavaScript code",
+    "link": "https://www.bleepingcomputer.com/news/security/appsflyer-web-sdk-used-to-spread-crypto-stealer-javascript-code/",
+    "published": "Sat, 14 Mar 2026 10:36:42 -0400",
+    "summary": "The AppsFlyer Web SDK was temporarily hijacked this week with malicious code used to steal cryptocurrency in a supply-chain attack. [...]"
+  },
+  {
+    "source": "bleeping_computer",
+    "title": "Microsoft: Windows 11 users can't access C: drive on some Samsung PCs",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-users-cant-access-c-drive-on-some-samsung-pcs/",
+    "published": "Fri, 13 Mar 2026 18:11:57 -0400",
+    "summary": "Microsoft is investigating a new issue affecting some Samsung laptops running Windows 11 after installing the February 2026 security updates, in which users lose access to their C:&#092; drive and are unable to launch applications. [...]"
+  },
+  {
+    "source": "bleeping_computer",
+    "title": "FBI seeks victims of Steam games used to spread malware",
+    "link": "https://www.bleepingcomputer.com/news/security/fbi-seeks-victims-of-steam-games-used-to-spread-malware/",
+    "published": "Fri, 13 Mar 2026 16:52:31 -0400",
+    "summary": "The FBI\u00a0is asking gamers who installed Steam titles containing malware to provide information as part of an ongoing investigation into eight malicious games uploaded to the gaming platform. [...]"
+  },
+  {
+    "source": "bleeping_computer",
+    "title": "Poland's nuclear research centre targeted by cyberattack",
+    "link": "https://www.bleepingcomputer.com/news/security/polands-nuclear-research-centre-targeted-by-cyberattack/",
+    "published": "Fri, 13 Mar 2026 13:11:37 -0400",
+    "summary": "Poland's National Centre for Nuclear Research (NCBJ) says hackers targeted its IT infrastructure, but the attack was detected and blocked before causing any impact. [...]"
+  },
+  {
+    "source": "bleeping_computer",
+    "title": "Microsoft investigates classic Outlook sync and connection issues",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-investigates-classic-outlook-sync-and-connection-issues/",
+    "published": "Fri, 13 Mar 2026 12:53:02 -0400",
+    "summary": "\u200bMicrosoft is investigating several issues causing email synchronization and connection problems when using the classic Outlook desktop client. [...]"
+  },
+  {
+    "source": "bleeping_computer",
+    "title": "From VMware to what\u2019s next: Protecting data during hypervisor migration",
+    "link": "https://www.bleepingcomputer.com/news/security/from-vmware-to-whats-next-protecting-data-during-hypervisor-migration/",
+    "published": "Fri, 13 Mar 2026 10:15:25 -0400",
+    "summary": "Hypervisor migrations can introduce hidden risks that threaten data availability and recovery. Acronis explains why verified backups and cross-platform recovery are essential during VMware transitions. [...]"
+  },
+  {
+    "source": "bleeping_computer",
+    "title": "Police sinkholes 45,000 IP addresses in cybercrime crackdown",
+    "link": "https://www.bleepingcomputer.com/news/security/police-sinkholes-45-000-ip-addresses-in-cybercrime-crackdown/",
+    "published": "Fri, 13 Mar 2026 09:28:33 -0400",
+    "summary": "An international law enforcement action codenamed \"Operation Synergia III\" has sinkholed tens of thousands of IP addresses and seized servers linked to cybercrime operations worldwide. [...]"
+  },
+  {
+    "source": "bleeping_computer",
+    "title": "Fake enterprise VPN sites used to steal company credentials",
+    "link": "https://www.bleepingcomputer.com/news/security/fake-enterprise-vpn-downloads-used-to-steal-company-credentials/",
+    "published": "Fri, 13 Mar 2026 09:23:28 -0400",
+    "summary": "A threat actor tracked as Storm-2561 is distributing fake\u00a0enterprise VPN clients from Ivanti, Cisco, and Fortinet to steal VPN credentials from unsuspecting users. [...]"
+  },
+  {
+    "source": "bleeping_computer",
+    "title": "Starbucks discloses data breach affecting hundreds of employees",
+    "link": "https://www.bleepingcomputer.com/news/security/starbucks-discloses-data-breach-affecting-hundreds-of-employees/",
+    "published": "Fri, 13 Mar 2026 04:16:55 -0400",
+    "summary": "Starbucks has disclosed a data breach affecting hundreds of employees after threat actors gained access to their Starbucks Partner Central accounts. [...]"
+  },
+  {
+    "source": "bleeping_computer",
+    "title": "Google fixes two new Chrome zero-days exploited in attacks",
+    "link": "https://www.bleepingcomputer.com/news/google/google-fixes-two-new-chrome-zero-days-exploited-in-attacks/",
+    "published": "Fri, 13 Mar 2026 02:56:58 -0400",
+    "summary": "Google has released emergency security updates to patch two high-severity Chrome vulnerabilities exploited in zero-day attacks. [...]"
+  },
+  {
+    "source": "bleeping_computer",
+    "title": "Canadian retail giant Loblaw notifies customers of data breach",
+    "link": "https://www.bleepingcomputer.com/news/security/canadian-retail-giant-loblaw-notifies-customers-of-data-breach/",
+    "published": "Thu, 12 Mar 2026 17:32:21 -0400",
+    "summary": "Still, out of an abundance of caution, Loblaw says it has automatically logged out all customers from their accounts. Account holders who need to access the company's digital services will have to log in again. [...]"
+  },
+  {
+    "source": "bleeping_computer",
+    "title": "England Hockey investigating ransomware data breach",
+    "link": "https://www.bleepingcomputer.com/news/security/england-hockey-investigating-ransomware-data-breach/",
+    "published": "Thu, 12 Mar 2026 16:37:16 -0400",
+    "summary": "England Hockey, the governing body for field hockey in England, is investigating a potential data breach after the AiLock ransomware gang listed it as a victim on its data leak site. [...]"
+  },
+  {
+    "source": "bleeping_computer",
+    "title": "AI-generated Slopoly malware used in Interlock ransomware attack",
+    "link": "https://www.bleepingcomputer.com/news/security/ai-generated-slopoly-malware-used-in-interlock-ransomware-attack/",
+    "published": "Thu, 12 Mar 2026 16:01:27 -0400",
+    "summary": "A new malware strain dubbed Slopoly, likely created using generative AI tools, allowed a threat actor to remain on a compromised server for more than a week and steal data in an Interlock ransomware attack. [...]"
+  },
+  {
+    "source": "bleeping_computer",
+    "title": "Veeam warns of critical flaws exposing backup servers to RCE attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/veeam-warns-of-critical-flaws-exposing-backup-servers-to-rce-attacks/",
+    "published": "Thu, 12 Mar 2026 12:59:20 -0400",
+    "summary": "Data protection company Veeam Software has patched multiple flaws in its Backup & Replication solution, including four critical remote code execution (RCE) vulnerabilities. [...]"
+  },
+  {
+    "source": "securityweek",
+    "title": "Critical HPE AOS-CX Vulnerability Allows Admin Password Resets",
+    "link": "https://www.securityweek.com/critical-hpe-aos-cx-vulnerability-allows-admin-password-resets/",
+    "published": "Sat, 14 Mar 2026 10:50:00 +0000",
+    "summary": "<p>The vulnerability can be exploited remotely, without authentication, to circumvent existing authentication controls.</p>\n<p>The post <a href=\"https://www.securityweek.com/critical-hpe-aos-cx-vulnerability-allows-admin-password-resets/\">Critical HPE AOS-CX Vulnerability Allows Admin Password Resets</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>"
+  },
+  {
+    "source": "securityweek",
+    "title": "Starbucks Data Breach Impacts Employees",
+    "link": "https://www.securityweek.com/starbucks-data-breach-impacts-employees/",
+    "published": "Fri, 13 Mar 2026 15:21:13 +0000",
+    "summary": "<p>Starbucks said the incident involved phishing attacks targeting an employee portal, affecting hundreds.</p>\n<p>The post <a href=\"https://www.securityweek.com/starbucks-data-breach-impacts-employees/\">Starbucks Data Breach Impacts Employees</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>"
+  },
+  {
+    "source": "securityweek",
+    "title": "In Other News: N8n Flaw Exploited, Slopoly Malware, Interpol Cybercrime Crackdown",
+    "link": "https://www.securityweek.com/in-other-news-n8n-flaw-exploited-slopoly-malware-interpol-cybercrime-crackdown/",
+    "published": "Fri, 13 Mar 2026 14:27:12 +0000",
+    "summary": "<p>Other noteworthy stories that might have slipped under the radar: Telus Digital data breach, vulnerabilities in Linux AppArmor allow root privileges, US defense contractor behind Coruna exploits.</p>\n<p>The post <a href=\"https://www.securityweek.com/in-other-news-n8n-flaw-exploited-slopoly-malware-interpol-cybercrime-crackdown/\">In Other News: N8n Flaw Exploited, Slopoly Malware, Interpol Cybercrime Crackdown</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>"
+  },
+  {
+    "source": "securityweek",
+    "title": "Iran-Linked Hackers Take Aim at US and Other Targets, Raising Risk of Cyberattacks During War",
+    "link": "https://www.securityweek.com/iran-linked-hackers-take-aim-at-us-and-other-targets-raising-risk-of-cyberattacks-during-war/",
+    "published": "Fri, 13 Mar 2026 12:32:48 +0000",
+    "summary": "<p>Pro-Iranian hackers are targeting sites in the Middle East and starting to stretch into the United States during the war, raising the risk of American defense contractors, power stations and water plants.</p>\n<p>The post <a href=\"https://www.securityweek.com/iran-linked-hackers-take-aim-at-us-and-other-targets-raising-risk-of-cyberattacks-during-war/\">Iran-Linked Hackers Take Aim at US and Other Targets, Raising Risk of Cyberattacks During War</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>"
+  },
+  {
+    "source": "securityweek",
+    "title": "Bold Security Emerges From Stealth With $40 Million in Funding",
+    "link": "https://www.securityweek.com/bold-security-emerges-from-stealth-with-40-million-in-funding/",
+    "published": "Fri, 13 Mar 2026 11:36:32 +0000",
+    "summary": "<p>The startup relies on AI to turn devices into active agents that understand users\u2019 actions and provide protection in real time.</p>\n<p>The post <a href=\"https://www.securityweek.com/bold-security-emerges-from-stealth-with-40-million-in-funding/\">Bold Security Emerges From Stealth With $40 Million in Funding</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>"
+  },
+  {
+    "source": "securityweek",
+    "title": "Google Paid Out $17 Million in Bug Bounty Rewards in 2025",
+    "link": "https://www.securityweek.com/google-paid-out-17-million-in-bug-bounty-rewards-in-2025/",
+    "published": "Fri, 13 Mar 2026 11:04:54 +0000",
+    "summary": "<p>Google paid over $3.7 million for Chrome vulnerabilities, and more than $3.5 million for cloud security defects.</p>\n<p>The post <a href=\"https://www.securityweek.com/google-paid-out-17-million-in-bug-bounty-rewards-in-2025/\">Google Paid Out $17 Million in Bug Bounty Rewards in 2025</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>"
+  },
+  {
+    "source": "securityweek",
+    "title": "Iran-Linked Hacker Attack on Stryker Disrupted Manufacturing and Shipping",
+    "link": "https://www.securityweek.com/iran-linked-hacker-attack-on-stryker-disrupted-manufacturing-and-shipping/",
+    "published": "Fri, 13 Mar 2026 10:38:47 +0000",
+    "summary": "<p>Evidence indicates that the attackers leveraged existing endpoint management software rather than malware to wipe devices.</p>\n<p>The post <a href=\"https://www.securityweek.com/iran-linked-hacker-attack-on-stryker-disrupted-manufacturing-and-shipping/\">Iran-Linked Hacker Attack on Stryker Disrupted Manufacturing and Shipping</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>"
+  },
+  {
+    "source": "securityweek",
+    "title": "Onyx Security Launches With $40 Million in Funding",
+    "link": "https://www.securityweek.com/onyx-security-launches-with-40-million-in-funding/",
+    "published": "Fri, 13 Mar 2026 09:25:51 +0000",
+    "summary": "<p>The startup is building a control pane to help organizations oversee autonomous AI agents and rapidly adopt them.</p>\n<p>The post <a href=\"https://www.securityweek.com/onyx-security-launches-with-40-million-in-funding/\">Onyx Security Launches With $40 Million in Funding</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>"
+  },
+  {
+    "source": "securityweek",
+    "title": "Authorities Disrupt SocksEscort Proxy Service Powered by AVrecon Botnet",
+    "link": "https://www.securityweek.com/authorities-disrupt-socksescort-proxy-service-powered-by-avrecon-botnet/",
+    "published": "Fri, 13 Mar 2026 08:27:34 +0000",
+    "summary": "<p>Law enforcement agencies in the US and Europe targeted the cybercrime service that has impacted 360,000 devices since 2020.</p>\n<p>The post <a href=\"https://www.securityweek.com/authorities-disrupt-socksescort-proxy-service-powered-by-avrecon-botnet/\">Authorities Disrupt SocksEscort Proxy Service Powered by AVrecon Botnet</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>"
+  },
+  {
+    "source": "securityweek",
+    "title": "Chrome 146 Update Patches Two Exploited Zero-Days",
+    "link": "https://www.securityweek.com/chrome-146-update-patches-two-exploited-zero-days/",
+    "published": "Fri, 13 Mar 2026 07:47:19 +0000",
+    "summary": "<p>The flaws can be exploited to manipulate data and bypass security restrictions, potentially leading to code execution.</p>\n<p>The post <a href=\"https://www.securityweek.com/chrome-146-update-patches-two-exploited-zero-days/\">Chrome 146 Update Patches Two Exploited Zero-Days</a> appeared first on <a href=\"https://www.securityweek.com\">SecurityWeek</a>.</p>"
+  },
+  {
+    "source": "krebs_on_security",
+    "title": "Iran-Backed Hackers Claim Wiper Attack on Medtech Firm Stryker",
+    "link": "https://krebsonsecurity.com/2026/03/iran-backed-hackers-claim-wiper-attack-on-medtech-firm-stryker/",
+    "published": "Wed, 11 Mar 2026 16:20:13 +0000",
+    "summary": "A hacktivist group with links to Iran's intelligence agencies is claiming responsibility for a data-wiping attack against Stryker, a global medical technology company based in Michigan. News reports out of Ireland, Stryker's largest hub outside of the United States, said the company sent home more than 5,000 workers there today. Meanwhile, a voicemail message at Stryker's main U.S. headquarters says the company is currently experiencing a building emergency."
+  },
+  {
+    "source": "krebs_on_security",
+    "title": "Microsoft Patch Tuesday, March 2026 Edition",
+    "link": "https://krebsonsecurity.com/2026/03/microsoft-patch-tuesday-march-2026-edition/",
+    "published": "Wed, 11 Mar 2026 00:32:51 +0000",
+    "summary": "Microsoft Corp. today pushed security updates to fix at least 77 vulnerabilities in its Windows operating systems and other software. There are no pressing \"zero-day\" flaws this month (compared to February's five zero-day treat), but as usual some patches may deserve more rapid attention from organizations using Windows. Here are a few highlights from this month's Patch Tuesday."
+  },
+  {
+    "source": "krebs_on_security",
+    "title": "How AI Assistants are Moving the Security Goalposts",
+    "link": "https://krebsonsecurity.com/2026/03/how-ai-assistants-are-moving-the-security-goalposts/",
+    "published": "Sun, 08 Mar 2026 23:35:42 +0000",
+    "summary": "AI-based assistants or \"agents\" -- autonomous programs that have access to the user's computer, files, online services and can automate virtually any task -- are growing in popularity with developers and IT workers. But as so many eyebrow-raising headlines over the past few weeks have shown, these powerful and assertive new tools are rapidly shifting the security priorities for organizations, while blurring the lines between data and code, trusted co-worker and insider threat, ninja hacker and novice code jockey."
+  },
+  {
+    "source": "krebs_on_security",
+    "title": "Who is the Kimwolf Botmaster \u201cDort\u201d?",
+    "link": "https://krebsonsecurity.com/2026/02/who-is-the-kimwolf-botmaster-dort/",
+    "published": "Sat, 28 Feb 2026 12:01:57 +0000",
+    "summary": "In early January 2026, KrebsOnSecurity revealed how a security researcher disclosed a vulnerability that was used to assemble Kimwolf, the world's largest and most disruptive botnet. Since then, the person in control of Kimwolf -- who goes by the handle \"Dort\" -- has coordinated a barrage of distributed denial-of-service (DDoS), doxing and email flooding attacks against the researcher and this author, and more recently caused a SWAT team to be sent to the researcher's home. This post examines what is knowable about Dort based on public information."
+  },
+  {
+    "source": "krebs_on_security",
+    "title": "\u2018Starkiller\u2019 Phishing Service Proxies Real Login Pages, MFA",
+    "link": "https://krebsonsecurity.com/2026/02/starkiller-phishing-service-proxies-real-login-pages-mfa/",
+    "published": "Fri, 20 Feb 2026 20:00:30 +0000",
+    "summary": "Most phishing websites are little more than static copies of login pages for popular online destinations, and they are often quickly taken down by anti-abuse activists and security firms. But a stealthy new phishing-as-a-service offering lets customers sidestep both of these pitfalls: It uses cleverly disguised links to load the target brand's real website, and then acts as a relay between the target and the legitimate site -- forwarding the victim's username, password and multi-factor authentication (MFA) code to the legitimate site and returning its responses."
+  },
+  {
+    "source": "krebs_on_security",
+    "title": "Kimwolf Botnet Swamps Anonymity Network I2P",
+    "link": "https://krebsonsecurity.com/2026/02/kimwolf-botnet-swamps-anonymity-network-i2p/",
+    "published": "Wed, 11 Feb 2026 16:08:11 +0000",
+    "summary": "For the past week, the massive \"Internet of Things\" (IoT) botnet known as Kimwolf has been disrupting the The Invisible Internet Project (I2P), a decentralized, encrypted communications network designed to anonymize and secure online communications. I2P users started reporting disruptions in the network around the same time the Kimwolf botmasters began relying on it to evade takedown attempts against the botnet's control servers."
+  },
+  {
+    "source": "krebs_on_security",
+    "title": "Patch Tuesday, February 2026 Edition",
+    "link": "https://krebsonsecurity.com/2026/02/patch-tuesday-february-2026-edition/",
+    "published": "Tue, 10 Feb 2026 21:49:53 +0000",
+    "summary": "Microsoft today released updates to fix more than 50 security holes in its Windows operating systems and other software, including patches for a whopping six \"zero-day\" vulnerabilities that attackers are already exploiting in the wild."
+  },
+  {
+    "source": "krebs_on_security",
+    "title": "Please Don\u2019t Feed the Scattered Lapsus ShinyHunters",
+    "link": "https://krebsonsecurity.com/2026/02/please-dont-feed-the-scattered-lapsus-shiny-hunters/",
+    "published": "Mon, 02 Feb 2026 16:15:16 +0000",
+    "summary": "A prolific data ransom gang that calls itself Scattered Lapsus ShinyHunters (SLSH) has a distinctive playbook when it seeks to extort payment from victim firms: Harassing, threatening and even swatting executives and their families, all while notifying journalists and regulators\u2026 <span class=\"read-more\"><a href=\"https://krebsonsecurity.com/2026/02/please-dont-feed-the-scattered-lapsus-shiny-hunters/\">Read More &#187;</a></span>"
+  },
+  {
+    "source": "krebs_on_security",
+    "title": "Who Operates the Badbox 2.0 Botnet?",
+    "link": "https://krebsonsecurity.com/2026/01/who-operates-the-badbox-2-0-botnet/",
+    "published": "Mon, 26 Jan 2026 16:11:38 +0000",
+    "summary": "The cybercriminals in control of Kimwolf -- a disruptive botnet that has infected more than 2 million devices -- recently shared a screenshot indicating they'd compromised the control panel for Badbox 2.0, a vast China-based botnet powered by malicious software that comes pre-installed on many Android TV streaming boxes. Both the FBI and Google say they are hunting for the people behind Badbox 2.0, and thanks to bragging by the Kimwolf botmasters we may now have a much clearer idea about that."
+  },
+  {
+    "source": "krebs_on_security",
+    "title": "Kimwolf Botnet Lurking in Corporate, Govt. Networks",
+    "link": "https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/",
+    "published": "Tue, 20 Jan 2026 18:19:13 +0000",
+    "summary": "A new Internet-of-Things botnet called Kimwolf has spread to more than 2 million devices, forcing infected systems to participate in massive distributed denial-of-service (DDoS) attacks and to relay other malicious and abusive Internet traffic. Kimwolf's ability to scan the local networks of compromised systems for other IoT devices to infect makes it a sobering threat to organizations, and new research reveals Kimwolf is surprisingly prevalent in government and corporate networks."
+  },
+  {
+    "source": "bellingcat",
+    "title": "Ex-UFC Fighter and Kinahan \u2018Friend\u2019 Mounir Lazzez Linked to Iran Sanctions",
+    "link": "https://www.bellingcat.com/news/2026/03/14/ex-ufc-fighter-and-kinahan-friend-mounir-lazzez-linked-to-iran-sanctions/",
+    "published": "Sat, 14 Mar 2026 18:02:13 +0000",
+    "summary": "<p>This article is the result of a collaboration with The Sunday Times. You can find their corresponding piece here. Bellingcat and The Sunday Times last week published photographs showing ex-UFC fighter Mounir &#8220;The Sniper&#8221; Lazzez with wanted cartel leaders Christy and Daniel Kinahan.\u00a0 The images, captured during the 971 Fighting Championship in Dubai last June, [&#8230;]</p>\n<p>The post <a href=\"https://www.bellingcat.com/news/2026/03/14/ex-ufc-fighter-and-kinahan-friend-mounir-lazzez-linked-to-iran-sanctions/\" rel=\"nofollow\">Ex-UFC Fighter and Kinahan &#8216;Friend&#8217; Mounir Lazzez Linked to Iran Sanctions</a> appeared first on <a href=\"https://www.bellingcat.com\" rel=\"nofollow\">bellingcat</a>.</p>"
+  },
+  {
+    "source": "bellingcat",
+    "title": "AI Used to Promote Non-Existent Evacuation Flights From the Middle East",
+    "link": "https://www.bellingcat.com/news/2026/03/12/ai-used-to-promote-non-existent-evacuation-flights-from-the-middle-east/",
+    "published": "Thu, 12 Mar 2026 10:46:35 +0000",
+    "summary": "<p>The Netherlands\u2019 largest newspaper, De Telegraaf, recently published an interview with a woman claiming to organise her own evacuation flights from Dubai, selling seats at \u20ac1,600 (US$ 1850) each. Four days later, her photo was removed from the article, though the interview remained. Bellingcat has found that the original image not only includes artefacts commonly [&#8230;]</p>\n<p>The post <a href=\"https://www.bellingcat.com/news/2026/03/12/ai-used-to-promote-non-existent-evacuation-flights-from-the-middle-east/\" rel=\"nofollow\">AI Used to Promote Non-Existent Evacuation Flights From the Middle East</a> appeared first on <a href=\"https://www.bellingcat.com\" rel=\"nofollow\">bellingcat</a>.</p>"
+  },
+  {
+    "source": "bellingcat",
+    "title": "Tracing Tomahawks: US Missiles Bound for Iran Spotted Over Iraq",
+    "link": "https://www.bellingcat.com/news/middle-east/2026/03/11/iran-war-iraq-tomahawks-munitions-syria-located-kurdistan-missiles-fired/",
+    "published": "Wed, 11 Mar 2026 13:55:35 +0000",
+    "summary": "<p>To stay up to date on our latest investigations, join Bellingcat\u2019s WhatsApp channel\u00a0here. Bellingcat has geolocated footage of multiple Tomahawk cruise missiles travelling through Iraqi airspace towards Iran, either in violation of its airspace or with Iraq\u2019s consent. Bellingcat identified at least 20 individual cruise missiles and geolocated them over Iraqi Kurdistan including alongside Mount [&#8230;]</p>\n<p>The post <a href=\"https://www.bellingcat.com/news/middle-east/2026/03/11/iran-war-iraq-tomahawks-munitions-syria-located-kurdistan-missiles-fired/\" rel=\"nofollow\">Tracing Tomahawks: US Missiles Bound for Iran Spotted Over Iraq</a> appeared first on <a href=\"https://www.bellingcat.com\" rel=\"nofollow\">bellingcat</a>.</p>"
+  },
+  {
+    "source": "bellingcat",
+    "title": "Video Shows US Tomahawk Missile Strike Next to Girls\u2019 School in Iran",
+    "link": "https://www.bellingcat.com/news/2026/03/08/video-shows-us-tomahawk-missile-strike-next-to-girls-school-in-iran/",
+    "published": "Sun, 08 Mar 2026 19:08:48 +0000",
+    "summary": "<p>New video footage shows a US Tomahawk missile hitting an Islamic Revolutionary Guard Corps (IRGC) facility in Minab, Iran, on Feb 28, showing for the first time that the US struck the area. The footage, released by Mehr News and geolocated by Bellingcat, also shows smoke already rising from the vicinity of the girls\u2019 school [&#8230;]</p>\n<p>The post <a href=\"https://www.bellingcat.com/news/2026/03/08/video-shows-us-tomahawk-missile-strike-next-to-girls-school-in-iran/\" rel=\"nofollow\">Video Shows US Tomahawk Missile Strike Next to Girls\u2019 School in Iran</a> appeared first on <a href=\"https://www.bellingcat.com\" rel=\"nofollow\">bellingcat</a>.</p>"
+  },
+  {
+    "source": "bellingcat",
+    "title": "New Footage Shows Wanted Kinahan Cartel Kingpins Post-Sanctions",
+    "link": "https://www.bellingcat.com/news/2026/03/07/new-footage-shows-wanted-kinahan-cartel-kingpins-post-sanctions/",
+    "published": "Sat, 07 Mar 2026 17:59:30 +0000",
+    "summary": "<p>This article is the result of a collaboration with The Sunday Times. You can find their corresponding piece here. Kinahan cartel leaders Daniel and Christy Kinahan have been photographed in Dubai, marking the most recent sighting of the wanted crime bosses since the US government put multi-million dollar bounties on their heads. The footage was [&#8230;]</p>\n<p>The post <a href=\"https://www.bellingcat.com/news/2026/03/07/new-footage-shows-wanted-kinahan-cartel-kingpins-post-sanctions/\" rel=\"nofollow\">New Footage Shows Wanted Kinahan Cartel Kingpins Post-Sanctions</a> appeared first on <a href=\"https://www.bellingcat.com\" rel=\"nofollow\">bellingcat</a>.</p>"
+  },
+  {
+    "source": "bellingcat",
+    "title": "The Incendiary Bomb Never Seen in Israel Before",
+    "link": "https://www.bellingcat.com/news/2026/03/07/the-incendiary-bomb-never-seen-in-israel-before/",
+    "published": "Sat, 07 Mar 2026 17:46:31 +0000",
+    "summary": "<p>The Israeli Air Force (IAF) has dropped 5,000 bombs on Iran since the United States and Israel launched an attack last week, according to a statement by the IAF on March 4. Bellingcat has monitored weapons used in the first few days of the war, and strikes across the region, including those that caused civilian [&#8230;]</p>\n<p>The post <a href=\"https://www.bellingcat.com/news/2026/03/07/the-incendiary-bomb-never-seen-in-israel-before/\" rel=\"nofollow\">The Incendiary Bomb Never Seen in Israel Before</a> appeared first on <a href=\"https://www.bellingcat.com\" rel=\"nofollow\">bellingcat</a>.</p>"
+  },
+  {
+    "source": "bellingcat",
+    "title": "Using Bellingcat\u2019s New Open Source Tool to Explore Historical and Spatial Flight Data",
+    "link": "https://www.bellingcat.com/resources/2026/03/05/turnstone-flight-tracking-tool/",
+    "published": "Thu, 05 Mar 2026 14:29:59 +0000",
+    "summary": "<p>Flight tracking data is an important tool in open source research, but with 100,000 daily flights, it can be difficult to contextualise what a particular aircraft&#8217;s movements indicate.&#160; Bellingcat has developed a tool called Turnstone to make it easier to visualise historical trends in flight data and spot unusual patterns. It also allows users to [&#8230;]</p>\n<p>The post <a href=\"https://www.bellingcat.com/resources/2026/03/05/turnstone-flight-tracking-tool/\" rel=\"nofollow\">Using Bellingcat\u2019s New Open Source Tool to Explore Historical and Spatial Flight Data</a> appeared first on <a href=\"https://www.bellingcat.com\" rel=\"nofollow\">bellingcat</a>.</p>"
+  },
+  {
+    "source": "bellingcat",
+    "title": "Satellite Imagery Reveals Strikes on Iranian Police Stations",
+    "link": "https://www.bellingcat.com/news/middle-east/2026/03/04/satellite-imagery-reveals-strikes-on-iranian-police-stations/",
+    "published": "Wed, 04 Mar 2026 12:35:06 +0000",
+    "summary": "<p>US President Donald Trump said on January 2 that the US was \u201clocked and loaded and ready to go\u201d. Trump was talking aloud about intervening in Iran if it continued a violent crackdown on demonstrators who had taken to the streets over spiralling inflation and ongoing repression.&#160; Thousands of Iranian\u2019s were reported to have been [&#8230;]</p>\n<p>The post <a href=\"https://www.bellingcat.com/news/middle-east/2026/03/04/satellite-imagery-reveals-strikes-on-iranian-police-stations/\" rel=\"nofollow\">Satellite Imagery Reveals Strikes on Iranian Police Stations</a> appeared first on <a href=\"https://www.bellingcat.com\" rel=\"nofollow\">bellingcat</a>.</p>"
+  },
+  {
+    "source": "bellingcat",
+    "title": "\u201cBombs will fall Everywhere\u201d: The American, Israeli and Iranian Weapons Being Deployed in Middle East",
+    "link": "https://www.bellingcat.com/news/2026/03/03/bombs-will-fall-everywhere-the-american-israeli-and-iranian-weapons-being-deployed-in-middle-east/",
+    "published": "Tue, 03 Mar 2026 12:26:06 +0000",
+    "summary": "<p>The United States and Israel launched an attack on Iran on Saturday morning, killing Supreme Leader Ayatollah Ali Khamenei as well as several senior regime figures and striking multiple sites across the country. Iran retaliated by firing at targets across the region, including Israel, Bahrain, Qatar, the UAE and other Gulf states. The conflict is [&#8230;]</p>\n<p>The post <a href=\"https://www.bellingcat.com/news/2026/03/03/bombs-will-fall-everywhere-the-american-israeli-and-iranian-weapons-being-deployed-in-middle-east/\" rel=\"nofollow\">\u201cBombs will fall Everywhere\u201d: The American, Israeli and Iranian Weapons Being Deployed in Middle East</a> appeared first on <a href=\"https://www.bellingcat.com\" rel=\"nofollow\">bellingcat</a>.</p>"
+  },
+  {
+    "source": "bellingcat",
+    "title": "How Russia\u2019s War Has Devastated Civilian Life in Ukraine",
+    "link": "https://www.bellingcat.com/news/2026/02/24/how-russias-war-has-devastated-civilian-life-in-ukraine/",
+    "published": "Tue, 24 Feb 2026 08:55:27 +0000",
+    "summary": "<p>In the tiny town of Krasnopillia in rural Ukraine, the stillness of the night is shattered by the whine of a Russian drone. Seconds later, a community hospital bursts into flames. Sparks and debris rain down across the skeletons of trees as the fire sends plumes of smoke into the pitch-black sky. Dozens of people [&#8230;]</p>\n<p>The post <a href=\"https://www.bellingcat.com/news/2026/02/24/how-russias-war-has-devastated-civilian-life-in-ukraine/\" rel=\"nofollow\">How Russia\u2019s War Has Devastated Civilian Life in Ukraine</a> appeared first on <a href=\"https://www.bellingcat.com\" rel=\"nofollow\">bellingcat</a>.</p>"
+  },
+  {
+    "source": "webbreacher_osint",
+    "title": "Get SMART About OSINT",
+    "link": "https://webbreacher.com/2022/11/14/get-smart-about-osint/?utm_source=rss&utm_medium=rss&utm_campaign=get-smart-about-osint",
+    "published": "Mon, 14 Nov 2022 20:53:10 +0000",
+    "summary": "<p>SMART (Start Me Aggregated Resource Tool) is a one stop shop for the aggregation of OSINT start.me data. Visit us and you are effectively searching over 240 OSINT start.me pages.</p>\n<p>The post <a href=\"https://webbreacher.com/2022/11/14/get-smart-about-osint/\">Get SMART About OSINT</a> appeared first on <a href=\"https://webbreacher.com\">Micah&#039;s personal blog.</a>.</p>"
+  },
+  {
+    "source": "webbreacher_osint",
+    "title": "Grabbing old Bitmoji outfits with BACKMOJI",
+    "link": "https://webbreacher.com/2022/10/24/grabbing-old-bitmoji-outfits-with-backmoji/?utm_source=rss&utm_medium=rss&utm_campaign=grabbing-old-bitmoji-outfits-with-backmoji",
+    "published": "Mon, 24 Oct 2022 21:24:55 +0000",
+    "summary": "<p>Backmoji - Bitmoji enumeration tool for OSINT work. A work inspired by Griffin Glynn's blog https://hatless1der.com/a-snapchat-osint-tip-viewing-bitmoji-changes/</p>\n<p>The post <a href=\"https://webbreacher.com/2022/10/24/grabbing-old-bitmoji-outfits-with-backmoji/\">Grabbing old Bitmoji outfits with BACKMOJI</a> appeared first on <a href=\"https://webbreacher.com\">Micah&#039;s personal blog.</a>.</p>"
+  },
+  {
+    "source": "webbreacher_osint",
+    "title": "Resources Mentioned in My 2022 DEFCON Recon Village Keynote",
+    "link": "https://webbreacher.com/2022/08/12/resources-mentioned-in-my-2022-defcon-recon-village-keynote/?utm_source=rss&utm_medium=rss&utm_campaign=resources-mentioned-in-my-2022-defcon-recon-village-keynote",
+    "published": "Fri, 12 Aug 2022 16:40:37 +0000",
+    "summary": "<p>Blog post sharing resources Micah Hoffman mentioned in his 2022 DEFCON Recon Village Keynote talk.</p>\n<p>The post <a href=\"https://webbreacher.com/2022/08/12/resources-mentioned-in-my-2022-defcon-recon-village-keynote/\">Resources Mentioned in My 2022 DEFCON Recon Village Keynote</a> appeared first on <a href=\"https://webbreacher.com\">Micah&#039;s personal blog.</a>.</p>"
+  },
+  {
+    "source": "webbreacher_osint",
+    "title": "We Are Not the Same: Generating Accessible Intelligence Reports",
+    "link": "https://webbreacher.com/2022/03/16/report-accessibility/?utm_source=rss&utm_medium=rss&utm_campaign=report-accessibility",
+    "published": "Wed, 16 Mar 2022 16:59:49 +0000",
+    "summary": "<p>\"We are all different.\" seems like a simple, easy to understand statement, right? Each of us is different and, in the OSINT world, we leverage those differences to generate creative methods to investigate our subjects and in processing the data we collect. Different is good. Embrace it. And yet, there are times when we forget...... <a class=\"more-link\" href=\"https://webbreacher.com/2022/03/16/report-accessibility/#more-2990\">Continue Reading &#8594;</a></p>\n<p>The post <a href=\"https://webbreacher.com/2022/03/16/report-accessibility/\">We Are Not the Same: Generating Accessible Intelligence Reports</a> appeared first on <a href=\"https://webbreacher.com\">Micah&#039;s personal blog.</a>.</p>"
+  },
+  {
+    "source": "webbreacher_osint",
+    "title": "Obsidian: The All-in-One Documentation Powerhouse",
+    "link": "https://webbreacher.com/2022/03/15/obsidian/?utm_source=rss&utm_medium=rss&utm_campaign=obsidian",
+    "published": "Tue, 15 Mar 2022 13:11:33 +0000",
+    "summary": "<p>What is Obsidian? At its most basic, Obsidian is a documentation tool. You write your notes in it instead of a text editor, word processing tool, or even a MindMap. The software is free for personal or educational use, and for companies with 1 employee. For those working in companies with 2 or more employees,...... <a class=\"more-link\" href=\"https://webbreacher.com/2022/03/15/obsidian/#more-2974\">Continue Reading &#8594;</a></p>\n<p>The post <a href=\"https://webbreacher.com/2022/03/15/obsidian/\">Obsidian: The All-in-One Documentation Powerhouse</a> appeared first on <a href=\"https://webbreacher.com\">Micah&#039;s personal blog.</a>.</p>"
+  },
+  {
+    "source": "webbreacher_osint",
+    "title": "OSINT Map: A MindMap for Your Investigations",
+    "link": "https://webbreacher.com/2018/07/12/osint-map/?utm_source=rss&utm_medium=rss&utm_campaign=osint-map",
+    "published": "Thu, 12 Jul 2018 20:15:49 +0000",
+    "summary": "<p>This is a guest post by Steve Hall (https://twitter.com/shall_1). Thanks for writing it Steve! Update - 2022-03-171. Micah updated the MindMap file to version 2. Little less cluttered and more focused. It is in the same GitHub location and called \"OSINT_Maps2.xmind\"2. I've moved from MindMaps to Obsidian for documentation. Check out the blog post https://webbreacher.com/2022/03/15/obsidian/...... <a class=\"more-link\" href=\"https://webbreacher.com/2018/07/12/osint-map/#more-2526\">Continue Reading &#8594;</a></p>\n<p>The post <a href=\"https://webbreacher.com/2018/07/12/osint-map/\">OSINT Map: A MindMap for Your Investigations</a> appeared first on <a href=\"https://webbreacher.com\">Micah&#039;s personal blog.</a>.</p>"
+  },
+  {
+    "source": "webbreacher_osint",
+    "title": "Introducing OSINT YOGA",
+    "link": "https://webbreacher.com/2018/06/24/introducing-osint-yoga/?utm_source=rss&utm_medium=rss&utm_campaign=introducing-osint-yoga",
+    "published": "Sun, 24 Jun 2018 11:51:38 +0000",
+    "summary": "<p>I absolutely love all of the public projects where people share their favorite OSINT bookmarks with others. You've most likely seen some of them. [UPDATE] Bruno Mortier (@digintelosint) created an excellent resource of resources page at https://start.me/p/ZME8nR/osint where a bunch of these sites are catalogued. Head over there and check them out! If you haven't...... <a class=\"more-link\" href=\"https://webbreacher.com/2018/06/24/introducing-osint-yoga/#more-2495\">Continue Reading &#8594;</a></p>\n<p>The post <a href=\"https://webbreacher.com/2018/06/24/introducing-osint-yoga/\">Introducing OSINT YOGA</a> appeared first on <a href=\"https://webbreacher.com\">Micah&#039;s personal blog.</a>.</p>"
+  },
+  {
+    "source": "webbreacher_osint",
+    "title": "Dark Web Report + TorGhost + EyeWitness == Goodness",
+    "link": "https://webbreacher.com/2017/09/02/dark-web-report-torghost-eyewitness-goodness/?utm_source=rss&utm_medium=rss&utm_campaign=dark-web-report-torghost-eyewitness-goodness",
+    "published": "Sun, 03 Sep 2017 00:08:12 +0000",
+    "summary": "<p>In this post I use a python tool (EyeWitness), TOR, TorGhost, and the Dark Web Reports from Hunchly to automate viewing the Dark Web resources.</p>\n<p>The post <a href=\"https://webbreacher.com/2017/09/02/dark-web-report-torghost-eyewitness-goodness/\">Dark Web Report + TorGhost + EyeWitness == Goodness</a> appeared first on <a href=\"https://webbreacher.com\">Micah&#039;s personal blog.</a>.</p>"
+  },
+  {
+    "source": "webbreacher_osint",
+    "title": "The Secrets of LinkedIn",
+    "link": "https://webbreacher.com/2017/01/14/the-secrets-of-linkedin/?utm_source=rss&utm_medium=rss&utm_campaign=the-secrets-of-linkedin",
+    "published": "Sat, 14 Jan 2017 15:51:12 +0000",
+    "summary": "<p>For those of you that have been the targets of SPAM or phishing or perhaps for those of you that are cyber defenders, how many times have you heard \"I have no idea how the attacker got my personal email address.\" I have a secret to share with you. [Come a little closer to the...... <a class=\"more-link\" href=\"https://webbreacher.com/2017/01/14/the-secrets-of-linkedin/#more-1552\">Continue Reading &#8594;</a></p>\n<p>The post <a href=\"https://webbreacher.com/2017/01/14/the-secrets-of-linkedin/\">The Secrets of LinkedIn</a> appeared first on <a href=\"https://webbreacher.com\">Micah&#039;s personal blog.</a>.</p>"
+  },
+  {
+    "source": "webbreacher_osint",
+    "title": "WhatsMyName Project",
+    "link": "https://webbreacher.com/2016/12/11/whatsmyname-project/?utm_source=rss&utm_medium=rss&utm_campaign=whatsmyname-project",
+    "published": "Sun, 11 Dec 2016 14:32:10 +0000",
+    "summary": "<p>What Is It? I've created the WhatsMyName project on Github (https://github.com/WebBreacher/WhatsMyName) to help with #OSINT searches by using target user names. Here's how it works: We understand that people use the same username across multiple web sites. For example, I am \"WebBreacher\" on both the Github and BitBucket web sites. Some web sites make it...... <a class=\"more-link\" href=\"https://webbreacher.com/2016/12/11/whatsmyname-project/#more-917\">Continue Reading &#8594;</a></p>\n<p>The post <a href=\"https://webbreacher.com/2016/12/11/whatsmyname-project/\">WhatsMyName Project</a> appeared first on <a href=\"https://webbreacher.com\">Micah&#039;s personal blog.</a>.</p>"
+  }
+]

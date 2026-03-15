@@ -1,0 +1,17 @@
+{
+  "hunt": "crowdstrike_alerts",
+  "source": "crowdstrike",
+  "alert_count": 93,
+  "verdict_counts": {
+    "expected_lab_activity": 85,
+    "suspicious": 5,
+    "needs_review": 3
+  },
+  "severity_counts": {
+    "Informational": 36,
+    "Low": 8,
+    "High": 35,
+    "Medium": 12,
+    "Critical": 2
+  }
+}

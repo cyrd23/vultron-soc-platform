@@ -1,0 +1,11 @@
+name: newly_observed_domains
+category: dns
+description: Detect newly observed domains in recent DNS telemetry
+severity: medium
+
+query_template: |
+  FROM logs-zeek.dns*
+  | STATS first_seen = MIN(@timestamp), last_seen = MAX(@timestamp), src_ips = VALUES(source.ip) BY dns.question.name
+  | WHERE first_seen >= NOW() - 1 day
+  | SORT first_seen DESC
+  | LIMIT 100

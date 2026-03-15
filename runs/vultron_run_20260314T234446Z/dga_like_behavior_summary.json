@@ -1,0 +1,76 @@
+{
+  "hunt": "dga_like_behavior",
+  "category": "dns",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "medium",
+  "columns": [
+    "@timestamp",
+    "source.ip",
+    "dns.question.name",
+    "dns.question.registered_domain",
+    "event.action"
+  ],
+  "entities": {
+    "ips": [
+      "12.117.188.38",
+      "12.86.141.10",
+      "32.140.248.34"
+    ],
+    "apps": [
+      "dns-request-Allowed"
+    ],
+    "domains": [
+      "7052064.fs1.hubspotusercontent-na1.net",
+      "ara.paa-reporting-advertising.amazon",
+      "browser-intake-datadoghq.com",
+      "datadoghq-browser-agent.com",
+      "dev.visualwebsiteoptimizer.com",
+      "hubspotusercontent-na1.net",
+      "microsoftpersonalcontent.com",
+      "municipalonlinepayments.com",
+      "my.microsoftpersonalcontent.com",
+      "paa-reporting-advertising.amazon",
+      "pharrtx.municipalonlinepayments.com",
+      "visualwebsiteoptimizer.com",
+      "www.datadoghq-browser-agent.com"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-14T23:21:24.000Z",
+      "32.140.248.34",
+      "my.microsoftpersonalcontent.com",
+      "microsoftpersonalcontent.com",
+      "dns-request-Allowed"
+    ],
+    [
+      "2026-03-13T23:20:59.000Z",
+      "32.140.248.34",
+      "my.microsoftpersonalcontent.com",
+      "microsoftpersonalcontent.com",
+      "dns-request-Allowed"
+    ],
+    [
+      "2026-03-13T21:14:07.000Z",
+      "12.86.141.10",
+      "browser-intake-datadoghq.com",
+      "browser-intake-datadoghq.com",
+      "dns-request-Allowed"
+    ],
+    [
+      "2026-03-13T21:10:09.000Z",
+      "12.86.141.10",
+      "browser-intake-datadoghq.com",
+      "browser-intake-datadoghq.com",
+      "dns-request-Allowed"
+    ],
+    [
+      "2026-03-13T21:08:33.000Z",
+      "12.86.141.10",
+      "browser-intake-datadoghq.com",
+      "browser-intake-datadoghq.com",
+      "dns-request-Allowed"
+    ]
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "hunt": "large_data_exfiltration",
+  "category": "construction_threats",
+  "status": "suspicious",
+  "findings": 3,
+  "severity": "critical",
+  "columns": [
+    "total_bytes",
+    "first_seen",
+    "last_seen",
+    "source.ip",
+    "destination.ip",
+    "destination.geo.country_name",
+    "duration_minutes"
+  ],
+  "entities": {
+    "ips": [
+      "185.246.211.27",
+      "192.168.20.105",
+      "91.189.92.24",
+      "96.255.250.253"
+    ]
+  },
+  "sample_values": [
+    [
+      795407681,
+      "2026-03-09T05:29:17.089Z",
+      "2026-03-14T15:40:09.214Z",
+      "96.255.250.253",
+      "91.189.92.24",
+      "United Kingdom",
+      7810
+    ],
+    [
+      149113944,
+      "2026-03-10T10:27:53.911Z",
+      "2026-03-10T10:27:53.911Z",
+      "96.255.250.253",
+      "185.246.211.27",
+      "France",
+      0
+    ],
+    [
+      123279475,
+      "2026-03-13T06:31:36.080Z",
+      "2026-03-13T06:31:36.080Z",
+      "192.168.20.105",
+      "91.189.92.24",
+      "United Kingdom",
+      0
+    ]
+  ]
+}

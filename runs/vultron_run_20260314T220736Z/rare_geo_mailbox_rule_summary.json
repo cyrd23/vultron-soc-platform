@@ -1,0 +1,14 @@
+{
+  "hunt": "rare_geo_mailbox_rule",
+  "category": "identity",
+  "status": "clean",
+  "findings": 0,
+  "severity": "critical",
+  "columns": [
+    "logins",
+    "user.name",
+    "geo.country_name"
+  ],
+  "entities": {},
+  "sample_values": []
+}

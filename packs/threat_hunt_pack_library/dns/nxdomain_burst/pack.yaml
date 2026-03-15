@@ -1,0 +1,12 @@
+name: nxdomain_burst
+category: dns
+description: Detect bursts of NXDOMAIN responses from the same source IP
+severity: high
+
+query_template: |
+  FROM logs-cisco_umbrella.log*
+  | WHERE dns.response_code == "NXDOMAIN"
+  | STATS nxdomain_count = COUNT(), domains = VALUES(dns.question.name) BY source.ip
+  | WHERE nxdomain_count >= 20
+  | SORT nxdomain_count DESC
+  | LIMIT 100

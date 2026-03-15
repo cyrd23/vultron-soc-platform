@@ -1,0 +1,62 @@
+{
+  "documents_found": 5,
+  "values_loaded": 20,
+  "took": 22,
+  "is_partial": false,
+  "columns": [
+    {
+      "name": "connections",
+      "type": "long"
+    },
+    {
+      "name": "first_seen",
+      "type": "date"
+    },
+    {
+      "name": "last_seen",
+      "type": "date"
+    },
+    {
+      "name": "source.ip",
+      "type": "ip"
+    },
+    {
+      "name": "destination.ip",
+      "type": "ip"
+    },
+    {
+      "name": "host.name",
+      "type": "keyword"
+    },
+    {
+      "name": "user.name",
+      "type": "keyword"
+    },
+    {
+      "name": "duration_minutes",
+      "type": "integer"
+    }
+  ],
+  "values": [
+    [
+      4,
+      "2026-03-09T13:15:56.892Z",
+      "2026-03-13T14:25:20.568Z",
+      "192.168.65.44",
+      "10.10.2.6",
+      "IT-STEMM-01-AJ",
+      null,
+      5829
+    ],
+    [
+      1,
+      "2026-03-10T14:19:09.300Z",
+      "2026-03-10T14:19:09.300Z",
+      "192.168.1.110",
+      "10.10.2.6",
+      "IT-STEMM-01-AJ",
+      null,
+      0
+    ]
+  ]
+}

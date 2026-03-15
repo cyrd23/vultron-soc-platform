@@ -1,0 +1,1402 @@
+[
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9897024929-10417-6137616",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11893337767-10417-8379408",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11884723401-10147-8364304",
+    "display_name": "PShellMimikatz",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11857738830-10417-8304400",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4240656",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-5733-3980560",
+    "display_name": "Machine Learning Identified High Confidence Malicious File",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11935825673-10417-8447760",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11919584015-10417-8424720",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-8298256",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11833570885-10417-8258576",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10371703633-10417-6660368",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9899057346-10417-6141968",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9908250020-10166-6157840",
+    "display_name": "PShellDownloadRun",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9898133367-10417-6138640",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11959720516-10417-8721936",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11886057611-10107-8365584",
+    "display_name": "PShellDownload",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-10417-6120208",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:9a83a8075e294430b6a73302b5b4a0fd:510317325820-10427-14436880",
+    "display_name": "SuspiciousFileWritten",
+    "hostname": "F-STEMM-01-BP",
+    "user": "Bob Poplin",
+    "decision": "escalate_crowdstrike_high_severity_alert",
+    "severity": "high",
+    "rationale": [
+      "High severity CrowdStrike alert has supporting host telemetry in Elastic",
+      "Reviewed CrowdStrike alert: SuspiciousFileWritten",
+      "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:fb3d64feb50846208262f41b6b78bf30:1924242885558-56-23975696",
+    "display_name": "HashDumpSAMUntrusted",
+    "hostname": "TUL-COUNTER-02",
+    "user": "TUL-COUNTER-02$",
+    "decision": "escalate_crowdstrike_high_severity_alert",
+    "severity": "high",
+    "rationale": [
+      "High severity CrowdStrike alert has supporting host telemetry in Elastic",
+      "Reviewed CrowdStrike alert: HashDumpSAMUntrusted",
+      "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11952182729-10417-8450832",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11862111419-10120-8314640",
+    "display_name": "ExploitKit",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11859763589-10147-8311568",
+    "display_name": "PShellMimikatz",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9910974655-10166-6162704",
+    "display_name": "PShellDownloadRun",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-4748-3955216",
+    "display_name": "Detect OnWrite Adware/PUP Hash",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11859763589-10146-8310544",
+    "display_name": "ProcMimikatz",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11863870195-10438-8388112",
+    "display_name": "Anomalous Process Execution",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-5733-6910480",
+    "display_name": "Machine Learning Identified High Confidence Malicious File",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4514832",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:fb3d64feb50846208262f41b6b78bf30:1925365432554-459-23959568",
+    "display_name": "UmppcBypassSuspected",
+    "hostname": "TUL-COUNTER-02",
+    "user": "TUL-COUNTER-02$",
+    "decision": "escalate_crowdstrike_high_severity_alert",
+    "severity": "high",
+    "rationale": [
+      "High severity CrowdStrike alert has supporting host telemetry in Elastic",
+      "Reviewed CrowdStrike alert: UmppcBypassSuspected",
+      "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:454c248f82bd4974a8576eb033799770:1954357939752-56-4023824",
+    "display_name": "HashDumpSAMUntrusted",
+    "hostname": "PO-STEMM-01-NC",
+    "user": "PO-STEMM-01-NC$",
+    "decision": "escalate_crowdstrike_high_severity_alert",
+    "severity": "high",
+    "rationale": [
+      "High severity CrowdStrike alert has supporting host telemetry in Elastic",
+      "Reviewed CrowdStrike alert: HashDumpSAMUntrusted",
+      "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-8392208",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11856711824-10417-8303376",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-4748-6918160",
+    "display_name": "Detect OnWrite Adware/PUP Hash",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-4748-6920976",
+    "display_name": "Detect OnWrite Adware/PUP Hash",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10372706814-10417-6661392",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10370718937-10417-6659344",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9901855281-10258-6146320",
+    "display_name": "CommandLineKnownMalware",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:9a83a8075e294430b6a73302b5b4a0fd:510256351096-10311-5536272",
+    "display_name": "BypassUACPrivEsc",
+    "hostname": "F-STEMM-01-BP",
+    "user": "Bob Poplin",
+    "decision": "escalate_crowdstrike_high_severity_alert",
+    "severity": "high",
+    "rationale": [
+      "High severity CrowdStrike alert has supporting host telemetry in Elastic",
+      "Reviewed CrowdStrike alert: BypassUACPrivEsc",
+      "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+      "Datasets observed: crowdstrike.fdr"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11856711824-10164-8306960",
+    "display_name": "PShellExploitKit2",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4530704",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11884723401-134-8363024",
+    "display_name": "PowershellCommandlineSuspicious",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9907554859-10258-6154000",
+    "display_name": "CommandLineKnownMalware",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9683050737-10127-5992464",
+    "display_name": "Dropper",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:ca8f0e489d374816b962fb078131fb4a:127314022248-337-6270992",
+    "display_name": "CommandLineStomping",
+    "hostname": "E-DAL-01-DB",
+    "user": "E-DAL-01-DB$",
+    "decision": "investigate_crowdstrike_medium_alert",
+    "severity": "medium",
+    "rationale": [
+      "Medium severity CrowdStrike alert has supporting telemetry and requires investigation",
+      "Reviewed CrowdStrike alert: CommandLineStomping",
+      "Medium severity CrowdStrike alert with supporting host telemetry found in Elastic"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11950902765-10417-8449552",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11896024689-10417-8384784",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11889542395-10248-8372240",
+    "display_name": "UnusualNslookup",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11863060189-10120-8316688",
+    "display_name": "ExploitKit",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11854519589-10166-8301072",
+    "display_name": "PShellDownloadRun",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11837773137-10106-8267280",
+    "display_name": "CredDump",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11834385132-10417-8259600",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-7995920",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11859097911-10166-8309520",
+    "display_name": "PShellDownloadRun",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-10127-6968848",
+    "display_name": "Dropper",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-5738-6963984",
+    "display_name": "OnWrite-PrewittSensorDetect-Medium",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-4748-6908176",
+    "display_name": "Detect OnWrite Adware/PUP Hash",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9910974655-10258-6161680",
+    "display_name": "CommandLineKnownMalware",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-10417-6112272",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-4748-5916176",
+    "display_name": "Detect OnWrite Adware/PUP Hash",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-5733-5915408",
+    "display_name": "Machine Learning Identified High Confidence Malicious File",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11928730356-546-8428816",
+    "display_name": "VolumeShadowCopyDeletion",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-8256784",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-5738-5987600",
+    "display_name": "OnWrite-PrewittSensorDetect-Medium",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-5733-5913872",
+    "display_name": "Machine Learning Identified High Confidence Malicious File",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4478736",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-4748-3986448",
+    "display_name": "Detect OnWrite Adware/PUP Hash",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:fb3d64feb50846208262f41b6b78bf30:1917645402998-474-15836944",
+    "display_name": "Parallel port scanning",
+    "hostname": "TUL-COUNTER-02",
+    "user": "tnavarro@ssicm.com",
+    "decision": "investigate_crowdstrike_medium_alert",
+    "severity": "medium",
+    "rationale": [
+      "Medium severity CrowdStrike alert has supporting telemetry and requires investigation",
+      "Reviewed CrowdStrike alert: Parallel port scanning",
+      "Medium severity CrowdStrike alert with supporting host telemetry found in Elastic"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11960544478-10417-8722960",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11901842666-546-8396048",
+    "display_name": "VolumeShadowCopyDeletion",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11863870195-10438-8339728",
+    "display_name": "Anomalous Process Execution",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11863870195-10438-8340240",
+    "display_name": "Anomalous Process Execution",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-7765008",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-10127-6969104",
+    "display_name": "Dropper",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-5733-5911312",
+    "display_name": "Machine Learning Identified High Confidence Malicious File",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-4748-5905168",
+    "display_name": "Detect OnWrite Adware/PUP Hash",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11866272953-10127-8325392",
+    "display_name": "Dropper",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-10127-5993232",
+    "display_name": "Dropper",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-5733-3974672",
+    "display_name": "Machine Learning Identified High Confidence Malicious File",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11863870195-10120-8318736",
+    "display_name": "ExploitKit",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-4748-5904656",
+    "display_name": "Detect OnWrite Adware/PUP Hash",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8846444048-10417-4660496",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4548112",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-5733-3985936",
+    "display_name": "Machine Learning Identified High Confidence Malicious File",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11892127031-10417-8378384",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11865244389-10159-8321040",
+    "display_name": "PShellBase64",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11854519589-10146-8300048",
+    "display_name": "ProcMimikatz",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-7802128",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-10417-6841360",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9901855281-10166-6147344",
+    "display_name": "PShellDownloadRun",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4278032",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:ca8f0e489d374816b962fb078131fb4a:126935565049-103-5439760",
+    "display_name": "ProductivityAppWroteAsep",
+    "hostname": "E-DAL-01-DB",
+    "user": "DuaneBarnett",
+    "decision": "investigate_crowdstrike_medium_alert",
+    "severity": "medium",
+    "rationale": [
+      "Medium severity CrowdStrike alert has supporting telemetry and requires investigation",
+      "Reviewed CrowdStrike alert: ProductivityAppWroteAsep",
+      "Medium severity CrowdStrike alert with supporting host telemetry found in Elastic"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11859097911-10166-8308496",
+    "display_name": "PShellDownloadRun",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  },
+  {
+    "hunt": "crowdstrike_alert",
+    "source": "crowdstrike",
+    "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8846444048-10417-4700432",
+    "display_name": "Testing activity",
+    "hostname": "LB-CCDEMO-01-RD",
+    "user": "reg",
+    "decision": "suppress_expected_lab_activity",
+    "severity": "low",
+    "rationale": [
+      "CrowdStrike alert was classified as expected lab/test activity",
+      "Connector classified this alert as expected lab/test activity",
+      "Matched Atomic Red Team / test activity indicators"
+    ]
+  }
+]

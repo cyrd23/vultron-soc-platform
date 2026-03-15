@@ -1,0 +1,84 @@
+{
+  "hunt": "script_interpreter_abuse",
+  "category": "endpoint",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "host.name",
+    "host.hostname",
+    "process.name",
+    "process.executable",
+    "process.command_line",
+    "event.action"
+  ],
+  "entities": {
+    "apps": [
+      "NetworkConnectIP4",
+      "ProcessRollup2"
+    ],
+    "hosts": [
+      "DAL-COUNTER-02",
+      "F-DAL-02-SS",
+      "IS-DAL-01-MF",
+      "LB-CCDEMO-01-RD",
+      "MCA-COUNTER-01",
+      "OA-DAL-01-CR",
+      "OS-BR-01-GB",
+      "OS-HOU-01-BD",
+      "OS-KAN-01-TG",
+      "PO-STEMM-01-NC",
+      "SAN-COUNTER-01",
+      "SSI-2024-Net",
+      "SSI-F9"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-14T22:28:43.748Z",
+      "OA-DAL-01-CR",
+      "OA-DAL-01-CR",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {f17c4bc4-1fec-11f1-8863-5cb26dd2b238}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T22:28:43.580Z",
+      "OA-DAL-01-CR",
+      "OA-DAL-01-CR",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {f17c46b1-1fec-11f1-8863-5cb26dd2b238}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T22:28:43.447Z",
+      "OA-DAL-01-CR",
+      "OA-DAL-01-CR",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {f17c4047-1fec-11f1-8863-5cb26dd2b238}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T22:28:43.286Z",
+      "OA-DAL-01-CR",
+      "OA-DAL-01-CR",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {f17c3ad6-1fec-11f1-8863-5cb26dd2b238}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T22:28:43.123Z",
+      "OA-DAL-01-CR",
+      "OA-DAL-01-CR",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {f17c336a-1fec-11f1-8863-5cb26dd2b238}",
+      "ProcessRollup2"
+    ]
+  ]
+}

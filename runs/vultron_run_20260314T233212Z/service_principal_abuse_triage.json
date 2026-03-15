@@ -1,0 +1,7 @@
+{
+  "hunt": "service_principal_abuse",
+  "verdict": "needs_review",
+  "notes": [
+    "Unhandled hunt type; manual review recommended"
+  ]
+}

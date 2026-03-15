@@ -1,0 +1,21 @@
+{
+  "documents_found": 0,
+  "values_loaded": 0,
+  "took": 44,
+  "is_partial": false,
+  "columns": [
+    {
+      "name": "logins",
+      "type": "long"
+    },
+    {
+      "name": "user.name",
+      "type": "keyword"
+    },
+    {
+      "name": "geo.country_name",
+      "type": "keyword"
+    }
+  ],
+  "values": []
+}

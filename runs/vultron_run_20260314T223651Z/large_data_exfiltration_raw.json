@@ -1,0 +1,65 @@
+{
+  "documents_found": 1719722,
+  "values_loaded": 7759439,
+  "took": 335,
+  "is_partial": false,
+  "columns": [
+    {
+      "name": "total_bytes",
+      "type": "long"
+    },
+    {
+      "name": "first_seen",
+      "type": "date"
+    },
+    {
+      "name": "last_seen",
+      "type": "date"
+    },
+    {
+      "name": "source.ip",
+      "type": "ip"
+    },
+    {
+      "name": "destination.ip",
+      "type": "ip"
+    },
+    {
+      "name": "destination.geo.country_name",
+      "type": "keyword"
+    },
+    {
+      "name": "duration_minutes",
+      "type": "integer"
+    }
+  ],
+  "values": [
+    [
+      795407681,
+      "2026-03-09T05:29:17.089Z",
+      "2026-03-14T15:40:09.214Z",
+      "96.255.250.253",
+      "91.189.92.24",
+      "United Kingdom",
+      7810
+    ],
+    [
+      149113944,
+      "2026-03-10T10:27:53.911Z",
+      "2026-03-10T10:27:53.911Z",
+      "96.255.250.253",
+      "185.246.211.27",
+      "France",
+      0
+    ],
+    [
+      123279475,
+      "2026-03-13T06:31:36.080Z",
+      "2026-03-13T06:31:36.080Z",
+      "192.168.20.105",
+      "91.189.92.24",
+      "United Kingdom",
+      0
+    ]
+  ]
+}

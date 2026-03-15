@@ -1,0 +1,10 @@
+name: vulnerable_host_activity
+category: exposure
+description: Detect vulnerable assets from Tenable data
+severity: high
+
+query_template: |
+  FROM logs-tenable_io.vulnerability*
+  | KEEP @timestamp, host.name, host.hostname, host.ip, vulnerability.id, vulnerability.severity
+  | SORT @timestamp DESC
+  | LIMIT 100

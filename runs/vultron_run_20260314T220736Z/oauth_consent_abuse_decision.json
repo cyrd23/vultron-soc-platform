@@ -1,0 +1,10 @@
+{
+  "hunt": "oauth_consent_abuse",
+  "decision": "needs_oauth_review",
+  "severity": "medium",
+  "rationale": [
+    "OAuth consent or application activity requires analyst validation",
+    "OAuth consent, grant, or application-related activity detected",
+    "Observed user count: 9"
+  ]
+}

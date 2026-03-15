@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-03-14T23:53:12.427368+00:00",
+  "run_dir": "/home/reg/soc/runs/vultron_run_20260314T233212Z",
+  "decisions_reviewed": 134,
+  "cases_created": 38,
+  "cases_by_priority": {
+    "critical": 0,
+    "high": 6,
+    "medium": 32,
+    "low": 0
+  }
+}

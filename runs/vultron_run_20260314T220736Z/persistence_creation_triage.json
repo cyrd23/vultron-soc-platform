@@ -1,0 +1,7 @@
+{
+  "hunt": "persistence_creation",
+  "verdict": "needs_review",
+  "notes": [
+    "Unhandled hunt type; manual review recommended"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-03-14T23:44:55.426745+00:00",
+  "source_type": "rss_research_extraction",
+  "source_files": [
+    "2026-03-11_feed_entries.json",
+    "2026-03-14_feed_entries.json"
+  ],
+  "ips": [],
+  "domains": [],
+  "hashes": [],
+  "scored_domains": []
+}

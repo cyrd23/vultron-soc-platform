@@ -1,0 +1,93 @@
+{
+  "hunt": "remote_service_creation",
+  "category": "lateral_movement",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "host.name",
+    "host.hostname",
+    "source.ip",
+    "destination.ip",
+    "event.action",
+    "process.name",
+    "process.executable",
+    "process.command_line"
+  ],
+  "entities": {
+    "ips": [
+      "10.10.2.4",
+      "192.168.60.12",
+      "192.168.70.10",
+      "192.168.86.229"
+    ],
+    "apps": [
+      "ServiceStarted",
+      "ServiceStopped"
+    ],
+    "hosts": [
+      "F-AUS-01-LS",
+      "MCA-COUNTER-01",
+      "OS-KAN-01-TG",
+      "SSI-2024-Net"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-14T23:13:09.720Z",
+      "MCA-COUNTER-01",
+      "MCA-COUNTER-01",
+      "192.168.70.10",
+      null,
+      "ServiceStopped",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p -s wuauserv"
+    ],
+    [
+      "2026-03-14T23:12:06.856Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "10.10.2.4",
+      null,
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\svchost.exe",
+      "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s wuauserv"
+    ],
+    [
+      "2026-03-14T23:06:01.862Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "10.10.2.4",
+      null,
+      "ServiceStarted",
+      "sppsvc.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\sppsvc.exe",
+      "C:\\Windows\\system32\\sppsvc.exe"
+    ],
+    [
+      "2026-03-14T23:03:04.014Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "192.168.60.12",
+      null,
+      "ServiceStarted",
+      "sppsvc.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\sppsvc.exe",
+      "C:\\WINDOWS\\system32\\sppsvc.exe"
+    ],
+    [
+      "2026-03-14T23:02:20.963Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "192.168.60.12",
+      null,
+      "ServiceStopped",
+      null,
+      null,
+      null
+    ]
+  ]
+}

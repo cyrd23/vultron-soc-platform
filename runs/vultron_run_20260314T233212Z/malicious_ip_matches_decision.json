@@ -1,0 +1,10 @@
+{
+  "hunt": "malicious_ip_matches",
+  "decision": "blocked_inbound_hostile_traffic",
+  "severity": "low",
+  "rationale": [
+    "Threat-intel IOC IPs were observed only in denied network events",
+    "Fortinet blocked the activity at the edge",
+    "No endpoint evidence of internal hosts contacting IOC infrastructure"
+  ]
+}

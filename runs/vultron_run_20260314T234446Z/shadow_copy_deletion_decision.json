@@ -1,0 +1,8 @@
+{
+  "hunt": "shadow_copy_deletion",
+  "decision": "benign",
+  "severity": "low",
+  "rationale": [
+    "Triage found no suspicious activity"
+  ]
+}

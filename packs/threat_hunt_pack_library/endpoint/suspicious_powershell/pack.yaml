@@ -1,0 +1,17 @@
+name: suspicious_powershell
+category: endpoint
+description: Detect suspicious PowerShell usage
+severity: high
+
+query_template: |
+  FROM logs-crowdstrike.fdr*
+  | WHERE process.name == "powershell.exe" 
+     OR process.name == "pwsh.exe"
+     OR process.command_line LIKE "*powershell*"
+  | WHERE process.command_line LIKE "*-enc*" 
+     OR process.command_line LIKE "*frombase64string*"
+     OR process.command_line LIKE "*iex*"
+     OR process.command_line LIKE "*downloadstring*"
+  | KEEP @timestamp, host.name, host.hostname, event.action, process.name, process.executable, process.command_line
+  | SORT @timestamp DESC
+  | LIMIT 100

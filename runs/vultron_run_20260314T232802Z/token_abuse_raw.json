@@ -1,0 +1,25 @@
+{
+  "documents_found": 0,
+  "values_loaded": 0,
+  "took": 5,
+  "is_partial": false,
+  "columns": [
+    {
+      "name": "country_count",
+      "type": "long"
+    },
+    {
+      "name": "countries",
+      "type": "keyword"
+    },
+    {
+      "name": "ips",
+      "type": "ip"
+    },
+    {
+      "name": "user.name",
+      "type": "keyword"
+    }
+  ],
+  "values": []
+}

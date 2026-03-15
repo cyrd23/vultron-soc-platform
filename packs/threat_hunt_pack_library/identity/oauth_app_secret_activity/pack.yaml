@@ -1,0 +1,17 @@
+name: oauth_app_secret_activity
+category: identity
+description: Detect application secret, certificate, or credential activity
+severity: high
+
+query_template: |
+  FROM logs-azure.auditlogs*
+  | WHERE event.action IS NOT NULL OR azure.auditlogs.properties.activity_display_name IS NOT NULL
+  | WHERE event.action LIKE "*secret*" 
+     OR event.action LIKE "*certificate*" 
+     OR event.action LIKE "*credential*"
+     OR azure.auditlogs.properties.activity_display_name LIKE "*secret*"
+     OR azure.auditlogs.properties.activity_display_name LIKE "*certificate*"
+     OR azure.auditlogs.properties.activity_display_name LIKE "*credential*"
+  | KEEP @timestamp, event.action, event.outcome, source.ip, client.ip, azure.auditlogs.properties.activity_display_name, azure.auditlogs.properties.initiated_by.user.userPrincipalName, azure.auditlogs.properties.initiated_by.app.displayName
+  | SORT @timestamp DESC
+  | LIMIT 100

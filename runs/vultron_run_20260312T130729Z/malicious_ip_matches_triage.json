@@ -1,0 +1,13 @@
+{
+  "hunt": "malicious_ip_matches",
+  "verdict": "suspicious",
+  "notes": [
+    "Threat-intel IP matches were observed in environment telemetry",
+    "Matched IOC IP count: 25",
+    "Observed action/app indicators: 2",
+    "Results include destination IP context",
+    "Results include source IP context",
+    "High volume of matched malicious IP findings",
+    "Some matched traffic appears denied or blocked; review whether this reflects effective control or scanning noise"
+  ]
+}

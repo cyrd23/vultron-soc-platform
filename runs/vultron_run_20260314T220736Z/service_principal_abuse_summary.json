@@ -1,0 +1,113 @@
+{
+  "hunt": "service_principal_abuse",
+  "category": "identity",
+  "status": "suspicious",
+  "findings": 75,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "event.action",
+    "event.outcome",
+    "source.ip",
+    "client.ip",
+    "azure.auditlogs.properties.activity_display_name",
+    "azure.auditlogs.properties.initiated_by.user.userPrincipalName",
+    "azure.auditlogs.properties.initiated_by.app.displayName",
+    "azure.auditlogs.operation_name"
+  ],
+  "entities": {
+    "users": [
+      "ELarson@ssicm.com",
+      "JFulbright@ssicm.com",
+      "MPetrikat@ssicm.com",
+      "NChrisman@ssicm.com",
+      "Reggie-Cyleuth@ssicm.com",
+      "dcarter@ssicm.com",
+      "jaldape@ssicm.com"
+    ],
+    "ips": [
+      "104.210.141.148",
+      "13.65.198.214",
+      "157.55.167.20",
+      "172.190.161.50",
+      "20.163.70.41"
+    ],
+    "apps": [
+      "Add app role assignment grant to user",
+      "Add application",
+      "Add delegated permission grant",
+      "Add owner to application",
+      "Add owner to service principal",
+      "Add service principal",
+      "Consent to application",
+      "Create application password for user",
+      "Create application \u2013 Certificates and secrets management ",
+      "Microsoft Azure AD Internal - Jit Provisioning",
+      "Microsoft Intune",
+      "Office 365 SharePoint Online",
+      "Power Virtual Agents Service",
+      "PowerApps Service",
+      "Remove delegated permission grant",
+      "Update application",
+      "Update service principal",
+      "Windows Azure Service Management API"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-12T20:38:28.921Z",
+      "Consent to application",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Consent to application",
+      "MPetrikat@ssicm.com",
+      null,
+      "Consent to application"
+    ],
+    [
+      "2026-03-12T20:38:28.920Z",
+      "Add app role assignment grant to user",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Add app role assignment grant to user",
+      "MPetrikat@ssicm.com",
+      null,
+      "Add app role assignment grant to user"
+    ],
+    [
+      "2026-03-12T20:38:28.855Z",
+      "Add delegated permission grant",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Add delegated permission grant",
+      "MPetrikat@ssicm.com",
+      null,
+      "Add delegated permission grant"
+    ],
+    [
+      "2026-03-12T20:38:28.794Z",
+      "Add service principal",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Add service principal",
+      "MPetrikat@ssicm.com",
+      null,
+      "Add service principal"
+    ],
+    [
+      "2026-03-12T09:18:10.428Z",
+      "Add service principal",
+      "success",
+      null,
+      null,
+      "Add service principal",
+      null,
+      "Microsoft Azure AD Internal - Jit Provisioning",
+      "Add service principal"
+    ]
+  ]
+}

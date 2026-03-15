@@ -1,0 +1,938 @@
+{
+  "documents_found": 320,
+  "values_loaded": 2060,
+  "took": 14,
+  "is_partial": false,
+  "columns": [
+    {
+      "name": "@timestamp",
+      "type": "date"
+    },
+    {
+      "name": "host.name",
+      "type": "keyword"
+    },
+    {
+      "name": "host.hostname",
+      "type": "keyword"
+    },
+    {
+      "name": "event.action",
+      "type": "keyword"
+    },
+    {
+      "name": "process.name",
+      "type": "keyword"
+    },
+    {
+      "name": "process.executable",
+      "type": "keyword"
+    },
+    {
+      "name": "process.command_line",
+      "type": "keyword"
+    }
+  ],
+  "values": [
+    [
+      "2026-03-14T23:37:01.770Z",
+      "SSI-F9",
+      "SSI-F9",
+      "ServiceStopped",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-14T23:32:47.312Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "ServiceStarted",
+      "sppsvc.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\sppsvc.exe",
+      "C:\\Windows\\system32\\sppsvc.exe"
+    ],
+    [
+      "2026-03-14T23:28:54.876Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "ServiceStarted",
+      "updater.exe",
+      "\\Device\\HarddiskVolume4\\Program Files (x86)\\Google\\GoogleUpdater\\147.0.7703.0\\updater.exe",
+      "\"C:\\Program Files (x86)\\Google\\GoogleUpdater\\147.0.7703.0\\updater.exe\" --system --windows-service --service=update-internal"
+    ],
+    [
+      "2026-03-14T23:28:54.876Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "ServiceStarted",
+      "updater.exe",
+      "\\Device\\HarddiskVolume4\\Program Files (x86)\\Google\\GoogleUpdater\\147.0.7703.0\\updater.exe",
+      "\"C:\\Program Files (x86)\\Google\\GoogleUpdater\\147.0.7703.0\\updater.exe\" --system --windows-service --service=update"
+    ],
+    [
+      "2026-03-14T23:22:11.124Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "ServiceStopped",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\svchost.exe",
+      "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s wuauserv"
+    ],
+    [
+      "2026-03-14T23:13:09.720Z",
+      "MCA-COUNTER-01",
+      "MCA-COUNTER-01",
+      "ServiceStopped",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p -s wuauserv"
+    ],
+    [
+      "2026-03-14T23:12:06.856Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\svchost.exe",
+      "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s wuauserv"
+    ],
+    [
+      "2026-03-14T23:06:01.862Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "ServiceStarted",
+      "sppsvc.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\sppsvc.exe",
+      "C:\\Windows\\system32\\sppsvc.exe"
+    ],
+    [
+      "2026-03-14T23:04:49.469Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "ProcessRollup2",
+      "schtasks.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\schtasks.exe",
+      "schtasks.exe /change /tn \"Microsoft\\Office\\Office Serviceability Manager\" /enable"
+    ],
+    [
+      "2026-03-14T23:04:49.468Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "ProcessRollup2",
+      "schtasks.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\schtasks.exe",
+      "schtasks.exe /Delete /F /tn \"Microsoft\\Office\\Office Serviceability Manager\""
+    ],
+    [
+      "2026-03-14T23:04:49.468Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "ProcessRollup2",
+      "schtasks.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\schtasks.exe",
+      "schtasks.exe /change /tn \"Microsoft\\Office\\Office Serviceability Manager\" /enable"
+    ],
+    [
+      "2026-03-14T23:04:49.468Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "ProcessRollup2",
+      "schtasks.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\schtasks.exe",
+      "schtasks.exe /change /tn \"Microsoft\\Office\\Office Serviceability Manager\" /enable"
+    ],
+    [
+      "2026-03-14T23:04:49.468Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "ProcessRollup2",
+      "schtasks.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\schtasks.exe",
+      "schtasks.exe /Create /tn \"Microsoft\\Office\\Office Serviceability Manager\" /XML \"C:\\Program Files\\Common Files\\Microsoft Shared\\ClickToRun\\OfficeSvcMgrSchedule_599M.xml\""
+    ],
+    [
+      "2026-03-14T23:03:04.014Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "sppsvc.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\sppsvc.exe",
+      "C:\\WINDOWS\\system32\\sppsvc.exe"
+    ],
+    [
+      "2026-03-14T23:02:20.963Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStopped",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-14T23:02:15.622Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\System32\\svchost.exe -k AppReadiness -p -s AppReadiness"
+    ],
+    [
+      "2026-03-14T23:02:15.622Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\System32\\svchost.exe -k swprv"
+    ],
+    [
+      "2026-03-14T23:02:15.622Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "VSSVC.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\VSSVC.exe",
+      "C:\\WINDOWS\\system32\\vssvc.exe"
+    ],
+    [
+      "2026-03-14T23:02:14.657Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p -s wlidsvc"
+    ],
+    [
+      "2026-03-14T23:02:14.197Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ProcessRollup2",
+      "schtasks.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\schtasks.exe",
+      "\"C:\\WINDOWS\\system32\\schtasks.exe\" /Change /TN \"Hewlett-Packard\\HP Active Health\\HP Active Health Scan\" /DISABLE"
+    ],
+    [
+      "2026-03-14T23:02:12.755Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\System32\\svchost.exe -k LocalSystemNetworkRestricted -p -s WdiSystemHost"
+    ],
+    [
+      "2026-03-14T23:02:12.264Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\System32\\svchost.exe -k wsappx -p -s ClipSVC"
+    ],
+    [
+      "2026-03-14T23:02:11.807Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "TouchpointAnalyticsClientService.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\DriverStore\\FileRepository\\hpanalyticscomp.inf_amd64_b532962506597d3d\\x64\\TouchpointAnalyticsClientService.exe",
+      "C:\\WINDOWS\\System32\\DriverStore\\FileRepository\\hpanalyticscomp.inf_amd64_b532962506597d3d\\x64\\TouchpointAnalyticsClientService.exe"
+    ],
+    [
+      "2026-03-14T23:02:11.807Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\System32\\svchost.exe -k netsvcs -p -s NetSetupSvc"
+    ],
+    [
+      "2026-03-14T23:02:11.807Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p -s wuauserv"
+    ],
+    [
+      "2026-03-14T23:02:11.806Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k wusvcs -p -s WaaSMedicSvc"
+    ],
+    [
+      "2026-03-14T23:02:11.315Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p"
+    ],
+    [
+      "2026-03-14T23:02:10.861Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "MicrosoftEdgeUpdate.exe",
+      "\\Device\\HarddiskVolume3\\Program Files (x86)\\Microsoft\\EdgeUpdate\\MicrosoftEdgeUpdate.exe",
+      "\"C:\\Program Files (x86)\\Microsoft\\EdgeUpdate\\MicrosoftEdgeUpdate.exe\" /svc"
+    ],
+    [
+      "2026-03-14T23:02:10.861Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStopped",
+      "sc.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\sc.exe",
+      "\"C:\\WINDOWS\\system32\\sc.exe\" \"stop\" \"HpTouchpointAnalyticsService\""
+    ],
+    [
+      "2026-03-14T23:02:10.861Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\System32\\svchost.exe -k netsvcs -p -s NetSetupSvc"
+    ],
+    [
+      "2026-03-14T23:02:09.277Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p"
+    ],
+    [
+      "2026-03-14T23:02:09.277Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStopped",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-14T23:02:09.276Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "WmiApSrv.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\wbem\\WmiApSrv.exe",
+      "C:\\WINDOWS\\system32\\wbem\\WmiApSrv.exe"
+    ],
+    [
+      "2026-03-14T23:02:08.357Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p"
+    ],
+    [
+      "2026-03-14T23:02:08.357Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "TrustedInstaller.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\servicing\\TrustedInstaller.exe",
+      "C:\\WINDOWS\\servicing\\TrustedInstaller.exe"
+    ],
+    [
+      "2026-03-14T23:02:08.356Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ProcessRollup2",
+      "schtasks.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\schtasks.exe",
+      "schtasks.exe /change /tn \"Microsoft\\Office\\Office Serviceability Manager\" /enable"
+    ],
+    [
+      "2026-03-14T23:02:08.356Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\System32\\svchost.exe -k wsappx -p -s ClipSVC"
+    ],
+    [
+      "2026-03-14T23:02:07.898Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ProcessRollup2",
+      "schtasks.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\schtasks.exe",
+      "schtasks.exe /Create /tn \"Microsoft\\Office\\Office Serviceability Manager\" /XML \"C:\\Program Files\\Common Files\\Microsoft Shared\\ClickToRun\\OfficeSvcMgrSchedule_420M.xml\""
+    ],
+    [
+      "2026-03-14T23:02:07.897Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ProcessRollup2",
+      "schtasks.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\schtasks.exe",
+      "schtasks.exe /change /tn \"Microsoft\\Office\\Office Serviceability Manager\" /enable"
+    ],
+    [
+      "2026-03-14T23:02:07.897Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ProcessRollup2",
+      "schtasks.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\schtasks.exe",
+      "schtasks.exe /change /tn \"Microsoft\\Office\\Office Serviceability Manager\" /enable"
+    ],
+    [
+      "2026-03-14T23:02:07.897Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ProcessRollup2",
+      "schtasks.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\schtasks.exe",
+      "schtasks.exe /Delete /F /tn \"Microsoft\\Office\\Office Serviceability Manager\""
+    ],
+    [
+      "2026-03-14T23:02:03.564Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "sppsvc.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\sppsvc.exe",
+      "C:\\WINDOWS\\system32\\sppsvc.exe"
+    ],
+    [
+      "2026-03-14T23:02:03.564Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k LocalServiceNetworkRestricted -p -s SmsRouter"
+    ],
+    [
+      "2026-03-14T23:02:03.561Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p -s dmwappushservice"
+    ],
+    [
+      "2026-03-14T23:01:59.859Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k GPSvcGroup"
+    ],
+    [
+      "2026-03-14T23:01:58.967Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\System32\\svchost.exe -k netsvcs -p -s BITS"
+    ],
+    [
+      "2026-03-14T23:01:58.967Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k wsappx -p -s AppXSvc"
+    ],
+    [
+      "2026-03-14T23:01:58.967Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p -s wlidsvc"
+    ],
+    [
+      "2026-03-14T23:01:54.080Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStopped",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-14T23:01:54.079Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k LocalServiceNetworkRestricted -p -s SmsRouter"
+    ],
+    [
+      "2026-03-14T23:01:53.099Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\System32\\svchost.exe -k netsvcs -p -s NetSetupSvc"
+    ],
+    [
+      "2026-03-14T23:01:53.099Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "TrustedInstaller.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\servicing\\TrustedInstaller.exe",
+      "C:\\WINDOWS\\servicing\\TrustedInstaller.exe"
+    ],
+    [
+      "2026-03-14T23:01:53.099Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\System32\\svchost.exe -k LocalSystemNetworkRestricted -p -s WdiSystemHost"
+    ],
+    [
+      "2026-03-14T23:01:53.099Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "sppsvc.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\sppsvc.exe",
+      "C:\\WINDOWS\\system32\\sppsvc.exe"
+    ],
+    [
+      "2026-03-14T23:01:52.609Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p -s wuauserv"
+    ],
+    [
+      "2026-03-14T23:01:52.608Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k wusvcs -p -s WaaSMedicSvc"
+    ],
+    [
+      "2026-03-14T23:01:52.608Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p -s wlidsvc"
+    ],
+    [
+      "2026-03-14T23:01:52.608Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k wsappx -p -s AppXSvc"
+    ],
+    [
+      "2026-03-14T23:01:52.117Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\System32\\svchost.exe -k wsappx -p -s ClipSVC"
+    ],
+    [
+      "2026-03-14T23:01:52.117Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p"
+    ],
+    [
+      "2026-03-14T23:01:52.116Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k LocalServiceNetworkRestricted -p -s SmsRouter"
+    ],
+    [
+      "2026-03-14T23:01:52.116Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p -s dmwappushservice"
+    ],
+    [
+      "2026-03-14T23:01:45.334Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k wsappx -p -s AppXSvc"
+    ],
+    [
+      "2026-03-14T23:01:38.495Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k wsappx -p -s AppXSvc"
+    ],
+    [
+      "2026-03-14T23:01:35.526Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p"
+    ],
+    [
+      "2026-03-14T23:01:31.585Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k wsappx -p -s AppXSvc"
+    ],
+    [
+      "2026-03-14T23:01:28.203Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k LocalServiceNetworkRestricted -p -s SmsRouter"
+    ],
+    [
+      "2026-03-14T23:01:25.630Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\System32\\svchost.exe -k wsappx -p -s ClipSVC"
+    ],
+    [
+      "2026-03-14T23:01:25.630Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p"
+    ],
+    [
+      "2026-03-14T23:01:25.630Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k LocalServiceNetworkRestricted -p -s SmsRouter"
+    ],
+    [
+      "2026-03-14T23:01:25.630Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p -s dmwappushservice"
+    ],
+    [
+      "2026-03-14T23:01:25.124Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k wusvcs -p -s WaaSMedicSvc"
+    ],
+    [
+      "2026-03-14T23:01:24.674Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k wsappx -p -s AppXSvc"
+    ],
+    [
+      "2026-03-14T23:01:24.673Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStopped",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-14T23:01:22.128Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStopped",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p -s wuauserv"
+    ],
+    [
+      "2026-03-14T23:01:21.620Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "sppsvc.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\sppsvc.exe",
+      "C:\\WINDOWS\\system32\\sppsvc.exe"
+    ],
+    [
+      "2026-03-14T23:01:21.620Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p -s wuauserv"
+    ],
+    [
+      "2026-03-14T23:01:21.620Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k wusvcs -p -s WaaSMedicSvc"
+    ],
+    [
+      "2026-03-14T23:01:18.331Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k wsappx -p -s AppXSvc"
+    ],
+    [
+      "2026-03-14T23:01:12.766Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k wusvcs -p -s WaaSMedicSvc"
+    ],
+    [
+      "2026-03-14T23:01:12.270Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k wsappx -p -s AppXSvc"
+    ],
+    [
+      "2026-03-14T23:01:12.270Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "TrustedInstaller.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\servicing\\TrustedInstaller.exe",
+      "C:\\WINDOWS\\servicing\\TrustedInstaller.exe"
+    ],
+    [
+      "2026-03-14T23:01:10.219Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p"
+    ],
+    [
+      "2026-03-14T23:01:07.179Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStopped",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-14T23:01:06.720Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k wsappx -p -s AppXSvc"
+    ],
+    [
+      "2026-03-14T23:01:06.720Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStopped",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-14T23:01:06.720Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStopped",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-14T23:01:06.720Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStopped",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-14T23:01:06.274Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k LocalServiceNetworkRestricted -p -s SmsRouter"
+    ],
+    [
+      "2026-03-14T23:01:06.274Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStopped",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-14T23:01:05.773Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStopped",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-14T23:01:05.773Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStopped",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-14T23:01:05.773Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStopped",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-14T23:01:04.850Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p"
+    ],
+    [
+      "2026-03-14T23:01:04.849Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p -s dmwappushservice"
+    ],
+    [
+      "2026-03-14T23:01:04.849Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\system32\\svchost.exe -k LocalServiceNetworkRestricted -p -s SmsRouter"
+    ],
+    [
+      "2026-03-14T23:01:04.704Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStopped",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-14T23:01:04.703Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStopped",
+      null,
+      null,
+      null
+    ],
+    [
+      "2026-03-14T23:00:59.252Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "msiexec.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\msiexec.exe",
+      "C:\\WINDOWS\\system32\\msiexec.exe /V"
+    ],
+    [
+      "2026-03-14T23:00:59.252Z",
+      "F-AUS-01-LS",
+      "F-AUS-01-LS",
+      "ServiceStarted",
+      "svchost.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe",
+      "C:\\WINDOWS\\System32\\svchost.exe -k LocalSystemNetworkRestricted -p -s WdiSystemHost"
+    ]
+  ]
+}

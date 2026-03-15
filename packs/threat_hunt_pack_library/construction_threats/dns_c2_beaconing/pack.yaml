@@ -1,0 +1,16 @@
+name: dns_c2_beaconing
+category: construction_threats
+severity: high
+description: Detect frequent DNS requests to the same domains that may indicate command and control
+
+query_template: |
+  FROM logs-cisco_umbrella.log*, logs-zeek.dns*
+  | STATS
+      queries = COUNT(),
+      first_seen = MIN(@timestamp),
+      last_seen = MAX(@timestamp)
+    BY source.ip, dns.question.name
+  | WHERE queries > 50
+  | EVAL duration_minutes = DATE_DIFF("minute", first_seen, last_seen)
+  | SORT queries DESC
+  | LIMIT 100

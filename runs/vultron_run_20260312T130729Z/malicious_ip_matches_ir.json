@@ -1,0 +1,213 @@
+{
+  "hunt": "malicious_ip_matches",
+  "ir_verdict": "network_overlap_found",
+  "notes": [
+    "Checked for breadth of telemetry overlap for malicious IOC IPs",
+    "IOC IP activity overlaps primarily with network telemetry",
+    "Some matching activity appears denied or blocked",
+    "Observed IOC activity appears fully blocked in sampled row-level events"
+  ],
+  "ioc_activity_summary": {
+    "total_events": 500,
+    "blocked_events": 500,
+    "allowed_or_other_events": 0,
+    "unique_source_ip_count": 286,
+    "unique_destination_ip_count": 8,
+    "datasets_observed": [
+      "fortinet_fortigate.log"
+    ],
+    "actions_observed": [
+      "deny"
+    ]
+  },
+  "summary": {
+    "documents_found": 3910878,
+    "columns": [
+      "total",
+      "datasets",
+      "actions"
+    ],
+    "sample_values": [
+      [
+        3910878,
+        [
+          "fortinet_fortigate.log",
+          "zeek.connection",
+          "crowdstrike.fdr"
+        ],
+        [
+          "deny",
+          "ProcessRollup2",
+          "DnsRequest",
+          "NetworkConnectIP4",
+          "ServiceStarted",
+          "ServiceStopped",
+          "EndOfProcess",
+          "ScheduledTaskModified",
+          "modification",
+          "creation",
+          "ProcessAncestryInformation",
+          "FileWrittenWithEntropyHigh",
+          "DirectoryCreate",
+          "SensorHeartbeat",
+          "ExecutableDeleted",
+          "ClassifiedModuleLoad",
+          "CurrentSystemTags",
+          "NeighborListIP4",
+          "ResourceUtilization",
+          "NetworkReceiveAcceptIP4",
+          "ConfigStateUpdate",
+          "SensitiveWmiQuery",
+          "FalconServiceStatus",
+          "deletion",
+          "InstanceMetadata"
+        ]
+      ]
+    ]
+  },
+  "row_level_summary": {
+    "documents_found": 2608,
+    "columns": [
+      "@timestamp",
+      "source.ip",
+      "destination.ip",
+      "related.ip",
+      "destination.port",
+      "host.name",
+      "data_stream.dataset",
+      "event.action"
+    ],
+    "sample_values": [
+      [
+        "2026-03-12T13:07:26.000Z",
+        "85.217.149.45",
+        "12.24.208.104",
+        [
+          "12.24.208.104",
+          "85.217.149.45"
+        ],
+        1340,
+        null,
+        "fortinet_fortigate.log",
+        "deny"
+      ],
+      [
+        "2026-03-12T13:07:25.000Z",
+        "85.217.149.50",
+        "12.24.208.104",
+        [
+          "12.24.208.104",
+          "85.217.149.50"
+        ],
+        6484,
+        null,
+        "fortinet_fortigate.log",
+        "deny"
+      ],
+      [
+        "2026-03-12T13:07:24.000Z",
+        "85.217.149.56",
+        "12.24.208.110",
+        [
+          "12.24.208.110",
+          "85.217.149.56"
+        ],
+        1736,
+        null,
+        "fortinet_fortigate.log",
+        "deny"
+      ],
+      [
+        "2026-03-12T13:07:24.000Z",
+        "85.217.149.69",
+        "12.24.208.110",
+        [
+          "12.24.208.110",
+          "85.217.149.69"
+        ],
+        6101,
+        null,
+        "fortinet_fortigate.log",
+        "deny"
+      ],
+      [
+        "2026-03-12T13:07:22.000Z",
+        "85.217.149.74",
+        "12.24.208.110",
+        [
+          "12.24.208.110",
+          "85.217.149.74"
+        ],
+        1935,
+        null,
+        "fortinet_fortigate.log",
+        "deny"
+      ],
+      [
+        "2026-03-12T13:07:21.000Z",
+        "85.217.149.56",
+        "12.24.208.109",
+        [
+          "12.24.208.109",
+          "85.217.149.56"
+        ],
+        1736,
+        null,
+        "fortinet_fortigate.log",
+        "deny"
+      ],
+      [
+        "2026-03-12T13:07:19.000Z",
+        "85.217.149.18",
+        "12.24.208.110",
+        [
+          "12.24.208.110",
+          "85.217.149.18"
+        ],
+        3741,
+        null,
+        "fortinet_fortigate.log",
+        "deny"
+      ],
+      [
+        "2026-03-12T13:07:18.000Z",
+        "162.216.149.200",
+        "12.24.208.108",
+        [
+          "12.24.208.108",
+          "162.216.149.200"
+        ],
+        8094,
+        null,
+        "fortinet_fortigate.log",
+        "deny"
+      ],
+      [
+        "2026-03-12T13:07:17.000Z",
+        "79.124.56.110",
+        "12.24.208.108",
+        [
+          "12.24.208.108",
+          "79.124.56.110"
+        ],
+        4469,
+        null,
+        "fortinet_fortigate.log",
+        "deny"
+      ],
+      [
+        "2026-03-12T13:07:15.000Z",
+        "8.216.7.68",
+        "12.24.208.106",
+        [
+          "8.216.7.68",
+          "12.24.208.106"
+        ],
+        2001,
+        null,
+        "fortinet_fortigate.log",
+        "deny"
+      ]
+    ]
+  }
+}

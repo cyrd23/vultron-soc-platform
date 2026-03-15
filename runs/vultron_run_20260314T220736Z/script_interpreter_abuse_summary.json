@@ -1,0 +1,85 @@
+{
+  "hunt": "script_interpreter_abuse",
+  "category": "endpoint",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "host.name",
+    "host.hostname",
+    "process.name",
+    "process.executable",
+    "process.command_line",
+    "event.action"
+  ],
+  "entities": {
+    "apps": [
+      "NetworkConnectIP4",
+      "ProcessRollup2"
+    ],
+    "hosts": [
+      "DAL-COUNTER-02",
+      "F-DAL-02-SS",
+      "IS-DAL-01-BC",
+      "IS-DAL-01-MF",
+      "LB-CCDEMO-01-RD",
+      "MCA-COUNTER-01",
+      "OA-AUS-01-RZ",
+      "OA-DAL-01-CR",
+      "OS-BR-01-GB",
+      "OS-KAN-01-TG",
+      "PO-STEMM-01-NC",
+      "SAN-COUNTER-01",
+      "SSI-2024-Net",
+      "SSI-F9"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-14T21:55:50.895Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "rundll32.exe",
+      null,
+      null,
+      "NetworkConnectIP4"
+    ],
+    [
+      "2026-03-14T21:55:50.865Z",
+      "SAN-COUNTER-01",
+      "SAN-COUNTER-01",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {147ff3b3-1feb-11f1-8f9d-040e3cc02be3}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:55:50.612Z",
+      "SSI-2024-Net",
+      "SSI-2024-Net",
+      "rundll32.exe",
+      "\\Device\\HarddiskVolume4\\Windows\\System32\\rundll32.exe",
+      "\"C:\\Windows\\system32\\rundll32.exe\" C:\\Windows\\system32\\PcaSvc.dll,PcaPatchSdbTask",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:55:40.107Z",
+      "LB-CCDEMO-01-RD",
+      "LB-CCDEMO-01-RD",
+      "cmd.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe",
+      "/k echo {c266b982-1fec-11f1-92d2-e0ad4700800a}",
+      "ProcessRollup2"
+    ],
+    [
+      "2026-03-14T21:55:27.043Z",
+      "SAN-COUNTER-01",
+      "SAN-COUNTER-01",
+      "rundll32.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\rundll32.exe",
+      "\"C:\\WINDOWS\\system32\\rundll32.exe\" C:\\WINDOWS\\system32\\PcaSvc.dll,PcaPatchSdbTask",
+      "ProcessRollup2"
+    ]
+  ]
+}

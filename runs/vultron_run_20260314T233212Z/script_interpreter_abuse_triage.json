@@ -1,0 +1,7 @@
+{
+  "hunt": "script_interpreter_abuse",
+  "verdict": "needs_review",
+  "notes": [
+    "Unhandled hunt type; manual review recommended"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "hunt": "shadow_copy_deletion",
+  "category": "construction_threats",
+  "status": "clean",
+  "findings": 0,
+  "severity": "critical",
+  "columns": [
+    "events",
+    "first_seen",
+    "last_seen",
+    "host.name",
+    "process.name",
+    "process.command_line",
+    "duration_minutes"
+  ],
+  "entities": {},
+  "sample_values": []
+}

@@ -1,0 +1,13 @@
+name: encoded_command_execution
+category: endpoint
+description: Detect encoded command execution across interpreters
+severity: high
+
+query_template: |
+  FROM logs-crowdstrike.fdr*
+  | WHERE process.command_line LIKE "*-enc*" 
+     OR process.command_line LIKE "*base64*"
+     OR process.command_line LIKE "*FromBase64String*"
+  | KEEP @timestamp, host.name, host.hostname, process.name, process.executable, process.command_line, event.action
+  | SORT @timestamp DESC
+  | LIMIT 100

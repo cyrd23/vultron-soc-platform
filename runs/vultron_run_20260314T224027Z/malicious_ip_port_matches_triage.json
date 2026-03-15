@@ -1,0 +1,7 @@
+{
+  "hunt": "malicious_ip_port_matches",
+  "verdict": "clean",
+  "notes": [
+    "No findings returned by the hunt"
+  ]
+}

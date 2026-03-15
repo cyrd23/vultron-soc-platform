@@ -1,0 +1,106 @@
+{
+  "hunt": "remote_execution_tools",
+  "category": "lateral_movement",
+  "status": "suspicious",
+  "findings": 100,
+  "severity": "high",
+  "columns": [
+    "@timestamp",
+    "host.name",
+    "host.hostname",
+    "event.action",
+    "process.name",
+    "process.executable",
+    "process.command_line",
+    "source.ip",
+    "destination.ip"
+  ],
+  "entities": {
+    "ips": [
+      "10.0.0.217",
+      "192.168.1.135",
+      "192.168.1.191",
+      "192.168.1.226",
+      "192.168.20.106",
+      "192.168.4.61",
+      "192.168.50.7",
+      "192.168.60.16",
+      "192.168.65.38",
+      "192.168.70.10",
+      "192.168.86.229"
+    ],
+    "apps": [
+      "ProcessRollup2"
+    ],
+    "hosts": [
+      "DAL-COUNTER-02",
+      "F-DAL-02-SS",
+      "LB-CCDEMO-01-RD",
+      "MCA-COUNTER-01",
+      "OA-AUS-01-RZ",
+      "OS-BR-01-GB",
+      "OS-DAL-01-NG",
+      "OS-HOU-01-BD",
+      "OS-HOUS-01-NC",
+      "OS-KAN-01-TG",
+      "SAN-COUNTER-01"
+    ]
+  },
+  "sample_values": [
+    [
+      "2026-03-14T21:56:55.150Z",
+      "MCA-COUNTER-01",
+      "MCA-COUNTER-01",
+      "ProcessRollup2",
+      "csc.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe",
+      "\"C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe\" /noconfig /fullpaths @\"C:\\WINDOWS\\SystemTemp\\vfzyszv5\\vfzyszv5.cmdline\"",
+      "192.168.70.10",
+      null
+    ],
+    [
+      "2026-03-14T21:47:33.290Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "ProcessRollup2",
+      "sc.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\sc.exe",
+      "\"C:\\WINDOWS\\system32\\sc.exe\" start w32time task_started",
+      "192.168.65.38",
+      null
+    ],
+    [
+      "2026-03-14T21:47:33.192Z",
+      "DAL-COUNTER-02",
+      "DAL-COUNTER-02",
+      "ProcessRollup2",
+      "sc.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\sc.exe",
+      "\"C:\\WINDOWS\\system32\\sc.exe\" start pushtoinstall registration",
+      "192.168.65.38",
+      null
+    ],
+    [
+      "2026-03-14T21:23:43.678Z",
+      "SAN-COUNTER-01",
+      "SAN-COUNTER-01",
+      "ProcessRollup2",
+      "csc.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe",
+      "\"C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe\" /noconfig /fullpaths @\"C:\\WINDOWS\\SystemTemp\\tdh2zdmv\\tdh2zdmv.cmdline\"",
+      "192.168.50.7",
+      null
+    ],
+    [
+      "2026-03-14T21:19:50.176Z",
+      "OS-KAN-01-TG",
+      "OS-KAN-01-TG",
+      "ProcessRollup2",
+      "sc.exe",
+      "\\Device\\HarddiskVolume3\\Windows\\System32\\sc.exe",
+      "\"C:\\Windows\\system32\\sc.exe\" start pushtoinstall registration",
+      "192.168.86.229",
+      null
+    ]
+  ]
+}

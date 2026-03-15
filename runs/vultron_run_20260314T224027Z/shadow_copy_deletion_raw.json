@@ -1,0 +1,37 @@
+{
+  "documents_found": 0,
+  "values_loaded": 0,
+  "took": 13,
+  "is_partial": false,
+  "columns": [
+    {
+      "name": "events",
+      "type": "long"
+    },
+    {
+      "name": "first_seen",
+      "type": "date"
+    },
+    {
+      "name": "last_seen",
+      "type": "date"
+    },
+    {
+      "name": "host.name",
+      "type": "keyword"
+    },
+    {
+      "name": "process.name",
+      "type": "keyword"
+    },
+    {
+      "name": "process.command_line",
+      "type": "keyword"
+    },
+    {
+      "name": "duration_minutes",
+      "type": "integer"
+    }
+  ],
+  "values": []
+}

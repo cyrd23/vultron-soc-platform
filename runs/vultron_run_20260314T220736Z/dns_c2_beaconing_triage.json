@@ -1,0 +1,7 @@
+{
+  "hunt": "dns_c2_beaconing",
+  "verdict": "needs_review",
+  "notes": [
+    "Unhandled hunt type; manual review recommended"
+  ]
+}

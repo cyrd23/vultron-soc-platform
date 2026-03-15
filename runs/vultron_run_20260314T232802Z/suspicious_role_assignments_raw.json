@@ -1,0 +1,252 @@
+{
+  "documents_found": 21,
+  "values_loaded": 124,
+  "took": 7,
+  "is_partial": false,
+  "columns": [
+    {
+      "name": "@timestamp",
+      "type": "date"
+    },
+    {
+      "name": "event.action",
+      "type": "keyword"
+    },
+    {
+      "name": "event.outcome",
+      "type": "keyword"
+    },
+    {
+      "name": "source.ip",
+      "type": "ip"
+    },
+    {
+      "name": "client.ip",
+      "type": "ip"
+    },
+    {
+      "name": "azure.auditlogs.properties.activity_display_name",
+      "type": "keyword"
+    },
+    {
+      "name": "azure.auditlogs.properties.initiated_by.user.userPrincipalName",
+      "type": "keyword"
+    },
+    {
+      "name": "azure.auditlogs.properties.initiated_by.user.displayName",
+      "type": "keyword"
+    }
+  ],
+  "values": [
+    [
+      "2026-03-12T20:38:28.920Z",
+      "Add app role assignment grant to user",
+      "success",
+      "20.163.70.41",
+      "20.163.70.41",
+      "Add app role assignment grant to user",
+      "MPetrikat@ssicm.com",
+      "Azure ESTS Service"
+    ],
+    [
+      "2026-03-10T16:29:17.207Z",
+      "Add app role assignment grant to user",
+      "success",
+      "172.190.161.50",
+      "172.190.161.50",
+      "Add app role assignment grant to user",
+      "JFulbright@ssicm.com",
+      "Azure ESTS Service"
+    ],
+    [
+      "2026-02-24T15:53:25.910Z",
+      "Add app role assignment grant to user",
+      "success",
+      "157.55.167.20",
+      "157.55.167.20",
+      "Add app role assignment grant to user",
+      "NChrisman@ssicm.com",
+      "Azure ESTS Service"
+    ],
+    [
+      "2026-01-28T13:26:07.464Z",
+      "Add app role assignment grant to user",
+      "success",
+      "172.190.161.50",
+      "172.190.161.50",
+      "Add app role assignment grant to user",
+      "jaldape@ssicm.com",
+      "Azure ESTS Service"
+    ],
+    [
+      "2026-01-24T07:04:16.219Z",
+      "Remove member from role (PIM activation expired)",
+      "success",
+      null,
+      null,
+      "Remove member from role (PIM activation expired)",
+      null,
+      "Azure AD PIM"
+    ],
+    [
+      "2026-01-23T23:04:17.686Z",
+      "Add member to role completed (PIM activation)",
+      "success",
+      null,
+      null,
+      "Add member to role completed (PIM activation)",
+      "reggie-cyleuth@ssicm.com",
+      "Reggie Dickerson"
+    ],
+    [
+      "2026-01-23T23:04:13.829Z",
+      "Add member to role requested (PIM activation)",
+      "success",
+      null,
+      null,
+      "Add member to role requested (PIM activation)",
+      "reggie-cyleuth@ssicm.com",
+      "Reggie Dickerson"
+    ],
+    [
+      "2026-01-23T22:17:50.209Z",
+      "Remove member from role (PIM activation expired)",
+      "success",
+      null,
+      null,
+      "Remove member from role (PIM activation expired)",
+      null,
+      "Azure AD PIM"
+    ],
+    [
+      "2026-01-23T21:27:20.908Z",
+      "Add app role assignment grant to user",
+      "success",
+      "172.190.161.50",
+      "172.190.161.50",
+      "Add app role assignment grant to user",
+      "dcarter@ssicm.com",
+      "Azure ESTS Service"
+    ],
+    [
+      "2026-01-23T18:06:46.108Z",
+      "Add member to role in PIM completed (permanent)",
+      "success",
+      null,
+      null,
+      "Add member to role in PIM completed (permanent)",
+      "aaron-sacro@ssicm.com",
+      "Aaron Jones"
+    ],
+    [
+      "2026-01-23T18:06:46.000Z",
+      "Add member to role",
+      "success",
+      null,
+      null,
+      "Add member to role",
+      null,
+      null
+    ],
+    [
+      "2026-01-23T18:06:45.683Z",
+      "Add member to role in PIM requested (permanent)",
+      "success",
+      null,
+      null,
+      "Add member to role in PIM requested (permanent)",
+      "aaron-sacro@ssicm.com",
+      "Aaron Jones"
+    ],
+    [
+      "2026-01-23T17:40:00.596Z",
+      "Add member to role in PIM completed (permanent)",
+      "success",
+      null,
+      null,
+      "Add member to role in PIM completed (permanent)",
+      "aaron-sacro@ssicm.com",
+      "Aaron Jones"
+    ],
+    [
+      "2026-01-23T17:40:00.104Z",
+      "Remove eligible member from role in PIM completed (permanent)",
+      "success",
+      null,
+      null,
+      "Remove eligible member from role in PIM completed (permanent)",
+      "aaron-sacro@ssicm.com",
+      "Aaron Jones"
+    ],
+    [
+      "2026-01-23T17:39:59.983Z",
+      "Remove eligible member from role",
+      "success",
+      null,
+      null,
+      "Remove eligible member from role",
+      null,
+      null
+    ],
+    [
+      "2026-01-23T17:39:59.770Z",
+      "Process role update request",
+      "success",
+      null,
+      null,
+      "Process role update request",
+      "aaron-sacro@ssicm.com",
+      "Aaron Jones"
+    ],
+    [
+      "2026-01-23T17:37:22.142Z",
+      "Add eligible member to role",
+      "success",
+      null,
+      null,
+      "Add eligible member to role",
+      null,
+      null
+    ],
+    [
+      "2026-01-23T17:37:21.931Z",
+      "Remove eligible member from role",
+      "success",
+      null,
+      null,
+      "Remove eligible member from role",
+      null,
+      null
+    ],
+    [
+      "2026-01-23T17:36:41.711Z",
+      "Add eligible member to role in PIM completed (permanent)",
+      "success",
+      null,
+      null,
+      "Add eligible member to role in PIM completed (permanent)",
+      "aaron-sacro@ssicm.com",
+      "Aaron Jones"
+    ],
+    [
+      "2026-01-23T17:36:41.622Z",
+      "Add eligible member to role",
+      "success",
+      null,
+      null,
+      "Add eligible member to role",
+      null,
+      null
+    ],
+    [
+      "2026-01-23T17:36:41.338Z",
+      "Add eligible member to role in PIM requested (permanent)",
+      "success",
+      null,
+      null,
+      "Add eligible member to role in PIM requested (permanent)",
+      "aaron-sacro@ssicm.com",
+      "Aaron Jones"
+    ]
+  ]
+}

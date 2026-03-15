@@ -1,0 +1,1875 @@
+{
+  "generated_at": "2026-03-14T23:45:37.373720+00:00",
+  "run_dir": "/home/reg/soc/runs/vultron_run_20260314T234446Z",
+  "file_counts": {
+    "summaries": 46,
+    "triage": 42,
+    "ir": 32,
+    "decisions": 42,
+    "crowdstrike_alerts": 93
+  },
+  "hunt_status_counts": {
+    "suspicious": 31,
+    "unknown": 1,
+    "clean": 10
+  },
+  "hunt_category_counts": {
+    "lateral_movement": 5,
+    "unknown": 1,
+    "construction_threats": 8,
+    "dns": 5,
+    "endpoint": 5,
+    "exposure": 4,
+    "identity": 9,
+    "compromise_detection": 1,
+    "intel_ioc": 4
+  },
+  "triage_verdict_counts": {
+    "needs_review": 32,
+    "expected_lab_activity": 85,
+    "suspicious": 7,
+    "clean": 10
+  },
+  "ir_verdict_counts": {
+    "not_implemented": 28,
+    "expected_lab_activity": 85,
+    "medium_severity_follow_on_activity_found": 3,
+    "high_severity_follow_on_activity_found": 5,
+    "network_overlap_found": 1,
+    "no_follow_on_o365_activity": 1,
+    "follow_on_success_found": 1
+  },
+  "decision_counts": {
+    "needs_review": 28,
+    "suppress_expected_lab_activity": 85,
+    "investigate_crowdstrike_medium_alert": 3,
+    "escalate_crowdstrike_high_severity_alert": 5,
+    "benign": 10,
+    "blocked_inbound_hostile_traffic": 1,
+    "needs_oauth_review": 1,
+    "escalate_possible_account_compromise": 1
+  },
+  "severity_counts": {
+    "medium": 32,
+    "low": 96,
+    "high": 6
+  },
+  "crowdstrike": {
+    "summary": {
+      "source": "crowdstrike",
+      "generated_at": "2026-03-14T23:44:58.853035+00:00",
+      "query_limit": 100,
+      "min_severity": 40,
+      "alert_ids_found": 100,
+      "raw_alert_objects": 100,
+      "normalized_alerts": 100,
+      "alerts_after_filtering": 93,
+      "new_alerts_after_dedupe": 93,
+      "classification_counts": {
+        "expected_lab_activity": 85,
+        "needs_triage": 8
+      },
+      "severity_counts": {
+        "Medium": 12,
+        "Informational": 36,
+        "High": 35,
+        "Low": 8,
+        "Critical": 2
+      },
+      "vultron_alert_url_configured": false
+    },
+    "classification_counts": {
+      "expected_lab_activity": 85,
+      "needs_triage": 8
+    },
+    "severity_counts": {
+      "Medium": 12,
+      "Informational": 36,
+      "High": 35,
+      "Low": 8,
+      "Critical": 2
+    }
+  },
+  "suspicious_hunts": [
+    {
+      "hunt": "malicious_ip_matches",
+      "category": "intel_ioc",
+      "findings": 200,
+      "severity": "unknown"
+    },
+    {
+      "hunt": "dga_like_behavior",
+      "category": "dns",
+      "findings": 100,
+      "severity": "medium"
+    },
+    {
+      "hunt": "newly_observed_domains",
+      "category": "dns",
+      "findings": 100,
+      "severity": "medium"
+    },
+    {
+      "hunt": "rare_domain_access",
+      "category": "dns",
+      "findings": 100,
+      "severity": "medium"
+    },
+    {
+      "hunt": "password_spray",
+      "category": "identity",
+      "findings": 11,
+      "severity": "medium"
+    },
+    {
+      "hunt": "abnormal_admin_behavior",
+      "category": "lateral_movement",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "dns_c2_beaconing",
+      "category": "construction_threats",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "dns_tunneling",
+      "category": "dns",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "external_scanning_to_vulnerable_asset",
+      "category": "exposure",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "internal_rdp",
+      "category": "lateral_movement",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "internet_facing_asset_risk",
+      "category": "exposure",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "mfa_fatigue",
+      "category": "identity",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "persistence_creation",
+      "category": "endpoint",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "remote_execution_tools",
+      "category": "lateral_movement",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "remote_service_creation",
+      "category": "lateral_movement",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "script_interpreter_abuse",
+      "category": "endpoint",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "tenable_exploitation_validation",
+      "category": "exposure",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "vulnerable_host_activity",
+      "category": "exposure",
+      "findings": 100,
+      "severity": "high"
+    },
+    {
+      "hunt": "service_principal_abuse",
+      "category": "identity",
+      "findings": 75,
+      "severity": "high"
+    },
+    {
+      "hunt": "oauth_consent_abuse",
+      "category": "identity",
+      "findings": 45,
+      "severity": "high"
+    },
+    {
+      "hunt": "suspicious_role_assignments",
+      "category": "identity",
+      "findings": 21,
+      "severity": "high"
+    },
+    {
+      "hunt": "oauth_app_secret_activity",
+      "category": "identity",
+      "findings": 14,
+      "severity": "high"
+    },
+    {
+      "hunt": "encoded_powershell",
+      "category": "construction_threats",
+      "findings": 11,
+      "severity": "high"
+    },
+    {
+      "hunt": "nxdomain_burst",
+      "category": "dns",
+      "findings": 11,
+      "severity": "high"
+    },
+    {
+      "hunt": "suspicious_powershell",
+      "category": "endpoint",
+      "findings": 8,
+      "severity": "high"
+    },
+    {
+      "hunt": "encoded_command_execution",
+      "category": "endpoint",
+      "findings": 7,
+      "severity": "high"
+    },
+    {
+      "hunt": "internal_rdp_lateral_movement",
+      "category": "lateral_movement",
+      "findings": 2,
+      "severity": "high"
+    },
+    {
+      "hunt": "smb_lateral_movement",
+      "category": "construction_threats",
+      "findings": 2,
+      "severity": "high"
+    },
+    {
+      "hunt": "process_injection",
+      "category": "endpoint",
+      "findings": 100,
+      "severity": "critical"
+    },
+    {
+      "hunt": "credential_dumping",
+      "category": "construction_threats",
+      "findings": 82,
+      "severity": "critical"
+    },
+    {
+      "hunt": "large_data_exfiltration",
+      "category": "construction_threats",
+      "findings": 3,
+      "severity": "critical"
+    }
+  ],
+  "coordinator_decisions": [
+    {
+      "hunt": "abnormal_admin_behavior",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "credential_dumping",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-10127-6969104"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8846444048-10417-4660496"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "investigate_crowdstrike_medium_alert",
+      "severity": "medium",
+      "rationale": [
+        "Medium severity CrowdStrike alert has supporting telemetry and requires investigation",
+        "Reviewed CrowdStrike alert: CommandLineStomping",
+        "Medium severity CrowdStrike alert with supporting host telemetry found in Elastic"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:ca8f0e489d374816b962fb078131fb4a:127314022248-337-6270992"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11896024689-10417-8384784"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11866272953-10127-8325392"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-8298256"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-5738-6963984"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-5733-6910480"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9901855281-10166-6147344"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-4748-5916176"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11952182729-10417-8450832"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11865244389-10159-8321040"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9907554859-10258-6154000"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-5733-5915408"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11928730356-546-8428816"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-8392208"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-10127-5993232"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-4748-5904656"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8846444048-10417-4700432"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-4748-3986448"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "escalate_crowdstrike_high_severity_alert",
+      "severity": "high",
+      "rationale": [
+        "High severity CrowdStrike alert has supporting host telemetry in Elastic",
+        "Reviewed CrowdStrike alert: UmppcBypassSuspected",
+        "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+        "Datasets observed: crowdstrike.fdr"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:fb3d64feb50846208262f41b6b78bf30:1925365432554-459-23959568"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "escalate_crowdstrike_high_severity_alert",
+      "severity": "high",
+      "rationale": [
+        "High severity CrowdStrike alert has supporting host telemetry in Elastic",
+        "Reviewed CrowdStrike alert: HashDumpSAMUntrusted",
+        "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+        "Datasets observed: crowdstrike.fdr"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:454c248f82bd4974a8576eb033799770:1954357939752-56-4023824"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11919584015-10417-8424720"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11901842666-546-8396048"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-8256784"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-7995920"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9910974655-10258-6161680"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-10417-6120208"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-5733-5911312"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4478736"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-10127-6968848"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10370718937-10417-6659344"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4530704"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-4748-3955216"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11884723401-134-8363024"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11856711824-10164-8306960"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10371703633-10417-6660368"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-5733-5913872"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11859763589-10146-8310544"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11935825673-10417-8447760"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11884723401-10147-8364304"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11889542395-10248-8372240"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11859097911-10166-8309520"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-7765008"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-4748-6908176"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-10417-6841360"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11859763589-10147-8311568"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-4748-6920976"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10372706814-10417-6661392"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9898133367-10417-6138640"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-5738-5987600"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-5733-3980560"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-5733-3985936"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "investigate_crowdstrike_medium_alert",
+      "severity": "medium",
+      "rationale": [
+        "Medium severity CrowdStrike alert has supporting telemetry and requires investigation",
+        "Reviewed CrowdStrike alert: ProductivityAppWroteAsep",
+        "Medium severity CrowdStrike alert with supporting host telemetry found in Elastic"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:ca8f0e489d374816b962fb078131fb4a:126935565049-103-5439760"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11960544478-10417-8722960"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9901855281-10258-6146320"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9910974655-10166-6162704"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11837773137-10106-8267280"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "escalate_crowdstrike_high_severity_alert",
+      "severity": "high",
+      "rationale": [
+        "High severity CrowdStrike alert has supporting host telemetry in Elastic",
+        "Reviewed CrowdStrike alert: HashDumpSAMUntrusted",
+        "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+        "Datasets observed: crowdstrike.fdr"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:fb3d64feb50846208262f41b6b78bf30:1924242885558-56-23975696"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11886057611-10107-8365584"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11856711824-10417-8303376"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11854519589-10166-8301072"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11833570885-10417-8258576"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9897024929-10417-6137616"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4514832"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4240656"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11893337767-10417-8379408"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11863870195-10438-8339728"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:10662981550-10417-7802128"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "escalate_crowdstrike_high_severity_alert",
+      "severity": "high",
+      "rationale": [
+        "High severity CrowdStrike alert has supporting host telemetry in Elastic",
+        "Reviewed CrowdStrike alert: SuspiciousFileWritten",
+        "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+        "Datasets observed: crowdstrike.fdr"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:9a83a8075e294430b6a73302b5b4a0fd:510317325820-10427-14436880"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "escalate_crowdstrike_high_severity_alert",
+      "severity": "high",
+      "rationale": [
+        "High severity CrowdStrike alert has supporting host telemetry in Elastic",
+        "Reviewed CrowdStrike alert: BypassUACPrivEsc",
+        "High severity CrowdStrike alert with supporting host telemetry found in Elastic",
+        "Datasets observed: crowdstrike.fdr"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:9a83a8075e294430b6a73302b5b4a0fd:510256351096-10311-5536272"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11892127031-10417-8378384"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11959720516-10417-8721936"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11950902765-10417-8449552"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11863060189-10120-8316688"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11834385132-10417-8259600"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-4748-6918160"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9683050737-10127-5992464"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11863870195-10438-8340240"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4548112"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:4515910051-5733-3974672"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "investigate_crowdstrike_medium_alert",
+      "severity": "medium",
+      "rationale": [
+        "Medium severity CrowdStrike alert has supporting telemetry and requires investigation",
+        "Reviewed CrowdStrike alert: Parallel port scanning",
+        "Medium severity CrowdStrike alert with supporting host telemetry found in Elastic"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:fb3d64feb50846208262f41b6b78bf30:1917645402998-474-15836944"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11863870195-10438-8388112"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11863870195-10120-8318736"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9899057346-10417-6141968"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9908250020-10166-6157840"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9522098887-10417-6112272"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:9684356190-4748-5905168"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:8127156727-10417-4278032"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11862111419-10120-8314640"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11854519589-10146-8300048"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11859097911-10166-8308496"
+    },
+    {
+      "hunt": "crowdstrike_alert",
+      "decision": "suppress_expected_lab_activity",
+      "severity": "low",
+      "rationale": [
+        "CrowdStrike alert was classified as expected lab/test activity",
+        "Connector classified this alert as expected lab/test activity",
+        "Matched Atomic Red Team / test activity indicators"
+      ],
+      "source": "crowdstrike",
+      "alert_id": "de6ca60e4fc74a3ea437a95e2b73c484:ind:f960a98702f34ecc8fa1cea7108981b9:11857738830-10417-8304400"
+    },
+    {
+      "hunt": "dga_like_behavior",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "dns_c2_beaconing",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "dns_tunneling",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "encoded_command_execution",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "encoded_powershell",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "external_scanning_to_vulnerable_asset",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "impossible_travel",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "internal_host_to_ioc",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "internal_rdp",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "internal_rdp_lateral_movement",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "internet_facing_asset_risk",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "large_data_exfiltration",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "malicious_domain_matches",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "malicious_domain_matches_umbrella",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "malicious_ip_matches",
+      "decision": "blocked_inbound_hostile_traffic",
+      "severity": "low",
+      "rationale": [
+        "Threat-intel IOC IPs were observed only in denied network events",
+        "Fortinet blocked the activity at the edge",
+        "No endpoint evidence of internal hosts contacting IOC infrastructure"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "malicious_ip_port_matches",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "mfa_fatigue",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "newly_observed_domains",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "nxdomain_burst",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "oauth_app_secret_activity",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "oauth_consent_abuse",
+      "decision": "needs_oauth_review",
+      "severity": "medium",
+      "rationale": [
+        "OAuth consent or application activity requires analyst validation",
+        "OAuth consent, grant, or application-related activity detected",
+        "Observed user count: 9"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "password_spray",
+      "decision": "escalate_possible_account_compromise",
+      "severity": "high",
+      "rationale": [
+        "Password spray activity was followed by successful sign-ins",
+        "Checked for successful sign-ins from suspicious spray IPs"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "persistence_creation",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "process_injection",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "rare_domain_access",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "rare_geo_mailbox_rule",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "remote_execution_tools",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "remote_service_creation",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "script_interpreter_abuse",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "service_principal_abuse",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "shadow_copy_deletion",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "smb_lateral_movement",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "suspicious_mailbox_rules",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "suspicious_powershell",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "suspicious_role_assignments",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "tenable_exploitation_validation",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "token_abuse",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "vpn_geo_anomaly",
+      "decision": "benign",
+      "severity": "low",
+      "rationale": [
+        "Triage found no suspicious activity"
+      ],
+      "source": null,
+      "alert_id": null
+    },
+    {
+      "hunt": "vulnerable_host_activity",
+      "decision": "needs_review",
+      "severity": "medium",
+      "rationale": [
+        "No specific coordinator rule matched; manual analyst review recommended",
+        "Unhandled hunt type; manual review recommended",
+        "No IR workflow implemented yet for this hunt"
+      ],
+      "source": null,
+      "alert_id": null
+    }
+  ]
+}

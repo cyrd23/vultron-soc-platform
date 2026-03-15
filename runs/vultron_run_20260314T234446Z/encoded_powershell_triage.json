@@ -1,0 +1,7 @@
+{
+  "hunt": "encoded_powershell",
+  "verdict": "needs_review",
+  "notes": [
+    "Unhandled hunt type; manual review recommended"
+  ]
+}

@@ -1,0 +1,13 @@
+name: credential_dumping
+category: endpoint
+description: Detect credential dumping related command lines
+severity: critical
+
+query_template: |
+  FROM logs-crowdstrike.fdr*
+  | WHERE process.command_line LIKE "*mimikatz*"
+     OR process.command_line LIKE "*procdump*"
+     OR process.command_line LIKE "*lsass*"
+  | KEEP @timestamp, host.name, host.hostname, event.action, process.name, process.executable, process.command_line
+  | SORT @timestamp DESC
+  | LIMIT 100

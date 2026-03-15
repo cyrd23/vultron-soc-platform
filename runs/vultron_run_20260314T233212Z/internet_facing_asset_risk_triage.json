@@ -1,0 +1,7 @@
+{
+  "hunt": "internet_facing_asset_risk",
+  "verdict": "needs_review",
+  "notes": [
+    "Unhandled hunt type; manual review recommended"
+  ]
+}

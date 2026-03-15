@@ -1,0 +1,18 @@
+{
+  "hunt": "oauth_consent_abuse",
+  "ir_verdict": "no_follow_on_o365_activity",
+  "notes": [
+    "Checked for O365 activity involving users from OAuth consent hunt"
+  ],
+  "follow_on_activity_count": 0,
+  "summary": {
+    "documents_found": 0,
+    "columns": [
+      "@timestamp",
+      "user.name",
+      "event.action",
+      "source.ip"
+    ],
+    "sample_values": []
+  }
+}

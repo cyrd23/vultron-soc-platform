@@ -1,0 +1,8 @@
+{
+  "hunt": "suspicious_mailbox_rules",
+  "decision": "benign",
+  "severity": "low",
+  "rationale": [
+    "Triage found no suspicious activity"
+  ]
+}

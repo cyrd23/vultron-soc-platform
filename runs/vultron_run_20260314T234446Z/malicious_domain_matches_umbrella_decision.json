@@ -1,0 +1,8 @@
+{
+  "hunt": "malicious_domain_matches_umbrella",
+  "decision": "benign",
+  "severity": "low",
+  "rationale": [
+    "Triage found no suspicious activity"
+  ]
+}
